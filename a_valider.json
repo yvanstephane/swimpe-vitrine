@@ -18,6 +18,38 @@
       ]
     },
     {
+      "sujet": "dates, inscriptions, examens blancs - KonkurSN — Concours au Sénégal",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://konkursn.net/concours/22",
+          "domaine": "konkursn.net"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : konkursn.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "AVIS DE CONCOURS Le Centre Pédagogique Régional de l'ICESCO au Tchad (CPRIT ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-19",
+      "liens": [
+        {
+          "lien": "https://www.facebook.com/61558722472328/posts/avis-de-concoursle-centre-pédagogique-régional-de-licesco-au-tchad-cprit-annonce/122258835038290749/",
+          "domaine": "facebook.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : facebook.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "«Il y a toujours une place pour vous», le STIS recrute des sapeurs-pompiers volontaires",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-10-20",
