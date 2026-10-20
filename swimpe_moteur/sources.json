@@ -55,13 +55,13 @@
     },
     {
       "id": "fonction_publique_sn",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "fonctionpublique.gouv.sn",
       "libelle": "Ministère de la Fonction publique — Sénégal (concours officiels)",
       "url": "https://fonctionpublique.gouv.sn/",
       "lire_pdf": true,
-      "pdf_max": 4,
+      "pdf_max": 6,
       "pays": "Sénégal",
       "selecteur_lien": "a",
       "mots_cles": [
@@ -73,17 +73,19 @@
       "fenetre_jours": 30,
       "limite": 15,
       "timeout": 45,
-      "_note": "Domaine confirmé (guide SenCampus 2026). Candidatures emploi État : emploi-fpublique.sec.gouv.sn (PGDE). Écoles : ena.sn, gendarmerie.sn, policenationale.gouv.sn… → la sonde dira si la page d'accueil est lisible."
+      "_note": "Domaine confirmé (guide SenCampus 2026). Candidatures emploi État : emploi-fpublique.sec.gouv.sn (PGDE). Écoles : ena.sn, gendarmerie.sn, policenationale.gouv.sn… → la sonde dira si la page d'accueil est lisible.",
+      "suivre_article": true,
+      "articles_max": 12
     },
     {
       "id": "fonction_publique_ci",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "fonctionpublique.gouv.ci",
       "libelle": "Ministère de la Fonction publique — Côte d'Ivoire (concours administratifs)",
       "url": "https://www.fonctionpublique.gouv.ci/",
       "lire_pdf": true,
-      "pdf_max": 4,
+      "pdf_max": 6,
       "pays": "Côte d'Ivoire",
       "selecteur_lien": "a",
       "mots_cles": [
@@ -96,11 +98,13 @@
       "fenetre_jours": 30,
       "limite": 15,
       "timeout": 45,
-      "_note": "Domaine officiel confirmé par recoupement. La sonde dira si la page est lisible par le moteur."
+      "_note": "Domaine officiel confirmé par recoupement. La sonde dira si la page est lisible par le moteur.",
+      "suivre_article": true,
+      "articles_max": 12
     },
     {
       "id": "agence_emploi_jeunes_ci",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "agenceemploijeunes.ci",
       "libelle": "Agence Emploi Jeunes — Côte d'Ivoire (agence publique)",
@@ -118,7 +122,11 @@
       "fenetre_jours": 21,
       "limite": 15,
       "timeout": 45,
-      "_note": "Site officiel confirmé 19/10/2026, mais les offres semblent derrière leur plateforme candidat. La sonde dira ce qui est visible publiquement."
+      "_note": "Site officiel confirmé 19/10/2026, mais les offres semblent derrière leur plateforme candidat. La sonde dira ce qui est visible publiquement.",
+      "suivre_article": true,
+      "lire_pdf": true,
+      "articles_max": 12,
+      "pdf_max": 6
     },
     {
       "id": "minesup_concours",
@@ -128,7 +136,7 @@
       "libelle": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
       "url": "https://minesup.gov.cm/index.php/category/concours/",
       "lire_pdf": true,
-      "pdf_max": 4,
+      "pdf_max": 8,
       "pays": "Cameroun",
       "selecteur_lien": "a",
       "mots_cles": [
@@ -140,7 +148,9 @@
       "limite": 20,
       "timeout": 60,
       "_note": "VÉRIFIÉ : liste HTML des arrêtés de concours (saison mai-août → souvent vide en oct). URL sans www (le sous-domaine www ne résout pas). À réessayer en saison.",
-      "concours_strict": true
+      "concours_strict": true,
+      "suivre_article": true,
+      "articles_max": 15
     },
     {
       "id": "msf_waca",
@@ -298,7 +308,7 @@
     },
     {
       "id": "senelec_recrutement",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "senelec.sn",
       "libelle": "SENELEC — portail officiel de recrutement (Sénégal)",
@@ -311,11 +321,15 @@
       "fenetre_jours": 14,
       "limite": 20,
       "timeout": 45,
-      "_note": "Portail dédié = source unique fiable (offres très copiées par les agrégateurs). Structure à sonder."
+      "_note": "Portail dédié = source unique fiable (offres très copiées par les agrégateurs). Structure à sonder.",
+      "suivre_article": true,
+      "lire_pdf": true,
+      "articles_max": 12,
+      "pdf_max": 6
     },
     {
       "id": "ansd_sn",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "ansd.sn",
       "libelle": "ANSD — Agence Nationale de la Statistique et de la Démographie (Sénégal)",
@@ -332,7 +346,11 @@
       "limite": 15,
       "timeout": 45,
       "verify_ssl": false,
-      "_note": "Certificat SSL incomplet côté serveur (fréquent sur sites gouv.) → verify_ssl:false. Domaine officiel épinglé. À réessayer ; sinon pointer la page recrutement précise."
+      "_note": "Certificat SSL incomplet côté serveur (fréquent sur sites gouv.) → verify_ssl:false. Domaine officiel épinglé. À réessayer ; sinon pointer la page recrutement précise.",
+      "suivre_article": true,
+      "lire_pdf": true,
+      "articles_max": 12,
+      "pdf_max": 6
     },
     {
       "id": "pnv_cameroun",
@@ -364,14 +382,16 @@
       "libelle": "MINFOPRA — concours administratifs (fonction publique, Cameroun)",
       "url": "https://www.minfopra.gov.cm/",
       "lire_pdf": true,
-      "pdf_max": 4,
+      "pdf_max": 8,
       "pays": "Cameroun",
       "selecteur_lien": "a",
       "fenetre_jours": 45,
       "limite": 15,
       "timeout": 90,
       "_note": "Site LENT (timeout 30s dépassé) → timeout porté à 90s. Domaine officiel connu.",
-      "concours_strict": true
+      "concours_strict": true,
+      "suivre_article": true,
+      "articles_max": 15
     },
     {
       "id": "concours_cameroon_tribune",
@@ -381,7 +401,7 @@
       "libelle": "Cameroon Tribune — avis officiels (concours, recrutements)",
       "url": "https://www.cameroon-tribune.cm/",
       "lire_pdf": true,
-      "pdf_max": 3,
+      "pdf_max": 8,
       "pays": "Cameroun",
       "selecteur_lien": "a",
       "mots_cles": [
@@ -394,7 +414,9 @@
       "limite": 15,
       "timeout": 45,
       "_note": "Joignable (sonde ✓) mais 0 avis en page d'accueil ce jour-là — à réessayer, ou pointer une rubrique annonces précise.",
-      "concours_strict": true
+      "concours_strict": true,
+      "suivre_article": true,
+      "articles_max": 15
     },
     {
       "id": "kamerpower_rss",
@@ -467,12 +489,14 @@
         "appel à candidature"
       ],
       "lire_pdf": true,
-      "pdf_max": 3,
+      "pdf_max": 8,
       "fenetre_jours": 45,
       "limite": 10,
       "timeout": 45,
       "_note": "Concours tous les 2-3 ans, avis en PDF (le moteur lit le PDF : vraie date limite + extrait). VIGILANCE : historique d'annulation/audit du concours 2022-23 — toujours renvoyer vers l'avis officiel beac.int.",
-      "concours_strict": true
+      "concours_strict": true,
+      "suivre_article": true,
+      "articles_max": 15
     },
     {
       "id": "veille_google",

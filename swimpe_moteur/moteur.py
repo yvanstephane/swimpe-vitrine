@@ -972,6 +972,28 @@ def fetch_concours(source, _mock=None):
     return pages
 
 
+def extraire_pdf_de_article(url, source):
+    """Ouvre la page d'article officiel et renvoie l'URL du PDF de l'avis (ou None).
+    Priorité aux documents (wp-content/uploads, 'avis', 'concours')."""
+    try:
+        r = _get(url, source)
+        r.raise_for_status()
+    except Exception:
+        return None
+    from urllib.parse import urljoin
+    hrefs = re.findall(r'href=["\']([^"\']+\.pdf[^"\'#?]*)["\']', r.text, re.I)
+    if not hrefs:
+        return None
+    liens = []
+    for h in hrefs:
+        u = urljoin(url, htmllib.unescape(h))
+        if u not in liens:
+            liens.append(u)
+    prioritaires = [u for u in liens
+                    if any(k in u.lower() for k in ("upload", "/avis", "concours", "recrutement"))]
+    return (prioritaires or liens)[0]
+
+
 def map_concours(htmltexts, source, pays_cibles=None):
     """Repere les liens d'offres/avis sur une page officielle :
     - par MOTS-CLES dans le titre du lien (mots_cles), et/ou
@@ -994,7 +1016,7 @@ def map_concours(htmltexts, source, pays_cibles=None):
     else:
         desc = "Offre publiée sur le site officiel. Détails et candidature sur la page officielle."
         domaine_txt = ""
-    vus, offres, pdfs_lus = set(), [], 0
+    vus, offres, pdfs_lus, arts_suivis = set(), [], 0, 0
     liens_a = []
     for htmltext in htmltexts:
         soup = BeautifulSoup(htmltext, "html.parser")
@@ -1021,6 +1043,13 @@ def map_concours(htmltexts, source, pays_cibles=None):
         if lien in vus:
             continue
         vus.add(lien)
+        # --- suivre l'article officiel pour pointer DIRECTEMENT vers le PDF de l'avis ---
+        if (source.get("suivre_article") and ".pdf" not in lien.lower()
+                and arts_suivis < int(source.get("articles_max", 15))):
+            arts_suivis += 1
+            pdf = extraire_pdf_de_article(lien, source)
+            if pdf:
+                lien = pdf  # on remplace la page d'article par le document officiel
         # --- lecture de l'avis PDF officiel (date limite reelle + extrait) ---
         expire_item, desc_item = exp, desc
         if source.get("lire_pdf") and ".pdf" in lien.lower() and pdfs_lus < int(source.get("pdf_max", 5)):
