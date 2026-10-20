@@ -1,6 +1,10 @@
 {
   "_comment": "LISTE BLANCHE des sources de confiance. Le moteur ne lit QUE ces sources. L'ORDRE = PRIORITE (en cas de doublon, la source la plus haute gagne). Anti-sosie : domaines vérifiés le 19/10/2026. Teste tout avec : python3 moteur.py --probe",
-  "pays_cibles": ["Cameroun", "Côte d'Ivoire", "Sénégal"],
+  "pays_cibles": [
+    "Cameroun",
+    "Côte d'Ivoire",
+    "Sénégal"
+  ],
   "sources": [
     {
       "id": "fne_cameroun",
@@ -13,14 +17,15 @@
       "type_offre": "emploi",
       "motif_href": "/offre/",
       "longueur_min_titre": 6,
+      "pages_max": 4,
       "fenetre_jours": 14,
-      "limite": 25,
+      "limite": 30,
       "timeout": 45,
       "_note": "VERIFIE 19/10/2026 : site officiel (le FNE avertit lui-même que seules les offres de fnecm.org sont officielles), ~24 offres en cours. Le moteur repère les liens /offre/{ref}."
     },
     {
       "id": "reliefweb_rss",
-      "actif": true,
+      "actif": false,
       "type": "rss",
       "domaine": "reliefweb.int",
       "libelle": "ReliefWeb (ONU/OCHA) — flux RSS des offres (sans clé)",
@@ -30,7 +35,7 @@
       ],
       "fenetre_jours": 21,
       "limite": 30,
-      "_note": "VERIFIE : fonctionne. Flux mondial filtré par le moteur sur nos pays cibles."
+      "_note": "Flux RSS ReliefWeb fermé (réponse non-XML au 2026-10-20). À rebrancher via l'API officielle (source 'reliefweb' + appname pré-approuvé) si besoin. Couvert en partie par un_careers_rss et coordination_sud."
     },
     {
       "id": "reliefweb",
@@ -41,7 +46,11 @@
       "api_base": "https://api.reliefweb.int/v2",
       "appname": "",
       "_appname_note": "Demande un appname pré-approuvé (formulaire : https://apidoc.reliefweb.int/parameters#appname, ex. swimpe-local-jobs-k7m2x). Reçu par e-mail → colle-le ici → actif:true (tu peux alors désactiver reliefweb_rss).",
-      "pays_reliefweb": ["Cameroon", "Côte d'Ivoire", "Senegal"],
+      "pays_reliefweb": [
+        "Cameroon",
+        "Côte d'Ivoire",
+        "Senegal"
+      ],
       "limite": 40
     },
     {
@@ -55,7 +64,12 @@
       "pdf_max": 4,
       "pays": "Sénégal",
       "selecteur_lien": "a",
-      "mots_cles": ["concours", "recrutement", "avis", "appel à candidature"],
+      "mots_cles": [
+        "concours",
+        "recrutement",
+        "avis",
+        "appel à candidature"
+      ],
       "fenetre_jours": 30,
       "limite": 15,
       "timeout": 45,
@@ -72,7 +86,13 @@
       "pdf_max": 4,
       "pays": "Côte d'Ivoire",
       "selecteur_lien": "a",
-      "mots_cles": ["concours", "recrutement", "avis", "inscription", "appel à candidature"],
+      "mots_cles": [
+        "concours",
+        "recrutement",
+        "avis",
+        "inscription",
+        "appel à candidature"
+      ],
       "fenetre_jours": 30,
       "limite": 15,
       "timeout": 45,
@@ -87,7 +107,14 @@
       "url": "https://agenceemploijeunes.ci/",
       "pays": "Côte d'Ivoire",
       "selecteur_lien": "a",
-      "mots_cles": ["emploi", "stage", "formation", "recrutement", "appel", "opportunité"],
+      "mots_cles": [
+        "emploi",
+        "stage",
+        "formation",
+        "recrutement",
+        "appel",
+        "opportunité"
+      ],
       "fenetre_jours": 21,
       "limite": 15,
       "timeout": 45,
@@ -104,7 +131,11 @@
       "pdf_max": 4,
       "pays": "Cameroun",
       "selecteur_lien": "a",
-      "mots_cles": ["concours", "recrutement", "admission"],
+      "mots_cles": [
+        "concours",
+        "recrutement",
+        "admission"
+      ],
       "fenetre_jours": 45,
       "limite": 20,
       "timeout": 60,
@@ -121,6 +152,148 @@
       "fenetre_jours": 21,
       "limite": 25,
       "_note": "API JSON publique Recruitee (sans clé) : /api/offers/. Offres CI/CM/SN peu présentes sur ReliefWeb → vrai complément. Pays détecté automatiquement. À sonder puis activer."
+    },
+    {
+      "id": "coordination_sud",
+      "actif": true,
+      "type": "wp_rest",
+      "domaine": "coordinationsud.org",
+      "libelle": "Coordination Sud — agrégateur solidarité internationale (API ouverte)",
+      "organisation_defaut": "Via Coordination Sud",
+      "description_defaut": "Offre de solidarité internationale (emploi, mission, stage, volontariat) relayée par Coordination Sud. Candidature sur la page de l'organisme recruteur.",
+      "api_base": "https://www.coordinationsud.org/wp-json/wp/v2",
+      "endpoint": "p_annonces",
+      "taxonomie": "localisation-geographique",
+      "pays_ids": {
+        "Cameroun": 124,
+        "Côte d'Ivoire": 126,
+        "Sénégal": 158
+      },
+      "per_page": 100,
+      "fenetre_jours": 30,
+      "limite": 60,
+      "_note": "PRISE MAJEURE : API JSON ouverte WordPress. Champs date-fin-validite / ville / lien-postuler / email_contact. Des centaines d'offres solidarité filtrables par pays."
+    },
+    {
+      "id": "un_careers_rss",
+      "actif": true,
+      "type": "rss",
+      "domaine": "careers.un.org",
+      "libelle": "UN Careers — flux RSS officiel du Secrétariat des Nations Unies",
+      "urls": [
+        "https://careers.un.org/jobfeed"
+      ],
+      "fenetre_jours": 30,
+      "limite": 25,
+      "_note": "Flux mondial RSS 2.0 officiel ; le moteur filtre sur les villes de nos pays (Yaoundé, Douala, Dakar, Abidjan) via la détection pays."
+    },
+    {
+      "id": "giz_workable",
+      "actif": true,
+      "type": "workable_api",
+      "domaine": "apply.workable.com/giz-kamerun",
+      "libelle": "GIZ Cameroun — coopération allemande (portail officiel Workable)",
+      "organisation_defaut": "GIZ Cameroun",
+      "compte": "giz-kamerun",
+      "pays": "Cameroun",
+      "fenetre_jours": 21,
+      "limite": 25,
+      "_note": "API JSON publique du widget Workable — gros employeur national, quasi absent de ReliefWeb."
+    },
+    {
+      "id": "worldvision_workday",
+      "actif": true,
+      "type": "workday_api",
+      "domaine": "worldvision.wd1.myworkdayjobs.com",
+      "libelle": "World Vision International — portail officiel Workday",
+      "organisation_defaut": "World Vision",
+      "tenant": "worldvision.wd1",
+      "site": "WorldVisionInternational",
+      "recherche": "Senegal",
+      "pays": "Sénégal",
+      "fenetre_jours": 21,
+      "limite": 20,
+      "_note": "API JSON publique des sites carrières Workday (recherche filtrée Sénégal — seul pays cible où WV opère)."
+    },
+    {
+      "id": "plan_international",
+      "actif": false,
+      "type": "concours_html",
+      "domaine": "jobs.plan-international.org",
+      "libelle": "Plan International — portail officiel (SuccessFactors)",
+      "url": "https://jobs.plan-international.org/go/All-jobs/8766001/",
+      "selecteur_lien": "a",
+      "motif_href": "/job/",
+      "longueur_min_titre": 6,
+      "fenetre_jours": 21,
+      "limite": 25,
+      "timeout": 45,
+      "_note": "Multi-pays : pays détecté dans le titre. À sonder puis activer (offres Yaoundé/Maroua vérifiées par la recherche)."
+    },
+    {
+      "id": "cicr_careers",
+      "actif": false,
+      "type": "concours_html",
+      "domaine": "careers.icrc.org",
+      "libelle": "CICR — portail officiel (postes résidents, peu présents sur ReliefWeb)",
+      "url": "https://careers.icrc.org/search/",
+      "selecteur_lien": "a",
+      "motif_href": "/job/",
+      "longueur_min_titre": 6,
+      "fenetre_jours": 21,
+      "limite": 20,
+      "timeout": 45,
+      "_note": "Multi-pays : pays détecté dans le titre. À sonder puis activer."
+    },
+    {
+      "id": "enabel_jobs",
+      "actif": false,
+      "type": "concours_html",
+      "domaine": "jobs.enabel.be",
+      "libelle": "Enabel — coopération belge (Dakar, Abidjan)",
+      "url": "https://jobs.enabel.be/go/Tous/4637301/",
+      "selecteur_lien": "a",
+      "motif_href": "/job/",
+      "longueur_min_titre": 6,
+      "fenetre_jours": 21,
+      "limite": 15,
+      "timeout": 45,
+      "_note": "Multi-pays : pays détecté dans le titre. Flux intermittent — à sonder."
+    },
+    {
+      "id": "eeas_ue",
+      "actif": false,
+      "type": "concours_html",
+      "domaine": "eeas.europa.eu",
+      "libelle": "Délégations de l'Union européenne (agents locaux, stages jeunes diplômés)",
+      "url": "https://www.eeas.europa.eu/eeas/vacancies_en",
+      "selecteur_lien": "a",
+      "motif_href": "vacanc|avis-de-vacance|stage-subventionn",
+      "longueur_min_titre": 8,
+      "fenetre_jours": 30,
+      "limite": 15,
+      "timeout": 45,
+      "_note": "Multi-pays : pays détecté dans le titre (délégations Cameroun/CI/Sénégal). À sonder."
+    },
+    {
+      "id": "canada_erp",
+      "actif": false,
+      "type": "concours_html",
+      "domaine": "dotation-erp.international.gc.ca",
+      "libelle": "Canada — emplois recrutés sur place (Yaoundé, Abidjan, Dakar)",
+      "url": "https://dotation-erp.international.gc.ca/fr/",
+      "selecteur_lien": "a",
+      "mots_cles": [
+        "emploi",
+        "poste",
+        "agent",
+        "adjoint",
+        "assistant"
+      ],
+      "fenetre_jours": 30,
+      "limite": 15,
+      "timeout": 45,
+      "_note": "Multi-pays : pays détecté dans le titre. À sonder (structure de la liste à confirmer)."
     },
     {
       "id": "senelec_recrutement",
@@ -148,7 +321,12 @@
       "url": "https://www.ansd.sn/",
       "pays": "Sénégal",
       "selecteur_lien": "a",
-      "mots_cles": ["recrutement", "appel à candidature", "enquêteur", "avis de recrutement"],
+      "mots_cles": [
+        "recrutement",
+        "appel à candidature",
+        "enquêteur",
+        "avis de recrutement"
+      ],
       "fenetre_jours": 21,
       "limite": 15,
       "timeout": 45,
@@ -165,7 +343,13 @@
       "pays": "Cameroun",
       "type_offre": "volontariat",
       "selecteur_lien": "a",
-      "mots_cles": ["volontariat", "volontaire", "mission", "appel", "recrutement"],
+      "mots_cles": [
+        "volontariat",
+        "volontaire",
+        "mission",
+        "appel",
+        "recrutement"
+      ],
       "fenetre_jours": 30,
       "limite": 10,
       "timeout": 45,
@@ -198,7 +382,12 @@
       "pdf_max": 3,
       "pays": "Cameroun",
       "selecteur_lien": "a",
-      "mots_cles": ["concours", "recrutement", "avis de concours", "appel à candidature"],
+      "mots_cles": [
+        "concours",
+        "recrutement",
+        "avis de concours",
+        "appel à candidature"
+      ],
       "fenetre_jours": 30,
       "limite": 15,
       "timeout": 45,
@@ -220,11 +409,13 @@
     },
     {
       "id": "lesopportunites_rss",
-      "actif": false,
+      "actif": true,
       "type": "rss",
       "domaine": "lesopportunites.com",
       "libelle": "LesOpportunités — relais concours, bourses & emplois (Afrique francophone)",
-      "urls": ["https://www.lesopportunites.com/feed/"],
+      "urls": [
+        "https://www.lesopportunites.com/feed/"
+      ],
       "fenetre_jours": 21,
       "limite": 25,
       "_note": "RELAIS PRIVÉ multi-pays — pays détecté automatiquement. À confirmer à la main avant activation."
@@ -235,7 +426,9 @@
       "type": "rss",
       "domaine": "cameroondesks.com",
       "libelle": "CameroonDesks — relais offres & concours (Cameroun)",
-      "urls": ["https://www.cameroondesks.com/feed/"],
+      "urls": [
+        "https://www.cameroondesks.com/feed/"
+      ],
       "pays": "Cameroun",
       "fenetre_jours": 14,
       "limite": 20,
@@ -247,7 +440,9 @@
       "type": "rss",
       "domaine": "concoursn.com",
       "libelle": "ConcoursN — relais concours & recrutements (Sénégal)",
-      "urls": ["https://concoursn.com/feed/"],
+      "urls": [
+        "https://concoursn.com/feed/"
+      ],
       "pays": "Sénégal",
       "fenetre_jours": 21,
       "limite": 20,
@@ -262,13 +457,39 @@
       "url": "https://www.beac.int/",
       "pays": "Cameroun",
       "selecteur_lien": "a",
-      "mots_cles": ["concours", "recrutement", "avis de concours", "appel à candidature"],
+      "mots_cles": [
+        "concours",
+        "recrutement",
+        "avis de concours",
+        "appel à candidature"
+      ],
       "lire_pdf": true,
       "pdf_max": 3,
       "fenetre_jours": 45,
       "limite": 10,
       "timeout": 45,
       "_note": "Concours tous les 2-3 ans, avis en PDF (le moteur lit le PDF : vraie date limite + extrait). VIGILANCE : historique d'annulation/audit du concours 2022-23 — toujours renvoyer vers l'avis officiel beac.int."
+    },
+    {
+      "id": "veille_google",
+      "actif": true,
+      "type": "veille_alertes",
+      "domaine": "(Google Alertes — flux RSS)",
+      "libelle": "Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "urls": [
+        "https://www.google.com/alerts/feeds/05616352632650263715/9552880696078008783",
+        "https://www.google.com/alerts/feeds/05616352632650263715/4130157575215892483",
+        "https://www.google.com/alerts/feeds/05616352632650263715/17758721226456687571",
+        "https://www.google.com/alerts/feeds/05616352632650263715/15540545678423676512",
+        "https://www.google.com/alerts/feeds/05616352632650263715/15880515596733885942",
+        "https://www.google.com/alerts/feeds/05616352632650263715/996679179737852683",
+        "https://www.google.com/alerts/feeds/05616352632650263715/884769175333194406",
+        "https://www.google.com/alerts/feeds/05616352632650263715/2058581171328501718",
+        "https://www.google.com/alerts/feeds/05616352632650263715/15788280171392527661"
+      ],
+      "max_messages": 120,
+      "timeout": 30,
+      "_note": "NE PUBLIE JAMAIS directement. Chaque lien remonté par Google passe par le validateur anti-sosie : domaine officiel (domaines_confiance.json) -> publié automatiquement ; sosie -> alerte 🔴 ; inconnu -> a_valider.json (vérif humaine, une fois, puis ajout du domaine à la liste de confiance). Aucun mot de passe, aucune 2FA : 9 flux RSS publics branchés le 2026-10-20."
     },
     {
       "id": "boite_veille",
@@ -291,9 +512,24 @@
       "libelle": "Jooble — agrégateur mondial (API officielle, clé gratuite) — bonus",
       "api_key": "",
       "requetes": [
-        { "host": "https://jooble.org", "pays": "Sénégal", "mots_cles": "", "localisation": "Sénégal" },
-        { "host": "https://jooble.org", "pays": "Cameroun", "mots_cles": "", "localisation": "Cameroun" },
-        { "host": "https://jooble.org", "pays": "Côte d'Ivoire", "mots_cles": "", "localisation": "Côte d'Ivoire" }
+        {
+          "host": "https://jooble.org",
+          "pays": "Sénégal",
+          "mots_cles": "",
+          "localisation": "Sénégal"
+        },
+        {
+          "host": "https://jooble.org",
+          "pays": "Cameroun",
+          "mots_cles": "",
+          "localisation": "Cameroun"
+        },
+        {
+          "host": "https://jooble.org",
+          "pays": "Côte d'Ivoire",
+          "mots_cles": "",
+          "localisation": "Côte d'Ivoire"
+        }
       ],
       "fenetre_jours": 14,
       "limite": 25,

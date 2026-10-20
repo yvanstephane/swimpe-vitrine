@@ -459,6 +459,187 @@ def map_jooble(resultats, source):
 
 
 # ---------------------------------------------------------------------------
+# CONNECTEUR Workable (portails type apply.workable.com/giz-kamerun)
+# API JSON publique du widget : /api/v1/widget/accounts/<compte>?details=true
+# ---------------------------------------------------------------------------
+def fetch_workable(source, _mock=None):
+    if _mock is not None:
+        return _mock
+    if requests is None:
+        raise RuntimeError("Le module 'requests' est requis.")
+    url = "https://apply.workable.com/api/v1/widget/accounts/%s?details=true" % source["compte"]
+    r = _get(url, source)
+    r.raise_for_status()
+    return r.json().get("jobs", [])
+
+
+def map_workable(jobs, source, pays_cibles):
+    fenetre = int(source.get("fenetre_jours", 21))
+    exp = (datetime.date.today() + datetime.timedelta(days=fenetre)).isoformat()
+    offres = []
+    for jb in jobs:
+        titre = nettoyer_html(jb.get("title", ""))[:140]
+        lien = (jb.get("url") or jb.get("application_url") or "").strip()
+        if not titre or not lien:
+            continue
+        lieu = " ".join(str(jb.get(k, "") or "") for k in ("city", "country", "state"))
+        pays = source.get("pays") or detecter_pays(titre + " " + lieu, pays_cibles)
+        if not pays:
+            continue
+        desc = nettoyer_html(jb.get("description", ""))
+        description = (desc[:240] + "…") if len(desc) > 240 else (
+            desc or "Offre publiée sur le portail officiel de recrutement.")
+        offres.append(_offre(
+            source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
+            titre, source.get("organisation_defaut", source.get("libelle", "")), pays,
+            nettoyer_html(str(jb.get("city", "") or "")), "",
+            description, lien, jour(jb.get("created_at")) or today(), exp))
+        if len(offres) >= int(source.get("limite", 25)):
+            break
+    return offres
+
+
+# ---------------------------------------------------------------------------
+# CONNECTEUR Workday (portails type worldvision.wd1.myworkdayjobs.com)
+# API JSON publique des sites carrieres : POST /wday/cxs/<tenant>/<site>/jobs
+# ---------------------------------------------------------------------------
+def fetch_workday(source, _mock=None):
+    if _mock is not None:
+        return _mock
+    if requests is None:
+        raise RuntimeError("Le module 'requests' est requis.")
+    hote = source["tenant"]                       # ex: worldvision.wd1
+    tenant = hote.split(".")[0]
+    site = source["site"]                         # ex: WorldVisionInternational
+    url = "https://%s.myworkdayjobs.com/wday/cxs/%s/%s/jobs" % (hote, tenant, site)
+    # Workday CXS : limite MAX 20 par requete -> on pagine jusqu'a limite_totale
+    cap = min(int(source.get("limite_api", 20)), 20)
+    total = int(source.get("limite_totale", 60))
+    posts, offset = [], 0
+    while offset < total:
+        corps = {"limit": cap, "offset": offset,
+                 "searchText": source.get("recherche", ""), "appliedFacets": {}}
+        r = requests.post(url, json=corps, timeout=int(source.get("timeout", 30)),
+                          headers={**UA, "Accept": "application/json",
+                                   "Content-Type": "application/json"},
+                          verify=source.get("verify_ssl", True))
+        r.raise_for_status()
+        lot = r.json().get("jobPostings", [])
+        posts += lot
+        if len(lot) < cap:
+            break
+        offset += cap
+    return posts
+
+
+def map_workday(posts, source, pays_cibles):
+    fenetre = int(source.get("fenetre_jours", 21))
+    exp = (datetime.date.today() + datetime.timedelta(days=fenetre)).isoformat()
+    base = "https://%s.myworkdayjobs.com/%s" % (source["tenant"], source["site"])
+    offres = []
+    for p in posts:
+        titre = nettoyer_html(p.get("title", ""))[:140]
+        chemin = p.get("externalPath", "")
+        if not titre or not chemin:
+            continue
+        lieu = nettoyer_html(str(p.get("locationsText", "") or ""))
+        pays = source.get("pays") or detecter_pays(titre + " " + lieu, pays_cibles)
+        if not pays:
+            continue
+        lien = base + chemin
+        offres.append(_offre(
+            source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
+            titre, source.get("organisation_defaut", source.get("libelle", "")), pays,
+            lieu, "", "Offre publiée sur le portail officiel de recrutement. "
+            "Détails et candidature sur la page officielle.",
+            lien, today(), exp))
+        if len(offres) >= int(source.get("limite", 25)):
+            break
+    return offres
+
+
+# ---------------------------------------------------------------------------
+# CONNECTEUR WordPress REST API (type Coordination Sud : /wp-json/wp/v2/<endpoint>)
+# API JSON ouverte, filtrable par taxonomie pays. Champs riches (acf).
+# ---------------------------------------------------------------------------
+def date_souple(v):
+    """Normalise une date ISO, DD/MM/YYYY ou AAAAMMJJ (ACF) -> AAAA-MM-JJ."""
+    if not v:
+        return ""
+    v = str(v).strip()
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", v)
+    if m:
+        return m.group(0)
+    m = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{4})$", v)
+    if m:
+        return "%s-%02d-%02d" % (m.group(3), int(m.group(2)), int(m.group(1)))
+    m = re.match(r"^(\d{4})(\d{2})(\d{2})$", v)
+    if m:
+        return "%s-%s-%s" % (m.group(1), m.group(2), m.group(3))
+    return jour(v)
+
+
+def fetch_wp_rest(source, _mock=None):
+    if _mock is not None:
+        return _mock
+    if requests is None:
+        raise RuntimeError("Le module 'requests' est requis.")
+    base = source["api_base"].rstrip("/")
+    endpoint = source.get("endpoint", "posts")
+    tax = source.get("taxonomie", "")
+    per = int(source.get("per_page", 100))
+    resultats = []
+    for pays, tid in source.get("pays_ids", {}).items():
+        params = "per_page=%d&page=1" % per
+        if tax and tid:
+            params += "&%s=%s" % (tax, tid)
+        url = "%s/%s?%s" % (base, endpoint, params)
+        try:
+            r = _get(url, source)
+            r.raise_for_status()
+            resultats.append((pays, r.json()))
+        except Exception as e:
+            print("  ! %s (%s) wp_rest: %s" % (source["id"], pays, e), file=sys.stderr)
+    return resultats
+
+
+def map_wp_rest(resultats, source):
+    fenetre = int(source.get("fenetre_jours", 30))
+    exp_def = (datetime.date.today() + datetime.timedelta(days=fenetre)).isoformat()
+    offres = []
+    for pays, posts in resultats:
+        if not isinstance(posts, list):
+            continue
+        for p in posts:
+            t = p.get("title", {})
+            titre = nettoyer_html(t.get("rendered", "") if isinstance(t, dict) else str(t))[:140]
+            acf = p.get("acf", {}) or {}
+            lien_postuler = (acf.get("lien-postuler") or "").strip()
+            lien = lien_postuler or (p.get("link") or "").strip()
+            if not titre or not lien:
+                continue
+            expire = date_souple(acf.get("date-fin-validite")) or exp_def
+            if not non_expiree(expire):
+                continue
+            mode, val = "lien", lien
+            email = (acf.get("email_contact") or "").strip()
+            if email and "@" in email and not lien_postuler:
+                mode, val = "email", email
+            ville = nettoyer_html(str(acf.get("ville", "") or ""))
+            desc = source.get("description_defaut",
+                              "Offre relayée par un agrégateur de confiance. Détails et "
+                              "candidature sur la page de l'organisme recruteur.")
+            o = _offre(source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
+                       titre, source.get("organisation_defaut", ""), pays, ville, "",
+                       desc, lien, jour(p.get("date")) or today(), expire)
+            o["comment_postuler"] = {"mode": mode, "valeur": val}
+            offres.append(o)
+            if len(offres) >= int(source.get("limite", 60)):
+                break
+    return offres
+
+
+# ---------------------------------------------------------------------------
 # CONNECTEUR VEILLE E-MAIL — pour ce qu'aucun robot ne lit directement :
 # recrutements annonces par presse/e-mail (CAMTEL, Ecobank...), PDF scannes, reseaux.
 # Principe : une boite dediee recoit Google Alerts + newsletters OFFICIELLES ;
@@ -551,6 +732,83 @@ def map_veille_email(messages, source):
             "_rappel": "Verifier sur le site OFFICIEL de l'organisme, puis recopier l'offre "
                        "dans offres_manuelles.json si elle est reelle (jamais de publication directe).",
         })
+    return candidats
+
+
+# ---------------------------------------------------------------------------
+# CONNECTEUR Google Alertes (flux RSS/Atom) — la « boîte de veille » sans e-mail
+# Google Alertes indexe TOUT le web : jamais de publication directe.
+# Chaque lien trouvé devient un CANDIDAT qui passe par le validateur anti-sosie
+# (trier_candidats) : domaine officiel -> publié ; sosie -> 🔴 alerte ; inconnu -> 🟡 file.
+# ---------------------------------------------------------------------------
+def _depouiller_google(l):
+    """Déballe un lien Google (redirection /url?url=...) -> (lien_propre, domaine) ou None si parasite."""
+    from urllib.parse import urlparse, parse_qs, unquote
+    l = (l or "").strip()
+    if not l:
+        return None
+    if "google." in l and "url?" in l:
+        q = parse_qs(urlparse(l).query)
+        cible = (q.get("url") or q.get("q") or [""])[0]
+        if cible:
+            l = unquote(cible)
+    l = l.split("&utm")[0].split("?utm")[0].rstrip(".,;")
+    dom = urlparse(l).netloc.lower().replace("www.", "")
+    if (not dom or "google." in dom or "gstatic" in dom or "doubleclick" in dom
+            or "youtube." in dom or "unsubscribe" in l.lower()):
+        return None
+    return (l, dom)
+
+
+def fetch_alertes(source, _mock=None):
+    """Lit les flux RSS Google Alertes déclarés (champ 'urls'). Retourne la liste des items parsés."""
+    if _mock is not None:
+        return _mock
+    if requests is None:
+        raise RuntimeError("Le module 'requests' est requis (pip install -r requirements.txt).")
+    urls = source.get("urls") or ([source["url"]] if source.get("url") else [])
+    if not urls:
+        raise RuntimeError("aucune URL de flux Google Alertes déclarée (champ 'urls').")
+    items, erreurs = [], []
+    for u in urls:
+        try:
+            r = _get(u, source)
+            r.raise_for_status()
+            debut = r.content[:2000].lower()
+            if not (b"<feed" in debut or b"<rss" in debut or b"<?xml" in debut):
+                raise RuntimeError("réponse non-XML")
+            items.extend(parser_flux(r.content))
+        except Exception as e:
+            erreurs.append("…%s : %s" % (u[-12:], e))
+    if not items and erreurs:
+        raise RuntimeError("aucun flux lisible (%s)" % " | ".join(erreurs))
+    return items
+
+
+def map_alertes(items, source):
+    """Flux Google Alertes -> CANDIDATS à valider (jamais publiés tels quels)."""
+    candidats, vus = [], set()
+    for it in items:
+        titre = nettoyer_html(it.get("titre", ""))[:160]
+        propre = _depouiller_google(it.get("lien", ""))
+        if not titre or not propre:
+            continue
+        lien, dom = propre
+        if lien in vus:
+            continue
+        vus.add(lien)
+        candidats.append({
+            "sujet": titre,
+            "expediteur": "Google Alertes — %s" % source.get("libelle", source.get("id", "")),
+            "recu_le": date_rss(it.get("date", "")) or today(),
+            "liens": [{"lien": lien, "domaine": dom}],
+            "statut": "a_valider",
+            "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de "
+                       "l'organisme avant toute diffusion (jamais de publication automatique "
+                       "hors domaine de confiance).",
+        })
+        if len(candidats) >= int(source.get("max_messages", 120)):
+            break
     return candidats
 
 
@@ -665,23 +923,43 @@ def est_bruit(titre):
 
 
 def fetch_concours(source, _mock=None):
+    """Recupere la page de liste + (option) ses pages de pagination (pages_max)."""
     if _mock is not None:
         return _mock
     if requests is None:
         raise RuntimeError("Le module 'requests' est requis.")
     r = _get(source["url"], source)
     r.raise_for_status()
-    return r.text
+    pages = [r.text]
+    pmax = int(source.get("pages_max", 1))
+    if pmax > 1:
+        from urllib.parse import urljoin
+        hrefs = re.findall(r'href=["\']([^"\']*(?:[?&]page=|/page/)\d+[^"\']*)["\']', r.text)
+        vues, suivantes = set(), []
+        for h in hrefs:
+            u = urljoin(source["url"], htmllib.unescape(h))
+            if u not in vues and u != source["url"]:
+                vues.add(u)
+                suivantes.append(u)
+        for u in suivantes[:pmax - 1]:
+            try:
+                r2 = _get(u, source)
+                r2.raise_for_status()
+                pages.append(r2.text)
+            except Exception:
+                pass
+    return pages
 
 
-def map_concours(htmltext, source):
+def map_concours(htmltexts, source, pays_cibles=None):
     """Repere les liens d'offres/avis sur une page officielle :
     - par MOTS-CLES dans le titre du lien (mots_cles), et/ou
     - par MOTIF D'URL (motif_href, regex sur le href — ex. "/offre/" pour fnecm.org)."""
     if BeautifulSoup is None:
         raise RuntimeError("Le module 'beautifulsoup4' est requis.")
     from urllib.parse import urljoin
-    soup = BeautifulSoup(htmltext, "html.parser")
+    if isinstance(htmltexts, str):
+        htmltexts = [htmltexts]
     mots = [m.lower() for m in source.get("mots_cles", CONCOURS_MOTS)]
     motif = source.get("motif_href", "")
     type_o = source.get("type_offre", "concours")
@@ -696,7 +974,11 @@ def map_concours(htmltext, source):
         desc = "Offre publiée sur le site officiel. Détails et candidature sur la page officielle."
         domaine_txt = ""
     vus, offres, pdfs_lus = set(), [], 0
-    for a in soup.select(source.get("selecteur_lien", "a")):
+    liens_a = []
+    for htmltext in htmltexts:
+        soup = BeautifulSoup(htmltext, "html.parser")
+        liens_a += soup.select(source.get("selecteur_lien", "a"))
+    for a in liens_a:
         titre = re.sub(r"\s+", " ", a.get_text(" ", strip=True)).strip()
         href = a.get("href") if a.has_attr("href") else ""
         if not titre or not href or len(titre) < long_min:
@@ -728,10 +1010,14 @@ def map_concours(htmltext, source):
                     desc_item = extrait + "… (extrait de l'avis officiel PDF)"
         if not non_expiree(expire_item):
             continue  # l'avis PDF porte une date limite deja passee
+        # pays : fixe par la source, sinon detecte dans le titre (sources multi-pays)
+        pays = source.get("pays") or detecter_pays(titre, pays_cibles or [])
+        if not pays:
+            continue
         offres.append(_offre(
             source, id_stable(source["id"], lien),
             detecter_type(titre, type_o), titre[:140],
-            source.get("libelle", source.get("domaine", "")), source.get("pays", ""), "",
+            source.get("libelle", source.get("domaine", "")), pays, "",
             domaine_txt, desc_item, lien, today(), expire_item))
         if len(offres) >= int(source.get("limite", 15)):
             break
@@ -924,7 +1210,13 @@ def lire_source(src, pays_cibles, mock=None):
     if t == "html":
         return map_html(fetch_html(src, _mock=m), src)
     if t == "concours_html":
-        return map_concours(fetch_concours(src, _mock=m), src)
+        return map_concours(fetch_concours(src, _mock=m), src, pays_cibles)
+    if t == "workable_api":
+        return map_workable(fetch_workable(src, _mock=m), src, pays_cibles)
+    if t == "workday_api":
+        return map_workday(fetch_workday(src, _mock=m), src, pays_cibles)
+    if t == "wp_rest":
+        return map_wp_rest(fetch_wp_rest(src, _mock=m), src)
     raise RuntimeError("type de source inconnu : %s" % t)
 
 
@@ -944,9 +1236,12 @@ def executer(config, mock=None):
         if not src.get("actif"):
             continue
         try:
-            if src["type"] == "veille_email":
-                cand = map_veille_email(
-                    fetch_veille_email(src, _mock=(mock or {}).get(src["id"])), src)
+            if src["type"] in ("veille_email", "veille_alertes"):
+                mid = (mock or {}).get(src["id"])
+                if src["type"] == "veille_alertes":
+                    cand = map_alertes(fetch_alertes(src, _mock=mid), src)
+                else:
+                    cand = map_veille_email(fetch_veille_email(src, _mock=mid), src)
                 a_valider += cand
                 print("  · %s : %d candidat(s) de veille (a valider, non publies)"
                       % (src["id"], len(cand)), file=sys.stderr)
@@ -991,8 +1286,11 @@ def probe(config):
     for src in config.get("sources", []):
         etat = "ACTIVE" if src.get("actif") else "inactive"
         try:
-            if src["type"] == "veille_email":
-                cand = map_veille_email(fetch_veille_email(src), src)
+            if src["type"] in ("veille_email", "veille_alertes"):
+                if src["type"] == "veille_alertes":
+                    cand = map_alertes(fetch_alertes(src), src)
+                else:
+                    cand = map_veille_email(fetch_veille_email(src), src)
                 print("  ✓ %-24s [%s] %d candidat(s) de veille (a valider)"
                       % (src["id"], etat, len(cand)))
                 if cand:
@@ -1061,10 +1359,43 @@ PAGES_MOCK = {
         "<html><head><title>Avis de recrutement de 25 techniciens réseau — CAMTEL</title></head>"
         "<body>CAMTEL recrute 25 techniciens réseau à Yaoundé (Cameroun). "
         "Dossiers à envoyer à emplois@camtel.cm. Date limite : 31/12/2099.</body></html>",
+    "https://giz.de/emploi/cm-2026":
+        "<html><head><title>Conseiller technique junior (H/F) — GIZ Cameroun</title></head>"
+        "<body>La GIZ recrute un conseiller technique junior basé à Yaoundé, Cameroun. "
+        "Candidatures à recrutement@giz.de. Date limite : 30/11/2099.</body></html>",
 }
 
+# Flux Google Alertes simulé : 1 domaine officiel (publié) + 1 sosie (🔴) + 1 inconnu (🟡)
+ALERTES_MOCK = [
+    {"titre": "GIZ : <b>conseiller</b> technique junior à Yaoundé",
+     "lien": "https://www.google.com/url?rct=j&sa=t&url=https://giz.de/emploi/cm-2026&ct=ga",
+     "desc": "Offre relayée", "date": "Mon, 19 Oct 2026 07:00:00 +0000", "cats": []},
+    {"titre": "CAMTEL recrute — déposez vite votre dossier",
+     "lien": "https://www.google.com/url?url=https://camtel-emploi.cm/postuler&ct=ga",
+     "desc": "", "date": "Mon, 19 Oct 2026 07:30:00 +0000", "cats": []},
+    {"titre": "100 emplois au Cameroun cette semaine",
+     "lien": "https://offres-emploi-afrique-inconnu.net/job/42",
+     "desc": "", "date": "Mon, 19 Oct 2026 08:00:00 +0000", "cats": []},
+]
+
+CS_MOCK = [
+    ("Cameroun", [
+        {"title": {"rendered": "Charg&#233;&#8217;e de projet jeunesse"},
+         "link": "https://www.coordinationsud.org/annonce/1",
+         "date": "2026-10-15T00:00:00",
+         "acf": {"date-fin-validite": "2099-11-30", "ville": "Yaoundé",
+                 "lien-postuler": "https://ong-exemple.org/postuler/1", "email_contact": ""}},
+        {"title": {"rendered": "Mission EXPIRÉE (doit être écartée)"},
+         "link": "https://www.coordinationsud.org/annonce/2",
+         "date": "2026-09-01T00:00:00",
+         "acf": {"date-fin-validite": "30/09/2026", "ville": "Douala"}},
+    ]),
+]
+
 SELF_TEST_MOCK = {
+    "coordination_sud": CS_MOCK,
     "boite_veille": VEILLE_MOCK,
+    "veille_google": ALERTES_MOCK,
     "_pages": PAGES_MOCK,
     "fne_cameroun": FNE_MOCK,
     "reliefweb_rss": RSS_MOCK,
@@ -1112,20 +1443,32 @@ def self_test(config):
     assert not any("contact" in o["titre"].lower() or "voir toutes" in o["titre"].lower()
                    for o in res["offres"]), "ÉCHEC : un lien de navigation est passé pour une offre !"
     autos = [o for o in res["offres"] if o.get("ajoute_par") == "veille-auto"]
-    assert len(autos) == 1 and autos[0]["pays"] == "Cameroun" \
-        and autos[0]["comment_postuler"]["mode"] == "email" \
-        and autos[0]["comment_postuler"]["valeur"] == "emplois@camtel.cm", \
+    camtel = [o for o in autos if o["source_domaine"] == "camtel.cm"]
+    assert len(camtel) == 1 and camtel[0]["pays"] == "Cameroun" \
+        and camtel[0]["comment_postuler"]["mode"] == "email" \
+        and camtel[0]["comment_postuler"]["valeur"] == "emplois@camtel.cm", \
         "ÉCHEC : le candidat CAMTEL (domaine officiel) n'a pas été AUTO-validé correctement"
-    assert len(res["offres"]) == 7, "ÉCHEC : total attendu 7 (6 + 1 auto-validée), obtenu %d" % len(res["offres"])
-    assert len(a_valider) == 2, "ÉCHEC : 2 candidats devaient rester à valider, obtenu %d" % len(a_valider)
-    assert any(c.get("alerte_arnaque_probable") for c in a_valider), \
-        "ÉCHEC : le domaine sosie (camtel-recrutement.cm) n'a pas déclenché l'alerte arnaque"
+    cs = [o for o in res["offres"] if o["source_domaine"] == "coordinationsud.org"]
+    assert len(cs) == 1 and cs[0]["comment_postuler"]["valeur"] == "https://ong-exemple.org/postuler/1", \
+        "ÉCHEC : le connecteur Coordination Sud (wp_rest) n'a pas publié la bonne offre (ou l'expirée est passée)"
+    # --- Google Alertes : le domaine officiel (giz.de) est publié, pas les autres ---
+    giz = [o for o in res["offres"] if o["source_domaine"] == "giz.de"]
+    assert len(giz) == 1 and giz[0]["pays"] == "Cameroun" and giz[0]["ajoute_par"] == "veille-auto", \
+        "ÉCHEC : l'alerte Google vers un domaine officiel (giz.de) n'a pas été AUTO-validée"
+    assert not any(o["source_domaine"] in ("camtel-emploi.cm", "offres-emploi-afrique-inconnu.net")
+                   for o in res["offres"]), \
+        "ÉCHEC : une alerte Google vers un domaine non vérifié a été publiée (faille anti-arnaque !)"
+    assert len(res["offres"]) == 9, "ÉCHEC : total attendu 9, obtenu %d" % len(res["offres"])
+    assert len(a_valider) == 4, "ÉCHEC : 4 candidats devaient rester à valider, obtenu %d" % len(a_valider)
+    sosies = [c for c in a_valider if c.get("alerte_arnaque_probable")]
+    assert len(sosies) >= 2, \
+        "ÉCHEC : les domaines sosies (camtel-recrutement.cm, camtel-emploi.cm) n'ont pas déclenché l'alerte"
     assert any("inconnu" in " ".join(c.get("diagnostic", [])) for c in a_valider), \
         "ÉCHEC : le domaine inconnu n'a pas été diagnostiqué"
     print("\nOK : %d offres valides — expirée écartée, hors-pays écartée, types détectés, motif_href OK."
           % len(res["offres"]))
-    print("OK veille : CAMTEL (domaine officiel) AUTO-publié avec e-mail officiel · "
-          "sosie camtel-recrutement.cm → 🔴 alerte · domaine inconnu → 🟡 à valider.")
+    print("OK veille e-mail + Google Alertes : domaines officiels (CAMTEL, GIZ) AUTO-publiés · "
+          "sosies → 🔴 alerte · domaines inconnus → 🟡 à valider (jamais publiés).")
 
 
 def main():
