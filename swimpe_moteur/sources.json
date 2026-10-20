@@ -122,7 +122,7 @@
     },
     {
       "id": "minesup_concours",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "minesup.gov.cm",
       "libelle": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
@@ -139,7 +139,8 @@
       "fenetre_jours": 45,
       "limite": 20,
       "timeout": 60,
-      "_note": "VÉRIFIÉ : liste HTML des arrêtés de concours (saison mai-août → souvent vide en oct). URL sans www (le sous-domaine www ne résout pas). À réessayer en saison."
+      "_note": "VÉRIFIÉ : liste HTML des arrêtés de concours (saison mai-août → souvent vide en oct). URL sans www (le sous-domaine www ne résout pas). À réessayer en saison.",
+      "concours_strict": true
     },
     {
       "id": "msf_waca",
@@ -357,7 +358,7 @@
     },
     {
       "id": "concours_minfopra",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "minfopra.gov.cm",
       "libelle": "MINFOPRA — concours administratifs (fonction publique, Cameroun)",
@@ -369,11 +370,12 @@
       "fenetre_jours": 45,
       "limite": 15,
       "timeout": 90,
-      "_note": "Site LENT (timeout 30s dépassé) → timeout porté à 90s. Domaine officiel connu."
+      "_note": "Site LENT (timeout 30s dépassé) → timeout porté à 90s. Domaine officiel connu.",
+      "concours_strict": true
     },
     {
       "id": "concours_cameroon_tribune",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "cameroon-tribune.cm",
       "libelle": "Cameroon Tribune — avis officiels (concours, recrutements)",
@@ -391,7 +393,8 @@
       "fenetre_jours": 30,
       "limite": 15,
       "timeout": 45,
-      "_note": "Joignable (sonde ✓) mais 0 avis en page d'accueil ce jour-là — à réessayer, ou pointer une rubrique annonces précise."
+      "_note": "Joignable (sonde ✓) mais 0 avis en page d'accueil ce jour-là — à réessayer, ou pointer une rubrique annonces précise.",
+      "concours_strict": true
     },
     {
       "id": "kamerpower_rss",
@@ -450,7 +453,7 @@
     },
     {
       "id": "beac_avis",
-      "actif": false,
+      "actif": true,
       "type": "concours_html",
       "domaine": "beac.int",
       "libelle": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
@@ -468,7 +471,8 @@
       "fenetre_jours": 45,
       "limite": 10,
       "timeout": 45,
-      "_note": "Concours tous les 2-3 ans, avis en PDF (le moteur lit le PDF : vraie date limite + extrait). VIGILANCE : historique d'annulation/audit du concours 2022-23 — toujours renvoyer vers l'avis officiel beac.int."
+      "_note": "Concours tous les 2-3 ans, avis en PDF (le moteur lit le PDF : vraie date limite + extrait). VIGILANCE : historique d'annulation/audit du concours 2022-23 — toujours renvoyer vers l'avis officiel beac.int.",
+      "concours_strict": true
     },
     {
       "id": "veille_google",

@@ -922,6 +922,27 @@ def est_bruit(titre):
     return any(n in t for n in NOISE)
 
 
+# Liens tournés vers le PASSÉ / l'admin (jamais un avis ouvert) — à écarter même avec un mot-clé
+EXCLUDE_CONCOURS = re.compile(
+    r"(r[ée]sultat|liste\s+des\s+admis|\badmis\b|proclamation|corrig[ée]|annales|"
+    r"palmar[èe]s|statistiques|archives|calendrier\s+des|anciens\s+sujets|d[ée]lib[ée]ration)",
+    re.I)
+# Signaux FORTS d'un vrai avis ouvert (titre d'un arrêté / appel / avis daté)
+STRONG_CONCOURS = re.compile(
+    r"(avis\b|appel\s+[àa]\s+cand|ouverture|arr[êe]t[ée]|communiqu[ée]|"
+    r"recrutement\s+(de|d'|d’|des|du)|concours\s+d|admission|session\s+20\d{2}|"
+    r"\b20\d{2}\b|\d{1,2}\s*(janvier|f[ée]vrier|mars|avril|mai|juin|juillet|"
+    r"ao[ûu]t|septembre|octobre|novembre|d[ée]cembre))", re.I)
+
+
+def concours_pertinent(titre, href):
+    """Vrai seulement si le lien ressemble à un AVIS ouvert : un PDF, ou un titre
+    portant un signal fort (avis / appel / arrêté / une date ou une année)."""
+    if ".pdf" in (href or "").lower():
+        return True
+    return bool(STRONG_CONCOURS.search(titre or ""))
+
+
 def fetch_concours(source, _mock=None):
     """Recupere la page de liste + (option) ses pages de pagination (pages_max)."""
     if _mock is not None:
@@ -985,11 +1006,15 @@ def map_concours(htmltexts, source, pays_cibles=None):
             continue
         if href.strip() in ("", "#") or href.strip().startswith(("#", "javascript:", "mailto:", "tel:")):
             continue
-        if est_bruit(titre):
+        # bruit de menu/pied de page — sauf si c'est clairement un avis (PDF ou titre fort)
+        if est_bruit(titre) and not concours_pertinent(titre, href):
             continue
         retenu = bool(motif and re.search(motif, href))
-        if not retenu:
-            retenu = any(m in titre.lower() for m in mots)
+        if not retenu and any(m in titre.lower() for m in mots):
+            # mode mots-clés : écarter les liens « résultats/admis… » et exiger un vrai avis
+            if EXCLUDE_CONCOURS.search(titre):
+                continue
+            retenu = concours_pertinent(titre, href) if source.get("concours_strict", True) else True
         if not retenu:
             continue
         lien = urljoin(source["url"], href)
