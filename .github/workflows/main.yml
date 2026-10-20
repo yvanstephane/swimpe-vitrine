@@ -1,0 +1,40 @@
+name: Swimpe — moteur d'offres
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  extraire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r swimpe_moteur/requirements.txt
+
+      - name: Lancer le moteur
+        run: python3 swimpe_moteur/moteur.py --config swimpe_moteur/sources.json --out offres.json
+
+      - name: Commit si offres.json a changé
+        run: |
+          if [ -n "$(git status --porcelain offres.json a_valider.json 2>/dev/null)" ]; then
+            git config user.name "swimpe-moteur"
+            git config user.email "moteur@swimpe.local"
+            git add offres.json
+            [ -f a_valider.json ] && git add a_valider.json
+            git commit -m "moteur: mise a jour des offres ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "Aucun changement."
+          fi
