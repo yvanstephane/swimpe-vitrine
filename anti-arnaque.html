@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Anti-arnaque Swimpe — reconnaître et éviter les fausses offres d'emploi, les faux concours et les frais abusifs. Ne payez jamais pour postuler.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Swimpe">
+<meta property="og:title" content="Anti-arnaque — Swimpe">
+<meta property="og:description" content="Comment reconnaître une arnaque à l'emploi, au stage ou au concours. Les règles simples pour ne jamais se faire piéger.">
+<meta property="og:url" content="https://swimpe.com/anti-arnaque.html">
+<meta name="theme-color" content="#0A1244">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Anti-arnaque — Swimpe</title>
+<style>
+:root{
+  --encre:#0A1244; --encre-2:#22344B;
+  --papier:#FFFFFF; --papier-2:#F3F5FB; --blanc:#FFFFFF;
+  --sceau:#2653F1; --sceau-fond:#EAF0FF;
+  --ambre:#8A6116; --ambre-fond:#FFF3D6;
+  --alerte:#C0392B; --alerte-fond:#FBEDEB;
+  --vert:#1E8E5A; --vert-fond:#E7F4EE;
+  --muet:#5C6470; --filet:#E3E7F4;
+  --serif:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;
+  --max:1120px; --pad-x:clamp(20px,5vw,48px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth} html,body{overflow-x:clip}
+body{font-family:var(--sans);font-size:16.5px;line-height:1.6;color:var(--encre);background:var(--papier);-webkit-font-smoothing:antialiased}
+svg{display:block;max-width:100%}
+a{color:inherit} button{font:inherit;cursor:pointer}
+.skip{position:absolute;left:-9999px;top:0;background:var(--encre);color:var(--blanc);padding:12px 20px;z-index:100}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--sceau);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x)}
+
+/* --- nav --- */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(246,244,238,.86);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--filet)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x);height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:var(--serif);font-size:21px;text-decoration:none;font-weight:850;letter-spacing:-.02em}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{font-size:14px;text-decoration:none;color:var(--encre-2);padding:10px 2px}
+.nav-links a:hover{color:var(--encre);text-decoration:underline;text-underline-offset:6px}
+.nav-links a.actif{color:var(--sceau);font-weight:700}
+.nav-cta{font-size:14px;text-decoration:none;color:var(--encre);border:2px solid var(--encre);border-radius:2px;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;transition:background .2s,color .2s}
+.nav-cta:hover{background:var(--encre);color:var(--papier)}
+.burger{display:none;background:none;border:1.5px solid var(--encre);border-radius:4px;width:44px;height:44px;font-size:18px;line-height:1}
+@media(max-width:820px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;gap:0;position:absolute;top:60px;left:0;right:0;background:var(--papier);border-bottom:1px solid var(--filet);padding:6px var(--pad-x) 14px}
+  .nav-links.open a{padding:13px 2px;font-size:16px;border-bottom:1px solid var(--filet)}
+  .burger{display:block}
+}
+
+/* --- héros --- */
+.aa-hero{background:linear-gradient(180deg,#FFFFFF 0%,#F7F9FF 100%);border-bottom:1px solid var(--filet);padding:clamp(28px,5vw,52px) 0}
+.aa-eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--alerte);font-weight:700;margin-bottom:12px}
+.aa-hero h1{font-family:var(--serif);font-weight:850;font-size:clamp(28px,4.6vw,46px);line-height:1.1;letter-spacing:-.015em;max-width:18ch}
+.aa-hero p{color:var(--muet);max-width:56ch;margin-top:14px;font-size:clamp(15px,2vw,17px)}
+
+/* --- règle d'or --- */
+.aa-or{background:var(--sceau-fond);border-left:4px solid var(--sceau);border-radius:4px;padding:18px 22px;margin:clamp(24px,4vw,34px) 0;font-family:var(--serif);font-weight:800;font-size:clamp(18px,2.6vw,23px);line-height:1.35;max-width:48ch}
+
+section.bloc{padding:clamp(28px,4vw,44px) 0}
+.bloc h2{font-family:var(--serif);font-weight:850;font-size:clamp(22px,3vw,30px);letter-spacing:-.015em;margin-bottom:6px}
+.bloc .intro{color:var(--muet);max-width:58ch;margin-bottom:22px;font-size:15px}
+
+/* --- signaux --- */
+.signaux{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:720px){.signaux{grid-template-columns:1fr 1fr}}
+.sig{display:flex;gap:12px;align-items:flex-start;background:var(--alerte-fond);border:1px solid #efc9c3;border-radius:4px;padding:14px 16px}
+.sig svg{width:20px;height:20px;flex:none;color:var(--alerte);margin-top:2px}
+.sig b{display:block;font-size:14.5px;color:#7E241D;margin-bottom:2px}
+.sig span{font-size:13.5px;color:#8C3B34;line-height:1.5}
+
+/* --- bon réflexe --- */
+.reflexes{display:grid;grid-template-columns:1fr;gap:12px;margin-top:4px}
+@media(min-width:720px){.reflexes{grid-template-columns:1fr 1fr}}
+.ref{display:flex;gap:12px;align-items:flex-start;background:var(--vert-fond);border:1px solid #bfe3d1;border-radius:4px;padding:14px 16px}
+.ref svg{width:20px;height:20px;flex:none;color:var(--vert);margin-top:2px}
+.ref b{display:block;font-size:14.5px;color:#14502f;margin-bottom:2px}
+.ref span{font-size:13.5px;color:#1c5e3b;line-height:1.5}
+
+/* --- cas par type --- */
+.cas{background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:18px 20px;margin-bottom:12px}
+.cas .tete{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.cas .pic{width:34px;height:34px;border-radius:5px;display:flex;align-items:center;justify-content:center;flex:none}
+.cas .pic svg{width:18px;height:18px}
+.cas.emploi .pic{background:var(--sceau-fond);color:var(--sceau)}
+.cas.concours .pic{background:var(--ambre-fond);color:var(--ambre)}
+.cas.formation .pic{background:#FBEAF0;color:#993556}
+.cas h3{font-family:var(--serif);font-weight:800;font-size:17px;letter-spacing:-.01em}
+.cas p{font-size:14px;color:var(--encre-2);line-height:1.6}
+.cas .legit{font-size:13.5px;color:#14502f;background:var(--vert-fond);border-radius:3px;padding:8px 12px;margin-top:10px;display:flex;gap:8px;align-items:flex-start}
+.cas .legit svg{width:16px;height:16px;flex:none;color:var(--vert);margin-top:2px}
+
+/* --- vérifier (étapes) --- */
+.etapes{counter-reset:e;display:grid;gap:10px}
+.etape{display:flex;gap:14px;align-items:flex-start;background:var(--papier-2);border:1px solid var(--filet);border-radius:4px;padding:14px 16px}
+.etape::before{counter-increment:e;content:counter(e);font-family:var(--serif);font-weight:850;font-size:18px;color:var(--sceau);background:var(--blanc);border:1.5px solid var(--sceau);border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex:none}
+.etape b{font-size:14.5px}
+.etape p{font-size:13.5px;color:var(--muet);margin-top:2px}
+
+/* --- signaler --- */
+.aa-signaler{background:var(--encre);color:#DEE6FD;border-radius:6px;padding:clamp(20px,3vw,28px);margin-top:10px}
+.aa-signaler h2{color:var(--blanc);font-family:var(--serif);font-weight:850;font-size:clamp(20px,2.6vw,26px);margin-bottom:8px}
+.aa-signaler p{color:#B9C6EE;font-size:14.5px;max-width:58ch}
+.aa-signaler .btn{display:inline-flex;align-items:center;gap:9px;min-height:48px;margin-top:16px;padding:12px 22px;border-radius:2px;font-size:15px;font-weight:700;text-decoration:none;background:var(--sceau);color:#fff;border:2px solid var(--sceau)}
+.aa-signaler .btn:hover{background:#1B41C9}
+
+/* --- footer --- */
+footer{background:var(--encre);color:#B9C6EE;padding:clamp(28px,5vw,44px) 0}
+footer .f-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer .slogan{font-family:var(--serif);font-size:20px;color:var(--papier);font-weight:800}
+footer .disc{font-size:12.5px;max-width:52ch;margin-top:10px;color:#8FA0CF}
+footer nav{display:flex;gap:20px;flex-wrap:wrap}
+footer nav a{font-size:13.5px;color:#C7D2F4;text-decoration:none}
+footer nav a:hover{text-decoration:underline}
+footer .fin{border-top:1px solid #3A4E6B;margin-top:24px;padding-top:16px;font-family:var(--mono);font-size:11.5px;color:#8FA0CF}
+</style>
+</head>
+<body data-page="anti-arnaque">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="Swimpe, accueil">Swimpe</a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="offres.html">Emploi &amp; stage</a></li>
+        <li><a href="anti-arnaque.html" class="actif">Anti-arnaque</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a class="nav-cta" href="espace.html">Espace membre</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" id="btn-menu">≡</button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+  <div class="aa-hero">
+    <div class="wrap">
+      <p class="aa-eyebrow">Protégez-vous</p>
+      <h1>Un emploi, un stage ou un concours ne se paient jamais d'avance.</h1>
+      <p>Chaque année, des milliers de jeunes perdent de l'argent à cause de fausses offres et de faux « facilitateurs ». Voici comment les reconnaître en quelques secondes — et vérifier avant de donner quoi que ce soit.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="aa-or">La règle d'or : personne ne doit vous demander de l'argent pour postuler, être « sélectionné » ou « réserver » une place. Jamais.</p>
+  </div>
+
+  <section class="bloc wrap">
+    <h2>Les signaux d'alerte</h2>
+    <p class="intro">Si une offre présente un seul de ces signaux, méfiez-vous et vérifiez avant d'aller plus loin.</p>
+    <div class="signaux">
+      <div class="sig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>On vous demande de payer</b><span>Frais de dossier, « caution », formation obligatoire payante, frais de visa envoyés à un particulier.</span></div></div>
+      <div class="sig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Tout passe par WhatsApp</b><span>Pas d'adresse, pas de bureau, pas de site officiel — juste un numéro et de l'urgence (« dernières places »).</span></div></div>
+      <div class="sig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Un salaire trop beau</b><span>Un revenu très élevé pour un travail vague ou sans qualification demandée. Si c'est trop beau, c'est faux.</span></div></div>
+      <div class="sig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>On garantit le résultat</b><span>« Embauche assurée », « visa garanti », « place réservée ». Aucune structure sérieuse ne garantit cela.</span></div></div>
+      <div class="sig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>On vous presse</b><span>« Répondez dans l'heure », « payez maintenant sinon c'est perdu ». La pression sert à vous empêcher de réfléchir.</span></div></div>
+      <div class="sig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>On veut vos documents trop tôt</b><span>Copie de la CNI, photo, données bancaires avant même un entretien ou une offre écrite.</span></div></div>
+    </div>
+  </section>
+
+  <section class="bloc wrap" style="padding-top:0">
+    <h2>Les bons réflexes</h2>
+    <div class="reflexes">
+      <div class="ref"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><div><b>Vérifiez le canal officiel</b><span>Cherchez le site officiel de l'organisme et postulez depuis ce site, pas depuis un lien reçu.</span></div></div>
+      <div class="ref"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><div><b>Ne payez rien d'avance</b><span>Postuler est gratuit. Les seuls frais possibles sont officiels et versés à l'organisme, jamais à une personne.</span></div></div>
+      <div class="ref"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><div><b>Prenez votre temps</b><span>Une offre vraie ne disparaît pas en une heure. Dormez dessus, demandez l'avis d'un proche.</span></div></div>
+      <div class="ref"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><div><b>Gardez une trace écrite</b><span>Demandez l'offre par écrit, avec le nom de l'organisme. Conservez les échanges.</span></div></div>
+    </div>
+  </section>
+
+  <section class="bloc wrap" style="padding-top:0">
+    <h2>Selon le type d'opportunité</h2>
+    <p class="intro">Ce qui est normal — et ce qui ne l'est jamais.</p>
+
+    <div class="cas emploi">
+      <div class="tete">
+        <span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16v13H4z"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></span>
+        <h3>Emploi, stage &amp; volontariat</h3>
+      </div>
+      <p>Une entreprise ou une ONG sérieuse ne fait jamais payer une candidature. Pas de « frais de traitement de dossier », pas d'achat de matériel imposé, pas de versement pour « réserver » le poste.</p>
+      <p class="legit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span>Normal : un CV, une lettre, un entretien. Les documents détaillés ne sont demandés qu'après une offre écrite.</span></p>
+    </div>
+
+    <div class="cas concours">
+      <div class="tete">
+        <span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg></span>
+        <h3>Concours (ENAM, EMIA, écoles publiques…)</h3>
+      </div>
+      <p>Des frais de concours existent parfois, mais ils sont <b>officiels</b> et se paient <b>au Trésor public</b> (ou au guichet indiqué dans l'avis officiel), avec un reçu. Personne d'autre ne doit encaisser cet argent — et aucun « facilitateur » ne peut vous vendre une place ou les sujets.</p>
+      <p class="legit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span>Normal : un reçu du Trésor public à votre nom. Jamais : payer un intermédiaire pour « garantir » l'admission.</span></p>
+    </div>
+
+    <div class="cas formation">
+      <div class="tete">
+        <span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+        <h3>Séminaires &amp; formations (fellowships, YALI…)</h3>
+      </div>
+      <p>La candidature à une formation ou à un programme d'échange sérieux est <b>gratuite</b>. On ne vous demande pas de payer pour « être retenu ». Méfiez-vous des faux programmes qui copient le nom d'un vrai.</p>
+      <p class="legit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span>Normal : un formulaire sur le site officiel du programme. Vérifiez l'adresse exacte du site.</span></p>
+    </div>
+  </section>
+
+  <section class="bloc wrap" style="padding-top:0">
+    <h2>Vérifier une offre en 4 étapes</h2>
+    <div class="etapes">
+      <div class="etape"><div><b>Cherchez l'organisme</b><p>Tapez son nom + « site officiel ». Un vrai organisme a une présence vérifiable.</p></div></div>
+      <div class="etape"><div><b>Comparez l'adresse du site</b><p>Le lien reçu correspond-il au site officiel ? Méfiez-vous des adresses qui imitent (fautes, extensions bizarres).</p></div></div>
+      <div class="etape"><div><b>Cherchez la demande d'argent</b><p>Y a-t-il un paiement à un particulier ? Si oui, arrêtez tout.</p></div></div>
+      <div class="etape"><div><b>Demandez un second avis</b><p>Parlez-en à un proche, un enseignant, ou signalez-le à Swimpe avant de payer ou d'envoyer vos documents.</p></div></div>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-bottom:clamp(40px,6vw,64px)">
+    <div class="aa-signaler">
+      <h2>Un doute ? Signalez-le.</h2>
+      <p>Si une offre vous paraît suspecte, ne restez pas seul·e. Envoyez-nous le lien ou une capture — on vérifie avant que quiconque ne se fasse piéger.</p>
+      <a class="btn" href="mailto:alerte@swimpe.com?subject=Signalement%20d'une%20offre%20suspecte">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H5.2L4 17.2z"/></svg>
+        Signaler une offre suspecte
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="slogan">Le monde, d'un geste.</p>
+        <p class="disc">Swimpe informe et accompagne. Nul — ni nous, ni aucune agence — ne peut garantir un emploi, une admission ou un visa. Méfiez-vous de quiconque le promet.</p>
+      </div>
+      <nav aria-label="Pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="offres.html">Emploi &amp; stage</a>
+        <a href="anti-arnaque.html">Anti-arnaque</a>
+        <a href="espace.html">Espace membre</a>
+      </nav>
+    </div>
+    <div class="fin">© 2026 Swimpe · FR</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('btn-menu'),m=document.getElementById('menu');
+  if(b&&m){b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "_mode_demploi": "Offres ajoutées À LA MAIN après vérification humaine (depuis a_valider.json, un PDF, la presse, CAMTEL/Ecobank…). Le moteur les fusionne EN PRIORITÉ dans offres.json à chaque exécution et masque automatiquement les expirées. Copie le modèle '_exemple' dans la liste 'offres', remplis les champs, et mets une VRAIE date limite (expire_le).",
+  "_exemple": {
+    "id": "2026-10-cm-manuel-001",
+    "domaine_swimpe": "local",
+    "type": "emploi",
+    "titre": "Technicien réseau (exemple à recopier)",
+    "organisation": "CAMTEL",
+    "pays": "Cameroun",
+    "ville": "Yaoundé",
+    "domaine": "Télécoms",
+    "description": "Avis publié par voie de presse. Candidature par e-mail à emplois@camtel.cm avec CV et lettre.",
+    "comment_postuler": { "mode": "email", "valeur": "emplois@camtel.cm" },
+    "pieces_a_fournir": ["CV", "Lettre de motivation", "Copie CNI"],
+    "publie_le": "2026-10-19",
+    "expire_le": "2026-11-15",
+    "verifie": true,
+    "source_url": "https://www.camtel.cm/",
+    "source_domaine": "camtel.cm",
+    "methode_verif": "manuel",
+    "verifie_le": "2026-10-19",
+    "ajoute_par": "yvan"
+  },
+  "offres": []
+}

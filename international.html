@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bourses, formations et travail à l'étranger pour toutes les nationalités. Information officielle gratuite à vie.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Swimpe">
+<meta property="og:title" content="Swimpe — Le monde, d'un geste">
+<meta property="og:description" content="Bourses, formations et travail à l'étranger pour toutes les nationalités. Information officielle gratuite à vie, chiffres réels, anti-arnaque.">
+<meta property="og:url" content="https://swimpe.com/">
+<meta name="theme-color" content="#0A1244">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Swimpe — Le monde, d'un geste</title>
+<style>
+/* ==========================================================================
+   SWIMPE — home V5 (phrase agences en gras · chiffres par nationalité)
+   V3 : (1) copy services reformulée en « avec toi » (ton collaboratif) ;
+   (2) grille de voies par passeport (porte vedette + 3 voies, pastilles
+   de capacité) alimentée par le JSON ; (3) page compressée ~40 %.
+   Données : charge donnees_swimpe_v4.json (repli embarqué), maj 15 min.
+   ========================================================================== */
+:root{
+  --encre:#0A1244; --encre-2:#22344B;
+  --papier:#FFFFFF; --papier-2:#F3F5FB; --blanc:#FFFFFF;
+  --sceau:#2653F1; --sceau-fond:#EAF0FF;
+  --ambre:#8A6116; --ambre-fond:#FFF3D6;
+  --alerte:#C0392B; --alerte-fond:#FBEDEB;
+  --muet:#5C6470; --filet:#E3E7F4;
+  --serif:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;
+  --max:1120px; --pad-x:clamp(20px,5vw,48px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--sans);font-size:16.5px;line-height:1.6;color:var(--encre);background:var(--papier);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit} button{font:inherit;cursor:pointer}
+.skip{position:absolute;left:-9999px;top:0;background:var(--encre);color:var(--blanc);padding:12px 20px;z-index:100}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--sceau);outline-offset:2px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x)}
+section{padding:clamp(40px,6vw,72px) 0}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muet);margin-bottom:14px}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3.8vw,38px);line-height:1.18;margin-bottom:10px}
+.maj{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11.5px;color:var(--sceau);background:var(--sceau-fond);border-radius:3px;padding:4px 12px}
+.maj .pt{width:7px;height:7px;border-radius:50%;background:var(--sceau);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.maj .pt{animation:none}}
+
+.detect{background:var(--encre);color:#C7D2F4;font-size:12.5px;padding:8px var(--pad-x);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.detect .ipl{font-family:var(--mono);font-size:11.5px}
+.detect b{color:var(--blanc);font-weight:600}
+.detect button{background:none;border:none;color:#C7D2F4;text-decoration:underline;text-underline-offset:3px;font-size:12.5px;padding:2px 4px}
+
+header.nav{position:sticky;top:0;z-index:50;background:rgba(246,244,238,.86);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--filet)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x);height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:var(--serif);font-size:21px;text-decoration:none}
+.logo span{color:var(--sceau)}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{font-size:14px;text-decoration:none;color:var(--encre-2);padding:10px 2px}
+.nav-links a:hover{color:var(--encre);text-decoration:underline;text-underline-offset:6px}
+.nav-cta{font-size:14px;text-decoration:none;color:var(--encre);border:1.5px solid var(--encre);border-radius:4px;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;transition:background .2s,color .2s}
+.nav-cta:hover{background:var(--encre);color:var(--papier)}
+.burger{display:none;background:none;border:1.5px solid var(--encre);border-radius:4px;width:44px;height:44px;font-size:18px;line-height:1}
+@media(max-width:820px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;gap:0;position:absolute;top:60px;left:0;right:0;background:var(--papier);border-bottom:1px solid var(--filet);padding:6px var(--pad-x) 14px}
+  .nav-links.open a{padding:13px 2px;font-size:16px;border-bottom:1px solid var(--filet)}
+  .burger{display:block}
+}
+
+/* --- héros + reçu côte à côte (compression majeure) ----------------------- */
+.hero{padding-top:clamp(44px,7vw,80px);padding-bottom:clamp(36px,5vw,56px)}
+.hero-deux{display:grid;grid-template-columns:1.15fr 380px;gap:clamp(28px,5vw,60px);align-items:center}
+.badge-gratuit{display:inline-flex;align-items:center;gap:8px;background:var(--sceau-fond);color:var(--sceau);border:1px solid var(--sceau);border-radius:3px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;margin-bottom:22px}
+.badge-gratuit svg{width:13px;height:13px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.4vw,56px);line-height:1.12;letter-spacing:-.01em;max-width:17ch}
+.passeport-inline{display:inline-flex;align-items:baseline;border-bottom:3px solid var(--encre);background:none;border-top:none;border-left:none;border-right:none;font-family:var(--serif);font-size:inherit;line-height:inherit;color:var(--sceau);padding:0 2px 2px;-webkit-appearance:none;appearance:none;border-radius:0;cursor:pointer}
+.passeport-inline:hover{background:var(--sceau-fond)}
+.hero-sub{font-size:clamp(16px,2vw,18px);color:var(--muet);max-width:46ch;margin:18px 0 26px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:4px;font-size:15px;text-decoration:none;border:1.5px solid var(--encre);transition:transform .15s,background .2s,color .2s}
+.btn:active{transform:scale(.98)}
+.btn-plein{background:var(--encre);color:var(--papier)}
+.btn-plein:hover{background:var(--encre-2)}
+.btn-ligne{color:var(--encre);background:transparent}
+.btn-ligne:hover{background:var(--blanc)}
+.recu{position:relative;background:var(--blanc);border:1px solid var(--filet);border-radius:3px 6px 0 0;padding:20px 22px 26px;font-family:var(--mono);font-size:13px;box-shadow:0 12px 30px rgba(10,18,68,.10)}
+.recu::after{content:"";position:absolute;left:0;right:0;bottom:-11px;height:11px;background:linear-gradient(-45deg,transparent 7px,var(--blanc) 0) 0 0/14px 11px repeat-x,linear-gradient(45deg,transparent 7px,var(--blanc) 0) 7px 0/14px 11px repeat-x;filter:drop-shadow(0 5px 7px rgba(10,18,68,.06))}
+.recu-tete{display:flex;justify-content:space-between;gap:10px;font-size:11px;letter-spacing:.07em;color:var(--muet);text-transform:uppercase;padding-bottom:11px;border-bottom:2px dashed var(--filet)}
+.recu-ligne{display:flex;align-items:baseline;gap:8px;padding:9px 0;font-size:12.5px}
+.recu-ligne .lib{color:var(--encre-2)}
+.recu-ligne .pts{flex:1;border-bottom:2px dotted var(--filet);transform:translateY(-4px)}
+.recu-ligne .mnt{color:var(--sceau);font-weight:600;white-space:nowrap}
+.recu-total{display:flex;align-items:baseline;gap:8px;padding-top:13px;margin-top:4px;border-top:2px dashed var(--filet)}
+.recu-total .lib{font-weight:700;letter-spacing:.09em}
+.recu-total .pts{flex:1;border-bottom:2px dotted var(--filet);transform:translateY(-6px)}
+.recu-total .mnt{font-size:clamp(26px,3.2vw,34px);font-weight:700;color:var(--sceau);white-space:nowrap;line-height:1}
+.recu-total .mnt .dev{font-size:.45em;font-weight:600;margin-left:4px}
+.tampon{position:absolute;top:11px;right:-10px;transform:rotate(-8deg);border:3px solid var(--sceau);color:var(--sceau);border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;background:rgba(255,255,255,.92);transition:transform .35s cubic-bezier(.2,1.6,.4,1),opacity .2s}
+.tampon.avant{transform:rotate(-8deg) scale(0);opacity:0}
+.recu-pied{margin-top:16px;font-size:11px;color:var(--muet);text-align:center}
+.recu-comp{font-size:14px;color:var(--encre);font-weight:600;margin-top:14px;max-width:44ch;line-height:1.5}
+.recu-comp .montant{color:var(--alerte)}
+@media(max-width:900px){.hero-deux{grid-template-columns:1fr}.recu{max-width:400px;margin-top:6px}.tampon{right:6px}}
+
+.stats{border-top:1px solid var(--filet);border-bottom:1px solid var(--filet);background:var(--papier-2)}
+.stats-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:clamp(16px,2.6vw,26px) var(--pad-x);border-left:1px solid var(--filet)}
+.stat:first-child{border-left:none}
+.stat .n{font-family:var(--serif);font-size:clamp(24px,3.2vw,34px);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--muet);margin-top:4px}
+@media(max-width:820px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:none;border-top:1px solid var(--filet)}
+  .stat:nth-child(4){border-top:1px solid var(--filet)}
+}
+
+/* --- voies : vedette + grille ---------------------------------------------- */
+.voies-tete{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.voie-vedette{background:var(--blanc);border:1px solid var(--filet);border-left:4px solid var(--sceau);border-radius:4px;padding:clamp(18px,3vw,26px);display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;margin-bottom:14px}
+.voie-vedette .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sceau);margin-bottom:8px}
+.voie-vedette h3{font-family:var(--serif);font-weight:400;font-size:clamp(21px,2.8vw,27px);margin-bottom:6px}
+.voie-vedette p{font-size:14.5px;color:var(--encre-2);max-width:62ch}
+.voie-vedette .canal{font-size:12.5px;color:var(--muet);margin-top:10px;display:flex;gap:8px;align-items:flex-start}
+.voie-vedette .canal svg{width:15px;height:15px;flex:none;margin-top:2px;color:var(--sceau)}
+.voies-grille{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.voie{background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:16px 18px}
+.voie .past{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;border-radius:3px;padding:4px 11px;margin-bottom:10px}
+.voie .past .pt{width:7px;height:7px;border-radius:50%}
+.past.forte{background:var(--sceau-fond);color:var(--sceau)} .past.forte .pt{background:var(--sceau)}
+.past.sel{background:var(--ambre-fond);color:var(--ambre)} .past.sel .pt{background:var(--ambre)}
+.past.tres{background:var(--alerte-fond);color:var(--alerte)} .past.tres .pt{background:var(--alerte)}
+.voie h4{font-size:15.5px;font-weight:600;margin-bottom:5px}
+.voie p{font-size:13px;color:var(--muet);line-height:1.5}
+.voies-lien{margin-top:18px;font-size:14.5px}
+.voies-lien a{color:var(--sceau);font-weight:600;text-decoration:none;border-bottom:2px solid var(--sceau);padding-bottom:2px}
+@media(max-width:820px){.voies-grille{grid-template-columns:1fr}.voie-vedette{grid-template-columns:1fr}}
+
+/* --- données (compressée) --------------------------------------------------- */
+.donnees{background:var(--encre);color:var(--papier)}
+.donnees .eyebrow{color:#8FA0CF}
+.donnees h2{max-width:24ch}
+.donnees .intro{color:#B9C6EE;max-width:58ch;margin-bottom:28px;font-size:15px}
+.barres{max-width:720px;display:grid;gap:13px}
+.barre{display:grid;grid-template-columns:100px 1fr 58px;gap:12px;align-items:center}
+.barre .p{font-size:13.5px;color:#DEE6FD}
+.barre .t{position:relative;height:9px;background:#22344B;border-radius:3px;overflow:hidden}
+.barre .f{position:absolute;inset:0 auto 0 0;width:0;background:var(--alerte);border-radius:3px;transition:width 1s ease .2s}
+.barre.ok .f{background:var(--sceau)}
+.barre .v{font-family:var(--mono);font-size:13px;text-align:right;color:#9DB8FF}
+.barre.ok .v{color:#BCD0FF}
+.barre.moi .p{color:var(--blanc);font-weight:600}
+.barre.moi .p::after{content:" ←";color:#8FA0CF;font-weight:400}
+.motifs{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.motif{font-size:12.5px;color:#DEE6FD;border:1px solid #3A4E6B;border-radius:3px;padding:6px 14px}
+.motif.fix{background:var(--sceau);border-color:var(--sceau);color:var(--blanc)}
+.donnees .source{font-family:var(--mono);font-size:11.5px;color:#8FA0CF;margin-top:20px}
+.don-vedette{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 0 26px}
+.don-vedette .dv-n{font-family:var(--serif);font-size:clamp(46px,7vw,76px);line-height:1;color:#9DB8FF}
+.don-vedette .dv-l{font-size:15px;color:#B9C6EE;max-width:34ch}
+.don-implication{margin-top:22px;padding:12px 16px;border-left:3px solid var(--sceau);background:#121D55;color:#DEE6FD;font-size:14px;max-width:64ch;line-height:1.55}
+
+/* --- charte condensée + alerte ---------------------------------------------- */
+.charte .intro{color:var(--muet);max-width:56ch;margin-bottom:26px;font-size:15px}
+.charte-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--encre)}
+.engagement{padding:18px 24px 4px 0}
+.engagement + .engagement{border-left:1px solid var(--filet);padding-left:24px}
+.engagement h3{font-size:15.5px;font-weight:600;margin-bottom:6px}
+.engagement p{font-size:13.5px;color:var(--encre-2)}
+.regle-or{margin-top:26px;padding:16px 22px;background:var(--sceau-fond);border-left:4px solid var(--sceau);font-family:var(--serif);font-size:clamp(17px,2.2vw,20px);line-height:1.4;max-width:46ch}
+@media(max-width:820px){
+  .charte-grid{grid-template-columns:1fr}
+  .engagement + .engagement{border-left:none;border-top:1px solid var(--filet);padding-left:0;padding-top:16px}
+}
+.arnaque{padding:clamp(20px,3vw,28px) 0 0}
+.arnaque-in{max-width:var(--max);margin:0 auto;background:var(--alerte-fond);border:1px solid var(--alerte);border-radius:4px;padding:16px clamp(16px,2.5vw,22px);display:flex;gap:12px;align-items:flex-start}
+.arnaque-in svg{width:20px;height:20px;flex:none;color:var(--alerte);margin-top:2px}
+.arnaque-in .t{font-weight:600;font-size:14.5px;color:#7E241D}
+.arnaque-in .d{font-size:13.5px;color:#8C3B34;margin-top:2px}
+.arnaque-in .m{font-family:var(--mono);font-size:10.5px;color:#8C3B34;margin-top:6px}
+
+/* --- services (copy « avec toi ») ------------------------------------------- */
+.services .cadre{border-top:1px solid var(--encre);padding-top:clamp(24px,4vw,36px);display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap}
+.services h2{max-width:22ch}
+.services p{color:var(--muet);max-width:54ch;font-size:15px}
+.services .rappel{font-size:13.5px;margin-top:10px;display:flex;gap:8px;align-items:center;color:var(--sceau)}
+.services .rappel svg{width:15px;height:15px}
+
+footer{background:var(--encre);color:#B9C6EE;padding:clamp(32px,5vw,48px) 0}
+footer .f-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer .slogan{font-family:var(--serif);font-size:20px;color:var(--papier)}
+footer .disc{font-size:12.5px;max-width:52ch;margin-top:10px;color:#8FA0CF}
+footer nav{display:flex;gap:20px;flex-wrap:wrap}
+footer nav a{font-size:13.5px;color:#C7D2F4;text-decoration:none}
+footer nav a:hover{text-decoration:underline}
+footer .fin{border-top:1px solid #3A4E6B;margin-top:28px;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:#8FA0CF}
+
+.teaser{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;background:var(--encre);color:#DEE6FD;text-decoration:none;border-radius:4px;padding:16px clamp(16px,3vw,24px);margin:clamp(28px,4vw,44px) auto 0;max-width:var(--max)}
+.teaser-n{font-family:var(--serif);font-size:clamp(26px,3.4vw,34px);color:#9DB8FF;line-height:1}
+.teaser-txt{font-size:14.5px;color:#B9C6EE}
+.teaser-lien{margin-left:auto;font-size:14px;color:#BCD0FF;font-weight:600}
+.retour{display:inline-block;margin:18px 0 0;font-size:14px;color:var(--encre);text-decoration:none;border-bottom:2px solid var(--sceau);padding-bottom:2px}
+.chiffres-tete{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:clamp(28px,4vw,44px)}
+.chiffres-tete .sel-compact{font-family:var(--sans);font-size:15px;border:1.5px solid var(--encre);border-radius:4px;padding:10px 14px;background:var(--blanc);min-height:44px}
+
+.esp-wrap{max-width:520px;margin:0 auto;padding:clamp(36px,6vw,64px) var(--pad-x)}
+.esp-carte{background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:clamp(22px,4vw,32px);box-shadow:0 12px 30px rgba(10,18,68,.07)}
+.esp-carte h2{margin-bottom:6px}
+.esp-note{font-size:12.5px;color:var(--muet);margin-bottom:20px}
+.esp-demo{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ambre);background:var(--ambre-fond);border-radius:3px;padding:4px 11px;margin-bottom:16px}
+.champ{display:block;margin-bottom:14px}
+.champ span{display:block;font-size:13px;color:var(--encre-2);margin-bottom:6px}
+.champ input{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid var(--filet);border-radius:2px;background:var(--papier);color:var(--encre);min-height:48px;box-sizing:border-box}
+.champ input:focus{outline:3px solid var(--sceau);outline-offset:1px;border-color:var(--sceau)}
+.esp-btn{width:100%;justify-content:center;margin-top:6px}
+.esp-liens{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.esp-liens a,.esp-liens button{color:var(--sceau);background:none;border:none;text-decoration:underline;text-underline-offset:3px;padding:0;font-size:13.5px;cursor:pointer}
+.esp-info{font-size:13px;color:var(--muet);background:var(--papier-2);border-left:3px solid var(--sceau);padding:10px 14px;margin-bottom:16px;line-height:1.5}
+.esp-tete{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;max-width:820px;margin:0 auto;padding:clamp(28px,5vw,44px) var(--pad-x) 0}
+.esp-tete h2{margin-bottom:0}
+.esp-deco{font-size:13.5px;color:var(--muet);background:none;border:none;text-decoration:underline;text-underline-offset:3px;padding:0;cursor:pointer}
+.projets{max-width:820px;margin:0 auto;padding:20px var(--pad-x) clamp(40px,6vw,64px);display:grid;gap:14px}
+.projet{background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:18px 20px}
+.projet .haut{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;margin-bottom:10px}
+.projet h3{font-size:16px;font-weight:600}
+.projet .statut{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sceau);background:var(--sceau-fond);border-radius:3px;padding:4px 11px}
+.projet .statut.att{color:var(--ambre);background:var(--ambre-fond)}
+.avance{height:8px;background:var(--papier-2);border-radius:2px;overflow:hidden;margin:8px 0 10px}
+.avance span{display:block;height:8px;background:var(--sceau);border-radius:2px}
+.projet .etape{font-size:13.5px;color:var(--muet)}
+.projet.vide{border-style:dashed}
+.projet.vide p{font-size:13.5px;color:var(--muet);margin:6px 0 14px}
+html,body{overflow-x:clip}
+.btn-partage{display:inline-flex;align-items:center;gap:10px;background:var(--sceau);color:#FFFFFF;border:none;border-radius:3px;min-height:48px;padding:12px 22px;font-size:15px;cursor:pointer;margin-top:28px;transition:background .2s}
+.btn-partage:hover{background:#0B5A47}
+.btn-partage svg{width:18px;height:18px}
+@media(max-width:600px){.btn-partage{width:100%;justify-content:center}}
+.det-select{font-family:var(--sans);font-weight:700;font-size:inherit;color:inherit;background:none;border:none;border-bottom:2px solid rgba(255,255,255,.4);padding:2px 4px;cursor:pointer;-webkit-appearance:none;appearance:none;max-width:60vw}
+.det-select option{color:#0F1B2B}
+button.passeport-inline{font-family:var(--serif);cursor:pointer}
+
+/* ===== HABILLAGE CFA INSTITUTE ===== */
+h1,h2,h3,h4{font-weight:800;letter-spacing:-.015em}
+h1{font-weight:850}
+.eyebrow{color:var(--sceau);font-weight:700;letter-spacing:.16em}
+.btn{border-radius:2px;font-weight:700}
+.btn-plein{background:var(--sceau);border-color:var(--sceau)}
+.btn-plein:hover{background:#1B41C9}
+.nav-cta{border-radius:2px;border-width:2px}
+.logo{font-weight:850;letter-spacing:-.02em}
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#FFFFFF 0%,#F7F9FF 100%)}
+.hero::before{content:"";position:absolute;top:-140px;right:-160px;width:520px;height:520px;background:linear-gradient(135deg,#EAF0FF,#D7E2FF);clip-path:polygon(0 0,100% 0,100% 100%);transform:rotate(10deg);pointer-events:none}
+.hero-deux{position:relative;z-index:1}
+.passeport-inline{color:var(--sceau);border-bottom-color:var(--sceau)}
+.badge-gratuit{border:1px solid #C9D7FF;border-radius:3px}
+.recu{border-radius:4px;border:1px solid var(--filet);box-shadow:0 18px 44px rgba(10,18,68,.10)}
+.tampon{color:var(--sceau);border-color:var(--sceau)}
+.recu-total b,.recu-total .mnt{color:var(--sceau)}
+.stats{background:var(--encre)}
+.stats .stat b,.stats .n{color:#FFFFFF}
+.stats .stat span,.stats .l{color:#B9C6EE}
+.voie,.voie-vedette{border-radius:4px}
+.voie:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(10,18,68,.10);transition:.2s}
+.teaser{background:linear-gradient(90deg,#1B41C9,#2653F1);border-radius:4px}
+.teaser-n{color:#FFFFFF}
+.teaser-txt{color:#D6E0FF}
+.teaser-lien{color:#FFFFFF;font-weight:700}
+.donnees{background:var(--encre)}
+.barre .f{background:var(--alerte)}
+.barre.ok .f{background:#1E8E5A}
+.don-implication{border-left-color:var(--sceau)}
+.btn-partage{border-radius:2px;background:var(--sceau)}
+.btn-partage:hover{background:#1B41C9}
+.esp-carte{border-radius:4px;box-shadow:0 14px 36px rgba(10,18,68,.08)}
+.champ input{border-radius:2px}
+.champ input:focus{outline-color:var(--sceau);border-color:var(--sceau)}
+.projet{border-radius:4px}
+.avance span{background:var(--sceau)}
+.statut{border-radius:3px}
+.esp-demo{border-radius:3px}
+footer{background:var(--encre)}
+.det-select{border-bottom-color:rgba(255,255,255,.45)}
+
+/* ===== CARREFOUR (deux portes) ===== */
+.carrefour{background:linear-gradient(180deg,#FFFFFF 0%,#F7F9FF 100%);border-bottom:1px solid var(--filet)}
+.carrefour .wrap{padding-top:clamp(28px,5vw,44px);padding-bottom:clamp(28px,5vw,44px)}
+.carrefour .cf-intro{margin-bottom:18px}
+.carrefour .cf-intro .eyebrow{margin-bottom:8px}
+.carrefour h2{font-family:var(--serif);font-weight:850;letter-spacing:-.015em;max-width:20ch}
+.carrefour .cf-sub{color:var(--muet);font-size:15px;margin-top:6px}
+.cf-grille{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:720px){.cf-grille{grid-template-columns:1fr 1fr}}
+.cf-porte{display:block;text-decoration:none;color:inherit;background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:clamp(18px,3vw,24px);transition:.2s}
+.cf-porte:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(10,18,68,.10)}
+.cf-porte.local{border-left:4px solid var(--sceau)}
+.cf-porte.inter{border-left:4px solid var(--encre)}
+.cf-ico{width:42px;height:42px;border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.cf-porte.local .cf-ico{background:var(--sceau-fond);color:var(--sceau)}
+.cf-porte.inter .cf-ico{background:var(--papier-2);color:var(--encre)}
+.cf-ico svg{width:22px;height:22px}
+.cf-porte h3{font-family:var(--serif);font-weight:800;font-size:clamp(18px,2.4vw,22px);letter-spacing:-.01em;margin-bottom:5px}
+.cf-porte p{font-size:14px;color:var(--encre-2);line-height:1.55}
+.cf-meta{font-family:var(--mono);font-size:11px;color:var(--muet);margin-top:10px}
+.cf-cta{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-size:14px;font-weight:700}
+.cf-porte.local .cf-cta{color:var(--sceau)}
+.cf-porte.inter .cf-cta{color:var(--encre)}
+.cf-pont{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;font-size:13.5px;color:var(--muet);text-align:center}
+</style>
+</head>
+<body data-page="accueil">
+<a class="skip" href="#contenu" data-i="skip">Aller au contenu</a>
+<div class="detect" role="region" aria-label="Détection de pays">
+  <span><span data-i="det_passeport">Ton passeport :</span>
+    <select class="det-select" id="sel-passeport" aria-label="Choisir votre passeport"><option value="SN">Sénégal</option></select></span>
+  </span>
+</div>
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#" aria-label="Swimpe, accueil">Swimpe</a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links" id="menu">
+        <li><a href="#voies" data-i="nav_voies">Vos voies</a></li>
+        <li><a href="offres.html">Emploi &amp; stage</a></li>
+        <li><a href="chiffres.html" data-i="nav_chiffres">Les chiffres</a></li>
+        <li><a href="chiffres.html#arnaque" data-i="nav_arnaque">Anti-arnaque</a></li>
+        <li><a href="#services" data-i="nav_services">Accompagnement</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a class="nav-cta" href="espace.html" data-i="nav_espace">Espace membre</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"
+        id="btn-menu">≡</button>
+    </div>
+  </div>
+</header>
+<main id="contenu">
+<section class="carrefour">
+  <div class="wrap">
+    <div class="cf-intro">
+      <p class="eyebrow">Par où commencer ?</p>
+      <h2>Avancez ici, ou préparez votre départ.</h2>
+      <p class="cf-sub">Deux chemins, un même objectif.</p>
+    </div>
+    <div class="cf-grille">
+      <a class="cf-porte local" href="offres.html">
+        <div class="cf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 10v9h14v-9"/><path d="M9 19v-5h6v5"/></svg></div>
+        <h3>Avancer dans votre pays</h3>
+        <p>Emploi, stage et volontariat vérifiés, près de chez vous.</p>
+        <p class="cf-meta">Offres triées à la main · plusieurs pays</p>
+        <span class="cf-cta">Voir les offres &rarr;</span>
+      </a>
+      <a class="cf-porte inter" href="#voies">
+        <div class="cf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg></div>
+        <h3>Partir à l'international</h3>
+        <p>Étudier, travailler ou se porter volontaire à l'étranger, étape par étape.</p>
+        <p class="cf-meta">Vos voies selon votre passeport</p>
+        <span class="cf-cta">Découvrir mes voies &rarr;</span>
+      </a>
+    </div>
+    <p class="cf-pont">Vous pouvez faire les deux : travailler chez vous en préparant votre départ.</p>
+  </div>
+</section>
+<section class="hero wrap">
+    <div class="hero-deux">
+      <div>
+        <div class="badge-gratuit rv">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 11h14v9H5z"/><path d="M8 11V7a4 4 0 0 1 8 0"/></svg>
+          <span data-i="badge_gratuit">L'information officielle est gratuite, à vie</span>
+        </div>
+        <h1 class="rv">
+          <span data-i="h1_avant">Votre passeport</span>
+          <button type="button" class="passeport-inline" id="h1-pays" aria-label="Choisir votre passeport">Sénégal</button>
+          <span data-i="h1_apres">ouvre des portes réelles.</span>
+        </h1>
+        <p class="hero-sub rv" id="hero-sub" data-i="hero_sub">Bourses, formations et emploi à l'étranger, sélectionnés pour votre nationalité. Données officielles, canaux vérifiés, aucune promesse infondée.</p>
+        <div class="cta-row rv">
+          <a class="btn btn-plein" href="#voies" data-i="cta_projet">Découvrir vos voies</a>
+          <a class="btn btn-ligne" href="chiffres.html#arnaque" data-i="cta_verifier">Vérifier une offre — gratuit</a>
+        </div>
+      </div>
+      <div>
+        <div class="recu rv" id="recu" aria-label="Reçu : information officielle à zéro">
+          <div class="tampon avant" id="tampon" data-i="recu_stamp">Gratuit à vie</div>
+          <div class="recu-tete">
+            <span>Swimpe</span>
+            <span><span data-i="recu_date_l">vérifié le</span> <span class="js-maj">—</span></span>
+          </div>
+          <div class="recu-ligne"><span class="lib" data-i="recu_l1">Canaux officiels par pays</span><span class="pts"></span><span class="mnt">0 <span class="js-dev">XOF</span></span></div>
+          <div class="recu-ligne"><span class="lib" data-i="recu_l2">Taux de refus réels</span><span class="pts"></span><span class="mnt">0 <span class="js-dev">XOF</span></span></div>
+          <div class="recu-ligne"><span class="lib" data-i="recu_l3">Alertes anti-arnaque</span><span class="pts"></span><span class="mnt">0 <span class="js-dev">XOF</span></span></div>
+          <div class="recu-ligne"><span class="lib" data-i="recu_l4">Portes spéciales selon votre passeport</span><span class="pts"></span><span class="mnt">0 <span class="js-dev">XOF</span></span></div>
+          <div class="recu-total">
+            <span class="lib" data-i="recu_total">TOTAL</span><span class="pts"></span>
+            <span class="mnt"><span id="recu-total-n">0</span><span class="dev js-dev">XOF</span></span>
+          </div>
+          <p class="recu-pied" data-i="recu_foot">Sans compte ni paiement · valable indéfiniment</p>
+        </div>
+        <p class="recu-comp rv"><span data-i="recu_comp_s1">Certaines agences facturent l'accès à ces mêmes informations </span><span class="montant" data-i="recu_comp_m">jusqu'à 300 000 FCFA</span><span data-i="recu_comp_s2">. Ce reçu est notre réponse.</span></p>
+      </div>
+    </div>
+  </section>
+  <div class="stats rv" role="region" aria-label="Chiffres clés">
+    <div class="stats-grid">
+      <div class="stat"><div class="n" id="stat-corridors">7 440</div><div class="l" data-i="stat_corridors">corridors documentés</div></div>
+      <div class="stat"><div class="n" id="stat-origines">249</div><div class="l" data-i="stat_origines">pays d'origine couverts</div></div>
+      <div class="stat"><div class="n"><span>0 </span><span class="js-dev">XOF</span></div><div class="l" data-i="stat_gratuit">pour l'information officielle</div></div>
+      <div class="stat"><div class="n">100 %</div><div class="l" data-i="stat_sources">des sources citées</div></div>
+    </div>
+  </div>
+
+  <section class="wrap" id="voies">
+    <div class="voies-tete">
+      <div>
+        <p class="eyebrow rv" style="margin-bottom:8px" data-i="voies_eyebrow">Selon votre passeport</p>
+        <h2 class="rv" style="margin-bottom:0" data-i="voies_titre">Vos voies, classées par probabilité réelle.</h2>
+      </div>
+      <span class="maj rv"><span class="pt"></span><span data-i="maj_label">Données vérifiées le</span>&nbsp;<span class="js-maj">—</span></span>
+    </div>
+    <div class="voie-vedette rv">
+      <div>
+        <p class="tag" id="porte-tag">Porte spéciale — canal 100 % gratuit</p>
+        <h3 id="porte-titre">Espagne · GECCO saisonnier agricole</h3>
+        <p id="porte-desc">Recrutement organisé au Sénégal, de 47 à 55 € par jour, pour les 25 à 50 ans justifiant d'une expérience agricole. Candidature via le canal BAOS, sans aucun frais.</p>
+        <p class="canal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>
+          <span id="porte-canal-txt">Canal officiel unique : BAOS (Espagne–Sénégal). Toute « agence » facturant cette voie relève de l'escroquerie.</span>
+        </p>
+      </div>
+    </div>
+    <div class="voies-grille rv" id="voies-grille"></div>
+    <p class="voies-lien rv"><a href="https://swimpe-app-gxjuhhnhuhbbfcrwfr6wvg.streamlit.app/" data-i="voies_toutes">Consulter toutes vos voies et répondre au questionnaire →</a></p>
+  </section>
+  <div class="wrap">
+  <a class="teaser rv" href="chiffres.html" id="teaser">
+    <span class="teaser-n" id="teaser-n">51,9 %</span>
+    <span class="teaser-txt" id="teaser-txt">de refus Schengen pour votre passeport.</span>
+    <span class="teaser-lien" data-i="teaser_lien">Consulter les chiffres que les autres passent sous silence →</span>
+  </a>
+</div>
+
+  <section class="services wrap" id="services">
+    <div class="cadre rv">
+      <div>
+        <h2 data-i="svc_t">Nous préparons votre dossier avec vous.</h2>
+        <p data-i="svc_d">Tout ce qui précède demeure gratuit, indéfiniment. Pour gagner du temps et éviter les erreurs qui conduisent à un refus, notre équipe construit votre dossier à vos côtés — vous rémunérez notre travail, jamais votre candidature.</p>
+        <p class="rappel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>
+          <span data-i="svc_rappel">Détail et tarifs sur la page Accompagnement, en toute transparence.</span>
+        </p>
+      </div>
+      <a class="btn btn-plein" href="https://swimpe-app-gxjuhhnhuhbbfcrwfr6wvg.streamlit.app/" data-i="svc_btn">Découvrir l'accompagnement</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="slogan" data-i="f_slogan">Le monde, d'un geste.</p>
+        <p class="disc" data-i="f_disc">Swimpe informe et accompagne. Nul — ni nous, ni aucune agence — ne peut garantir une admission ou un visa. Méfiez-vous de quiconque le promet.</p>
+      </div>
+      <nav aria-label="Pied de page">
+        <a href="#voies" data-i="nav_voies">Vos voies</a>
+        <a href="offres.html">Emploi &amp; stage</a>
+        <a href="chiffres.html" data-i="nav_chiffres">Les chiffres</a>
+        <a href="chiffres.html#arnaque" data-i="nav_arnaque">Anti-arnaque</a>
+        <a href="#services" data-i="nav_services">Accompagnement</a>
+      </nav>
+    </div>
+    <button class="btn-partage" id="btn-partage" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.7 10.7l6.6-3.4M8.7 13.3l6.6 3.4"/></svg>
+      <span data-i="partage_btn">Partager Swimpe</span>
+    </button>
+    <div class="fin">
+      <span>© 2026 Swimpe</span>
+      <span><span id="langline">FR</span> · <span data-i="maj_label">Données vérifiées le</span> <span class="js-maj">—</span> · <span id="src-donnees">embarquées</span></span>
+    </div>
+  </div>
+</footer>
+<script src="swimpe.js"></script>
+</body>
+</html>

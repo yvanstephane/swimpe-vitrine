@@ -1,0 +1,1998 @@
+{
+ "version": "2026-08-08",
+ "maj": "06/08/2026",
+ "stats": {
+  "corridors": "7 440",
+  "origines": "249"
+ },
+ "refus": [
+  [
+   "KM",
+   "Comores",
+   "Comores",
+   55.0
+  ],
+  [
+   "GW",
+   "Guinée-Bissau",
+   "Guiné-Bissau",
+   54.3
+  ],
+  [
+   "BI",
+   "Burundi",
+   "Burundi",
+   53.4
+  ],
+  [
+   "GN",
+   "Guinée",
+   "Guiné",
+   52.1
+  ],
+  [
+   "SN",
+   "Sénégal",
+   "Senegal",
+   51.9
+  ],
+  [
+   "NG",
+   "Nigeria",
+   "Nigéria",
+   47.9
+  ],
+  [
+   "GH",
+   "Ghana",
+   "Gana",
+   46.5
+  ],
+  [
+   "AO",
+   "Angola",
+   "Angola",
+   45.4
+  ],
+  [
+   "ML",
+   "Mali",
+   "Mali",
+   42.5
+  ],
+  [
+   "TG",
+   "Togo",
+   "Togo",
+   40.2
+  ],
+  [
+   "DZ",
+   "Algérie",
+   "Argélia",
+   31.0
+  ],
+  [
+   "TN",
+   "Tunisie",
+   "Tunísia",
+   19.5
+  ],
+  [
+   "MA",
+   "Maroc",
+   "Marrocos",
+   19.2
+  ],
+  [
+   "CN",
+   "Chine",
+   "China",
+   4.0
+  ]
+ ],
+ "alerte": {
+  "fr": {
+   "t": "Alerte en cours : faux contrats saisonniers pour l'Italie",
+   "d": "De faux « contrats Flussi » payants circulent sur WhatsApp. Le dépôt authentique s'effectue uniquement via l'employeur, le jour du click-day. Vérifiez toute offre ici, gratuitement, avant tout paiement."
+  },
+  "pt": {
+   "t": "Alerta em curso: falsos contratos sazonais para a Itália",
+   "d": "«Contratos Flussi» pagos circulam no WhatsApp. A candidatura verdadeira passa unicamente pelo empregador no click-day."
+  }
+ },
+ "origines": {
+  "AL": {
+   "nom": "Albanie",
+   "nom_pt": "Albânia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "L",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "DZ": {
+   "nom": "Algérie",
+   "nom_pt": "Argélia",
+   "langues": "fr",
+   "devise": "DZD",
+   "devise_aff": "DA",
+   "refus": 31.0,
+   "comparer": [
+    "TG",
+    "ML",
+    "TN",
+    "MA"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "AO": {
+   "nom": "Angola",
+   "nom_pt": "Angola",
+   "langues": "pt",
+   "devise": "AOA",
+   "devise_aff": "Kz",
+   "refus": 45.4,
+   "comparer": [
+    "GH",
+    "NG",
+    "ML",
+    "TG"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "BD": {
+   "nom": "Bangladesh",
+   "nom_pt": "Bangladesh",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "৳",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "BA": {
+   "nom": "Bosnie-Herzégovine",
+   "nom_pt": "Bósnia e Herzegovina",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "KM",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "BR": {
+   "nom": "Brésil",
+   "nom_pt": "Brasil",
+   "langues": "pt",
+   "devise": "BRL",
+   "devise_aff": "R$",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "CV": {
+   "nom": "Cap-Vert",
+   "nom_pt": "Cabo Verde",
+   "langues": "pt",
+   "devise": "CVE",
+   "devise_aff": "CVE",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "CO": {
+   "nom": "Colombie",
+   "nom_pt": "Colômbia",
+   "langues": "fr",
+   "devise": "COP",
+   "devise_aff": "COL$",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "CI": {
+   "nom": "Côte d'Ivoire",
+   "nom_pt": "Costa do Marfim",
+   "langues": "fr",
+   "devise": "XOF",
+   "devise_aff": "FCFA",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "EC": {
+   "nom": "Équateur",
+   "nom_pt": "Equador",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "US$",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "EG": {
+   "nom": "Égypte",
+   "nom_pt": "Egito",
+   "langues": "fr",
+   "devise": "EGP",
+   "devise_aff": "E£",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "SV": {
+   "nom": "Salvador",
+   "nom_pt": "El Salvador",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "US$",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "GQ": {
+   "nom": "Guinée équatoriale",
+   "nom_pt": "Guiné Equatorial",
+   "langues": "pt",
+   "devise": "XAF",
+   "devise_aff": "FCFA",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "ET": {
+   "nom": "Éthiopie",
+   "nom_pt": "Etiópia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "Br",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "GM": {
+   "nom": "Gambie",
+   "nom_pt": "Gâmbia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "GMD",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "GH": {
+   "nom": "Ghana",
+   "nom_pt": "Gana",
+   "langues": "fr",
+   "devise": "GHS",
+   "devise_aff": "GH₵",
+   "refus": 46.5,
+   "comparer": [
+    "AO",
+    "NG",
+    "ML",
+    "SN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "GT": {
+   "nom": "Guatemala",
+   "nom_pt": "Guatemala",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "Q",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "GW": {
+   "nom": "Guinée-Bissau",
+   "nom_pt": "Guiné-Bissau",
+   "langues": "pt",
+   "devise": "XOF",
+   "devise_aff": "FCFA",
+   "refus": 54.3,
+   "comparer": [
+    "KM",
+    "BI",
+    "GN",
+    "SN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "HN": {
+   "nom": "Honduras",
+   "nom_pt": "Honduras",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "L",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "IN": {
+   "nom": "Inde",
+   "nom_pt": "Índia",
+   "langues": "fr",
+   "devise": "INR",
+   "devise_aff": "₹",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    }
+   ]
+  },
+  "JP": {
+   "nom": "Japon",
+   "nom_pt": "Japão",
+   "langues": "fr",
+   "devise": "JPY",
+   "devise_aff": "¥",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "KR": {
+   "nom": "Corée du Sud",
+   "nom_pt": "Coreia do Sul",
+   "langues": "fr",
+   "devise": "KRW",
+   "devise_aff": "₩",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "ML": {
+   "nom": "Mali",
+   "nom_pt": "Mali",
+   "langues": "fr",
+   "devise": "XOF",
+   "devise_aff": "FCFA",
+   "refus": 42.5,
+   "comparer": [
+    "TG",
+    "AO",
+    "GH",
+    "NG"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "MR": {
+   "nom": "Mauritanie",
+   "nom_pt": "Mauritânia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "MRU",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "MU": {
+   "nom": "Maurice",
+   "nom_pt": "Maurícia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "₨",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "MX": {
+   "nom": "Mexique",
+   "nom_pt": "México",
+   "langues": "fr",
+   "devise": "MXN",
+   "devise_aff": "MX$",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "MD": {
+   "nom": "Moldavie",
+   "nom_pt": "Moldávia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "L",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "ME": {
+   "nom": "Monténégro",
+   "nom_pt": "Montenegro",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "€",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "MA": {
+   "nom": "Maroc",
+   "nom_pt": "Marrocos",
+   "langues": "fr",
+   "devise": "MAD",
+   "devise_aff": "DH",
+   "refus": 19.2,
+   "comparer": [
+    "TN",
+    "DZ",
+    "CN",
+    "TG"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    }
+   ]
+  },
+  "MZ": {
+   "nom": "Mozambique",
+   "nom_pt": "Moçambique",
+   "langues": "pt",
+   "devise": "MZN",
+   "devise_aff": "MZN",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "NE": {
+   "nom": "Niger",
+   "nom_pt": "Níger",
+   "langues": "fr",
+   "devise": "XOF",
+   "devise_aff": "FCFA",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "NG": {
+   "nom": "Nigeria",
+   "nom_pt": "Nigéria",
+   "langues": "fr",
+   "devise": "NGN",
+   "devise_aff": "₦",
+   "refus": 47.9,
+   "comparer": [
+    "GH",
+    "AO",
+    "SN",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "MK": {
+   "nom": "Macédoine du Nord",
+   "nom_pt": "Macedónia do Norte",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "ден",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "PK": {
+   "nom": "Pakistan",
+   "nom_pt": "Paquistão",
+   "langues": "fr",
+   "devise": "PKR",
+   "devise_aff": "₨",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "PE": {
+   "nom": "Pérou",
+   "nom_pt": "Peru",
+   "langues": "fr",
+   "devise": "PEN",
+   "devise_aff": "S/",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "PH": {
+   "nom": "Philippines",
+   "nom_pt": "Filipinas",
+   "langues": "fr",
+   "devise": "PHP",
+   "devise_aff": "₱",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "ST": {
+   "nom": "Sao Tomé-et-Principe",
+   "nom_pt": "São Tomé e Príncipe",
+   "langues": "pt",
+   "devise": "",
+   "devise_aff": "STN",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "SN": {
+   "nom": "Sénégal",
+   "nom_pt": "Senegal",
+   "langues": "fr",
+   "devise": "XOF",
+   "devise_aff": "FCFA",
+   "refus": 51.9,
+   "comparer": [
+    "GN",
+    "BI",
+    "GW",
+    "KM"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Espagne — GECCO / migration circulaire",
+    "desc": "L'État et les employeurs recrutent DANS le pays d'origine — pas d'employeur à trouver soi-même.",
+    "canal": "Sénégal : BAOS (ministère du Travail) — recrutement 100 % GRATUIT en ligne. Maroc : ANAPEC."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Espagne — GECCO, recrutement à l'origine",
+     "d": "AUCUNE exigence de langue ni de diplôme. Conditions Sénégal : 25–50 ans, expérience agricole."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    }
+   ]
+  },
+  "RS": {
+   "nom": "Serbie",
+   "nom_pt": "Sérvia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "дин",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "LK": {
+   "nom": "Sri Lanka",
+   "nom_pt": "Sri Lanka",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "₨",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "SD": {
+   "nom": "Soudan",
+   "nom_pt": "Sudão",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "SDG",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "TL": {
+   "nom": "Timor oriental",
+   "nom_pt": "Timor-Leste",
+   "langues": "pt",
+   "devise": "",
+   "devise_aff": "US$",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal 100 % gratuit",
+    "titre": "Portugal — Accord de mobilité CPLP",
+    "desc": "Entrée avec le seul passeport, puis titre de séjour demandé directement au Portugal (sans visa consulaire).",
+    "canal": "AIMA — procédure en ligne ~15 €. Test marché travail SUPPRIMÉ pour les permis CPLP."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Portugal — mobilité CPLP",
+     "d": "Aucune barrière de langue (portugais = langue nationale). Titre demandé sur place, ~15 € en ligne."
+    },
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "TN": {
+   "nom": "Tunisie",
+   "nom_pt": "Tunísia",
+   "langues": "fr",
+   "devise": "TND",
+   "devise_aff": "DT",
+   "refus": 19.5,
+   "comparer": [
+    "MA",
+    "DZ",
+    "CN",
+    "TG"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  },
+  "UA": {
+   "nom": "Ukraine",
+   "nom_pt": "Ucrânia",
+   "langues": "fr",
+   "devise": "",
+   "devise_aff": "₴",
+   "refus": null,
+   "comparer": [
+    "KM",
+    "GW",
+    "BI",
+    "GN"
+   ],
+   "implication": "Sécurisez d'abord une voie à forte capacité : votre porte spéciale passe par un canal officiel, distinct du guichet Schengen le plus saturé.",
+   "porte": {
+    "tag": "Porte spéciale — canal officiel",
+    "titre": "Italie — Decreto Flussi",
+    "desc": "C'est l'EMPLOYEUR italien qui dépose la demande (click-day) — le travailleur ne peut pas candidater seul depuis l'étranger.",
+    "canal": "Portale Servizi ALI — Ministero dell'Interno (côté employeur) ; info : ministère italien du Travail."
+   },
+   "voies": [
+    {
+     "p": "forte",
+     "t": "Ausbildung",
+     "d": "Allemand B1 exigé pour le visa (§16a AufenthG), B2 recommandé par les employeurs et chambres de commerce — soit ~12 mois"
+    },
+    {
+     "p": "sel",
+     "t": "Italie — Decreto Flussi",
+     "d": "Trouver un employeur italien qui dépose. Aucune exigence formelle de langue pour le saisonnier."
+    },
+    {
+     "p": "sel",
+     "t": "France — visa long séjour études",
+     "d": "Admission dans un établissement + preuve de ressources. À NE PAS confondre avec le visa court séjour, dont les taux de r"
+    },
+    {
+     "p": "tres",
+     "t": "Bourse MEXT",
+     "d": "Concours écrit + entretien à l'ambassade. Langue NON exigée (cours de japonais 6–12 mois inclus)."
+    }
+   ]
+  }
+ }
+}
