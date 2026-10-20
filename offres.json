@@ -531,34 +531,10 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-b58eaf4c7d",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "Concours d’entrée à l’IUS, à l’INUBIL et au CEFR.",
-      "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/09/29/concours-dentree-a-lius-a-linubil-et-au-cefr/"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-12-04",
-      "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/09/29/concours-dentree-a-lius-a-linubil-et-au-cefr/",
-      "source_domaine": "minesup.gov.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-20",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "minesup_concours-4b433d4c95",
       "domaine_swimpe": "local",
       "type": "concours",
-      "titre": "Concours_CEFR_IUBC_L1_Ergotherapie",
+      "titre": "Concours d’entrée à l’IUS, à l’INUBIL et au CEFR.",
       "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
       "pays": "Cameroun",
       "ville": "",
@@ -627,34 +603,10 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-b1e0795e10",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "Concours d’entrée à l’ISLAPE sous tutelle ESTLC et à l’ISSTMADD sous tutelle ENSPM",
-      "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/09/25/concours-dentree-a-lislape-sous-tutelle-estlc-et-a-lisstmadd-sous-tutelle-enspm/"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-12-04",
-      "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/09/25/concours-dentree-a-lislape-sous-tutelle-estlc-et-a-lisstmadd-sous-tutelle-enspm/",
-      "source_domaine": "minesup.gov.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-20",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "minesup_concours-c39bf455ae",
       "domaine_swimpe": "local",
       "type": "concours",
-      "titre": "Concours-ISLAPE-sous-tutelle-ESTLC-UEb-1ere-annee",
+      "titre": "Concours d’entrée à l’ISLAPE sous tutelle ESTLC et à l’ISSTMADD sous tutelle ENSPM",
       "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
       "pays": "Cameroun",
       "ville": "",
@@ -747,7 +699,7 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-7c126cb5a0",
+      "id": "minesup_concours-88fea185b1",
       "domaine_swimpe": "local",
       "type": "concours",
       "titre": "Décisions portant ouverture des concours à la FS de l’UMa et à la JFN-HUI de Douala",
@@ -758,36 +710,12 @@
       "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/09/21/decisions-portant-ouverture-des-concours-a-la-fs-de-luma-et-a-la-jfn-hui-de-douala/"
+        "valeur": "https://www.minesup.gov.cm/wp-content/uploads/2026/09/UMa_FS_L1_Sce_Biomedicales_Medico_Sanitaires.pdf"
       },
       "publie_le": "2026-10-20",
       "expire_le": "2026-12-04",
       "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/09/21/decisions-portant-ouverture-des-concours-a-la-fs-de-luma-et-a-la-jfn-hui-de-douala/",
-      "source_domaine": "minesup.gov.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-20",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "minesup_concours-0fa982638d",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "Décisions portant ouverture des concours dans certains IPES sous tutelle académique de l’ENSPD",
-      "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/09/10/decisions-portant-ouverture-des-concours-dans-certains-ipes-sous-tutelle-academique-de-lenspd/"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-12-04",
-      "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/09/10/decisions-portant-ouverture-des-concours-dans-certains-ipes-sous-tutelle-academique-de-lenspd/",
+      "source_url": "https://www.minesup.gov.cm/wp-content/uploads/2026/09/UMa_FS_L1_Sce_Biomedicales_Medico_Sanitaires.pdf",
       "source_domaine": "minesup.gov.cm",
       "methode_verif": "auto",
       "verifie_le": "2026-10-20",
@@ -798,7 +726,7 @@
       "id": "minesup_concours-3ab21227cd",
       "domaine_swimpe": "local",
       "type": "concours",
-      "titre": "Concours-IPES-sous-tutelle-ENSPD-1ere-annee-cursus-INGENIEUR",
+      "titre": "Décisions portant ouverture des concours dans certains IPES sous tutelle académique de l’ENSPD",
       "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
       "pays": "Cameroun",
       "ville": "",
@@ -843,7 +771,7 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-b596d25fbe",
+      "id": "minesup_concours-5374f8744d",
       "domaine_swimpe": "local",
       "type": "concours",
       "titre": "Décisions portant ouverture des concours à la FASA et l’UIECC",
@@ -854,12 +782,12 @@
       "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/09/08/decisions-portant-ouverture-des-concours-a-la-fasa-et-luiecc/"
+        "valeur": "https://www.minesup.gov.cm/wp-content/uploads/2026/09/UDs_FASA_1ere_Annee_Ingenieur.pdf"
       },
       "publie_le": "2026-10-20",
       "expire_le": "2026-12-04",
       "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/09/08/decisions-portant-ouverture-des-concours-a-la-fasa-et-luiecc/",
+      "source_url": "https://www.minesup.gov.cm/wp-content/uploads/2026/09/UDs_FASA_1ere_Annee_Ingenieur.pdf",
       "source_domaine": "minesup.gov.cm",
       "methode_verif": "auto",
       "verifie_le": "2026-10-20",
@@ -867,7 +795,7 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-b8a80c40bb",
+      "id": "minesup_concours-13815135fd",
       "domaine_swimpe": "local",
       "type": "concours",
       "titre": "Décisions portant ouverture des concours au CRESA, à l’ENSPM, et dans un IPES",
@@ -878,12 +806,12 @@
       "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/09/03/decisions-portant-ouverture-des-concours-au-cresa-a-lenspm-et-dans-un-ipes/"
+        "valeur": "https://www.minesup.gov.cm/wp-content/uploads/2026/09/UMa_ENSP_L3_Cursus_Sciences_Ingenieur.pdf"
       },
       "publie_le": "2026-10-20",
       "expire_le": "2026-12-04",
       "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/09/03/decisions-portant-ouverture-des-concours-au-cresa-a-lenspm-et-dans-un-ipes/",
+      "source_url": "https://www.minesup.gov.cm/wp-content/uploads/2026/09/UMa_ENSP_L3_Cursus_Sciences_Ingenieur.pdf",
       "source_domaine": "minesup.gov.cm",
       "methode_verif": "auto",
       "verifie_le": "2026-10-20",
@@ -891,7 +819,7 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-34a7f455a4",
+      "id": "minesup_concours-42f460f808",
       "domaine_swimpe": "local",
       "type": "concours",
       "titre": "Décisions portant ouverture du concours d’entrée en 1ère et 3ème Année de l’ENSPM",
@@ -902,36 +830,12 @@
       "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/08/19/decisions-portant-ouverture-du-concours-dentree-en-1ere-et-3eme-annee-polytechnique-de-maroua/"
+        "valeur": "https://www.minesup.gov.cm/wp-content/uploads/2026/08/ENSP-de-Maroua-2026-2027-1ere-annee-du-cursus-de-formation-dIngenieur-.pdf"
       },
       "publie_le": "2026-10-20",
       "expire_le": "2026-12-04",
       "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/08/19/decisions-portant-ouverture-du-concours-dentree-en-1ere-et-3eme-annee-polytechnique-de-maroua/",
-      "source_domaine": "minesup.gov.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-20",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "minesup_concours-066765c73d",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "Décision portant ouverture du concours d’entrée au CESSI de l’Université de Yaoundé I",
-      "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/08/19/decision-portant-ouverture-du-concours-dentree-au-cessi-de-luyi/"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-12-04",
-      "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/08/19/decision-portant-ouverture-du-concours-dentree-au-cessi-de-luyi/",
+      "source_url": "https://www.minesup.gov.cm/wp-content/uploads/2026/08/ENSP-de-Maroua-2026-2027-1ere-annee-du-cursus-de-formation-dIngenieur-.pdf",
       "source_domaine": "minesup.gov.cm",
       "methode_verif": "auto",
       "verifie_le": "2026-10-20",
@@ -942,7 +846,7 @@
       "id": "minesup_concours-4813c443dd",
       "domaine_swimpe": "local",
       "type": "concours",
-      "titre": "FMSB-UY1-2026-2027-concours-dentree-au-Centre-dEnseignement-Superieur-en-Soins-Infirmiers-CESSI",
+      "titre": "Décision portant ouverture du concours d’entrée au CESSI de l’Université de Yaoundé I",
       "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
       "pays": "Cameroun",
       "ville": "",
@@ -963,34 +867,10 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-66b343a8d1",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "Décision portant ouverture du concours d’entrée en 1ère année de la filière génie minier à l’ENSPY, site de MEYOMESSALA",
-      "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/08/14/decision-portant-ouverture-du-concours-dentree-en-1ere-annee-de-la-filiere-genie-minier-a-lenspy-site-de-meyomessala/"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-12-04",
-      "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/08/14/decision-portant-ouverture-du-concours-dentree-en-1ere-annee-de-la-filiere-genie-minier-a-lenspy-site-de-meyomessala/",
-      "source_domaine": "minesup.gov.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-20",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "minesup_concours-023763b520",
       "domaine_swimpe": "local",
       "type": "concours",
-      "titre": "CONCOURS-DENTREE-EN-1ERE-ANNEE-DE-LA-FILIERE-GENIE-MINIER-A-LENSPY-SITE-DE-MEYOMESSALA",
+      "titre": "Décision portant ouverture du concours d’entrée en 1ère année de la filière génie minier à l’ENSPY, site de MEYOMESSALA",
       "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
       "pays": "Cameroun",
       "ville": "",
@@ -1803,6 +1683,30 @@
       "profil_international": false
     },
     {
+      "id": "senelec_recrutement-890d94e134",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Offres d'emploi",
+      "organisation": "SENELEC — portail officiel de recrutement (Sénégal)",
+      "pays": "Sénégal",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://recrutement.senelec.sn/offre-emploi"
+      },
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
+      "verifie": true,
+      "source_url": "https://recrutement.senelec.sn/offre-emploi",
+      "source_domaine": "senelec.sn",
+      "methode_verif": "auto",
+      "verifie_le": "2026-10-20",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
       "id": "concours_minfopra-5b0ee234bb",
       "domaine_swimpe": "local",
       "type": "concours",
@@ -1851,7 +1755,7 @@
       "profil_international": false
     },
     {
-      "id": "concours_minfopra-68e059d402",
+      "id": "concours_minfopra-f4c75aaef5",
       "domaine_swimpe": "local",
       "type": "concours",
       "titre": "Concours Administratifs: La Saison 2026 est ouverte....",
@@ -1862,12 +1766,12 @@
       "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.minfopra.gov.cm/index.php/fr/publications/2363-concours-administratifs-la-saison-2026-est-ouverte"
+        "valeur": "https://www.minfopra.gov.cm/images/2026/DDRHE/CONCOURS/ENAM/10_Admin_Greffes_A_Fr.pdf"
       },
       "publie_le": "2026-10-20",
       "expire_le": "2026-12-04",
       "verifie": true,
-      "source_url": "https://www.minfopra.gov.cm/index.php/fr/publications/2363-concours-administratifs-la-saison-2026-est-ouverte",
+      "source_url": "https://www.minfopra.gov.cm/images/2026/DDRHE/CONCOURS/ENAM/10_Admin_Greffes_A_Fr.pdf",
       "source_domaine": "minfopra.gov.cm",
       "methode_verif": "auto",
       "verifie_le": "2026-10-20",
@@ -1875,7 +1779,7 @@
       "profil_international": false
     },
     {
-      "id": "concours_minfopra-50dacd7c6c",
+      "id": "concours_minfopra-11869e8af1",
       "domaine_swimpe": "local",
       "type": "concours",
       "titre": "COMMUNIQUÉS PORTANT ADMISSIBILITÉS DES CANDIDATS AUX CONCOURS DIRECTS POUR LE RECRUTEMENT DES PROFESSEURS DES LYCÉES ET COLLÈGES DES ENSEIGN",
@@ -1883,15 +1787,15 @@
       "pays": "Cameroun",
       "ville": "",
       "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
+      "description": "nci)UBUQUE DU CAMEROUN Pair.Travail- Petrie \"''&l & 1卜三日P 矢 qh+'n.. REPUBUC OF CAMERC>ON F)each- \\Po&- Fatherland MINl仃OF THE PUBUC SERVICE AND ADMINISTRATIVE REFORM MINISTERS DE LA FONCnON pueuQue ET DE LA REFORME ADMINlrRATIVE SECREFARli\\… (extrait de l'avis officiel PDF)",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.minfopra.gov.cm/index.php/fr/communiques-ge/2382-communiques-portant-admissibilites-des-candidats-aux-concours-directs-pour-le-recrutement-des-professeurs-des-lycees-et-colleges-des-enseignements-general-et-technique-session-2026"
+        "valeur": "https://www.minfopra.gov.cm/images/2026/DDRHE/RESULTATS/Definitifs/Admissibilits_enseignement_gnral_sous_systme_francophone_2026.pdf"
       },
       "publie_le": "2026-10-20",
       "expire_le": "2026-12-04",
       "verifie": true,
-      "source_url": "https://www.minfopra.gov.cm/index.php/fr/communiques-ge/2382-communiques-portant-admissibilites-des-candidats-aux-concours-directs-pour-le-recrutement-des-professeurs-des-lycees-et-colleges-des-enseignements-general-et-technique-session-2026",
+      "source_url": "https://www.minfopra.gov.cm/images/2026/DDRHE/RESULTATS/Definitifs/Admissibilits_enseignement_gnral_sous_systme_francophone_2026.pdf",
       "source_domaine": "minfopra.gov.cm",
       "methode_verif": "auto",
       "verifie_le": "2026-10-20",
@@ -2123,7 +2027,7 @@
       "pays": "Cameroun",
       "ville": "",
       "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
+      "description": "BEAC BANQUE DES ETÂIS DE LAFRIQUE CENTRALE COMMISSION GENERALE DE PASSATION DES MARCHES N'2 Décision N\"024/GR/2025 du 24 janvier 2025 Séledion internationale ouverte n\"49/BEAC/SG-DAJ R/SlO/Ser/2026 pour le recrutement d'un cabinet de consul… (extrait de l'avis officiel PDF)",
       "comment_postuler": {
         "mode": "lien",
         "valeur": "https://www.beac.int/wp-content/uploads/2016/10/selection-internationale-n49.pdf"
@@ -2228,6 +2132,30 @@
       "expire_le": "2026-11-10",
       "verifie": true,
       "source_url": "https://au.int/fr/pressreleases/20261020/le-president-cua-ete-recu-par-le-president-de-la-republique-de-cote-divoire",
+      "source_domaine": "au.int",
+      "methode_verif": "auto",
+      "verifie_le": "2026-10-20",
+      "ajoute_par": "veille-auto",
+      "profil_international": false
+    },
+    {
+      "id": "veille-0d3484fe32",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Le Président de la CUA a appelé à faire des frontières africaines de véritables espaces de coopération, de paix, de sécurité et de prospérit",
+      "organisation": "Corps des jeunes volontaires de l'Union africaine (AU-YVC)",
+      "pays": "Côte d'Ivoire",
+      "ville": "",
+      "domaine": "",
+      "description": "Le Président de la CUA a appelé à faire des frontières africaines de véritables espaces de coopération, de paix, de sécurité et de prospérité partagée | African Union {\"path\":{\"baseUrl\":\"\\/\",\"pathPrefix\":\"fr\\/\",\"currentPath\":\"node\\/47120\",\"…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://au.int/fr/pressreleases/20261020/le-president-appele-faire-des-frontieres-africaines-de-veritables-espaces-de"
+      },
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-10",
+      "verifie": true,
+      "source_url": "https://au.int/fr/pressreleases/20261020/le-president-appele-faire-des-frontieres-africaines-de-veritables-espaces-de",
       "source_domaine": "au.int",
       "methode_verif": "auto",
       "verifie_le": "2026-10-20",
