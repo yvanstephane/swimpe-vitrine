@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-19",
+  "maj": "2026-10-20",
   "schema": "1",
   "offres": [
     {
@@ -16,21 +16,21 @@
         "mode": "lien",
         "valeur": "https://fnecm.org/programme/ciiej"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
       "source_url": "https://fnecm.org/programme/ciiej",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-270e43fe07",
+      "id": "fne_cameroun-b4d438399d",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Coiffeur Dames",
+      "titre": "Salesman",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -38,23 +38,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/J01-OE-2026-001027"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000375"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/J01-OE-2026-001027",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000375",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-d6ae7cbcc9",
+      "id": "fne_cameroun-24c9a10011",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Cadre gestionnaire des ressources humaines",
+      "titre": "Opérateur sur station de pompage",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -62,23 +62,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/C01-OE-2026-001945"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000376"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/C01-OE-2026-001945",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000376",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-6fa199a11e",
+      "id": "fne_cameroun-b63cb43467",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Agent Immobilier",
+      "titre": "Commis de Restaurant",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -86,23 +86,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/NET-OE-2026-009296"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000377"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/NET-OE-2026-009296",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000377",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-983cec32e1",
+      "id": "fne_cameroun-567d51098d",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Agent de transit",
+      "titre": "Cadre financier",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -110,23 +110,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/NET-OE-2026-009294"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000378"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/NET-OE-2026-009294",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000378",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-50d707fb2e",
+      "id": "fne_cameroun-05f886eea6",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Réceptionniste",
+      "titre": "Employé de Bureau",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -134,23 +134,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000340"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000379"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000340",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000379",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-53cded17ef",
+      "id": "fne_cameroun-ce1d462b09",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Cuisinier Domestique",
+      "titre": "Chef Cuisinier",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -158,23 +158,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/L01-OE-2026-000092"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000382"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/L01-OE-2026-000092",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000382",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-df579cac2f",
+      "id": "fne_cameroun-0b348c1486",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Aide Comptable",
+      "titre": "Plombier",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -182,23 +182,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/C01-OE-2026-001808"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000383"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/C01-OE-2026-001808",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000383",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-5f3620caca",
+      "id": "fne_cameroun-034ffa07de",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Comptable",
+      "titre": "Commercial",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -206,23 +206,23 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/C01-OE-2026-001809"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000384"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/C01-OE-2026-001809",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000384",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-ac7031824d",
+      "id": "fne_cameroun-b3eff3860f",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Manutentionnaire",
+      "titre": "Ingénieur Electricien",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -230,39 +230,15 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/C01-OE-2026-001810"
+        "valeur": "https://fnecm.org/offre/G01-OE-2026-000385"
       },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-03",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/C01-OE-2026-001810",
+      "source_url": "https://fnecm.org/offre/G01-OE-2026-000385",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "reliefweb_rss-575acf8e2c",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Financial Inclusion Officer - Senegal",
-      "organisation": "",
-      "pays": "Sénégal",
-      "ville": "",
-      "domaine": "",
-      "description": "Country: Senegal Organization: Blue Ventures Closing date: 2 Nov 2026 Location: Dakar, Sine Saloum or Casamance, with signiﬁcant national travel Contract type and duration: Two years (with the possibility of extension thereafter) Hours: Ful…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://reliefweb.int/job/4234722/financial-inclusion-officer-senegal"
-      },
-      "publie_le": "2026-10-19",
-      "expire_le": "2026-11-02",
-      "verifie": true,
-      "source_url": "https://reliefweb.int/job/4234722/financial-inclusion-officer-senegal",
-      "source_domaine": "reliefweb.int",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
@@ -286,7 +262,7 @@
       "source_url": "https://medecinssansfrontiereswaca.recruitee.com/o/responsable-de-lengagement-communautairepool-durgence",
       "source_domaine": "waca.msf.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
@@ -310,7 +286,7 @@
       "source_url": "https://medecinssansfrontiereswaca.recruitee.com/o/architecte-systeme",
       "source_domaine": "waca.msf.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
@@ -334,31 +310,7 @@
       "source_url": "https://medecinssansfrontiereswaca.recruitee.com/o/manager-des-services-generaux",
       "source_domaine": "waca.msf.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "msf_waca-406ec3e2d0",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "CONSULTANT(E) – APPUI À LA MISE EN ŒUVRE PILOTE DU PROGRAMME D'INTÉGRITÉ",
-      "organisation": "MSF WaCA",
-      "pays": "Côte d'Ivoire",
-      "ville": "ABIDJAN",
-      "domaine": "",
-      "description": "Médecins Sans Frontières fondée en 1971, est une organisation internationale médicale humanitaire qui apporte une assistance médicale d’urgence aux personnes affectées par les conflits, les épidémies, les catastrophes ou l'exclusion des soi…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://medecinssansfrontiereswaca.recruitee.com/o/consultante-appui-a-la-mise-en-uvre-pilote-du-programme-dintegrite"
-      },
-      "publie_le": "2026-09-28",
-      "expire_le": "2026-10-19",
-      "verifie": true,
-      "source_url": "https://medecinssansfrontiereswaca.recruitee.com/o/consultante-appui-a-la-mise-en-uvre-pilote-du-programme-dintegrite",
-      "source_domaine": "waca.msf.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     },
@@ -382,7 +334,7 @@
       "source_url": "https://medecinssansfrontiereswaca.recruitee.com/o/responsable-programme-cellule-durgence",
       "source_domaine": "waca.msf.org",
       "methode_verif": "auto",
-      "verifie_le": "2026-10-19",
+      "verifie_le": "2026-10-20",
       "ajoute_par": "moteur",
       "profil_international": false
     }
