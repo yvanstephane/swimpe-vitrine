@@ -2139,30 +2139,6 @@
       "profil_international": false
     },
     {
-      "id": "veille-0d3484fe32",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Le Président de la CUA a appelé à faire des frontières africaines de véritables espaces de coopération, de paix, de sécurité et de prospérit",
-      "organisation": "Corps des jeunes volontaires de l'Union africaine (AU-YVC)",
-      "pays": "Côte d'Ivoire",
-      "ville": "",
-      "domaine": "",
-      "description": "Le Président de la CUA a appelé à faire des frontières africaines de véritables espaces de coopération, de paix, de sécurité et de prospérité partagée | African Union {\"path\":{\"baseUrl\":\"\\/\",\"pathPrefix\":\"fr\\/\",\"currentPath\":\"node\\/47120\",\"…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://au.int/fr/pressreleases/20261020/le-president-appele-faire-des-frontieres-africaines-de-veritables-espaces-de"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-11-10",
-      "verifie": true,
-      "source_url": "https://au.int/fr/pressreleases/20261020/le-president-appele-faire-des-frontieres-africaines-de-veritables-espaces-de",
-      "source_domaine": "au.int",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-20",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
       "id": "veille-dd707a25c9",
       "domaine_swimpe": "local",
       "type": "emploi",

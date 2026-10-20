@@ -1170,6 +1170,22 @@
       ]
     },
     {
+      "sujet": "Le Président de la CUA a appelé à faire des frontières africaines de véritables espaces de ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://au.int/fr/pressreleases/20261020/le-president-appele-faire-des-frontieres-africaines-de-veritables-espaces-de",
+          "domaine": "au.int"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 au.int officiel, mais titre/pays cible non détectés sur la page — à confirmer"
+      ]
+    },
+    {
       "sujet": "Journées Portes Ouvertes à Daloa : La SIB au plus près des acteurs économiques d",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-10-20",
@@ -1727,22 +1743,6 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : ouragan.cd — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Le Président de la CUA a appelé à faire des frontières africaines de véritables espaces de ...",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://au.int/fr/pressreleases/20261020/le-president-appele-faire-des-frontieres-africaines-de-veritables-espaces-de",
-          "domaine": "au.int"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 au.int officiel, mais titre/pays cible non détectés sur la page — à confirmer"
       ]
     }
   ]
