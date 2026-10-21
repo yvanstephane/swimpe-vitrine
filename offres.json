@@ -843,34 +843,10 @@
       "profil_international": false
     },
     {
-      "id": "minesup_concours-066765c73d",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "Décision portant ouverture du concours d’entrée au CESSI de l’Université de Yaoundé I",
-      "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la date limite directement sur l'avis officiel.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.minesup.gov.cm/index.php/2026/08/19/decision-portant-ouverture-du-concours-dentree-au-cessi-de-luyi/"
-      },
-      "publie_le": "2026-10-21",
-      "expire_le": "2026-12-05",
-      "verifie": true,
-      "source_url": "https://www.minesup.gov.cm/index.php/2026/08/19/decision-portant-ouverture-du-concours-dentree-au-cessi-de-luyi/",
-      "source_domaine": "minesup.gov.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-21",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "minesup_concours-4813c443dd",
       "domaine_swimpe": "local",
       "type": "concours",
-      "titre": "FMSB-UY1-2026-2027-concours-dentree-au-Centre-dEnseignement-Superieur-en-Soins-Infirmiers-CESSI",
+      "titre": "Décision portant ouverture du concours d’entrée au CESSI de l’Université de Yaoundé I",
       "organisation": "MINESUP — hub officiel des concours des grandes écoles (ENSTP, IRIC, ENS, FMSB…)",
       "pays": "Cameroun",
       "ville": "",
@@ -1539,6 +1515,30 @@
       "profil_international": false
     },
     {
+      "id": "un_careers_rss-6380678ea8",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Procurement Officer (Head, West and Central Africa Procurement Hub)",
+      "organisation": "",
+      "pays": "Sénégal",
+      "ville": "",
+      "domaine": "",
+      "description": "Level : P-4 Job ID : 286543 Job Network : Logistics, Transportation and Supply Chain Job Family : Procurement Department/Office : United Nations Office on Drugs and Crime Duty Station : DAKAR Staffing Exercise : undefined Posted Date : 10/2…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://careers.un.org/jobSearchDescription/286543?language=en"
+      },
+      "publie_le": "2026-10-21",
+      "expire_le": "2026-11-20",
+      "verifie": true,
+      "source_url": "https://careers.un.org/jobSearchDescription/286543?language=en",
+      "source_domaine": "careers.un.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-10-21",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
       "id": "worldvision_workday-eb5fac4e45",
       "domaine_swimpe": "local",
       "type": "emploi",
@@ -2064,78 +2064,6 @@
       "methode_verif": "auto",
       "verifie_le": "2026-10-21",
       "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "veille-dd707a25c9",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Emplois verts: Niche d’opportunités",
-      "organisation": "Cameroon Tribune",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Emplois verts: Niche d’opportunités (237) 222 30 41 47 info@cameroon-tribune.cm Nous contacter Wishlist: 12 --> Boutique | Abonnement Presidential Politique Economie Société Culture Sports International Editorial Régions Commentaires Région…",
-      "comment_postuler": {
-        "mode": "email",
-        "valeur": "info@cameroon-tribune.cm"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-11-11",
-      "verifie": true,
-      "source_url": "https://www.cameroon-tribune.cm/article.html/81753/fr.html/emplois-verts-niche-dopportunites",
-      "source_domaine": "cameroon-tribune.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-21",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
-      "id": "veille-1efcb551db",
-      "domaine_swimpe": "local",
-      "type": "volontariat",
-      "titre": "Au Cameroun, la Journée du volontariat français 2026 célèbre l’engagement au service du développement durable - France-Volontaires",
-      "organisation": "France Volontaires (VSI)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement); Au Cameroun, la Journée du volontariat français 2026 célèbre l’engagement au service du développement durable - France-Volontaires {\"@con…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://france-volontaires.org/actualite/au-cameroun-la-journee-du-volontariat-francais-2026-celebre-lengagement-au-service-du-developpement-durable/"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-11-11",
-      "verifie": true,
-      "source_url": "https://france-volontaires.org/actualite/au-cameroun-la-journee-du-volontariat-francais-2026-celebre-lengagement-au-service-du-developpement-durable/",
-      "source_domaine": "france-volontaires.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-21",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
-      "id": "veille-514e7fc2c8",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Erasmus+: Candidatures camerounaises attendues",
-      "organisation": "Cameroon Tribune",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Erasmus+: Candidatures camerounaises attendues (237) 222 30 41 47 info@cameroon-tribune.cm Nous contacter Wishlist: 12 --> Boutique | Abonnement Presidential Politique Economie Société Culture Sports International Editorial Régions Commenta…",
-      "comment_postuler": {
-        "mode": "email",
-        "valeur": "info@cameroon-tribune.cm"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-11-11",
-      "verifie": true,
-      "source_url": "http://www.cameroon-tribune.cm/article.html/81761/fr.html/erasmus-candidatures-camerounaises-attendues",
-      "source_domaine": "cameroon-tribune.cm",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-21",
-      "ajoute_par": "veille-auto",
       "profil_international": false
     }
   ]
