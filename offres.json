@@ -2065,6 +2065,54 @@
       "verifie_le": "2026-10-21",
       "ajoute_par": "moteur",
       "profil_international": false
+    },
+    {
+      "id": "veille-b12c36eb3f",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Recrutement ONG Village Pilote Sénégal : Assistant(e) Chargé(e) de Programme (Session 2026)",
+      "organisation": "ConcoursN",
+      "pays": "Sénégal",
+      "ville": "",
+      "domaine": "",
+      "description": "Recrutement ONG Village Pilote Sénégal : Assistant(e) Chargé(e) de Programme (Session 2026) {\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://concoursn.com/#website\",\"name\":\"Concoursn.com\",\"url\":\"https://concoursn.com/\",\"inL…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://concoursn.com/recrutement-ong-village-pilote-senegal-assistante-chargee-de-programme-session-2026/"
+      },
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-11",
+      "verifie": true,
+      "source_url": "https://concoursn.com/recrutement-ong-village-pilote-senegal-assistante-chargee-de-programme-session-2026/",
+      "source_domaine": "concoursn.com",
+      "methode_verif": "auto",
+      "verifie_le": "2026-10-21",
+      "ajoute_par": "veille-auto",
+      "profil_international": false
+    },
+    {
+      "id": "veille-3a487f6ba7",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Recrutement Quality Center Sénégal : Chefs de Projets Clients Centre d’Appels (Session 2026)",
+      "organisation": "ConcoursN",
+      "pays": "Sénégal",
+      "ville": "",
+      "domaine": "",
+      "description": "Recrutement Quality Center Sénégal : Chefs de Projets Clients Centre d’Appels (Session 2026) {\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://concoursn.com/#website\",\"name\":\"Concoursn.com\",\"url\":\"https://concoursn.com/\",\"in…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://concoursn.com/recrutement-quality-center-senegal-chefs-de-projets-clients-centre-dappels-session-2026/"
+      },
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-11",
+      "verifie": true,
+      "source_url": "https://concoursn.com/recrutement-quality-center-senegal-chefs-de-projets-clients-centre-dappels-session-2026/",
+      "source_domaine": "concoursn.com",
+      "methode_verif": "auto",
+      "verifie_le": "2026-10-21",
+      "ajoute_par": "veille-auto",
+      "profil_international": false
     }
   ]
 }
