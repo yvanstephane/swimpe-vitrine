@@ -1,5 +1,5 @@
 {
-  "maj": "2026-10-21",
+  "maj": "2026-10-22",
   "candidats": [
     {
       "sujet": "Sushi man - women h/f - Biars-sur-Cère - Offre d'emploi Octobre 2026 - Jobijoba",
@@ -66,12 +66,60 @@
       ]
     },
     {
-      "sujet": "Nouveau recrutement lancé à l'Institut Européen de Coopération et de Développement (IECD)",
+      "sujet": "Cameroun : le gouvernement relance le Cameroon Business Forum à Douala",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-21",
       "liens": [
         {
-          "lien": "https://yop.l-frii.com/nouveau-recrutement-lance-a-linstitut-europeen-de-cooperation-et-de-developpement-iecd-20-octobre-2026/",
+          "lien": "https://www.financialafrik.com/2026/10/21/cameroun-le-gouvernement-relance-le-cameroon-business-forum-a-douala/",
+          "domaine": "financialafrik.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Cameroun : le président du GECAM impliqué dans un litige foncier qui fragilise l'investissement privé",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.financialafrik.com/2026/10/21/cameroun-le-president-du-gecam-implique-dans-un-litige-foncier-qui-fragilise-linvestissement-prive/",
+          "domaine": "financialafrik.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Cameroun : la justice française maintient la saisie conservatoire de 20 millions USD dans l ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.financialafrik.com/2026/10/21/cameroun-la-justice-francaise-maintient-la-saisie-conservatoire-de-20-millions-usd-dans-laffaire-garoube/",
+          "domaine": "financialafrik.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "ONU Volontaires recherche 10 bénévoles 21 octobre 2026 - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/onu-volontaires-recherche-10-benevoles-21-octobre-2026/",
           "domaine": "yop.l-frii.com"
         }
       ],
@@ -82,12 +130,76 @@
       ]
     },
     {
-      "sujet": "PARISCAM RECRUTE À DOUALA ET À YAOUNDÉ ! Vous êtes dynamique, motivé(e ...",
+      "sujet": "Médecins Sans Frontières recrute du personnel 21 octobre 2026 - YOP L-FRII",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-21",
       "liens": [
         {
-          "lien": "https://www.facebook.com/FretexpressFranceCameroun/posts/-pariscam-recrute-à-douala-et-à-yaoundé-vous-êtes-dynamique-motivée-avez-le-sens/1806101038188089/",
+          "lien": "https://yop.l-frii.com/medecins-sans-frontieres-recrute-du-personnel-21-octobre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Independent sales contractors Remote. commission-only – Hubstaff - Talent.com",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://cm.talent.com/view?id=642670023973869843",
+          "domaine": "cm.talent.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : cm.talent.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Opportunité intéressante au Goethe-Institut - 21 Octobre 2026 - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/opportunite-interessante-au-goethe-institut-21-octobre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Offres d'emploi : Ingénieur Statisticien à Douala - Optioncarriere.cm",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.optioncarriere.cm/emploi-ingenieur-statisticien/Douala",
+          "domaine": "optioncarriere.cm"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : optioncarriere.cm — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "OPTIMUM FINANCES RECRUTE !* > *COLLECTEURS / COLLECTRICES - Yaoundé ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.facebook.com/keepgrowing2/posts/-optimum-finances-recrute-collecteurs-collectrices-yaoundé-douala-tu-es-souriant/1117917907864350/",
           "domaine": "facebook.com"
         }
       ],
@@ -98,92 +210,12 @@
       ]
     },
     {
-      "sujet": "Bethel Essence recrute des Agents Commerciaux terrain. Yaoundé | CD Emploi Cameroun",
+      "sujet": "Goumbala se lâche sur Macky Sall : Révélations sur son retrait à l'ONU, « 200 milliards yimou...",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-22",
       "liens": [
         {
-          "lien": "https://fr.linkedin.com/posts/cd-emploi-cameroun_bethel-essence-recrute-des-agents-commerciaux-activity-7518264509007028224-0GP6",
-          "domaine": "fr.linkedin.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : fr.linkedin.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Ptcœur Recrute Des commerciaux B2C (Commandos) Douala , Yaoundé , Bafoussam Date ...",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.instagram.com/p/DetRv4AFrxi/",
-          "domaine": "instagram.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : instagram.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Ingenix Construction : un entrepreneur de Douala qui présente ses projets et recrute en ligne",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://lekwatt.com/actualites/ingenix-construction-entrepreneur-en-ligne",
-          "domaine": "lekwatt.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : lekwatt.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "linova sarl recrute — assistante de direction - Doopinet",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://web.doopinet.com/post/254932_linova-6959e67c862b1-linova-sarl-recrute-assistante-de-direction-douala?lang=english",
-          "domaine": "web.doopinet.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : web.doopinet.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "ANSD ouvre une concertation pour adapter le questionnaire du recensement des entreprises",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-21",
-      "liens": [
-        {
-          "lien": "https://senego.com/ansd-ouvre-une-concertation-pour-adapter-le-questionnaire-du-recensement-des-entreprises_2015771.html",
-          "domaine": "senego.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : senego.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "JOJ Dakar -2026 : Yankoba Diémé évalue les préparatifs sécuritaires - Seneweb",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-21",
-      "liens": [
-        {
-          "lien": "https://www.seneweb.com/fr/news/Actualites/joj-dakar-2026-yankoba-dieme-evalue-les-preparatifs-securitaires_n_999001274.html",
+          "lien": "https://www.seneweb.com/fr/news/Video/goumbala-se-lache-sur-macky-sall-revelations-sur-son-retrait-a-lonu-200-milliards-yimou_n_999001377.html",
           "domaine": "seneweb.com"
         }
       ],
@@ -194,188 +226,28 @@
       ]
     },
     {
-      "sujet": "Réunion d'information en ligne pour un recrutement à MSF - YOP L-FRII",
+      "sujet": "Sénégal : un programme agricole de 54,2 millions USD mobilise la finance climatique",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-22",
       "liens": [
         {
-          "lien": "https://yop.l-frii.com/reunion-dinformation-en-ligne-pour-un-recrutement-a-msf/",
-          "domaine": "yop.l-frii.com"
+          "lien": "https://www.financialafrik.com/2026/10/21/senegal-un-programme-agricole-de-542-millions-usd-mobilise-la-finance-climatique/",
+          "domaine": "financialafrik.com"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
-      "sujet": "Expertise France recrute à nouveau - 20 octobre 2026 - YOP L-FRII",
+      "sujet": "Conptable confirme h/f - Saint-Louis - Offre d'emploi Octobre 2026 - Jobijoba",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-22",
       "liens": [
         {
-          "lien": "https://yop.l-frii.com/expertise-france-recrute-a-nouveau-20-octobre-2026/",
-          "domaine": "yop.l-frii.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "L'USO recrute un enseignant-chercheur en droit minier - Université du Sénégal oriental",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://uso.sn/events/luso-recrute-un-enseignant-chercheur-en-droit-minier/",
-          "domaine": "uso.sn"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : uso.sn — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Offre d'emploi Responsable Amélioration Continue et Processus achats F/H, Blagnac, France",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.aerocontact.com/emploi-aeronautique/responsable-amelioration-continue-et-processus-achats-fh~1196737.html",
-          "domaine": "aerocontact.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : aerocontact.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "ENGIM recrute – Trois opportunités professionnelles à Ziguinchor , Casamance ( Sénégal )",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://engimstartup.org/fr/engim-recrute-trois-opportunites-professionnelles-a-ziguinchor-casamance-senegal/",
-          "domaine": "engimstartup.org"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : engimstartup.org — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Le Fonds des Nations Unies pour l'enfance (UNICEF) recrute – 20 octobre 2026",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://yop.l-frii.com/le-fonds-des-nations-unies-pour-lenfance-unicef-recrute-20-octobre-2026/",
-          "domaine": "yop.l-frii.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "AFI-L'UE recrute un Assistant des Études et des Programmes - Emploi Dakar",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.emploidakar.com/offre-demploi/afi-lue-zone-b-dakar-cdd-stage-assistant-des-etudes-et-des-programmes/",
-          "domaine": "emploidakar.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : emploidakar.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Amazon recrute en masse aux Etats-Unis et investit en Allemagne - 20/10/2026 à 16:58",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.boursorama.com/bourse/actualites/amazon-recrute-en-masse-aux-etats-unis-et-investit-en-allemagne-9aeb76686dac3a76a216effbf30757e3",
-          "domaine": "boursorama.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : boursorama.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Modou Lô mise sur Franc pour le combat du millénaire : « Je suis persuadé que Franc va ...",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://senbaat.com/modou-lo-mise-sur-franc-pour-le-combat-du-millenaire-je-suis-persuade-que-franc-va-battre-reug-reug.html",
-          "domaine": "senbaat.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : senbaat.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Sales Representative (English C1) - Dakar (100% Télétravail / Remote) - Emploi Senegal",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.emploisenegal.com/offre-emploi-senegal/sales-representative-english-c1-dakar-100-teletravail-remote-1671919",
-          "domaine": "emploisenegal.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : emploisenegal.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Saint-Louis : The DER/FJ enrolls 725 beneficiaries for a funding of 72.5 million CFA francs",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.seneweb.com/en/news/Societe/saint-louis-la-derfj-enrole-725-beneficiaires-pour-un-financement-de-725-millions-f-cfa_n_999001250.html",
-          "domaine": "seneweb.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : seneweb.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Directeur.trice générale des services - Saint-Louis - Offre d'emploi Octobre 2026 - Jobijoba",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.jobijoba.com/fr/annonce/54/676d50c84add1fb3bdf439a0262e3be7",
+          "lien": "https://www.jobijoba.com/fr/annonce/54/4be458cc446f2f1c77719c6a584b10ef",
           "domaine": "jobijoba.com"
         }
       ],
@@ -386,52 +258,243 @@
       ]
     },
     {
-      "sujet": "Offre d'emploi : Préposé (e) à l'accueil et aux services du centre des loisirs",
+      "sujet": "Le ministère de la Santé recrute un spécialiste en passation de marchés - Leral.net",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-21",
       "liens": [
         {
-          "lien": "https://saintlouisduhaha.com/2026/10/20/offre-demploi-prepose-e-a-laccueil-et-aux-services-du-centre-des-loisirs/",
-          "domaine": "saintlouisduhaha.com"
+          "lien": "https://www.leral.net/Le-ministere-de-la-Sante-recrute-un-specialiste-en-passation-de-marches_a410010.html",
+          "domaine": "leral.net"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 domaine inconnu : saintlouisduhaha.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+        "🟡 domaine inconnu : leral.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
-      "sujet": "RMO Sénégal recrute une Commercial(e) en assurance - Concours.sn",
+      "sujet": "Le projet “Classroom to Care” dresse le bilan de son action au Sénégal , au Mali et au Niger",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-21",
       "liens": [
         {
-          "lien": "https://concours.sn/rmo-senegal-recrute-une-commerciale-en-assurance/",
-          "domaine": "concours.sn"
+          "lien": "https://www.leral.net/Le-projet-Classroom-to-Care-dresse-le-bilan-de-son-action-au-Senegal-au-Mali-et-au-Niger_a410031.html",
+          "domaine": "leral.net"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🔴 concours.sn ressemble au domaine officiel concoursn.com — sosie probable, NE PAS diffuser"
-      ],
-      "alerte_arnaque_probable": true
+        "🟡 domaine inconnu : leral.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
     },
     {
-      "sujet": "Enseignant Génie Thermique & Froid CDD 1 Mois Saint-Louis - Offres-Travail.com",
+      "sujet": "Paludisme : un forum tenu à Kédougou pour renforcer la mobilisation des ressources locales",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
+      "recu_le": "2026-10-21",
       "liens": [
         {
-          "lien": "https://offres-travail.com/emploi/enseignant-genie-thermique-froid-cdd-1-mois-saint-louis/saint-louis/623958",
-          "domaine": "offres-travail.com"
+          "lien": "https://www.leral.net/Paludisme-un-forum-tenu-a-Kedougou-pour-renforcer-la-mobilisation-des-ressources-locales_a410032.html",
+          "domaine": "leral.net"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 domaine inconnu : offres-travail.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+        "🟡 domaine inconnu : leral.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Kaolack : près de 8 000 poches de sang collectées en dix mois par le Centre régional de ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.leral.net/Kaolack-pres-de-8-000-poches-de-sang-collectees-en-dix-mois-par-le-Centre-regional-de-transfusion-sanguine_a410041.html",
+          "domaine": "leral.net"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : leral.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Préparatifs des JOJ Dakar : Le directeur général de la police nationale inspecte les futurs ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.seneweb.com/fr/news/Sécurité/preparatifs-des-joj-dakar-le-directeur-general-de-la-police-nationale-inspecte-les-futurs-sites-de-competition-a-dakar-et-a-saly_n_999001376.html",
+          "domaine": "seneweb.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : seneweb.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "SAR recrute un Cadre RH Senior - Emploi Dakar",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.emploidakar.com/offre-demploi/cadre-rh-senior/",
+          "domaine": "emploidakar.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : emploidakar.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Opportunité de carrière à l'UNESCO - 21 octobre 2026 - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/opportunite-de-carriere-a-lunesco-21-octobre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Offre d'emploi : l'APIX-SA recrute à Dakar (CDI) - SenBaat.com",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://senbaat.com/offre-demploi-lapix-sa-recrute-a-dakar-cdi.html",
+          "domaine": "senbaat.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : senbaat.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Avis de recrutement d'un(e) Comptable - LinkedIn Senegal",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://sn.linkedin.com/jobs/view/avis-de-recrutement-d’un-e-comptable-at-ipar-think-tank-4459074744?refId=Y9L3JO1pEiRmQwemFWkGTA==&trackingId=s99myWHhkAlkLeZDBehw2Q==",
+          "domaine": "sn.linkedin.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : sn.linkedin.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Avis de recrutement au bureau de l'OIM – 21 Octobre 2026 - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/avis-de-recrutement-au-bureau-de-loim-21-octobre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "OFFRE D'EMPLOI – COMMUNITY MANAGER (H/F) - Ngor - Expat-Dakar",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.expat-dakar.com/annonce/offre-demploi-community-manager-hf-6860100",
+          "domaine": "expat-dakar.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : expat-dakar.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Alten Sénégal recrute un Conseiller client, chargé QSE - Emploi Dakar",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.emploidakar.com/offre-demploi/alten-senegal-dakar-senegal-cdi-conseiller-client-charge-qse/",
+          "domaine": "emploidakar.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : emploidakar.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "APIX-SA recrute un Auditeur(trice) Interne - Emploi Dakar",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.emploidakar.com/offre-demploi/auditeurtrice-interne/",
+          "domaine": "emploidakar.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : emploidakar.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Offre d`emploi TECHNICO-COMMERCIAL(E) CVC F/H Saint-Louis - 68 | Apec",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/179632577W?motsCles=Technico-Commercial CVC&selectedIndex=11&page=0",
+          "domaine": "apec.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : apec.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Offre d'emploi COMPTABLE (F/H) à Saint-Louis 68300 001-YM-1740291_01C - Randstad",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.randstad.fr/emploi/comptable-fh_saint-louis_001-ym-1740291_01c/",
+          "domaine": "randstad.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : randstad.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -979,22 +1042,6 @@
       ]
     },
     {
-      "sujet": "Opportunités à Afrique - Sénégal | Projet social | Communication et marketing | Long terme",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-20",
-      "liens": [
-        {
-          "lien": "https://www.worldpackers.com/fr/search/social_impact/africa/senegal/dakar/skill_marketing/duration_long/type_social_project",
-          "domaine": "worldpackers.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : worldpackers.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
       "sujet": "L'escrime au Sénégal , une promesse de visibilité portée par les JOJ 2026 - APS",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-10-20",
@@ -1040,6 +1087,423 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : seneweb.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Football. CAN-2025 : le TAS se prononcera « fin novembre » sur la finale Maroc- Sénégal",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.ledauphine.com/sport/2026/10/20/can-2025-le-tas-se-prononcera-fin-novembre-sur-la-finale-maroc-senegal",
+          "domaine": "ledauphine.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : ledauphine.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Orchestra Baobab signe son retour avec Made in Senegal | Africanews",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://fr.africanews.com/2026/10/20/orchestra-baobab-signe-son-retour-avec-made-in-senegal/",
+          "domaine": "fr.africanews.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : fr.africanews.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Nouveau recrutement lancé à l'Institut Européen de Coopération et de Développement (IECD)",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/nouveau-recrutement-lance-a-linstitut-europeen-de-cooperation-et-de-developpement-iecd-20-octobre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "PARISCAM RECRUTE À DOUALA ET À YAOUNDÉ ! Vous êtes dynamique, motivé(e ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.facebook.com/FretexpressFranceCameroun/posts/-pariscam-recrute-à-douala-et-à-yaoundé-vous-êtes-dynamique-motivée-avez-le-sens/1806101038188089/",
+          "domaine": "facebook.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : facebook.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Bethel Essence recrute des Agents Commerciaux terrain. Yaoundé | CD Emploi Cameroun",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://fr.linkedin.com/posts/cd-emploi-cameroun_bethel-essence-recrute-des-agents-commerciaux-activity-7518264509007028224-0GP6",
+          "domaine": "fr.linkedin.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : fr.linkedin.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Ptcœur Recrute Des commerciaux B2C (Commandos) Douala , Yaoundé , Bafoussam Date ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.instagram.com/p/DetRv4AFrxi/",
+          "domaine": "instagram.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : instagram.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Ingenix Construction : un entrepreneur de Douala qui présente ses projets et recrute en ligne",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://lekwatt.com/actualites/ingenix-construction-entrepreneur-en-ligne",
+          "domaine": "lekwatt.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : lekwatt.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "linova sarl recrute — assistante de direction - Doopinet",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://web.doopinet.com/post/254932_linova-6959e67c862b1-linova-sarl-recrute-assistante-de-direction-douala?lang=english",
+          "domaine": "web.doopinet.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : web.doopinet.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "ANSD ouvre une concertation pour adapter le questionnaire du recensement des entreprises",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://senego.com/ansd-ouvre-une-concertation-pour-adapter-le-questionnaire-du-recensement-des-entreprises_2015771.html",
+          "domaine": "senego.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : senego.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "JOJ Dakar -2026 : Yankoba Diémé évalue les préparatifs sécuritaires - Seneweb",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://www.seneweb.com/fr/news/Actualites/joj-dakar-2026-yankoba-dieme-evalue-les-preparatifs-securitaires_n_999001274.html",
+          "domaine": "seneweb.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : seneweb.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Réunion d'information en ligne pour un recrutement à MSF - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/reunion-dinformation-en-ligne-pour-un-recrutement-a-msf/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Expertise France recrute à nouveau - 20 octobre 2026 - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/expertise-france-recrute-a-nouveau-20-octobre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "L'USO recrute un enseignant-chercheur en droit minier - Université du Sénégal oriental",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://uso.sn/events/luso-recrute-un-enseignant-chercheur-en-droit-minier/",
+          "domaine": "uso.sn"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : uso.sn — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Offre d'emploi Responsable Amélioration Continue et Processus achats F/H, Blagnac, France",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.aerocontact.com/emploi-aeronautique/responsable-amelioration-continue-et-processus-achats-fh~1196737.html",
+          "domaine": "aerocontact.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : aerocontact.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "ENGIM recrute – Trois opportunités professionnelles à Ziguinchor , Casamance ( Sénégal )",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://engimstartup.org/fr/engim-recrute-trois-opportunites-professionnelles-a-ziguinchor-casamance-senegal/",
+          "domaine": "engimstartup.org"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : engimstartup.org — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Le Fonds des Nations Unies pour l'enfance (UNICEF) recrute – 20 octobre 2026",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/le-fonds-des-nations-unies-pour-lenfance-unicef-recrute-20-octobre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "AFI-L'UE recrute un Assistant des Études et des Programmes - Emploi Dakar",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.emploidakar.com/offre-demploi/afi-lue-zone-b-dakar-cdd-stage-assistant-des-etudes-et-des-programmes/",
+          "domaine": "emploidakar.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : emploidakar.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Amazon recrute en masse aux Etats-Unis et investit en Allemagne - 20/10/2026 à 16:58",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.boursorama.com/bourse/actualites/amazon-recrute-en-masse-aux-etats-unis-et-investit-en-allemagne-9aeb76686dac3a76a216effbf30757e3",
+          "domaine": "boursorama.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : boursorama.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Modou Lô mise sur Franc pour le combat du millénaire : « Je suis persuadé que Franc va ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://senbaat.com/modou-lo-mise-sur-franc-pour-le-combat-du-millenaire-je-suis-persuade-que-franc-va-battre-reug-reug.html",
+          "domaine": "senbaat.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : senbaat.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Sales Representative (English C1) - Dakar (100% Télétravail / Remote) - Emploi Senegal",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.emploisenegal.com/offre-emploi-senegal/sales-representative-english-c1-dakar-100-teletravail-remote-1671919",
+          "domaine": "emploisenegal.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : emploisenegal.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Saint-Louis : The DER/FJ enrolls 725 beneficiaries for a funding of 72.5 million CFA francs",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.seneweb.com/en/news/Societe/saint-louis-la-derfj-enrole-725-beneficiaires-pour-un-financement-de-725-millions-f-cfa_n_999001250.html",
+          "domaine": "seneweb.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : seneweb.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Directeur.trice générale des services - Saint-Louis - Offre d'emploi Octobre 2026 - Jobijoba",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.jobijoba.com/fr/annonce/54/676d50c84add1fb3bdf439a0262e3be7",
+          "domaine": "jobijoba.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : jobijoba.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Offre d'emploi : Préposé (e) à l'accueil et aux services du centre des loisirs",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://saintlouisduhaha.com/2026/10/20/offre-demploi-prepose-e-a-laccueil-et-aux-services-du-centre-des-loisirs/",
+          "domaine": "saintlouisduhaha.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : saintlouisduhaha.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "RMO Sénégal recrute une Commercial(e) en assurance - Concours.sn",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://concours.sn/rmo-senegal-recrute-une-commerciale-en-assurance/",
+          "domaine": "concours.sn"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🔴 concours.sn ressemble au domaine officiel concoursn.com — sosie probable, NE PAS diffuser"
+      ],
+      "alerte_arnaque_probable": true
+    },
+    {
+      "sujet": "Enseignant Génie Thermique & Froid CDD 1 Mois Saint-Louis - Offres-Travail.com",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://offres-travail.com/emploi/enseignant-genie-thermique-froid-cdd-1-mois-saint-louis/saint-louis/623958",
+          "domaine": "offres-travail.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : offres-travail.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Opportunités à Afrique - Sénégal | Projet social | Communication et marketing | Long terme",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://www.worldpackers.com/fr/search/social_impact/africa/senegal/dakar/skill_marketing/duration_long/type_social_project",
+          "domaine": "worldpackers.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : worldpackers.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
