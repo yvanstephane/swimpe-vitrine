@@ -2,6 +2,38 @@
   "maj": "2026-10-22",
   "candidats": [
     {
+      "sujet": "Santé, Médical & Pharmacie | Offres d'emploi & opportunités au Sénégal - Liggeybi",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-21",
+      "liens": [
+        {
+          "lien": "https://liggeybi.com/secteur/sante-medical-pharmacie?page=3",
+          "domaine": "liggeybi.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : liggeybi.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Concoursn.com : avis et classement 2026 - Sunu Top",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-20",
+      "liens": [
+        {
+          "lien": "https://sunutop.com/site/concoursn/",
+          "domaine": "sunutop.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : sunutop.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "L'ex-patron de Stellantis, Carlos Tavares, sort de sa retraite pour une mission militaire très spéciale",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-10-22",
