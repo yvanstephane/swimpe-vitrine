@@ -9,16 +9,16 @@
 <meta property="og:title" content="Swimpe — Le monde, d'un geste">
 <meta property="og:description" content="Emploi, stage et volontariat vérifiés près de chez vous — et, bientôt, vos voies à l'international. Information officielle gratuite, à vie.">
 <meta property="og:url" content="https://swimpe.com/">
-<meta name="theme-color" content="#0A1244">
+<meta name="theme-color" content="#0B2545">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <title>Swimpe — Le monde, d'un geste</title>
 <style>
 :root{
-  --encre:#0A1244; --encre-2:#22344B;
-  --papier:#FFFFFF; --papier-2:#F3F5FB; --blanc:#FFFFFF;
-  --sceau:#2653F1; --sceau-fond:#EAF0FF;
-  --ambre:#8A6116; --ambre-fond:#FFF3D6;
-  --muet:#5C6470; --filet:#E3E7F4;
+  --encre:#EAF1FB; --encre-2:#C3D0E2;
+  --papier:#0B2545; --papier-2:#0A1F3C; --blanc:#12304F;
+  --sceau:#F28C28; --sceau-fond:#37291A;
+  --ambre:#F6C98A; --ambre-fond:#3A2A12;
+  --muet:#90A2BB; --filet:#23466B;
   --serif:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
   --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;
@@ -35,15 +35,15 @@ a{color:inherit} button{font:inherit;cursor:pointer}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x)}
 
 /* --- nav --- */
-header.nav{position:sticky;top:0;z-index:50;background:rgba(246,244,238,.86);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--filet)}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(11,37,69,.82);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--filet)}
 .nav-in{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x);height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{font-family:var(--serif);font-size:21px;text-decoration:none;font-weight:850;letter-spacing:-.02em}
 .logo span{color:var(--sceau)}
-.nav-cta{font-size:14px;text-decoration:none;color:var(--encre);border:2px solid var(--encre);border-radius:2px;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;transition:background .2s,color .2s}
-.nav-cta:hover{background:var(--encre);color:var(--papier)}
+.nav-cta{font-size:14px;font-weight:700;text-decoration:none;color:#2A1705;background:var(--sceau);border:2px solid var(--sceau);border-radius:2px;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;transition:filter .2s}
+.nav-cta:hover{filter:brightness(1.08)}
 
 /* --- carrefour --- */
-.carrefour{background:linear-gradient(180deg,#FFFFFF 0%,#F7F9FF 100%)}
+.carrefour{background:linear-gradient(180deg,#0B2545 0%,#0A1F3C 100%)}
 .carrefour .wrap{padding-top:clamp(40px,7vw,72px);padding-bottom:clamp(36px,6vw,64px)}
 .cf-intro{margin-bottom:26px}
 .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sceau);font-weight:700;margin-bottom:10px}
@@ -53,7 +53,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(246,244,238,.86);bac
 @media(min-width:720px){.cf-grille{grid-template-columns:1fr 1fr}}
 .cf-porte{position:relative;display:block;text-decoration:none;color:inherit;background:var(--blanc);border:1px solid var(--filet);border-radius:6px;padding:clamp(22px,3.5vw,30px);transition:.2s}
 .cf-porte.local{border-left:4px solid var(--sceau)}
-.cf-porte.local:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(10,18,68,.12)}
+.cf-porte.local:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,0,0,.38)}
 .cf-porte.inter{border-left:4px solid var(--filet);opacity:.72;cursor:not-allowed}
 .cf-ico{width:46px;height:46px;border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
 .cf-porte.local .cf-ico{background:var(--sceau-fond);color:var(--sceau)}
@@ -64,14 +64,14 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(246,244,238,.86);bac
 .cf-meta{font-family:var(--mono);font-size:11px;color:var(--muet);margin-top:12px}
 .cf-cta{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-size:14.5px;font-weight:800}
 .cf-porte.local .cf-cta{color:var(--sceau)}
-.cf-badge{position:absolute;top:16px;right:16px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ambre);background:var(--ambre-fond);border:1px solid #e9d9ad;border-radius:3px;padding:4px 10px}
+.cf-badge{position:absolute;top:16px;right:16px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ambre);background:var(--ambre-fond);border:1px solid #5A4420;border-radius:3px;padding:4px 10px}
 .cf-soon{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-size:14px;font-weight:700;color:var(--muet)}
 .cf-trust{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:26px;font-size:13.5px;color:var(--muet);text-align:center}
 .cf-trust svg{width:16px;height:16px;color:var(--sceau);flex:none}
 
-footer{background:var(--encre);color:#B9C6EE;padding:clamp(28px,5vw,44px) 0}
+footer{background:#081A30;color:#B9C6EE;padding:clamp(28px,5vw,44px) 0}
 footer .f-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
-footer .slogan{font-family:var(--serif);font-size:20px;color:var(--papier);font-weight:800}
+footer .slogan{font-family:var(--serif);font-size:20px;color:#EAF1FB;font-weight:800}
 footer .disc{font-size:12.5px;max-width:52ch;margin-top:10px;color:#8FA0CF}
 footer nav{display:flex;gap:20px;flex-wrap:wrap}
 footer nav a{font-size:13.5px;color:#C7D2F4;text-decoration:none}
