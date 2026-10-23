@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B2545">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Annuaire Swimpe</title>
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --fg:#0B2545; --muted:#5B6B7F; --line:#E6EAF0; --navy:#0B2545;
+  --accent:#F28C28; --accent-ink:#2A1705;
+  --ok:#0CAA41; --ok-bg:#E9F7EE; --warn:#8A6116; --warn-bg:#FFF3D6; --risk:#C23B22; --risk-bg:#FBECE8;
+  --loc:#1C5D99; --loc-bg:#E7F0FA; --int:#7A4DB0; --int-bg:#F1EAFA; --interm:#6A5AAD; --interm-bg:#ECE9FA;
+  --radius:13px;
+  --sans:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1A2E;--surface:#12263E;--fg:#EAF1FB;--muted:#9FB0C4;--line:#23374F;--navy:#081426;--accent:#F7A34D;--accent-ink:#2A1705;--ok:#4FD07F;--ok-bg:#0F2B1C;--warn:#E7B85C;--warn-bg:#2E2512;--risk:#F09078;--risk-bg:#301612;--loc:#7FB2E6;--loc-bg:#122840;--int:#C0A3E6;--int-bg:#221A33;--interm:#B3A6E8;--interm-bg:#1F1B33;color-scheme:dark;}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.5;font-size:15px}
+
+header.top{background:var(--navy);color:#fff;padding:14px max(14px,env(safe-area-inset-left)) 12px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .s{width:30px;height:30px;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px;flex:0 0 auto}
+.brand .n{font-weight:800;font-size:18px;letter-spacing:-.01em;margin-right:auto}
+.net{font-family:var(--mono);font-size:10.5px;font-weight:700;padding:4px 9px;border-radius:999px;display:inline-flex;align-items:center;gap:6px}
+.net.on{background:rgba(12,170,65,.22);color:#8BE6AC}
+.net.off{background:rgba(242,140,40,.25);color:#FBC98A}
+.net .d{width:7px;height:7px;border-radius:50%;background:currentColor}
+.tag{font-size:12px;color:#AFC0D6;margin:7px 0 0}
+
+.controls{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding:10px max(14px,env(safe-area-inset-left)) 9px}
+.cwrap{max-width:860px;margin:0 auto}
+#q{width:100%;font:inherit;font-size:16px;padding:10px 13px;border:1.5px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--fg)}
+#q:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+.chiprow{display:flex;gap:7px;overflow-x:auto;padding:9px 1px 2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.chiprow::-webkit-scrollbar{display:none}
+.chip{font:inherit;font-size:12.5px;padding:6px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;flex:0 0 auto}
+.chip[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:700}
+.chip .n{font-family:var(--mono);font-size:9.5px;font-weight:700;background:var(--line);color:var(--muted);min-width:16px;height:15px;padding:0 4px;border-radius:999px;display:inline-grid;place-items:center}
+.chip[aria-pressed="true"] .n{background:rgba(255,255,255,.22);color:#fff}
+.segrow{display:flex;gap:6px;padding-top:7px;flex-wrap:wrap}
+.seg{font:inherit;font-size:11.5px;padding:5px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;white-space:nowrap}
+.seg[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+
+main{max-width:860px;margin:0 auto;padding:14px max(14px,env(safe-area-inset-left)) 50px}
+details.panel{background:var(--risk-bg);border:1px solid var(--risk);border-radius:var(--radius);margin:0 0 12px;overflow:hidden}
+details.panel summary{cursor:pointer;padding:12px 14px;font-weight:700;font-size:13.8px;color:var(--risk);list-style:none;display:flex;align-items:center;gap:8px}
+details.panel summary::-webkit-details-marker{display:none}
+details.panel summary::after{content:"+";margin-left:auto;font-weight:800}
+details.panel[open] summary::after{content:"–"}
+details.panel .inner{padding:0 16px 13px}
+details.panel ul{margin:0;padding-left:18px;font-size:13px}
+details.panel li{margin:4px 0}
+details.panel strong{color:var(--risk)}
+
+.count{font-size:12.5px;color:var(--muted);margin:4px 2px 10px}
+section.cat{margin:20px 0 0}
+.cat h2{font-size:17px;margin:0;font-weight:800;letter-spacing:-.01em;display:flex;align-items:baseline;gap:8px}
+.cat h2 .cc{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--accent)}
+.cat .cdesc{font-size:12.3px;color:var(--muted);margin:2px 0 10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 13px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start}
+.card .body{flex:1;min-width:0}
+.card h3{font-size:13.8px;margin:0;font-weight:700;line-height:1.3;overflow-wrap:break-word}
+.card .dom{font-family:var(--mono);font-size:10.8px;color:var(--loc);margin:2px 0 5px;overflow-wrap:anywhere}
+.card p{font-size:12px;color:var(--muted);margin:0 0 7px;line-height:1.42}
+.row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.badge{font-family:var(--mono);font-size:9.8px;font-weight:600;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.b-off{background:var(--ok-bg);color:var(--ok)}
+.b-ver{background:var(--warn-bg);color:var(--warn)}
+.b-ris{background:var(--risk-bg);color:var(--risk)}
+.b-itm{background:var(--interm-bg);color:var(--interm)}
+.b-loc{background:var(--loc-bg);color:var(--loc)}
+.b-int{background:var(--int-bg);color:var(--int)}
+.star{flex:0 0 auto;width:34px;height:34px;border-radius:9px;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);font-size:17px;cursor:pointer;display:grid;place-items:center;line-height:1;padding:0}
+.star[aria-pressed="true"]{color:var(--accent);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.empty{color:var(--muted);font-size:13.5px;padding:28px 0;text-align:center}
+
+details.dom{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin:26px 0 0;overflow:hidden}
+details.dom summary{cursor:pointer;padding:12px 14px;font-weight:700;font-size:13.5px;list-style:none;display:flex;align-items:center;gap:8px}
+details.dom summary::-webkit-details-marker{display:none}
+details.dom .inner{padding:0 14px 13px}
+details.dom p{font-size:12px;color:var(--muted);margin:0 0 8px}
+details.dom textarea{width:100%;height:110px;font-family:var(--mono);font-size:11.5px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--fg);padding:9px;resize:vertical}
+.copybtn{font:inherit;font-size:12.5px;font-weight:700;background:var(--accent);color:var(--accent-ink);border:0;border-radius:9px;padding:9px 14px;margin-top:8px;cursor:pointer}
+
+footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34px;max-width:620px;margin:0 auto;text-wrap:balance}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="s">S</span><span class="n">Annuaire Swimpe</span>
+    <span id="net" class="net on"><span class="d"></span><span id="netlabel">En ligne</span></span>
+  </div>
+  <p class="tag">Sources officielles vérifiées · Cameroun · Sénégal · Côte d'Ivoire · fonctionne hors-ligne</p>
+</header>
+
+<div class="controls"><div class="cwrap">
+  <input id="q" type="search" placeholder="Rechercher un organisme, un domaine, un mot-clé…" autocomplete="off">
+  <div class="chiprow" id="cats"></div>
+  <div class="segrow" id="volets">
+    <button class="seg" data-v="all" aria-pressed="true">Tout</button>
+    <button class="seg" data-v="local" aria-pressed="false">🏠 Local</button>
+    <button class="seg" data-v="inter" aria-pressed="false">✈️ International</button>
+    <button class="seg" data-v="fav" aria-pressed="false">⭐ Mes sélections</button>
+  </div>
+</div></div>
+
+<main>
+  <details class="panel">
+    <summary>⚠️ Règles anti-arnaque — à lire avant de postuler</summary>
+    <div class="inner"><ul>
+      <li>Aucun organisme officiel ne demande de <strong>payer</strong> pour postuler, candidater ou passer un entretien.</li>
+      <li><strong>Ambassades</strong> : chaque mission a UN canal unique (États-Unis = ERA, Royaume-Uni = tal.net, UE = e-mails eeasjobs…). Un emploi n'est <strong>jamais</strong> un visa.</li>
+      <li><strong>Sport / football</strong> : une vraie détection ne se paie JAMAIS. Faux agents, faux essais en Europe, fausses « académies FIFA » = arnaques.</li>
+      <li><strong>Arts / audiovisuel</strong> : un vrai concours, prix ou casting ne se paie jamais. Fuyez éditions à compte d'auteur et « pay-to-play ».</li>
+      <li>Concours publics : seule preuve valable = l'<strong>arrêté officiel signé</strong>. Seul le Trésor public encaisse des frais légitimes.</li>
+      <li>Toujours vérifier le <strong>domaine exact</strong> ; se méfier des liens raccourcis (bit.ly…) et des contacts WhatsApp — remonter à la source officielle.</li>
+    </ul></div>
+  </details>
+
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+
+  <details class="dom">
+    <summary>🔗 Domaines officiels affichés — pour domaines_confiance.json</summary>
+    <div class="inner">
+      <p>Liste dédupliquée des domaines « Officiel » correspondant aux filtres en cours.</p>
+      <textarea id="domtext" readonly></textarea>
+      <button class="copybtn" id="copy">Copier</button>
+    </div>
+  </details>
+
+  <footer>Annuaire Swimpe · constitué par recherche vérifiée · les entrées « À vérifier » doivent être confirmées avant publication. Installe cette page (menu du navigateur → « Ajouter à l'écran d'accueil ») pour l'utiliser sans connexion ; tes ⭐ sélections restent sur cet appareil.</footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

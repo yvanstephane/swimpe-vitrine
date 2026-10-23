@@ -1,0 +1,13 @@
+{
+  "name": "Swimpe — Annuaire anti-arnaque",
+  "short_name": "Swimpe",
+  "description": "Parcourir et sélectionner des programmes fiables, même hors-ligne.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0B2545",
+  "theme_color": "#0B2545",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
