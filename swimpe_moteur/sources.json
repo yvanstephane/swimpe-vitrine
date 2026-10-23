@@ -530,7 +530,7 @@
       "imap_mdp_env": "SWIMPE_IMAP_MDP",
       "dossier": "INBOX",
       "max_messages": 30,
-      "_note": "NE PUBLIE JAMAIS directement : produit a_valider.json (candidats), que tu vérifies puis recopies dans offres_manuelles.json. Mise en route : 1) crée une boîte Gmail dédiée (ex. veille.swimpe@gmail.com) ; 2) configure les Google Alerts (voir README) ; 3) colle l'adresse dans imap_utilisateur ; 4) export SWIMPE_IMAP_MDP='mot de passe d'application' ; 5) actif:true."
+      "_note": "DÉSACTIVÉ VOLONTAIREMENT — ne pas réactiver. La veille passe par le FLUX RSS (source veille_google), sans mot de passe ni 2FA. L'app password sur info.swimpe@gmail.com est bloqué par Google et n'est PAS nécessaire. Pour ajouter une veille : modifier les Google Alertes (livrées en « Flux RSS ») et la liste urls de veille_google. Laisser cette source actif:false."
     },
     {
       "id": "jooble",

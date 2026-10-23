@@ -4,6 +4,19 @@ Un robot qui va chercher des offres sur des **sources de confiance** (liste blan
 écarte les expirées et les doublons, et génère `offres.json` au schéma du site.
 Conçu pour tourner tout seul sur **GitHub Actions**.
 
+## ✅ DÉCISION ACTÉE (23/10/2026) — la veille passe par le FLUX RSS, PAS par l'e-mail
+**La boîte de veille fonctionne via les flux RSS des Google Alertes** (source `veille_google`, `actif:true`,
+9 flux branchés le 20/10/2026). **Aucun mot de passe, aucune double authentification (2FA) n'est nécessaire.**
+- ❌ NE PAS réactiver la source `boite_veille` (IMAP). L'accès « mot de passe d'application » sur
+  `info.swimpe@gmail.com` est **bloqué par Google** et **n'est pas requis**. Elle reste volontairement `actif:false`.
+- ➕ Pour ajouter/retirer une veille : on modifie les **Google Alertes** (compte `info.swimpe@gmail.com`,
+  livraison réglée sur **« Flux RSS »**) et on met à jour la liste `urls` de `veille_google`. C'est tout.
+- 🔒 Chaque lien remonté passe par `domaines_confiance.json` (**304 domaines** au 23/10, dont ambassades, ONU,
+  BAD…) : domaine officiel → **publié auto** ; sosie → alerte 🔴 ; inconnu → `a_valider.json`.
+- 📇 Comptes : veille = `info.swimpe@gmail.com` · adresse pro du projet = `contact@swimpe.com` (renvoie vers ce Gmail).
+- 📨 Demande d'appname ReliefWeb envoyée le 23/10/2026 depuis `contact@swimpe.com` (en attente). À réception :
+  coller l'appname dans la source `reliefweb` et passer `actif:true`.
+
 ## LA STRATÉGIE v3.1 (pourquoi c'est plus performant)
 1. **Organismes OFFICIELS vérifiés (le cœur)** — connecteur `concours_html`, qui repère
    les offres par mots-clés ET/OU par motif d'URL (`motif_href`) :
