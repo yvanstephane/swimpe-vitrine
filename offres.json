@@ -1837,30 +1837,6 @@
       "profil_international": false
     },
     {
-      "id": "worldvision_workday-985934bd52",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Technical Director, Faith Integration & Programming",
-      "organisation": "World Vision",
-      "pays": "Sénégal",
-      "ville": "23 Locations",
-      "domaine": "",
-      "description": "Offre publiée sur le portail officiel de recrutement. Détails et candidature sur la page officielle.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://worldvision.wd1.myworkdayjobs.com/WorldVisionInternational/job/Philippines---Home-Working/Technical-Director--Faith-Integration---Programming_JR53058-1"
-      },
-      "publie_le": "2026-10-25",
-      "expire_le": "2026-11-15",
-      "verifie": true,
-      "source_url": "https://worldvision.wd1.myworkdayjobs.com/WorldVisionInternational/job/Philippines---Home-Working/Technical-Director--Faith-Integration---Programming_JR53058-1",
-      "source_domaine": "worldvision.wd1.myworkdayjobs.com",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-25",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "worldvision_workday-b810530c78",
       "domaine_swimpe": "local",
       "type": "stage",

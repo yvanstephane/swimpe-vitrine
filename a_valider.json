@@ -18,22 +18,6 @@
       ]
     },
     {
-      "sujet": "Concours de Recrutement OFPPT 2026 (30 Postes) - Dreamjob.ma",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-10-24",
-      "liens": [
-        {
-          "lien": "https://www.dreamjob.ma/emploi-public/concours-de-recrutement-ofppt-2026-30-postes/",
-          "domaine": "dreamjob.ma"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : dreamjob.ma — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
       "sujet": "Offre d'emploi Abidjan - Facebook",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-10-24",
@@ -1097,6 +1081,22 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : senenews.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Concours de Recrutement OFPPT 2026 (30 Postes) - Dreamjob.ma",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-10-24",
+      "liens": [
+        {
+          "lien": "https://www.dreamjob.ma/emploi-public/concours-de-recrutement-ofppt-2026-30-postes/",
+          "domaine": "dreamjob.ma"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : dreamjob.ma — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
