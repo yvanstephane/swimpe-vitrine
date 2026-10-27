@@ -1,6 +1,6 @@
-const CATS={onu:"ONU & organisations internationales",ong:"ONG internationales & humanitaires",diplo:"Ambassades & coopération internationale",public:"Institutions publiques & concours",prive:"Secteur privé",formations:"Formations & certifications (≤ 1 an)",olympiades:"Olympiades & compétitions académiques",concours:"Concours, prix & programmes jeunes",bourses:"Bourses d'études (émigration)",sport:"Sport (football, olympisme, basket…)",arts:"Arts & Audiovisuel",plateforme:"Plateformes & agrégateurs"};
+const CATS={onu:"ONU & organisations internationales",ong:"ONG internationales & humanitaires",diplo:"Ambassades & coopération internationale",public:"Institutions publiques & concours",prive:"Secteur privé",formations:"Formations & certifications (≤ 1 an)",olympiades:"Olympiades & compétitions académiques",concours:"Concours, prix & programmes jeunes",bourses:"Bourses d'études (émigration)",sport:"Sport (football, olympisme, basket…)",arts:"Arts, culture & médias",plateforme:"Plateformes & agrégateurs"};
 const SHORT={onu:"ONU",ong:"ONG",diplo:"Ambassades",public:"Public",prive:"Privé",formations:"Formations",olympiades:"Olympiades",concours:"Prix & progr.",bourses:"Bourses",sport:"Sport",arts:"Arts",plateforme:"Plateformes"};
-const CDESC={onu:"Agences ONU et coopérations. Recrutement gratuit, souvent via reliefweb.int.",ong:"Humanitaire et développement. Très actives à l'Est et à l'Extrême-Nord.",diplo:"Missions diplomatiques et agences de coopération qui recrutent du personnel local. Chaque mission a UN canal officiel unique — candidature toujours gratuite, et un emploi n'est jamais un visa.",public:"Ministères, écoles, forces, entreprises publiques. Concours centralisés via MINESUP.",prive:"Banques, télécoms, industries. Les grands groupes recrutent via leur portail global.",formations:"Cours et certifications d'un an ou moins, en ligne ou en présentiel local.",olympiades:"Compétitions scolaires et universitaires. La sélection se fait au pays.",concours:"Entrepreneuriat, prix, hackathons et programmes jeunesse.",bourses:"Études à l'étranger. Cible des arnaques — vérifier la source officielle.",sport:"Emploi, détection, formations et bourses sportives. L'accès passe par la fédération ou le comité officiel — jamais par un paiement.",arts:"Cinéma, musique, arts visuels, mode, écriture et médias. Méfiez-vous des faux castings, labels et concours « pay-to-play ».",plateforme:"Relais qui republient des offres. À vérifier au cas par cas."};
+const CDESC={onu:"Agences ONU et coopérations. Recrutement gratuit, souvent via reliefweb.int.",ong:"Humanitaire et développement. Très actives à l'Est et à l'Extrême-Nord.",diplo:"Missions diplomatiques et agences de coopération qui recrutent du personnel local. Chaque mission a UN canal officiel unique — candidature toujours gratuite, et un emploi n'est jamais un visa.",public:"Ministères, écoles, forces, entreprises publiques. Concours centralisés via MINESUP.",prive:"Banques, télécoms, industries. Les grands groupes recrutent via leur portail global.",formations:"Cours et certifications d'un an ou moins, en ligne ou en présentiel local.",olympiades:"Compétitions scolaires et universitaires. La sélection se fait au pays.",concours:"Entrepreneuriat, prix, hackathons et programmes jeunesse.",bourses:"Études à l'étranger. Cible des arnaques — vérifier la source officielle.",sport:"Emploi, détection, formations et bourses sportives. L'accès passe par la fédération ou le comité officiel — jamais par un paiement.",arts:"Cinéma, musique, arts visuels, mode, écriture et médias : festivals, fonds, résidences, écoles. Méfiez-vous des faux castings, labels et concours « pay-to-play ».",plateforme:"Relais qui republient des offres. À vérifier au cas par cas."};
 const ORDER=["onu","ong","diplo","public","prive","formations","olympiades","concours","bourses","sport","arts","plateforme"];
 const D=[
 // ONU — local (emplois dans le pays)
@@ -355,12 +355,24 @@ const D=[
 ["plateforme","LinkedIn","linkedin.com","emploi cadres","averifier","Employeur vérifiable via page entreprise.","local"],
 ];
 
-let filter="all", volet="all", query="";
+let filter="all", volet="all", query="", compOnly=false;
 let fav=[]; try{ fav=JSON.parse(localStorage.getItem('swimpe_fav')||'[]'); }catch(e){ fav=[]; }
 const idOf=r=>r[1];
+
+// 🏆 Compétitions de TOUS les domaines (cinéma, musique, mode, écriture, sciences, tech, entrepreneuriat, sport…).
+// Une fiche compte comme compétition si : elle est dans « Olympiades », ou si son nom/type (catégories Concours, Sport,
+// Arts) parle de festival, prix, concours, compétition, hackathon, biennale, tournoi, jeux… Les « concours » d'État
+// (admission, fonction publique) sont des examens : ils restent dans « Public » et ne comptent pas ici.
+// Pour ajouter une compétition dans un autre domaine : la mettre dans Concours/Sport/Arts avec un type contenant l'un de ces mots,
+// ou l'ajouter à COMP_EXTRA (nom exact de la fiche).
+const COMP_CATS=new Set(["concours","sport","arts"]);
+const COMP_RE=/festival|comp[ée]tition|olympiad|concours|\bprix\b|prize|award|hackathon|biennale|tournoi|championnat|\bcoupe\b|\bjeux\b|challenge|quiz|troph[ée]e/i;
+const COMP_EXTRA=new Set([]);
+const estCompetition=r=>r[0]==='olympiades'||COMP_EXTRA.has(r[1])||(COMP_CATS.has(r[0])&&COMP_RE.test(r[1]+' '+r[3]));
 const saveFav=()=>{ try{ localStorage.setItem('swimpe_fav', JSON.stringify(fav)); }catch(e){} };
 
 const totals={}; D.forEach(r=>{ totals[r[0]]=(totals[r[0]]||0)+1; });
+const nComp=D.filter(estCompetition).length; document.getElementById('ncomp').textContent=nComp;
 const catsEl=document.getElementById('cats');
 catsEl.innerHTML='<button class="chip" data-f="all" aria-pressed="true">Tout <span class="n">'+D.length+'</span></button>'+
   ORDER.map(c=>'<button class="chip" data-f="'+c+'" aria-pressed="false">'+SHORT[c]+' <span class="n">'+(totals[c]||0)+'</span></button>').join('');
@@ -374,6 +386,7 @@ function render(){
   const q=query.trim().toLowerCase();
   const rows=D.filter(r=>{
     if(filter!=='all' && r[0]!==filter) return false;
+    if(compOnly && !estCompetition(r)) return false;
     if(volet==='local' && r[6]!=='local') return false;
     if(volet==='inter' && r[6]!=='inter') return false;
     if(volet==='fav' && fav.indexOf(idOf(r))<0) return false;
@@ -382,7 +395,8 @@ function render(){
   });
   document.getElementById('count').textContent=rows.length+' organisme'+(rows.length>1?'s':'')+
     (volet==='fav'?' sélectionné'+(rows.length>1?'s':''):'')+(filter!=='all'?' · '+CATS[filter]:'')+
-    (volet==='local'?' · 🏠 Local':volet==='inter'?' · ✈️ International':'');
+    (volet==='local'?' · 🏠 Local':volet==='inter'?' · ✈️ International':'')+(compOnly?' · 🏆 Compétitions':'');
+  document.getElementById('compnote').hidden=!compOnly;
   const list=document.getElementById('list');
   if(!rows.length){ list.innerHTML='<div class="empty">'+(volet==='fav'?'Aucune sélection pour l\'instant. Touche ⭐ sur un organisme pour le garder ici.':'Aucun résultat pour ces filtres.')+'</div>'; }
   else{
@@ -408,6 +422,8 @@ catsEl.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)retu
   filter=b.dataset.f; [...catsEl.children].forEach(c=>c.setAttribute('aria-pressed', c===b)); render();});
 document.getElementById('volets').addEventListener('click',e=>{const b=e.target.closest('.seg');if(!b)return;
   volet=b.dataset.v; [...e.currentTarget.children].forEach(c=>c.setAttribute('aria-pressed', c===b)); render();});
+document.getElementById('types').addEventListener('click',e=>{const b=e.target.closest('.seg');if(!b)return;
+  compOnly=!compOnly; b.setAttribute('aria-pressed',compOnly); render();});
 document.getElementById('q').addEventListener('input',e=>{query=e.target.value;render();});
 document.getElementById('list').addEventListener('click',e=>{const s=e.target.closest('.star');if(!s)return;
   const id=s.dataset.id; const i=fav.indexOf(id); if(i>=0)fav.splice(i,1); else fav.push(id); saveFav();

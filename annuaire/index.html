@@ -45,6 +45,8 @@ header.top{background:var(--navy);color:#fff;padding:14px max(14px,env(safe-area
 .segrow{display:flex;gap:6px;padding-top:7px;flex-wrap:wrap}
 .seg{font:inherit;font-size:11.5px;padding:5px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;white-space:nowrap}
 .seg[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.seg .n{font-family:var(--mono);font-size:9.5px;font-weight:700;opacity:.75;margin-left:3px}
+.compnote{font-size:12.5px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:9px 12px;margin:0 0 12px}
 
 main{max-width:860px;margin:0 auto;padding:14px max(14px,env(safe-area-inset-left)) 50px}
 details.panel{background:var(--risk-bg);border:1px solid var(--risk);border-radius:var(--radius);margin:0 0 12px;overflow:hidden}
@@ -108,6 +110,9 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
     <button class="seg" data-v="inter" aria-pressed="false">✈️ International</button>
     <button class="seg" data-v="fav" aria-pressed="false">⭐ Mes sélections</button>
   </div>
+  <div class="segrow" id="types">
+    <button class="seg seg-comp" data-t="comp" aria-pressed="false" title="Concours, festivals, prix, olympiades et tournois — tous domaines confondus">🏆 Compétitions · tous domaines <span class="n" id="ncomp"></span></button>
+  </div>
 </div></div>
 
 <main>
@@ -117,12 +122,13 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
       <li>Aucun organisme officiel ne demande de <strong>payer</strong> pour postuler, candidater ou passer un entretien.</li>
       <li><strong>Ambassades</strong> : chaque mission a UN canal unique (États-Unis = ERA, Royaume-Uni = tal.net, UE = e-mails eeasjobs…). Un emploi n'est <strong>jamais</strong> un visa.</li>
       <li><strong>Sport / football</strong> : une vraie détection ne se paie JAMAIS. Faux agents, faux essais en Europe, fausses « académies FIFA » = arnaques.</li>
-      <li><strong>Arts / audiovisuel</strong> : un vrai concours, prix ou casting ne se paie jamais. Fuyez éditions à compte d'auteur et « pay-to-play ».</li>
+      <li><strong>Compétitions / arts</strong> : un vrai concours, prix ou casting ne se paie jamais. Fuyez éditions à compte d'auteur et « pay-to-play ».</li>
       <li>Concours publics : seule preuve valable = l'<strong>arrêté officiel signé</strong>. Seul le Trésor public encaisse des frais légitimes.</li>
       <li>Toujours vérifier le <strong>domaine exact</strong> ; se méfier des liens raccourcis (bit.ly…) et des contacts WhatsApp — remonter à la source officielle.</li>
     </ul></div>
   </details>
 
+  <p class="compnote" id="compnote" hidden>🏆 <strong>Compétitions de tous les domaines</strong> : concours, festivals, prix, olympiades, tournois et hackathons, classés par catégorie. Vérifie toujours le règlement et le site officiel de l'organisateur avant de t'inscrire.</p>
   <div class="count" id="count"></div>
   <div id="list"></div>
 
