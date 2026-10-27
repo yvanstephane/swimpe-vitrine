@@ -2291,6 +2291,54 @@
       "verifie_le": "2026-10-27",
       "ajoute_par": "moteur",
       "profil_international": false
+    },
+    {
+      "id": "veille-a8add52776",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Ecole Nationale d'Administration (ENA)",
+      "organisation": "ENA – École Nationale d'Administration (Côte d'Ivoire)",
+      "pays": "Côte d'Ivoire",
+      "ville": "",
+      "domaine": "",
+      "description": "Ecole Nationale d'Administration (ENA) --> --> ACCUEIL L'ÉNA SE PRÉSENTE Missions Vision Valeurs Historique Organigramme Fonctionnement CONCOURS 2026 Pochette concours professionnels Espace concours FORMATION Master Professionnel 3 e promot…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://www.ena.ci/index.php?men=actualite&id=341"
+      },
+      "publie_le": "2026-10-26",
+      "expire_le": "2026-11-17",
+      "verifie": true,
+      "source_url": "https://www.ena.ci/index.php?men=actualite&id=341",
+      "source_domaine": "ena.ci",
+      "methode_verif": "auto",
+      "verifie_le": "2026-10-27",
+      "ajoute_par": "veille-auto",
+      "profil_international": false
+    },
+    {
+      "id": "veille-0ee8564271",
+      "domaine_swimpe": "local",
+      "type": "formation",
+      "titre": "AMI - Sénégal - Formation du personnel du PRESAN-PC sur la gestion des risques de projet",
+      "organisation": "Banque Africaine de Développement",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "--> AMI - Sénégal - Formation du personnel du PRESAN-PC sur la gestion des risques de projet =current_time&&(window.document.documentElement.className+=\" \"+key.replace(/[^a-zA-Z0-9\\-]/g,\"\"))} //--> /* */ Skip to main content body { margin: …",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://www.afdb.org/en/documents/ami-senegal-formation-personnel-presan-pc-gestion-97863"
+      },
+      "publie_le": "2026-10-26",
+      "expire_le": "2026-11-17",
+      "verifie": true,
+      "source_url": "https://www.afdb.org/en/documents/ami-senegal-formation-personnel-presan-pc-gestion-97863",
+      "source_domaine": "afdb.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-10-27",
+      "ajoute_par": "veille-auto",
+      "profil_international": false
     }
   ]
 }
