@@ -46,6 +46,26 @@ header.top{background:var(--navy);color:#fff;padding:14px max(14px,env(safe-area
 .seg{font:inherit;font-size:11.5px;padding:5px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;white-space:nowrap}
 .seg[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
 .seg .n{font-family:var(--mono);font-size:9.5px;font-weight:700;opacity:.75;margin-left:3px}
+/* Bouton Retour + liens de l'en-tête */
+.back{display:inline-flex;align-items:center;gap:6px;min-height:40px;margin:-4px 0 8px;padding:8px 14px 8px 11px;border-radius:999px;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22)}
+.back:hover{background:rgba(255,255,255,.18)}
+.liens{display:flex;flex-wrap:wrap;gap:8px;margin:11px 0 0}
+.liens a{font-size:12.8px;font-weight:700;text-decoration:none;padding:8px 13px;border-radius:999px;min-height:36px;display:inline-flex;align-items:center}
+.liens .lien-1{background:var(--accent);color:var(--accent-ink)}
+.liens .lien-2{border:1.5px solid rgba(255,255,255,.3);color:#fff}
+/* Filtres secondaires (Local / Compétitions / domaines) : dans la page, plus dans la barre collée en haut */
+.filtres2{margin:0 0 12px}
+.filtres2 .segrow:first-child{padding-top:0}
+.seglabel{font-size:11.5px;color:var(--muted);align-self:center;margin-right:2px}
+#doms[hidden]{display:none}
+/* Pages de 20 fiches */
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:18px 0 6px}
+.pginfo{flex-basis:100%;text-align:center;font-size:12.5px;color:var(--muted)}
+.pg{font:inherit;font-size:14px;font-weight:700;min-height:46px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.pg--suiv:not([disabled]){background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pg[disabled]{opacity:.38;cursor:default}
+.pg--haut{flex-basis:100%;max-width:200px;min-height:40px;font-size:12.5px;font-weight:600;color:var(--muted)}
+.cat h2 .suite{font-size:11px;font-weight:600;color:var(--muted);font-family:var(--sans)}
 .compnote{font-size:12.5px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:9px 12px;margin:0 0 12px}
 
 main{max-width:860px;margin:0 auto;padding:14px max(14px,env(safe-area-inset-left)) 50px}
@@ -89,21 +109,31 @@ details.dom p{font-size:12px;color:var(--muted);margin:0 0 8px}
 details.dom textarea{width:100%;height:110px;font-family:var(--mono);font-size:11.5px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--fg);padding:9px;resize:vertical}
 .copybtn{font:inherit;font-size:12.5px;font-weight:700;background:var(--accent);color:var(--accent-ink);border:0;border-radius:9px;padding:9px 14px;margin-top:8px;cursor:pointer}
 
+.pied-liens{margin:0 0 10px}.pied-liens a{color:var(--accent);font-weight:700;text-decoration:none}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34px;max-width:620px;margin:0 auto;text-wrap:balance}
 </style>
 </head>
 <body>
 <header class="top">
+  <a class="back" id="retour" href="/">← Retour</a>
   <div class="brand">
     <span class="s">S</span><span class="n">Sources officielles</span>
     <span id="net" class="net on"><span class="d"></span><span id="netlabel">En ligne</span></span>
   </div>
   <p class="tag">Sources officielles vérifiées · Cameroun · Sénégal · Côte d'Ivoire · fonctionne hors-ligne</p>
+  <div class="liens">
+    <a class="lien-1" href="/offres.html">💼 Voir les offres disponibles →</a>
+    <a class="lien-2" href="/anti-arnaque.html">🛡️ Anti-arnaque</a>
+  </div>
 </header>
 
 <div class="controls"><div class="cwrap">
-  <input id="q" type="search" placeholder="Rechercher un organisme, un domaine, un mot-clé…" autocomplete="off">
+  <input id="q" type="search" placeholder="Rechercher un organisme, un domaine…" autocomplete="off">
   <div class="chiprow" id="cats"></div>
+</div></div>
+
+<main>
+  <div class="filtres2">
   <div class="segrow" id="volets">
     <button class="seg" data-v="all" aria-pressed="true">Tout</button>
     <button class="seg" data-v="local" aria-pressed="false">🏠 Local</button>
@@ -113,9 +143,9 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
   <div class="segrow" id="types">
     <button class="seg seg-comp" data-t="comp" aria-pressed="false" title="Concours, festivals, prix, olympiades et tournois — tous domaines confondus">🏆 Compétitions · tous domaines <span class="n" id="ncomp"></span></button>
   </div>
-</div></div>
+  <div class="segrow" id="doms" hidden></div>
+</div>
 
-<main>
   <details class="panel">
     <summary>⚠️ Règles anti-arnaque — à lire avant de postuler</summary>
     <div class="inner"><ul>
@@ -128,7 +158,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
     </ul></div>
   </details>
 
-  <p class="compnote" id="compnote" hidden>🏆 <strong>Compétitions de tous les domaines</strong> : concours, festivals, prix, olympiades, tournois et hackathons, classés par catégorie. Vérifie toujours le règlement et le site officiel de l'organisateur avant de t'inscrire.</p>
+  <p class="compnote" id="compnote" hidden>🏆 <strong>Compétitions de tous les domaines</strong> : concours, festivals, prix, olympiades, tournois et hackathons, classés par catégorie — choisis un domaine (cinéma, sciences, sport…) pour affiner. Vérifie toujours le règlement et le site officiel de l'organisateur avant de t'inscrire.</p>
   <div class="count" id="count"></div>
   <div id="list"></div>
 
@@ -141,7 +171,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
     </div>
   </details>
 
-  <footer>Sources officielles Swimpe · constitué par recherche vérifiée · les entrées « À vérifier » doivent être confirmées avant publication. Installe cette page (menu du navigateur → « Ajouter à l'écran d'accueil ») pour l'utiliser sans connexion ; tes ⭐ sélections restent sur cet appareil.</footer>
+  <footer><p class="pied-liens"><a href="/">Accueil</a> · <a href="/offres.html">Offres disponibles</a> · <a href="/anti-arnaque.html">Anti-arnaque</a></p>Sources officielles Swimpe · constitué par recherche vérifiée · les entrées « À vérifier » doivent être confirmées avant publication. Installe cette page (menu du navigateur → « Ajouter à l'écran d'accueil ») pour l'utiliser sans connexion ; tes ⭐ sélections restent sur cet appareil.</footer>
 </main>
 
 <script src="app.js"></script>

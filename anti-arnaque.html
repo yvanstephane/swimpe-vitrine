@@ -56,6 +56,10 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(11,37,69,.82);backdr
 
 /* --- héros --- */
 .aa-hero{background:linear-gradient(180deg,#0B2545 0%,#0A1F3C 100%);border-bottom:1px solid var(--filet);padding:clamp(28px,5vw,52px) 0}
+.aa-retour{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-bottom:18px;padding:10px 18px 10px 14px;border-radius:2px;border:1.5px solid var(--filet);background:rgba(255,255,255,.05);color:var(--encre);text-decoration:none;font-weight:700;font-size:14.5px}
+.aa-retour:hover{border-color:var(--sceau);color:var(--sceau)}
+.aa-bas{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:26px}
+.aa-bas a:not(.aa-retour){color:var(--sceau);font-weight:700;text-decoration:none;border-bottom:2px solid var(--sceau);padding-bottom:1px}
 .aa-eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--alerte);font-weight:700;margin-bottom:12px}
 .aa-hero h1{font-family:var(--serif);font-weight:850;font-size:clamp(28px,4.6vw,46px);line-height:1.1;letter-spacing:-.015em;max-width:18ch}
 .aa-hero p{color:var(--muet);max-width:56ch;margin-top:14px;font-size:clamp(15px,2vw,17px)}
@@ -63,7 +67,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(11,37,69,.82);backdr
 /* --- règle d'or --- */
 .aa-or{background:var(--sceau-fond);border-left:4px solid var(--sceau);border-radius:4px;padding:18px 22px;margin:clamp(24px,4vw,34px) 0;font-family:var(--serif);font-weight:800;font-size:clamp(18px,2.6vw,23px);line-height:1.35;max-width:48ch}
 
-section.bloc{padding:clamp(28px,4vw,44px) 0}
+section.bloc{padding-block:clamp(28px,4vw,44px)} /* padding-block : garde la marge gauche/droite de .wrap (le texte touchait le bord de l'écran sur téléphone) */
 .bloc h2{font-family:var(--serif);font-weight:850;font-size:clamp(22px,3vw,30px);letter-spacing:-.015em;margin-bottom:6px}
 .bloc .intro{color:var(--muet);max-width:58ch;margin-bottom:22px;font-size:15px}
 
@@ -131,6 +135,7 @@ footer .fin{border-top:1px solid #3A4E6B;margin-top:24px;padding-top:16px;font-f
         <li><a href="index.html">Accueil</a></li>
         <li><a href="offres.html">Emploi &amp; stage</a></li>
         <li><a href="anti-arnaque.html" class="actif">Anti-arnaque</a></li>
+        <li><a href="annuaire/">Sources officielles</a></li>
       </ul>
     </nav>
     <div style="display:flex;gap:12px;align-items:center">
@@ -143,6 +148,7 @@ footer .fin{border-top:1px solid #3A4E6B;margin-top:24px;padding-top:16px;font-f
 <main id="contenu">
   <div class="aa-hero">
     <div class="wrap">
+      <a class="aa-retour" data-retour href="index.html">← Retour</a>
       <p class="aa-eyebrow">Protégez-vous</p>
       <h1>Un emploi, un stage ou un concours ne se paient jamais d'avance.</h1>
       <p>Chaque année, des milliers de jeunes perdent de l'argent à cause de fausses offres et de faux « facilitateurs ». Voici comment les reconnaître en quelques secondes — et vérifier avant de donner quoi que ce soit.</p>
@@ -234,6 +240,11 @@ footer .fin{border-top:1px solid #3A4E6B;margin-top:24px;padding-top:16px;font-f
         Signaler une offre suspecte
       </a>
     </div>
+    <p class="aa-bas">
+      <a class="aa-retour" data-retour href="index.html">← Retour</a>
+      <a href="offres.html">Voir les offres vérifiées →</a>
+      <a href="annuaire/">Sources officielles →</a>
+    </p>
   </div>
 </main>
 
@@ -248,6 +259,7 @@ footer .fin{border-top:1px solid #3A4E6B;margin-top:24px;padding-top:16px;font-f
         <a href="index.html">Accueil</a>
         <a href="offres.html">Emploi &amp; stage</a>
         <a href="anti-arnaque.html">Anti-arnaque</a>
+        <a href="annuaire/">Sources officielles</a>
         <a href="espace.html">Espace membre</a>
       </nav>
     </div>
@@ -256,5 +268,6 @@ footer .fin{border-top:1px solid #3A4E6B;margin-top:24px;padding-top:16px;font-f
 </footer>
 
 <script src="menu.js"></script>
+<script src="retour.js"></script>
 </body>
 </html>
