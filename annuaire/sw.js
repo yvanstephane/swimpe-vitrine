@@ -1,4 +1,4 @@
-// Service worker de l'annuaire Swimpe — RÉSEAU D'ABORD, copie gardée si pas de réseau (ou réseau trop lent).
+// Service worker des Sources officielles Swimpe (page /annuaire/) — RÉSEAU D'ABORD, copie gardée si pas de réseau (ou réseau trop lent).
 //
 // Avant (v2) : « cache d'abord » avec une version de cache qui ne changeait jamais. Résultat : un téléphone ou un
 // navigateur qui avait déjà ouvert l'annuaire gardait l'ancienne liste pour toujours, même après l'ajout de nouvelles
