@@ -87,6 +87,9 @@ section.cat{margin:20px 0 0}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 13px;margin-bottom:8px;display:flex;gap:10px;align-items:flex-start}
 .card .body{flex:1;min-width:0}
 .card h3{font-size:13.8px;margin:0;font-weight:700;line-height:1.3;overflow-wrap:break-word}
+.card a.dom--lien{display:inline-block;padding:3px 0;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.card a.dom--lien:hover{color:var(--accent)}
+.card .dom-off{color:var(--muted);font-style:italic}
 .card .dom{font-family:var(--mono);font-size:10.8px;color:var(--loc);margin:2px 0 5px;overflow-wrap:anywhere}
 .card p{font-size:12px;color:var(--muted);margin:0 0 7px;line-height:1.42}
 .row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
@@ -115,7 +118,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
 </head>
 <body>
 <header class="top">
-  <a class="back" id="retour" href="/">← Retour</a>
+  <a class="back" id="retour" href="/anti-arnaque.html#verifier">← Retour</a>
   <div class="brand">
     <span class="s">S</span><span class="n">Sources officielles</span>
     <span id="net" class="net on"><span class="d"></span><span id="netlabel">En ligne</span></span>
@@ -123,7 +126,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
   <p class="tag">Sources officielles vérifiées · Cameroun · Sénégal · Côte d'Ivoire · fonctionne hors-ligne</p>
   <div class="liens">
     <a class="lien-1" href="/offres.html">💼 Voir les offres disponibles →</a>
-    <a class="lien-2" href="/anti-arnaque.html">🛡️ Anti-arnaque</a>
+    <a class="lien-2" href="/anti-arnaque.html#verifier">🔎 Vérifier un site</a>
   </div>
 </header>
 
@@ -171,9 +174,10 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 14px 34p
     </div>
   </details>
 
-  <footer><p class="pied-liens"><a href="/">Accueil</a> · <a href="/offres.html">Offres disponibles</a> · <a href="/anti-arnaque.html">Anti-arnaque</a></p>Sources officielles Swimpe · constitué par recherche vérifiée · les entrées « À vérifier » doivent être confirmées avant publication. Installe cette page (menu du navigateur → « Ajouter à l'écran d'accueil ») pour l'utiliser sans connexion ; tes ⭐ sélections restent sur cet appareil.</footer>
+  <footer><p class="pied-liens"><a href="/anti-arnaque.html#verifier">Vérifier un site</a> · <a href="/offres.html">Offres disponibles</a> · <a href="/">Accueil</a></p>Sources officielles Swimpe · constitué par recherche vérifiée · les entrées « À vérifier » doivent être confirmées avant publication. Installe cette page (menu du navigateur → « Ajouter à l'écran d'accueil ») pour l'utiliser sans connexion ; tes ⭐ sélections restent sur cet appareil.</footer>
 </main>
 
+<script src="donnees.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -4,8 +4,8 @@
 // navigateur qui avait déjà ouvert l'annuaire gardait l'ancienne liste pour toujours, même après l'ajout de nouvelles
 // fiches (sport, etc.). Maintenant : quand il y a du réseau, on charge toujours la dernière version, et on s'en sert
 // pour mettre à jour la copie hors connexion.
-const CACHE = 'swimpe-offline-v3'; // changer ce nom purge les anciennes copies chez tout le monde
-const ASSETS = ['./', './index.html', './app.js', './manifest.webmanifest', './icon.svg'];
+const CACHE = 'swimpe-offline-v4'; // changer ce nom purge les anciennes copies chez tout le monde
+const ASSETS = ['./', './index.html', './donnees.js', './app.js', './manifest.webmanifest', './icon.svg'];
 const DELAI_RESEAU_MS = 4000; // au-delà, sur une connexion très lente, on montre la copie gardée
 
 self.addEventListener('install', (e) => {
