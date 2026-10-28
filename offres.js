@@ -142,11 +142,11 @@
     var d = el("div", "of-vide");
     if (datasetVide) {
       var ht = el("h3"); ht.textContent = "Les premières offres arrivent très bientôt"; d.appendChild(ht);
-      var hp = el("p"); hp.textContent = "Swimpe publie uniquement des offres vérifiées : emploi, stage, volontariat, concours et formations. Revenez très vite."; d.appendChild(hp);
+      var hp = el("p"); hp.textContent = "Swimpe publie uniquement des offres vérifiées : emploi, stage, volontariat, concours et formations. Reviens très vite."; d.appendChild(hp);
       return d;
     }
     var h = el("h3"); h.textContent = "Aucune offre pour ces filtres"; d.appendChild(h);
-    var p = el("p"); p.textContent = "Élargissez votre recherche — de nouvelles offres vérifiées sont ajoutées régulièrement."; d.appendChild(p);
+    var p = el("p"); p.textContent = "Élargis ta recherche — de nouvelles offres vérifiées sont ajoutées régulièrement."; d.appendChild(p);
     var b = el("button", "btn btn-ligne"); b.type = "button"; b.textContent = "Réinitialiser les filtres";
     b.addEventListener("click", function () { state.type = "tout"; state.paysSel = []; state.domaine = "tout"; state.page = 1; rendre(); });
     d.appendChild(b); return d;
@@ -173,10 +173,10 @@
     if (Array.isArray(o.pieces_a_fournir) && o.pieces_a_fournir.length) d.appendChild(blocPieces(o));
     var al = el("div", "of-alerte");
     var txtAlerte = o.type === "concours"
-      ? "Concours officiel. Seuls les frais indiqués sur l'avis officiel, payés au Trésor public, sont légitimes. Ne versez jamais d'argent à un intermédiaire qui « garantit » une place."
+      ? "Concours officiel. Seuls les frais indiqués sur l'avis officiel, payés au Trésor public, sont légitimes. Ne verse jamais d'argent à un intermédiaire qui « garantit » une place."
       : (o.type === "formation"
-        ? "Formation / programme officiel. Vérifiez les conditions et la date limite sur le site officiel. Méfiez-vous de tout intermédiaire qui facture l'accès ou « garantit » une place."
-        : "Offre vérifiée par Swimpe. Ne payez jamais pour postuler : aucun emploi, stage ou volontariat légitime ne se paie.");
+        ? "Formation / programme officiel. Vérifie les conditions et la date limite sur le site officiel. Méfie-toi de tout intermédiaire qui facture l'accès ou « garantit » une place."
+        : "Offre vérifiée par Swimpe. Ne paie jamais pour postuler : aucun emploi, stage ou volontariat légitime ne se paie.");
     al.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>' +
       '<span>' + txtAlerte + '</span>';
     d.appendChild(al);
@@ -195,7 +195,7 @@
     if (!state.coches[o.id]) state.coches[o.id] = {};
     var coches = state.coches[o.id];
     var prep = el("div", "of-prep");
-    var h = el("h4"); h.textContent = "Votre dossier — cochez ce que vous avez prêt"; prep.appendChild(h);
+    var h = el("h4"); h.textContent = "Ton dossier — coche ce que tu as prêt"; prep.appendChild(h);
     var cpt = el("p", "cpt"); prep.appendChild(cpt);
     function maj() {
       var tot = o.pieces_a_fournir.length, f = 0;
@@ -208,7 +208,7 @@
       cb.addEventListener("change", function () { coches[i] = cb.checked; row.className = "of-piece" + (cb.checked ? " ok" : ""); maj(); });
       var s = el("span"); s.textContent = piece; row.appendChild(cb); row.appendChild(s); prep.appendChild(row);
     });
-    var note = el("p", "note"); note.textContent = "Swimpe ne collecte aucun document : vous les transmettez directement à l'organisation."; prep.appendChild(note);
+    var note = el("p", "note"); note.textContent = "Swimpe ne collecte aucun document : tu les transmets directement à l'organisation."; prep.appendChild(note);
     maj(); return prep;
   }
 
@@ -239,7 +239,7 @@
         rendre();
       })
       .catch(function (e) {
-        $("#of-liste").innerHTML = '<div class="of-vide"><h3>Chargement impossible</h3><p>Réessayez dans un instant. (' + esc(e.message) + ')</p></div>';
+        $("#of-liste").innerHTML = '<div class="of-vide"><h3>Chargement impossible</h3><p>Réessaie dans un instant. (' + esc(e.message) + ')</p></div>';
       });
   }
 

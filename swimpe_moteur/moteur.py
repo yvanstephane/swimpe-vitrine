@@ -1010,7 +1010,7 @@ def map_concours(htmltexts, source, pays_cibles=None):
     fenetre = int(source.get("fenetre_jours", 30))
     exp = (datetime.date.today() + datetime.timedelta(days=fenetre)).isoformat()
     if type_o == "concours":
-        desc = ("Avis repéré sur une source officielle. Vérifiez les pièces à fournir et la "
+        desc = ("Avis repéré sur une source officielle. Vérifie les pièces à fournir et la "
                 "date limite directement sur l'avis officiel.")
         domaine_txt = "Concours / recrutement"
     else:
