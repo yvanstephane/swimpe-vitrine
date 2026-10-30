@@ -2107,23 +2107,23 @@
       "profil_international": false
     },
     {
-      "id": "veille-ebf3dda1ca",
+      "id": "veille-a2b34b82cf",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Cameroun: des partis d’opposition dénoncent la suspension pour trois mois du FSNC d’Issa Tchiroma - RFI",
+      "titre": "Jeux olympiques de la jeunesse 2026: le Sénégal accueille enfin le monde du sport après 8 ans d’attente - RFI",
       "organisation": "Bourse Ghislaine Dupont & Claude Verlon (RFI)",
-      "pays": "Cameroun",
+      "pays": "Sénégal",
       "ville": "",
       "domaine": "",
       "description": ":root{--raw-white:#fff;--raw-black:#0e1013;--raw-greyscale-000:#fff;--raw-greyscale-050:#f8f9fa;--raw-greyscale-100:#f1f3f4;--raw-greyscale-200:#e8eaed;--raw-greyscale-300:#dadce0;--raw-greyscale-400:#bdc1c6;--raw-greyscale-500:#9aa0a6;--ra…",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.rfi.fr/fr/afrique/20261029-cameroun-des-partis-d-opposition-dénoncent-la-suspension-pour-trois-mois-du-fsnc-d-issa-tchiroma"
+        "valeur": "https://www.rfi.fr/fr/afrique/20261030-jeux-olympiques-de-la-jeunesse-2026-le-sénégal-accueille-enfin-le-monde-du-sport-après-8-ans-d-attente"
       },
-      "publie_le": "2026-10-29",
+      "publie_le": "2026-10-30",
       "expire_le": "2026-11-20",
       "verifie": true,
-      "source_url": "https://www.rfi.fr/fr/afrique/20261029-cameroun-des-partis-d-opposition-dénoncent-la-suspension-pour-trois-mois-du-fsnc-d-issa-tchiroma",
+      "source_url": "https://www.rfi.fr/fr/afrique/20261030-jeux-olympiques-de-la-jeunesse-2026-le-sénégal-accueille-enfin-le-monde-du-sport-après-8-ans-d-attente",
       "source_domaine": "rfi.fr",
       "methode_verif": "auto",
       "verifie_le": "2026-10-30",
