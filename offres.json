@@ -2108,30 +2108,6 @@
       "profil_international": false
     },
     {
-      "id": "veille-917dbf7951",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Côte d'Ivoire: l'héritage du photographe Paul Kodjo dans son pays d'origine - Reportage Afrique - RFI",
-      "organisation": "Bourse Ghislaine Dupont & Claude Verlon (RFI)",
-      "pays": "Côte d'Ivoire",
-      "ville": "",
-      "domaine": "",
-      "description": ":root{--raw-white:#fff;--raw-black:#0e1013;--raw-greyscale-000:#fff;--raw-greyscale-050:#f8f9fa;--raw-greyscale-100:#f1f3f4;--raw-greyscale-200:#e8eaed;--raw-greyscale-300:#dadce0;--raw-greyscale-400:#bdc1c6;--raw-greyscale-500:#9aa0a6;--ra…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.rfi.fr/fr/podcasts/reportage-afrique/20261030-côte-d-ivoire-l-héritage-du-photographe-paul-kodjo-dans-son-pays-d-origine"
-      },
-      "publie_le": "2026-10-30",
-      "expire_le": "2026-11-21",
-      "verifie": true,
-      "source_url": "https://www.rfi.fr/fr/podcasts/reportage-afrique/20261030-côte-d-ivoire-l-héritage-du-photographe-paul-kodjo-dans-son-pays-d-origine",
-      "source_domaine": "rfi.fr",
-      "methode_verif": "auto",
-      "verifie_le": "2026-10-31",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
       "id": "veille-8b598a3ea8",
       "domaine_swimpe": "local",
       "type": "concours",
