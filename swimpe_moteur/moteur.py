@@ -1261,6 +1261,31 @@ def enfiler_liens_google(chemin_av, limite_nouveaux=25, scan_max=150):
     return nouveaux
 
 
+def charger_ecartees():
+    """Adresses des offres écartées à la main par l'admin (bouton « Écarter » de l'app).
+    Lues via la fonction Supabase ; jeu vide si les secrets manquent ou si l'action n'existe pas."""
+    base = os.environ.get("SWIMPE_USINE_URL")
+    cle = os.environ.get("SWIMPE_IMPORT_KEY")
+    if not base or not cle or requests is None:
+        return set()
+    headers = {"x-import-key": cle}
+    anon = os.environ.get("SWIMPE_ANON_KEY")
+    if anon:
+        headers["Authorization"] = "Bearer " + anon
+        headers["apikey"] = anon
+    try:
+        r = requests.get(base + "?action=ecartees", headers=headers, timeout=20)
+        lignes = r.json().get("ecartees", []) if r.ok else []
+    except Exception:
+        return set()
+    s = set()
+    for l in lignes:
+        for v in (l.get("source_url"), l.get("postuler_valeur")):
+            if v:
+                s.add(v)
+    return s
+
+
 def charger_offres_manuelles(chemin):
     """Offres ajoutees A LA MAIN (validees par un humain) : fusionnees en priorite."""
     if not chemin:
@@ -1731,6 +1756,14 @@ def main():
     charger_sites_suivis(config)  # ajoute les sites « Suivre ce site » de l'app (si secret présent)
     res = executer(config)
     a_valider = res.pop("_a_valider", [])
+    # offres écartées à la main par l'admin : on ne les publie plus jamais
+    ecartees = charger_ecartees()
+    if ecartees:
+        avant = len(res["offres"])
+        res["offres"] = [o for o in res["offres"]
+                         if o.get("source_url") not in ecartees and o.get("postuler_valeur") not in ecartees]
+        if avant != len(res["offres"]):
+            print("  − %d offre(s) écartée(s) par l'admin retirée(s) du flux." % (avant - len(res["offres"])))
     with open(args.out, "w", encoding="utf-8") as fh:
         json.dump(res, fh, ensure_ascii=False, indent=2)
     print("%d offres valides écrites dans %s (maj %s)." % (len(res["offres"]), args.out, res["maj"]))
