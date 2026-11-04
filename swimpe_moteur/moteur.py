@@ -570,7 +570,8 @@ def map_oracle_hcm(resultats, source, pays_cibles=None):
                 or detecter_pays(autres + " " + titre, pays_cibles or []))
         if not pays:
             continue
-        expire = (jour(det.get("PostingEndDate") or det.get("ExpirationDate") or it.get("PostingEndDate"))
+        expire = (jour(det.get("ExternalPostedEndDate") or det.get("PostingEndDate") or det.get("ExpirationDate")
+                       or it.get("ExternalPostedEndDate") or it.get("PostingEndDate"))
                   or exp_def)
         if not non_expiree(expire):
             continue
@@ -582,12 +583,21 @@ def map_oracle_hcm(resultats, source, pays_cibles=None):
             if v:
                 morceaux.append(etiquette + v)
         corps = "\n\n".join(morceaux)
+        def _champ(etiquette, *cles):
+            for c in cles:
+                v = _oracle_texte(det.get(c) or it.get(c))
+                if v:
+                    return etiquette + v
+            return ""
         entete = " · ".join(x for x in [
             ("Lieu : " + lieu) if lieu else "",
-            ("Organisation : " + _oracle_texte(det.get("Organization") or it.get("Organization")))
-            if (det.get("Organization") or it.get("Organization")) else "",
-            ("Famille : " + _oracle_texte(det.get("JobFamily") or it.get("JobFamily")))
-            if (det.get("JobFamily") or it.get("JobFamily")) else ""] if x)
+            _champ("Organisation : ", "Organization"),
+            _champ("Type de contrat : ", "ContractType"),
+            _champ("Grade : ", "JobGrade"),
+            _champ("Niveau d'études : ", "StudyLevel"),
+            _champ("Famille : ", "JobFamily"),
+            _champ("Postes ouverts : ", "NumberOfOpenings"),
+            ("Date limite : " + expire) if expire != exp_def else ""] if x)
         description = ((entete + "\n\n") if entete else "") + corps[:3500]
         if len(description) < 40:
             description = "Offre publiée sur le portail officiel de l'organisation. Détails et candidature sur la page officielle."
@@ -597,7 +607,7 @@ def map_oracle_hcm(resultats, source, pays_cibles=None):
         offres.append(_offre(
             source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
             titre, source.get("organisation_defaut", ""), pays, ville, "", description, lien,
-            jour(it.get("PostedDate") or det.get("PostedDate")) or today(), expire))
+            jour(det.get("ExternalPostedStartDate") or it.get("PostedDate") or det.get("PostedDate")) or today(), expire))
     return offres
 
 
