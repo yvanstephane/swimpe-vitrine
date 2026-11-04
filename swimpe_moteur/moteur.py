@@ -1086,6 +1086,72 @@ def charger_config(chemin):
         return json.load(fh)
 
 
+def _poster_site_configure(base, headers, domaine, source_json, statut, note):
+    try:
+        requests.post(base, headers=headers, timeout=20,
+                      data=json.dumps({"action": "site_configure", "domaine": domaine,
+                                       "source_json": source_json, "statut": statut,
+                                       "note": (note or "")[:400]}))
+    except Exception:
+        pass
+
+
+def charger_sites_suivis(config):
+    """Sites ajoutes depuis l'app admin (option « Suivre ce site »), lus via la fonction Supabase.
+    Chaque site est passe au detecteur pour trouver son connecteur, puis ajoute aux sources du
+    passage en cours. Ne fait RIEN si les variables d'environnement ne sont pas la (tests, local)."""
+    base = os.environ.get("SWIMPE_USINE_URL")       # .../functions/v1/usine-fiches
+    cle = os.environ.get("SWIMPE_IMPORT_KEY")
+    anon = os.environ.get("SWIMPE_ANON_KEY")
+    if not base or not cle:
+        return 0
+    try:
+        import detecter_source as det
+    except Exception as e:
+        print("  ! detecteur indisponible: %s" % e, file=sys.stderr)
+        return 0
+    headers = {"x-import-key": cle, "Content-Type": "application/json"}
+    if anon:
+        headers["Authorization"] = "Bearer " + anon
+        headers["apikey"] = anon
+    try:
+        r = requests.get(base + "?action=sites", headers=headers, timeout=30)
+        sites = r.json().get("sites", []) if r.ok else []
+    except Exception as e:
+        print("  ! file des sites a scraper illisible: %s" % e, file=sys.stderr)
+        return 0
+    ajoutes = 0
+    ids = {s.get("id") for s in config["sources"]}
+    for st in sites:
+        dom = st.get("domaine")
+        if not dom:
+            continue
+        src = st.get("source_json")
+        if not src:  # pas encore configure : on detecte, et on memorise le resultat
+            entry, pourquoi = det.detecter(
+                st.get("url_exemple") or ("https://" + dom),
+                st.get("pays_indice"), st.get("type_indice"))
+            if not entry:
+                _poster_site_configure(base, headers, dom, None, "echec", pourquoi)
+                continue
+            src = entry
+            _poster_site_configure(base, headers, dom, src, "configure", pourquoi)
+        src = dict(src)
+        src["actif"] = True
+        base_id = src.get("id") or det._id_depuis(dom)
+        src["id"] = base_id
+        i = 2
+        while src["id"] in ids:
+            src["id"] = "%s_%d" % (base_id, i)
+            i += 1
+        ids.add(src["id"])
+        config["sources"].append(src)
+        ajoutes += 1
+    if ajoutes:
+        print("  + %d site(s) suivi(s) ajoute(s) au scraping (option « Suivre ce site »)." % ajoutes)
+    return ajoutes
+
+
 def charger_offres_manuelles(chemin):
     """Offres ajoutees A LA MAIN (validees par un humain) : fusionnees en priorite."""
     if not chemin:
@@ -1547,6 +1613,7 @@ def main():
         probe(config)
         return
 
+    charger_sites_suivis(config)  # ajoute les sites « Suivre ce site » de l'app (si secret présent)
     res = executer(config)
     a_valider = res.pop("_a_valider", [])
     with open(args.out, "w", encoding="utf-8") as fh:

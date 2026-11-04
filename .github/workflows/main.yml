@@ -24,6 +24,13 @@ jobs:
         run: pip install -r swimpe_moteur/requirements.txt
 
       - name: Lancer le moteur
+        env:
+          # URL et clé publique = en clair (publiques). Seule la clé d'import est un secret GitHub.
+          # Tant que le secret SWIMPE_IMPORT_KEY n'existe pas, la clé est vide → le moteur ignore
+          # simplement les « sites à suivre » et tourne normalement.
+          SWIMPE_USINE_URL: https://nwvcsqqukgygudbjnryk.supabase.co/functions/v1/usine-fiches
+          SWIMPE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53dmNzcXF1a2d5Z3VkYmpucnlrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyOTAxNDUsImV4cCI6MjEwMTg2NjE0NX0.NRMeYaAkubvk97eRxoSz_2-9p7OdrvIeJG7Juv2VWp8
+          SWIMPE_IMPORT_KEY: ${{ secrets.SWIMPE_IMPORT_KEY }}
         run: python3 swimpe_moteur/moteur.py --config swimpe_moteur/sources.json --out offres.json
 
       - name: Commit si offres.json a changé
