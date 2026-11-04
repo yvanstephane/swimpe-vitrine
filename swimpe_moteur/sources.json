@@ -187,7 +187,7 @@
     },
     {
       "id": "un_careers_rss",
-      "actif": true,
+      "actif": false,
       "type": "rss",
       "domaine": "careers.un.org",
       "libelle": "UN Careers — flux RSS officiel du Secrétariat des Nations Unies",
@@ -196,7 +196,7 @@
       ],
       "fenetre_jours": 30,
       "limite": 25,
-      "_note": "Flux mondial RSS 2.0 officiel ; le moteur filtre sur les villes de nos pays (Yaoundé, Douala, Dakar, Abidjan) via la détection pays."
+      "_note": "Remplace par un_careers_api (texte complet). Le flux RSS ne donnait presque aucun texte."
     },
     {
       "id": "giz_workable",
@@ -562,6 +562,20 @@
       "fenetre_jours": 14,
       "limite": 25,
       "_note": "Couverture faible/mélangée pour nos pays (vérifié 19/10) → simple bonus. Clé gratuite : https://jooble.org/api/about."
+    },
+    {
+      "id": "un_careers_api",
+      "actif": true,
+      "type": "un_careers_api",
+      "domaine": "careers.un.org",
+      "libelle": "UN Careers — portail officiel du Secrétariat des Nations Unies (API)",
+      "organisation_defaut": "Nations Unies (Secrétariat)",
+      "api_base": "https://careers.un.org/api/public/opening/jo",
+      "par_page": 100,
+      "pages_max": 6,
+      "limite": 40,
+      "timeout": 40,
+      "_note": "API JSON publique lue par la page web elle-meme (POST /list/filteredV2/en). Toutes les offres mondiales, filtrees sur nos pays via le lieu d'affectation (dutyStation) + titre. Description complete stockee (texte de secours pour l'usine)."
     }
   ]
 }

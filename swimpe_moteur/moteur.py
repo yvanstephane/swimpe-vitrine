@@ -9,6 +9,7 @@ extrait les offres, ne garde que les NON EXPIREES, et ecrit offres.json au schem
 Connecteurs disponibles :
   - rss           : tout flux RSS/Atom d'une source de confiance (sans cle ni inscription)
   - reliefweb_api : API officielle ReliefWeb V2 (necessite un appname pre-approuve)
+  - un_careers_api : API JSON publique du portail careers.un.org (texte complet, lieu d'affectation)
   - jooble_api    : API officielle Jooble (cle gratuite par formulaire)
   - html          : page HTML officielle lisible (selecteurs CSS)
   - concours_html : reperage d'avis de concours sur sites officiels
@@ -329,7 +330,7 @@ def map_rss(donnees, source, pays_cibles):
         if not non_expiree(expire):
             continue
         publie = date_rss(it["date"]) or today()
-        description = (desc[:240] + "…") if len(desc) > 240 else (
+        description = (desc[:2500] + "…") if len(desc) > 2500 else (
             desc or "Offre publiée sur la source. Détails et candidature sur la page officielle.")
         offres.append(_offre(
             source, id_stable(source["id"], lien),
@@ -375,6 +376,72 @@ def fetch_reliefweb(source, pays_cibles, _mock=None):
             "Endpoint ReliefWeb supprime (410). Verifie api_base (doit etre https://api.reliefweb.int/v2).")
     r.raise_for_status()
     return r.json().get("data", [])
+
+
+# ---------------------------------------------------------------------------
+# CONNECTEUR UN CAREERS (careers.un.org) — API JSON publique du portail ONU.
+# Le flux RSS officiel ne donne presque aucun texte ; l'API que lit la page web
+# elle-meme fournit TOUTES les offres avec description complete et lieu d'affectation.
+# ---------------------------------------------------------------------------
+def fetch_un_careers(source, _mock=None):
+    if _mock is not None:
+        return _mock
+    if requests is None:
+        raise RuntimeError("Le module 'requests' est requis.")
+    base = source.get("api_base", "https://careers.un.org/api/public/opening/jo")
+    par_page = int(source.get("par_page", 100))
+    pages_max = int(source.get("pages_max", 6))
+    tous = []
+    for page in range(pages_max):
+        corps = {"filterConfig": {"jle": [], "jc": []},
+                 "pagination": {"page": page, "itemPerPage": par_page,
+                                "sortBy": "startDate", "sortDirection": -1}}
+        r = requests.post(base + "/list/filteredV2/en", json=corps,
+                          timeout=int(source.get("timeout", 40)),
+                          headers={**UA, "Accept": "application/json",
+                                   "Content-Type": "application/json"})
+        r.raise_for_status()
+        data = (r.json() or {}).get("data") or {}
+        liste = data.get("list") or []
+        tous += liste
+        if len(liste) < par_page or len(tous) >= int(data.get("count") or 0):
+            break
+    return tous
+
+
+def map_un_careers(items, source, pays_cibles=None):
+    offres = []
+    for it in items or []:
+        jid = it.get("jobId") or it.get("id")
+        titre = nettoyer_html(str(it.get("postingTitle") or it.get("jobTitle") or ""))[:140]
+        if not jid or not titre:
+            continue
+        lieu = str(it.get("dutyStation") or "")
+        pays = detecter_pays(lieu + " " + titre, pays_cibles or [])
+        if not pays:
+            continue  # offre hors de nos pays
+        expire = jour(it.get("endDate")) or ""
+        if not expire or not non_expiree(expire):
+            continue
+        desc = nettoyer_html(str(it.get("jobDescription") or ""))
+        niveau = str(it.get("jobLevel") or "").strip()
+        dept = nettoyer_html(str(it.get("dept") or it.get("departmentDescr") or ""))
+        entete = " · ".join(x for x in [
+            ("Lieu d'affectation : " + lieu.title()) if lieu else "",
+            ("Niveau : " + niveau) if niveau else "",
+            ("Département : " + dept) if dept else ""] if x)
+        description = ((entete + "\n\n") if entete else "") + (desc[:2500] + ("…" if len(desc) > 2500 else ""))
+        if len(description) < 40:
+            description = "Offre publiée sur le portail officiel des Nations Unies. Détails et candidature sur la page officielle."
+        lien = "https://careers.un.org/jobSearchDescription/%s?language=en" % jid
+        offres.append(_offre(
+            source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
+            titre, source.get("organisation_defaut", "Nations Unies (Secrétariat)"),
+            pays, lieu.title(), "", description, lien,
+            jour(it.get("startDate")) or today(), expire))
+        if len(offres) >= int(source.get("limite", 40)):
+            break
+    return offres
 
 
 def map_reliefweb(jobs, source):
@@ -447,7 +514,7 @@ def map_jooble(resultats, source):
             if not titre or not lien:
                 continue
             desc = nettoyer_html(jb.get("snippet", ""))
-            description = (desc[:240] + "…") if len(desc) > 240 else (
+            description = (desc[:2500] + "…") if len(desc) > 2500 else (
                 desc or "Offre agrégée par Jooble. Détails et candidature sur l'annonce d'origine.")
             offres.append(_offre(
                 source, id_stable("jb", lien), detecter_type(titre, "emploi"),
@@ -487,7 +554,7 @@ def map_workable(jobs, source, pays_cibles):
         if not pays:
             continue
         desc = nettoyer_html(jb.get("description", ""))
-        description = (desc[:240] + "…") if len(desc) > 240 else (
+        description = (desc[:2500] + "…") if len(desc) > 2500 else (
             desc or "Offre publiée sur le portail officiel de recrutement.")
         offres.append(_offre(
             source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
@@ -854,7 +921,7 @@ def map_recruitee(offers, source, pays_cibles):
         if not non_expiree(expire):
             continue
         desc = nettoyer_html(o.get("description", ""))
-        description = (desc[:240] + "…") if len(desc) > 240 else (
+        description = (desc[:2500] + "…") if len(desc) > 2500 else (
             desc or "Offre publiée sur le portail officiel de recrutement.")
         offres.append(_offre(
             source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
@@ -1437,7 +1504,7 @@ def trier_candidats(candidats, confiance, pays_cibles, mock_pages=None):
                 if verifier_domaine(dm, confiance)[0] == "ok":
                     mode, valeur = "email", em
                     break
-            desc = (texte[:240] + "…") if len(texte) > 240 else (
+            desc = (texte[:2500] + "…") if len(texte) > 2500 else (
                 texte or "Offre publiée sur le site officiel.")
             organisation = (confiance.get(officiel, "") or "").split("—")[0].strip()[:90]
             o = _offre({"domaine": dom}, id_stable("veille", lien),
@@ -1463,6 +1530,8 @@ def lire_source(src, pays_cibles, mock=None):
     t = src["type"]
     if t == "rss":
         return map_rss(fetch_rss(src, _mock=m), src, pays_cibles)
+    if t == "un_careers_api":
+        return map_un_careers(fetch_un_careers(src, _mock=m), src, pays_cibles)
     if t == "reliefweb_api":
         return map_reliefweb(fetch_reliefweb(src, pays_cibles, _mock=m), src)
     if t == "jooble_api":
