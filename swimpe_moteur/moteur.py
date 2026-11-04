@@ -1644,28 +1644,46 @@ def executer(config, mock=None):
     # dedup par id PUIS par (titre+organisation) — l'ordre des sources = priorite ;
     # PUIS par page officielle (meme lien d'offre) : la fiche la plus complete gagne
     vus_id, vus_cle, vus_url, uniques = set(), set(), {}, []
+    n_doublons, journal_liens = 0, []
     for o in toutes:
         c = _cle_dedup(o)
         if o["id"] in vus_id or (c and c in vus_cle):
+            n_doublons += 1
             continue
         cu = _cle_url(o)
         if cu and cu in vus_url:
             i = vus_url[cu]
             if len(o.get("description") or "") > len(uniques[i].get("description") or "") + 200:
+                journal_liens.append("remplacé « %s » (%s) par « %s » (%s), fiche plus complète"
+                                     % (uniques[i]["titre"][:40], uniques[i]["id"], o["titre"][:40], o["id"]))
                 uniques[i] = o
+            else:
+                journal_liens.append("gardé « %s » (%s), doublon de lien : %s"
+                                     % (uniques[i]["titre"][:40], uniques[i]["id"], o["id"]))
             continue
         vus_id.add(o["id"])
         vus_cle.add(c)
         if cu:
             vus_url[cu] = len(uniques)
         uniques.append(o)
+    if n_doublons or journal_liens:
+        print("  − dédoublonnage : %d doublon(s) par id/titre, %d par lien d'offre"
+              % (n_doublons, len(journal_liens)), file=sys.stderr)
+        for ligne in journal_liens[:12]:
+            print("      · " + ligne, file=sys.stderr)
     # on ne garde que les pays cibles
+    hors_pays = [o for o in uniques if pays_cibles and o["pays"] not in pays_cibles]
+    if hors_pays:
+        print("  − %d offre(s) hors pays cibles écartée(s) : %s" % (len(hors_pays),
+              ", ".join(sorted(set(o["pays"] or "?" for o in hors_pays))[:8])), file=sys.stderr)
     uniques = [o for o in uniques if not pays_cibles or o["pays"] in pays_cibles]
     # on écarte les avis destinés aux entreprises (appels d'offres, prestataires…)
     b2b = [o for o in uniques if pour_entreprises(o.get("titre", ""))]
     if b2b:
         print("  − %d avis « pour entreprises » écarté(s) (appels d'offres, prestataires…)" % len(b2b),
               file=sys.stderr)
+    for o in b2b[:6]:
+        print("      · « %s »" % o["titre"][:70], file=sys.stderr)
     uniques = [o for o in uniques if not pour_entreprises(o.get("titre", ""))]
     return {"maj": today(), "schema": SCHEMA_VERSION, "offres": uniques,
             "_a_valider": a_valider}
