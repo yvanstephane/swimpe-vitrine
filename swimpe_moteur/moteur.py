@@ -429,12 +429,15 @@ def _un_texte(v):
 def _un_villes(duty, pays_cibles):
     """Liste des lieux d'affectation -> (pays detecte, libelle de ville lisible)."""
     villes = [v for v in (_un_texte(x) for x in (duty if isinstance(duty, list) else [duty])) if v]
-    villes = [{"Yaounde": "Yaoundé", "Abidjan": "Abidjan", "Dakar": "Dakar", "Douala": "Douala"}.get(v, v) for v in villes]
+    # l'API renvoie souvent les villes EN MAJUSCULES : on remet une casse lisible + accents usuels
+    villes = [v.title() if v.isupper() else v for v in villes]
+    villes = [{"Yaounde": "Yaoundé", "Ndjamena": "N'Djamena", "Lome": "Lomé", "Niamey": "Niamey"}.get(v, v) for v in villes]
     chez_nous = [v for v in villes if detecter_pays(v, pays_cibles or [])]
     if chez_nous:
         pays = detecter_pays(chez_nous[0], pays_cibles or [])
         autres = len(villes) - len(chez_nous)
-        ville = ", ".join(chez_nous[:3]) + ((" (+ %d autres lieux)" % autres) if autres > 0 else "")
+        ville = ", ".join(chez_nous[:3]) + (
+            ((" (+ %d autres lieux)" % autres) if autres > 1 else " (+ 1 autre lieu)") if autres > 0 else "")
     else:
         pays = ""
         ville = ", ".join(villes[:3]) + ((" (+ %d autres)" % (len(villes) - 3)) if len(villes) > 3 else "")
