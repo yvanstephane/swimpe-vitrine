@@ -17,4 +17,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -q requests
-      - run: python3 swimpe_moteur/sonde.py ${{ inputs.liens }}
+      - run: python3 swimpe_moteur/sonde.py $LIENS
+        env:
+          LIENS: ${{ inputs.liens }}
