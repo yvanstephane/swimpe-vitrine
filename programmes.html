@@ -78,6 +78,19 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(11,37,69,.82);backdr
 .pg-carte p .ok{color:var(--vert);font-weight:700}
 .pg-lien{display:inline-block;margin-top:12px;font-size:14px;color:var(--sceau);font-weight:700;text-decoration:none;border-bottom:2px solid var(--sceau);padding-bottom:1px;word-break:break-word}
 
+/* --- astuce : candidature spontanée --- */
+.pg-astuce{background:var(--sceau-fond);border:1px solid var(--sceau);border-radius:4px;padding:18px 20px;margin-bottom:20px}
+.pg-astuce .pg-haut{margin-bottom:8px}
+.pg-astuce p{font-size:15px;line-height:1.65;color:var(--encre-2)}
+.pg-etapes{margin:14px 0 4px;padding:0;list-style:none;counter-reset:et}
+.pg-etapes li{position:relative;padding:0 0 14px 42px;counter-increment:et;font-size:14.5px;line-height:1.55;color:var(--encre-2)}
+.pg-etapes li:last-child{padding-bottom:0}
+.pg-etapes li::before{content:counter(et);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--sceau);color:#2A1705;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.pg-etapes li b{color:var(--encre)}
+.pg-libre{display:flex;gap:10px;align-items:flex-start;background:var(--vert-fond);border:1px solid #1E5E3F;border-radius:4px;padding:11px 14px;margin-top:14px}
+.pg-libre svg{width:18px;height:18px;flex:none;color:var(--vert);margin-top:1px}
+.pg-libre span{font-size:13.5px;color:#9FE3BE;line-height:1.5}
+
 /* --- alerte anti-arnaque --- */
 .pg-alerte{display:flex;gap:10px;align-items:flex-start;background:var(--alerte-fond);border:1px solid var(--alerte);border-radius:4px;padding:12px 16px;margin-bottom:20px}
 .pg-alerte svg{width:18px;height:18px;flex:none;color:var(--alerte);margin-top:1px}
@@ -164,6 +177,25 @@ footer .fin{border-top:1px solid #3A4E6B;margin-top:28px;padding-top:16px;displa
       </article>
 
     </div>
+
+    <section class="pg-astuce">
+      <div class="pg-haut"><span class="pg-badge">Le bon réflexe</span><h2 class="pg-titre">Candidature spontanée : inscris ton profil</h2></div>
+      <p>Pour les Volontaires ONU (VNU), <b>près de 9 missions sur 10 ne sont jamais publiées</b> comme annonces : elles sont pourvues avec les profils déjà inscrits dans le vivier mondial. Le plus efficace n'est donc pas d'attendre une offre, mais d'<b>inscrire ton profil et de le garder à jour</b> — c'est le VNU qui vient chercher les bons profils.</p>
+      <ol class="pg-etapes">
+        <li>Crée un compte sur <b>app.unv.org</b> (il faut avoir 18 ans). Tu reçois un code de vérification à saisir.</li>
+        <li>Sur ton tableau de bord, ouvre la tâche <b>« compléter mon profil »</b>.</li>
+        <li>Remplis tout : <b>compétences, diplômes, expériences</b>. Décris bien tes missions passées. Compte environ <b>45 minutes</b>.</li>
+        <li>Complète tous les champs obligatoires (la plateforme te signale ceux qui manquent).</li>
+        <li><b>Soumets ton profil</b> : seul un profil complet peut être soumis. Tu entres alors dans le vivier.</li>
+        <li>Parcours les missions proposées et <b>postule</b> à celles qui te correspondent.</li>
+        <li>Garde ton profil <b>actif</b> : connecte-toi au moins <b>une fois par an</b>.</li>
+      </ol>
+      <div class="pg-libre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        <span>L'inscription au vivier VNU est <b>100 % gratuite</b>. Personne ne doit jamais te demander d'argent pour « garantir » une place de volontaire.</span>
+      </div>
+      <p style="margin-top:12px;font-size:13.5px;color:var(--muet)">Beaucoup d'ONG acceptent aussi les candidatures spontanées (ça dépend de chacune). En revanche, le volontariat en ligne de l'ONU et les postes salariés se font par candidature à des missions publiées.</p>
+    </section>
 
     <div class="pg-alerte">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9L2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
