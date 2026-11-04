@@ -100,7 +100,14 @@ def sonder(url):
                 if ok:
                     try:
                         j = ra.json()
-                        print("     → clés :", ", ".join(list((j.get("data") or j if isinstance(j, dict) else {}).keys())[:12]))
+                        d = j.get("data") or j if isinstance(j, dict) else {}
+                        if isinstance(d, dict) and isinstance(d.get("items"), list) and d["items"]:
+                            d = d["items"][0]
+                        if isinstance(d, dict):
+                            print("     → clés :", ", ".join(list(d.keys())[:40]))
+                            for k, v in d.items():
+                                if isinstance(v, str) and 0 < len(v) <= 60 and re.search(r"\d{4}-\d\d-\d\d|date", k + v, re.I):
+                                    print("        %s = %s" % (k, v))
                     except Exception:
                         pass
             except Exception as e:
