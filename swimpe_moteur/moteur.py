@@ -410,35 +410,69 @@ def fetch_un_careers(source, _mock=None):
     return tous
 
 
+def _un_texte(v):
+    """Aplatit une valeur de l'API ONU (chaine, dict {Description/name}, liste) en texte lisible."""
+    if v is None:
+        return ""
+    if isinstance(v, str):
+        return v.strip()
+    if isinstance(v, dict):
+        for k in ("Description", "description", "name", "Name", "label", "value"):
+            if isinstance(v.get(k), str) and v[k].strip():
+                return v[k].strip()
+        return ""
+    if isinstance(v, (list, tuple)):
+        return ", ".join(t for t in (_un_texte(x) for x in v) if t)
+    return str(v).strip()
+
+
+def _un_villes(duty, pays_cibles):
+    """Liste des lieux d'affectation -> (pays detecte, libelle de ville lisible)."""
+    villes = [v for v in (_un_texte(x) for x in (duty if isinstance(duty, list) else [duty])) if v]
+    villes = [{"Yaounde": "Yaoundé", "Abidjan": "Abidjan", "Dakar": "Dakar", "Douala": "Douala"}.get(v, v) for v in villes]
+    chez_nous = [v for v in villes if detecter_pays(v, pays_cibles or [])]
+    if chez_nous:
+        pays = detecter_pays(chez_nous[0], pays_cibles or [])
+        autres = len(villes) - len(chez_nous)
+        ville = ", ".join(chez_nous[:3]) + ((" (+ %d autres lieux)" % autres) if autres > 0 else "")
+    else:
+        pays = ""
+        ville = ", ".join(villes[:3]) + ((" (+ %d autres)" % (len(villes) - 3)) if len(villes) > 3 else "")
+    return pays, ville
+
+
 def map_un_careers(items, source, pays_cibles=None):
     offres = []
     for it in items or []:
         jid = it.get("jobId") or it.get("id")
-        titre = nettoyer_html(str(it.get("postingTitle") or it.get("jobTitle") or ""))[:140]
+        titre = nettoyer_html(_un_texte(it.get("postingTitle") or it.get("jobTitle")))[:140]
         if not jid or not titre:
             continue
-        lieu = str(it.get("dutyStation") or "")
-        pays = detecter_pays(lieu + " " + titre, pays_cibles or [])
+        pays, ville = _un_villes(it.get("dutyStation"), pays_cibles)
+        if not pays:
+            pays = detecter_pays(titre, pays_cibles or [])
         if not pays:
             continue  # offre hors de nos pays
         expire = jour(it.get("endDate")) or ""
         if not expire or not non_expiree(expire):
             continue
-        desc = nettoyer_html(str(it.get("jobDescription") or ""))
-        niveau = str(it.get("jobLevel") or "").strip()
-        dept = nettoyer_html(str(it.get("dept") or it.get("departmentDescr") or ""))
+        desc = nettoyer_html(_un_texte(it.get("jobDescription")))
+        niveau = _un_texte(it.get("jobLevel"))
+        dept = nettoyer_html(_un_texte(it.get("dept")) or _un_texte(it.get("departmentDescr")))[:120]
         entete = " · ".join(x for x in [
-            ("Lieu d'affectation : " + lieu.title()) if lieu else "",
+            ("Lieu d'affectation : " + ville) if ville else "",
             ("Niveau : " + niveau) if niveau else "",
             ("Département : " + dept) if dept else ""] if x)
         description = ((entete + "\n\n") if entete else "") + (desc[:2500] + ("…" if len(desc) > 2500 else ""))
         if len(description) < 40:
             description = "Offre publiée sur le portail officiel des Nations Unies. Détails et candidature sur la page officielle."
         lien = "https://careers.un.org/jobSearchDescription/%s?language=en" % jid
+        organisation = source.get("organisation_defaut", "Nations Unies (Secrétariat)")
+        if dept and 3 < len(dept) <= 80:
+            organisation = "ONU · " + dept
         offres.append(_offre(
             source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
-            titre, source.get("organisation_defaut", "Nations Unies (Secrétariat)"),
-            pays, lieu.title(), "", description, lien,
+            titre, organisation, pays, ville, "", description, lien,
             jour(it.get("startDate")) or today(), expire))
         if len(offres) >= int(source.get("limite", 40)):
             break
@@ -1556,6 +1590,18 @@ def _cle_dedup(o):
     return re.sub(r"\W+", " ", (o["titre"] + " " + o.get("organisation", "")).lower()).strip()
 
 
+def _cle_url(o):
+    """Cle de dedup par page officielle : seulement les liens qui visent UNE offre precise
+    (un numero dans le chemin). Les pages-listes (…/jobs, …/vacancies) ne comptent pas."""
+    u = (o.get("source_url") or (o.get("comment_postuler") or {}).get("valeur") or "").strip().lower()
+    if not u.startswith("http"):
+        return ""
+    u = re.sub(r"[?#].*$", "", u).rstrip("/")
+    u = re.sub(r"^https?://(www\.)?", "", u)
+    chemin = u.split("/", 1)[1] if "/" in u else ""
+    return u if re.search(r"\d", chemin) else ""
+
+
 def executer(config, mock=None):
     pays_cibles = config.get("pays_cibles", [])
     # offres validees a la main : prioritaires (gagnent le dedup)
@@ -1595,14 +1641,23 @@ def executer(config, mock=None):
                 print("  · veille → %d offre(s) AUTO-validée(s) (domaine officiel confirmé)"
                       % len(autos), file=sys.stderr)
             toutes += autos
-    # dedup par id PUIS par (titre+organisation) — l'ordre des sources = priorite
-    vus_id, vus_cle, uniques = set(), set(), []
+    # dedup par id PUIS par (titre+organisation) — l'ordre des sources = priorite ;
+    # PUIS par page officielle (meme lien d'offre) : la fiche la plus complete gagne
+    vus_id, vus_cle, vus_url, uniques = set(), set(), {}, []
     for o in toutes:
         c = _cle_dedup(o)
         if o["id"] in vus_id or (c and c in vus_cle):
             continue
+        cu = _cle_url(o)
+        if cu and cu in vus_url:
+            i = vus_url[cu]
+            if len(o.get("description") or "") > len(uniques[i].get("description") or "") + 200:
+                uniques[i] = o
+            continue
         vus_id.add(o["id"])
         vus_cle.add(c)
+        if cu:
+            vus_url[cu] = len(uniques)
         uniques.append(o)
     # on ne garde que les pays cibles
     uniques = [o for o in uniques if not pays_cibles or o["pays"] in pays_cibles]
