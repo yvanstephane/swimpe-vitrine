@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Les grands programmes de volontariat pour les jeunes : Volontaires ONU, volontariat en ligne, France Volontaires, service civique, PNV. Gratuit — on ne paie jamais.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Swimpe">
+<meta property="og:title" content="Programmes de volontariat — Swimpe">
+<meta property="og:description" content="Les grands programmes de volontariat pour les jeunes, expliqués simplement. Candidature officielle, jamais payante.">
+<meta property="og:url" content="https://swimpe.com/programmes.html">
+<meta name="theme-color" content="#0B2545">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Programmes de volontariat — Swimpe</title>
+<style>
+:root{
+  --encre:#EAF1FB; --encre-2:#C3D0E2;
+  --papier:#0B2545; --papier-2:#0A1F3C; --blanc:#12304F;
+  --sceau:#F28C28; --sceau-fond:#37291A;
+  --ambre:#F6C98A; --ambre-fond:#3A2A12;
+  --alerte:#F08A7A; --alerte-fond:#3A1714;
+  --vert:#4FD08A; --vert-fond:#123A28;
+  --muet:#90A2BB; --filet:#23466B;
+  --serif:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;
+  --max:1120px; --pad-x:clamp(20px,5vw,48px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth} html,body{overflow-x:clip}
+body{font-family:var(--sans);font-size:16.5px;line-height:1.6;color:var(--encre);background:var(--papier);-webkit-font-smoothing:antialiased}
+svg{display:block;max-width:100%}
+a{color:inherit} button{font:inherit;cursor:pointer}
+.skip{position:absolute;left:-9999px;top:0;background:var(--encre);color:var(--blanc);padding:12px 20px;z-index:100}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--sceau);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x)}
+
+/* --- nav (identique au site) --- */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(11,37,69,.82);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--filet)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 var(--pad-x);height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:var(--serif);font-size:21px;text-decoration:none;font-weight:850;letter-spacing:-.02em}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{font-size:14px;text-decoration:none;color:var(--encre-2);padding:10px 2px}
+.nav-links a:hover{color:var(--encre);text-decoration:underline;text-underline-offset:6px}
+.nav-links a.actif{color:var(--sceau);font-weight:700}
+.nav-cta{font-size:14px;font-weight:700;text-decoration:none;color:#2A1705;background:var(--sceau);border:2px solid var(--sceau);border-radius:2px;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;transition:filter .2s}
+.nav-cta:hover{filter:brightness(1.08)}
+.burger{display:none;background:none;border:1.5px solid var(--encre);border-radius:4px;width:44px;height:44px;font-size:18px;line-height:1}
+@media(max-width:820px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;gap:0;position:absolute;top:60px;left:0;right:0;background:var(--papier);border-bottom:1px solid var(--filet);padding:6px var(--pad-x) 14px}
+  .nav-links.open a{padding:13px 2px;font-size:16px;border-bottom:1px solid var(--filet)}
+  .burger{display:block}
+}
+
+/* --- en-tête de page --- */
+.pg-hero{background:linear-gradient(180deg,#0B2545 0%,#0A1F3C 100%);border-bottom:1px solid var(--filet);padding:clamp(28px,5vw,48px) 0}
+.pg-eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sceau);font-weight:700;margin-bottom:12px}
+.pg-hero h1{font-family:var(--serif);font-weight:850;font-size:clamp(28px,4.4vw,44px);line-height:1.12;letter-spacing:-.015em;max-width:20ch}
+.pg-hero p{color:var(--muet);max-width:54ch;margin-top:12px;font-size:15.5px}
+
+/* --- bandeau confiance --- */
+.pg-garde{display:flex;gap:10px;align-items:flex-start;background:var(--vert-fond);border:1px solid #1E5E3F;border-radius:4px;padding:12px 16px;margin:clamp(20px,3vw,28px) 0 6px}
+.pg-garde svg{width:20px;height:20px;flex:none;color:var(--vert);margin-top:1px}
+.pg-garde b{color:#9FE3BE;font-size:14.5px}
+.pg-garde span{display:block;color:#86D4AC;font-size:13.5px}
+
+/* --- liste des programmes --- */
+.pg-liste{display:grid;gap:14px;padding:clamp(20px,3vw,28px) 0 clamp(40px,6vw,64px)}
+.pg-carte{background:var(--blanc);border:1px solid var(--filet);border-radius:4px;padding:18px 20px}
+.pg-haut{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.pg-badge{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:3px;background:var(--vert-fond);color:var(--vert)}
+.pg-badge.enligne{background:#241B3F;color:#B9A6F0}
+.pg-badge.public{background:var(--ambre-fond);color:var(--ambre)}
+.pg-titre{font-family:var(--serif);font-weight:800;font-size:18px;letter-spacing:-.01em}
+.pg-carte p{font-size:15px;line-height:1.65;color:var(--encre-2)}
+.pg-carte p .ok{color:var(--vert);font-weight:700}
+.pg-lien{display:inline-block;margin-top:12px;font-size:14px;color:var(--sceau);font-weight:700;text-decoration:none;border-bottom:2px solid var(--sceau);padding-bottom:1px;word-break:break-word}
+
+/* --- alerte anti-arnaque --- */
+.pg-alerte{display:flex;gap:10px;align-items:flex-start;background:var(--alerte-fond);border:1px solid var(--alerte);border-radius:4px;padding:12px 16px;margin-bottom:20px}
+.pg-alerte svg{width:18px;height:18px;flex:none;color:var(--alerte);margin-top:1px}
+.pg-alerte span{font-size:13.5px;color:#F0B2AA;line-height:1.5}
+
+/* --- pont --- */
+.pg-pont{border-top:1px solid var(--filet);margin-top:8px;padding:18px 0;font-size:14px;color:var(--muet);text-align:center}
+.pg-pont a{color:var(--sceau);font-weight:700;text-decoration:none;border-bottom:2px solid var(--sceau);padding-bottom:1px}
+
+/* --- footer --- */
+footer{background:#081A30;color:#B9C6EE;padding:clamp(32px,5vw,48px) 0}
+footer .f-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer .slogan{font-family:var(--serif);font-size:20px;color:#EAF1FB;font-weight:800}
+footer .disc{font-size:12.5px;max-width:52ch;margin-top:10px;color:#8FA0CF}
+footer nav{display:flex;gap:20px;flex-wrap:wrap}
+footer nav a{font-size:13.5px;color:#C7D2F4;text-decoration:none}
+footer nav a:hover{text-decoration:underline}
+footer .fin{border-top:1px solid #3A4E6B;margin-top:28px;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:#8FA0CF}
+</style>
+</head>
+<body data-page="programmes">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="Swimpe, accueil">Swimpe</a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="offres.html">Emploi &amp; stage</a></li>
+        <li><a href="programmes.html" class="actif">Volontariat</a></li>
+        <li><a href="anti-arnaque.html">Anti-arnaque</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a class="nav-cta" href="espace.html">Espace membre</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" id="btn-menu">≡</button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+  <div class="pg-hero">
+    <div class="wrap">
+      <p class="pg-eyebrow">Programmes de volontariat</p>
+      <h1>Donner de son temps, apprendre, voyager</h1>
+      <p>Les grands programmes de volontariat ouverts aux jeunes, expliqués simplement. On t'indique où postuler — directement sur les sites officiels.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="pg-garde">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <div><b>Candidature officielle, jamais payante.</b><span>Devenir volontaire ne se paie pas. Méfie-toi de quiconque réclame de l'argent.</span></div>
+    </div>
+
+    <div class="pg-liste">
+
+      <article class="pg-carte">
+        <div class="pg-haut"><span class="pg-badge">International</span><h2 class="pg-titre">VNU — Volontaires des Nations Unies</h2></div>
+        <p>Le guichet unique du volontariat ONU (toutes les agences). Des missions nationales et internationales de 1 à 48 mois, pour les 18–80 ans. Indemnité de subsistance, assurance et congés. On postule sur app.unv.org. Gratuit — <span class="ok">on ne paie jamais pour devenir Volontaire ONU.</span></p>
+        <a class="pg-lien" href="https://app.unv.org" target="_blank" rel="noopener">app.unv.org →</a>
+      </article>
+
+      <article class="pg-carte">
+        <div class="pg-haut"><span class="pg-badge enligne">En ligne</span><h2 class="pg-titre">Volontariat en ligne (ONU)</h2></div>
+        <p>Des missions à distance, depuis chez soi, pour appuyer des organisations de développement. Idéal pour une première expérience sans se déplacer.</p>
+        <a class="pg-lien" href="https://www.onlinevolunteering.org" target="_blank" rel="noopener">onlinevolunteering.org →</a>
+      </article>
+
+      <article class="pg-carte">
+        <div class="pg-haut"><span class="pg-badge">International</span><h2 class="pg-titre">France Volontaires</h2></div>
+        <p>Volontariat de Solidarité Internationale (VSI) et missions de coopération. Présence en Afrique de l'Ouest et centrale. Indemnité et couverture sociale. La candidature se fait via le réseau France Volontaires.</p>
+        <a class="pg-lien" href="https://www.france-volontaires.org" target="_blank" rel="noopener">france-volontaires.org →</a>
+      </article>
+
+      <article class="pg-carte">
+        <div class="pg-haut"><span class="pg-badge">Jeunesse</span><h2 class="pg-titre">Service civique &amp; corps de volontaires</h2></div>
+        <p>Des programmes de service civique et de volontariat jeunesse (selon les pays). Durée courte à moyenne, accessibles aux jeunes, souvent sans diplôme exigé.</p>
+      </article>
+
+      <article class="pg-carte">
+        <div class="pg-haut"><span class="pg-badge public">Public · Cameroun</span><h2 class="pg-titre">PNV — Programme National du Volontariat</h2></div>
+        <p>Dispositif public camerounais de volontariat des jeunes diplômés. Des missions dans les administrations et les projets de développement.</p>
+      </article>
+
+    </div>
+
+    <div class="pg-alerte">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9L2 18a2 2 0 0 0 1.7 3h16.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+      <span>Un programme officiel ne demande jamais de « frais de dossier » pour postuler. Si on te réclame de l'argent, c'est une arnaque — <a href="anti-arnaque.html#verifier" style="color:#F6C98A;font-weight:700">vérifie le site ici</a>.</span>
+    </div>
+
+    <div class="pg-pont">
+      Tu cherches aussi un emploi ou un stage vérifié ? <a href="offres.html">Voir les offres →</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="slogan">Le monde, d'un geste.</p>
+        <p class="disc">Swimpe informe et accompagne. Nul — ni nous, ni aucune agence — ne peut garantir un emploi, une admission ou un visa. Méfie-toi de quiconque le promet.</p>
+      </div>
+      <nav aria-label="Pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="offres.html">Emploi &amp; stage</a>
+        <a href="programmes.html">Volontariat</a>
+        <a href="anti-arnaque.html">Anti-arnaque</a>
+        <a href="espace.html">Espace membre</a>
+      </nav>
+    </div>
+    <div class="fin">
+      <span>© 2026 Swimpe · <a class="acces-equipe" href="https://app.swimpe.com/login" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Accès équipe</a></span>
+      <span>FR · Information gratuite</span>
+    </div>
+  </div>
+</footer>
+<script src="menu.js"></script>
+</body>
+</html>
