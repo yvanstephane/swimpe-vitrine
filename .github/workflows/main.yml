@@ -41,7 +41,9 @@ jobs:
             git add offres.json
             [ -f a_valider.json ] && git add a_valider.json
             git commit -m "moteur: mise a jour des offres ($(date -u +%Y-%m-%d))"
-            git push
+            # si quelqu'un a poussé pendant le passage, on se met à jour avant de pousser
+            git pull --rebase origin main || true
+            git push || (git pull --rebase origin main && git push)
           else
             echo "Aucun changement."
           fi
