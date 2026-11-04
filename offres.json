@@ -1221,23 +1221,23 @@
       "profil_international": false
     },
     {
-      "id": "coordination_sud-b0edd74065",
+      "id": "coordination_sud-0f6fd5ea05",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "RÉFÉRENT·E RECHERCHE CLINIQUE – PROJET EBO-PEP – H/F – Localisation à définir",
+      "titre": "Appui aux chargés de mission microprojets – Levallois",
       "organisation": "Via Coordination Sud",
       "pays": "Sénégal",
-      "ville": "",
+      "ville": "LEVALLOIS-PERRET",
       "domaine": "",
       "description": "Offre de solidarité internationale (emploi, mission, stage, volontariat) relayée par Coordination Sud. Candidature sur la page de l'organisme recruteur.",
       "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://alliance.alima.ngo/jobs/referent-e-recherche-clinique-projet-ebo-pep-551"
+        "mode": "email",
+        "valeur": "recrutement@la-guilde.org"
       },
-      "publie_le": "2026-11-03",
-      "expire_le": "2026-11-24",
+      "publie_le": "2026-11-04",
+      "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://alliance.alima.ngo/jobs/referent-e-recherche-clinique-projet-ebo-pep-551",
+      "source_url": "https://www.coordinationsud.org/offre-emploi/appui-aux-charges-de-mission-microprojets-levallois/",
       "source_domaine": "coordinationsud.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-04",
@@ -1355,7 +1355,7 @@
         "valeur": "recrutement@la-guilde.org"
       },
       "publie_le": "2026-10-16",
-      "expire_le": "2026-11-20",
+      "expire_le": "2026-11-10",
       "verifie": true,
       "source_url": "https://www.coordinationsud.org/offre-emploi/stagiaire-en-gestion-de-projets-et-programmes-h-f/",
       "source_domaine": "coordinationsud.org",
@@ -1653,6 +1653,30 @@
       "profil_international": false
     },
     {
+      "id": "lesopportunites_rss-9478bdf4c1",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb",
+      "organisation": "",
+      "pays": "Sénégal",
+      "ville": "",
+      "domaine": "",
+      "description": "ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb POSTULER ICI Cet article ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/?utm_source=rss&utm_medium=rss&utm_campaign=abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb"
+      },
+      "publie_le": "2026-11-04",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/?utm_source=rss&utm_medium=rss&utm_campaign=abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb",
+      "source_domaine": "lesopportunites.com",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
       "id": "lesopportunites_rss-5107dddaa7",
       "domaine_swimpe": "local",
       "type": "emploi",
@@ -1677,30 +1701,6 @@
       "profil_international": false
     },
     {
-      "id": "beac_avis-a13c8b4b76",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "30/10/2026 Sélection nationale ouverte n°176/BEAC/DGE-DRH/SNO/Prest/2026 pour le recrutement d'une entreprise spécialisée en vue de l'extern",
-      "organisation": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Avis repéré sur une source officielle. Vérifie les pièces à fournir et la date limite directement sur l'avis officiel.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.beac.int/wp-content/uploads/2016/10/avis-de-selection-n°-176-Externalisation-restaurant-d-entreprise-Beac.pdf"
-      },
-      "publie_le": "2026-11-04",
-      "expire_le": "2026-12-19",
-      "verifie": true,
-      "source_url": "https://www.beac.int/wp-content/uploads/2016/10/avis-de-selection-n°-176-Externalisation-restaurant-d-entreprise-Beac.pdf",
-      "source_domaine": "beac.int",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "beac_avis-089a55b08a",
       "domaine_swimpe": "local",
       "type": "stage",
@@ -1718,30 +1718,6 @@
       "expire_le": "2026-12-19",
       "verifie": true,
       "source_url": "https://www.beac.int/wp-content/uploads/2016/10/avis-de-selection-n°-175-recrutement-AMOA-IA.pdf",
-      "source_domaine": "beac.int",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "beac_avis-fd505a60ea",
-      "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "27/10/2026 Avis à manifestation d'intérêt N°008/BEAC/SG/UGRIF/PASFUAC/SQC/2026 du 27 octobre 2026 (Services de consultants - FIRME) relatif ",
-      "organisation": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "Concours / recrutement",
-      "description": "Page 1 sur 15 Termes de référence Recrutement d'un cabinet pour l'assistance technique à la CRCT-BEAC sur le marché de la pension-livrée (REPO) 1. CONTEXTE ET JUSTIFICATION 1.1 CONTEXTE La Banque Africaine de Développement (BAD) et la Banqu… (extrait de l'avis officiel PDF)",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.beac.int/wp-content/uploads/2016/10/Ami-008.pdf"
-      },
-      "publie_le": "2026-11-04",
-      "expire_le": "2026-12-19",
-      "verifie": true,
-      "source_url": "https://www.beac.int/wp-content/uploads/2016/10/Ami-008.pdf",
       "source_domaine": "beac.int",
       "methode_verif": "auto",
       "verifie_le": "2026-11-04",
@@ -1917,10 +1893,58 @@
       "profil_international": false
     },
     {
-      "id": "veille-43f793e42e",
+      "id": "veille-3d4f3838f7",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Sénégal: l'Assemblée nationale rejette le projet de loi de finances présenté par le gouvernement - RFI",
+      "titre": "Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun",
+      "organisation": "LesOpportunités",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function(){return litespeed_docref}}),sessionStorage.removeItem(\"litespeed_docref\")); (function(i,s,o,g,r,a,m)…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/"
+      },
+      "publie_le": "2026-11-04",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/",
+      "source_domaine": "lesopportunites.com",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "veille-auto",
+      "profil_international": false
+    },
+    {
+      "id": "veille-138e9aa0c7",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde",
+      "organisation": "LesOpportunités",
+      "pays": "Sénégal",
+      "ville": "",
+      "domaine": "",
+      "description": "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function(){return litespeed_docref}}),sessionStorage.removeItem(\"litespeed_docref\")); (function(i,s,o,g,r,a,m)…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/"
+      },
+      "publie_le": "2026-11-04",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/",
+      "source_domaine": "lesopportunites.com",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "veille-auto",
+      "profil_international": false
+    },
+    {
+      "id": "veille-7f602ae14d",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Sénégal: quelles sont les options de l'exécutif après le rejet de la loi de finances rectificatives? - RFI",
       "organisation": "Bourse Ghislaine Dupont & Claude Verlon (RFI)",
       "pays": "Sénégal",
       "ville": "",
@@ -1928,12 +1952,12 @@
       "description": ":root{--raw-white:#fff;--raw-black:#0e1013;--raw-greyscale-000:#fff;--raw-greyscale-050:#f8f9fa;--raw-greyscale-100:#f1f3f4;--raw-greyscale-200:#e8eaed;--raw-greyscale-300:#dadce0;--raw-greyscale-400:#bdc1c6;--raw-greyscale-500:#9aa0a6;--ra…",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.rfi.fr/fr/en-bref/20261103-sénégal-l-assemblée-nationale-rejette-le-projet-de-loi-de-finances-présenté-par-le-gouvernement"
+        "valeur": "https://www.rfi.fr/fr/afrique/20261104-sénégal-quelles-sont-les-options-de-l-exécutif-après-le-rejet-de-la-loi-de-finances-rectificatives"
       },
       "publie_le": "2026-11-04",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://www.rfi.fr/fr/en-bref/20261103-sénégal-l-assemblée-nationale-rejette-le-projet-de-loi-de-finances-présenté-par-le-gouvernement",
+      "source_url": "https://www.rfi.fr/fr/afrique/20261104-sénégal-quelles-sont-les-options-de-l-exécutif-après-le-rejet-de-la-loi-de-finances-rectificatives",
       "source_domaine": "rfi.fr",
       "methode_verif": "auto",
       "verifie_le": "2026-11-04",
