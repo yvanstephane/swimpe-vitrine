@@ -1319,7 +1319,7 @@
     {
       "id": "coordination_sud-06e7a16487",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "emploi",
       "titre": "Regional Internal Auditor – Sahel & Francophone",
       "organisation": "Via Coordination Sud",
       "pays": "Sénégal",
@@ -1367,7 +1367,7 @@
     {
       "id": "coordination_sud-7db714098d",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "volontariat",
       "titre": "Volontaire de solidarité internationale pour le Sicoval",
       "organisation": "Via Coordination Sud",
       "pays": "Sénégal",
@@ -1679,7 +1679,7 @@
     {
       "id": "beac_avis-1741022640",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "concours",
       "titre": "23/09/2026 Avis de sélection internationale n° 142/BEAC/DGE-DSI/SIO/Ser/2026 Recrutement AMOA Génie Logiciel",
       "organisation": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
       "pays": "Cameroun",
@@ -1703,7 +1703,7 @@
     {
       "id": "beac_avis-37030f2cdb",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "concours",
       "titre": "10/07/2026 Sélection internationale ouverte n°105/BEAC/SG-DPMG/SIO/Ser/2026 pour le recrutement d'un Assistant à Maîtrise d'Ouvrage (AMOA) e",
       "organisation": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
       "pays": "Cameroun",
@@ -1727,7 +1727,7 @@
     {
       "id": "beac_avis-7b7ba01561",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "concours",
       "titre": "10/07/2026 Sélection internationale ouverte n°104/BEAC/SG-DPMG/SIO/Ser/2026 pour le recrutement d'un Assistant à Maîtrise d'Ouvrage (AMOA) e",
       "organisation": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
       "pays": "Cameroun",
@@ -1775,7 +1775,7 @@
     {
       "id": "beac_avis-f6d70830bb",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "concours",
       "titre": "15/06/2026 Avis d'attribution du marché issu de la sélection internationale ouverte n°43/BEAC/CRBC/SIO/Ser/2025 du 15 avril 2025 pour le rec",
       "organisation": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
       "pays": "Cameroun",
@@ -1799,7 +1799,7 @@
     {
       "id": "beac_avis-5719188bb1",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "concours",
       "titre": "10/06/2026 Sélection internationale ouverte n°02/COBAC/SG/DRAJR/2026 pour le recrutement d'un consultant spécialisé en supervision et résolu",
       "organisation": "BEAC — Banque des États de l'Afrique Centrale (concours CEMAC)",
       "pays": "Cameroun",
@@ -1847,7 +1847,7 @@
     {
       "id": "un_careers_api-728ee00a6d",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "emploi",
       "titre": "International Consultant to Conduct a Human Rights Due Diligence Review (HRDDP) of the Security Sector in The Gambia",
       "organisation": "Nations Unies (Secrétariat)",
       "pays": "Sénégal",
@@ -1871,7 +1871,7 @@
     {
       "id": "un_careers_api-de1c1d1844",
       "domaine_swimpe": "local",
-      "type": "stage",
+      "type": "emploi",
       "titre": "International Consultant (Team Leader) – Study on the Sexual Exploitation of Children in Guinea-Bissau: Focus on the Bolama-Bijagós Region.",
       "organisation": "Nations Unies (Secrétariat)",
       "pays": "Sénégal",
@@ -1941,30 +1941,6 @@
       "profil_international": false
     },
     {
-      "id": "un_careers_api-265cadc5a9",
-      "domaine_swimpe": "local",
-      "type": "stage",
-      "titre": "Programme Management Intern",
-      "organisation": "Nations Unies (Secrétariat)",
-      "pays": "Côte d'Ivoire",
-      "ville": "[{'Code': '2250', 'Description': 'Abidjan', '_Id': '6Aeb68A41C4175Bb31B617Fe'}, {'Code': '2400', 'Description': 'Nairobi', '_Id': '6Aeb68A41C4175Bb31B617Ff'}]",
-      "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '2250', 'Description': 'Abidjan', '_Id': '6Aeb68A41C4175Bb31B617Fe'}, {'Code': '2400', 'Description': 'Nairobi', '_Id': '6Aeb68A41C4175Bb31B617Ff'}] · Niveau : I-1 · Département : {'code': '19801980', 'name': 'United Nations Human Settlements Programme'}\n\nWork Location In-Person, Abidjan, Côte d’Ivoire Expected duration 6 Months Duties and Responsibilities The United Nations Human Settlements Programme (UN-Habitat) is mandated by the UN General Assembly to promote socially and environmentally sustainable towns and cities. UN-Habitat is the focal point for all urbanization and human settlement matters within the UN system. UN-Habitat works with partners to build inclusive, safe, resilient and sustainable cities and communities. UN-Habitat promotes urbanization as a positive transformative force for people and communities, reducing inequality, discrimination and poverty. The UN-Habitat Regional Office for Africa (ROAF) supports African countries developing human settlements projects to address fast urbanization of the continent and achieve sustainable development by focusing on challenges faced by cities in Africa. In recent years, the Côte d’Ivoire Country Office was marked by the reinforcement of the organization's presence within the UN ecosystem and the facilitation and strengthening of dialogue with several continental and regional organizations, such as the African Development Bank (AfDB) headquarter. The Cote d’Ivoire portfolio has recently increased with active projects in waste management, housing, climate change and costal resilience. Moreover, recently an MoU was signed between UN HABITAT and the Government of Cote d’Ivoire to strengthen the areas of collaboration in various sectors as assistance on housing and urban policy development. Also, various interaction between UN-Habitat and the District of Abidjan happened on the issue of slums upgrading. Beyond the management of ongoing projects, the resource mobilization and application to calls for proposal remain a key element of the country office. Therefore, additional support is needed in the framework UN Habitat activities in Cote d’Ivoire. The above mentioned project “Improving resilience for coastal communities in Cote d’Ivoire and Ghana was launched in September 2024 and is implemented in these two countries with the operational support of three executing entities. That project will require a high level of commitment and coordination with the stakeholders. The intern under the supervision of the project manager, will support on various tasks related to project monitoring and evaluation, support field monitoring visits and reporting. UN-Habitat is expanding and developing its presence in those countries and needs support for its pro-gramme impl…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://careers.un.org/jobSearchDescription/286269?language=en"
-      },
-      "publie_le": "2026-10-21",
-      "expire_le": "2026-11-05",
-      "verifie": true,
-      "source_url": "https://careers.un.org/jobSearchDescription/286269?language=en",
-      "source_domaine": "careers.un.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "un_careers_api-6380678ea8",
       "domaine_swimpe": "local",
       "type": "emploi",
@@ -1982,6 +1958,30 @@
       "expire_le": "2026-11-20",
       "verifie": true,
       "source_url": "https://careers.un.org/jobSearchDescription/286543?language=en",
+      "source_domaine": "careers.un.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "un_careers_api-265cadc5a9",
+      "domaine_swimpe": "local",
+      "type": "stage",
+      "titre": "Programme Management Intern",
+      "organisation": "Nations Unies (Secrétariat)",
+      "pays": "Côte d'Ivoire",
+      "ville": "[{'Code': '2250', 'Description': 'Abidjan', '_Id': '6Aeb68A41C4175Bb31B617Fe'}, {'Code': '2400', 'Description': 'Nairobi', '_Id': '6Aeb68A41C4175Bb31B617Ff'}]",
+      "domaine": "",
+      "description": "Lieu d'affectation : [{'Code': '2250', 'Description': 'Abidjan', '_Id': '6Aeb68A41C4175Bb31B617Fe'}, {'Code': '2400', 'Description': 'Nairobi', '_Id': '6Aeb68A41C4175Bb31B617Ff'}] · Niveau : I-1 · Département : {'code': '19801980', 'name': 'United Nations Human Settlements Programme'}\n\nWork Location In-Person, Abidjan, Côte d’Ivoire Expected duration 6 Months Duties and Responsibilities The United Nations Human Settlements Programme (UN-Habitat) is mandated by the UN General Assembly to promote socially and environmentally sustainable towns and cities. UN-Habitat is the focal point for all urbanization and human settlement matters within the UN system. UN-Habitat works with partners to build inclusive, safe, resilient and sustainable cities and communities. UN-Habitat promotes urbanization as a positive transformative force for people and communities, reducing inequality, discrimination and poverty. The UN-Habitat Regional Office for Africa (ROAF) supports African countries developing human settlements projects to address fast urbanization of the continent and achieve sustainable development by focusing on challenges faced by cities in Africa. In recent years, the Côte d’Ivoire Country Office was marked by the reinforcement of the organization's presence within the UN ecosystem and the facilitation and strengthening of dialogue with several continental and regional organizations, such as the African Development Bank (AfDB) headquarter. The Cote d’Ivoire portfolio has recently increased with active projects in waste management, housing, climate change and costal resilience. Moreover, recently an MoU was signed between UN HABITAT and the Government of Cote d’Ivoire to strengthen the areas of collaboration in various sectors as assistance on housing and urban policy development. Also, various interaction between UN-Habitat and the District of Abidjan happened on the issue of slums upgrading. Beyond the management of ongoing projects, the resource mobilization and application to calls for proposal remain a key element of the country office. Therefore, additional support is needed in the framework UN Habitat activities in Cote d’Ivoire. The above mentioned project “Improving resilience for coastal communities in Cote d’Ivoire and Ghana was launched in September 2024 and is implemented in these two countries with the operational support of three executing entities. That project will require a high level of commitment and coordination with the stakeholders. The intern under the supervision of the project manager, will support on various tasks related to project monitoring and evaluation, support field monitoring visits and reporting. UN-Habitat is expanding and developing its presence in those countries and needs support for its pro-gramme impl…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://careers.un.org/jobSearchDescription/286269?language=en"
+      },
+      "publie_le": "2026-10-21",
+      "expire_le": "2026-11-05",
+      "verifie": true,
+      "source_url": "https://careers.un.org/jobSearchDescription/286269?language=en",
       "source_domaine": "careers.un.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-04",
