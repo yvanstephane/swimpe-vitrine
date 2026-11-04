@@ -1,0 +1,20 @@
+name: sonde
+# Diagnostic d'un lien « illisible » depuis le cloud (même vue du web que le moteur).
+# Actions → sonde → Run workflow → coller un ou plusieurs liens séparés par des espaces.
+on:
+  workflow_dispatch:
+    inputs:
+      liens:
+        description: "Lien(s) à sonder (séparés par des espaces)"
+        required: true
+        type: string
+jobs:
+  sonder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - run: python3 swimpe_moteur/sonde.py ${{ inputs.liens }}
