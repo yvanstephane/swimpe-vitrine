@@ -1152,6 +1152,96 @@ def charger_sites_suivis(config):
     return ajoutes
 
 
+# --- File « à traiter » depuis Google Alertes -------------------------------
+# Les alertes Google remontent beaucoup de bruit (presse, blogs, agregateurs).
+# On ne met dans la file QUE des liens de sites officiels (ATS de recrutement,
+# organisations internationales/ONU/ONG, sites .gouv). L'usine des 3 IA sur le
+# Mac lit ensuite cette file, verifie chaque page, et publie ce qui est bon.
+_G_ATS = ("workable.com", "recruitee.com", "myworkdayjobs.com", "smartrecruiters.com",
+          "lever.co", "greenhouse.io", "taleo.net", "successfactors.com", "oraclecloud",
+          "brassring.com", "icims.com", "workday.com")
+_G_ORG = ("undp.org", "unicef.org", "who.int", "unhcr.org", "wfp.org", "iom.int", "unv.org",
+          "giz.de", "worldbank.org", "afdb.org", "oif.org", "reliefweb.int", "msf.org",
+          "oxfam", "care.org", "savethechildren", "plan-international", "unesco.org",
+          "unfpa.org", "ilo.org", "fao.org", "developmentaid.org", "coordinationsud.org",
+          "expertisefrance", "cirad.fr", "afd.fr", "ird.fr", "beac.int", "uemoa.int",
+          "ecowas.int", "au.int")
+_G_SIGNAL = ("recrut", "carriere", "fonctionpublique", "fonction-publique", "emploi-public")
+# Agregateurs / job boards / blogs : exclus meme s'ils contiennent un mot « signal ».
+_G_AGREGATEURS = ("optioncarriere", "educarriere", "infosconcours", "afri-carrieres",
+                  "actuconcours", "concours-scolaire", "minajobs", "jobrapide", "louma-jobs",
+                  "dreamjob", "afriqueemplois", "emploiscameroun", "jobincamer", "projobivoire",
+                  "expat-dakar", "coinafrique", "camerbiz", "jooble", "indeed", "meteojob",
+                  "jobijoba", "glassdoor", "bebee", "randstad", "apec.fr", "cdiscussion",
+                  "doopinet", "cari.africa", "socialnetlink", "journaluniversitaire")
+
+
+def _google_credible(dm):
+    dm = (dm or "").lower().replace("www.", "")
+    if not dm or any(a in dm for a in _G_AGREGATEURS):
+        return None
+    if any(a in dm for a in _G_ATS):
+        return "ATS"
+    if any(o in dm for o in _G_ORG):
+        return "ORG"
+    if dm.endswith(".int"):
+        return "INT"
+    if ".gouv." in dm or ".gov." in dm:
+        return "GOUV"
+    if any(s in dm for s in _G_SIGNAL):
+        return "SIGNAL"
+    return None
+
+
+def enfiler_liens_google(chemin_av, limite_nouveaux=25, scan_max=150):
+    """Lit a_valider.json, garde les liens officiels, et les met dans la file « à traiter »
+    (action queue_lien). L'edge refuse les doublons. No-op si secrets absents (tests, local)."""
+    base = os.environ.get("SWIMPE_USINE_URL")
+    cle = os.environ.get("SWIMPE_IMPORT_KEY")
+    if not base or not cle or requests is None:
+        return 0
+    try:
+        with open(chemin_av, encoding="utf-8") as fh:
+            cands = json.load(fh).get("candidats", [])
+    except Exception:
+        return 0
+    headers = {"x-import-key": cle, "Content-Type": "application/json"}
+    anon = os.environ.get("SWIMPE_ANON_KEY")
+    if anon:
+        headers["Authorization"] = "Bearer " + anon
+        headers["apikey"] = anon
+    # plus recents d'abord
+    cands = sorted(cands, key=lambda c: c.get("recu_le") or "", reverse=True)
+    vus, nouveaux, scannes = set(), 0, 0
+    for cand in cands:
+        if cand.get("alerte_arnaque_probable"):
+            continue
+        for l in cand.get("liens", []):
+            url = (l.get("lien") or "").strip()
+            if not url or not url.startswith("https://") or url in vus:
+                continue
+            if not _google_credible(l.get("domaine")):
+                continue
+            vus.add(url)
+            scannes += 1
+            try:
+                r = requests.post(base, headers=headers, timeout=20, data=json.dumps({
+                    "action": "queue_lien", "url": url,
+                    "pays_indice": cand.get("pays"), "type_indice": cand.get("type")}))
+                if r.ok and r.json().get("ajoute"):
+                    nouveaux += 1
+            except Exception:
+                pass
+            if nouveaux >= limite_nouveaux or scannes >= scan_max:
+                break
+        if nouveaux >= limite_nouveaux or scannes >= scan_max:
+            break
+    if nouveaux:
+        print("  + %d lien(s) officiel(s) de Google Alertes mis dans la file « à traiter » "
+              "(les 3 IA les valideront)." % nouveaux)
+    return nouveaux
+
+
 def charger_offres_manuelles(chemin):
     """Offres ajoutees A LA MAIN (validees par un humain) : fusionnees en priorite."""
     if not chemin:
@@ -1624,6 +1714,9 @@ def main():
         total = ecrire_a_valider(chemin_av, a_valider)
         print("%d candidat(s) de veille en attente dans %s — à vérifier à la main "
               "puis recopier dans offres_manuelles.json." % (total, chemin_av))
+        # Les liens OFFICIELS repérés par Google Alertes partent dans la file « à traiter »
+        # pour que les 3 IA du Mac les valident et les publient automatiquement.
+        enfiler_liens_google(chemin_av)
 
 
 if __name__ == "__main__":
