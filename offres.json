@@ -1893,54 +1893,6 @@
       "profil_international": false
     },
     {
-      "id": "veille-0f5925aa65",
-      "domaine_swimpe": "local",
-      "type": "stage",
-      "titre": "Stage de Recherche au Centre Pasteur du Cameroun (CPC) - novembre 2027",
-      "organisation": "CameroonDesks",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Stage de Recherche au Centre Pasteur du Cameroun (CPC) - novembre 2027 :root { --body-font-stack: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } body, .body-font, .text-font, .meta-font, .title…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.cameroondesks.com/2026/11/stage-de-recherche-au-centre-pasteur-du-cameroun-novembre-sta.html"
-      },
-      "publie_le": "2026-11-03",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://www.cameroondesks.com/2026/11/stage-de-recherche-au-centre-pasteur-du-cameroun-novembre-sta.html",
-      "source_domaine": "cameroondesks.com",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
-      "id": "veille-7c34f1a60a",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Côte d'Ivoire: le prix d'achat du coton inchangé malgré un contexte économique difficile - RFI",
-      "organisation": "Bourse Ghislaine Dupont & Claude Verlon (RFI)",
-      "pays": "Côte d'Ivoire",
-      "ville": "",
-      "domaine": "",
-      "description": ":root{--raw-white:#fff;--raw-black:#0e1013;--raw-greyscale-000:#fff;--raw-greyscale-050:#f8f9fa;--raw-greyscale-100:#f1f3f4;--raw-greyscale-200:#e8eaed;--raw-greyscale-300:#dadce0;--raw-greyscale-400:#bdc1c6;--raw-greyscale-500:#9aa0a6;--ra…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "http://www.rfi.fr/fr/afrique/20261103-côte-d-ivoire-le-prix-d-achat-du-coton-inchangé-malgré-un-contexte-économique-difficile"
-      },
-      "publie_le": "2026-11-03",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "http://www.rfi.fr/fr/afrique/20261103-côte-d-ivoire-le-prix-d-achat-du-coton-inchangé-malgré-un-contexte-économique-difficile",
-      "source_domaine": "rfi.fr",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
       "id": "veille-43f793e42e",
       "domaine_swimpe": "local",
       "type": "emploi",
