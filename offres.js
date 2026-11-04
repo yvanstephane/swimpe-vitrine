@@ -147,6 +147,12 @@
     }
     var h = el("h3"); h.textContent = "Aucune offre pour ces filtres"; d.appendChild(h);
     var p = el("p"); p.textContent = "Élargis ta recherche — de nouvelles offres vérifiées sont ajoutées régulièrement."; d.appendChild(p);
+    if (state.type === "volontariat") {
+      // Pas d'offre de volontariat pour l'instant : on guide vers les programmes + tutoriels.
+      var pv = el("p");
+      pv.innerHTML = 'En attendant, découvre les <a href="programmes.html" style="color:var(--sceau);font-weight:700">programmes de volontariat et leurs tutoriels pas à pas &rarr;</a>';
+      d.appendChild(pv);
+    }
     var b = el("button", "btn btn-ligne"); b.type = "button"; b.textContent = "Réinitialiser les filtres";
     b.addEventListener("click", function () { state.type = "tout"; state.paysSel = []; state.domaine = "tout"; state.page = 1; rendre(); });
     d.appendChild(b); return d;
