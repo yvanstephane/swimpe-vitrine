@@ -145,7 +145,8 @@ def detecter_type(titre, defaut="emploi"):
     t = (titre or "").lower()
     if "concours" in t:
         return "concours"
-    if "stag" in t or "intern" in t:
+    # mots entiers seulement : « International » ne doit pas devenir un stage
+    if re.search(r"\bstag(?:e|es|iaire|iaires)\b", t) or re.search(r"\bintern(?:ship|ships|s|e|es)?\b", t):
         return "stage"
     if "volont" in t or "volunt" in t or "bénévol" in t or "benevol" in t:
         return "volontariat"
