@@ -626,9 +626,17 @@ def map_wp_rest(resultats, source):
             if email and "@" in email and not lien_postuler:
                 mode, val = "email", email
             ville = nettoyer_html(str(acf.get("ville", "") or ""))
-            desc = source.get("description_defaut",
-                              "Offre relayée par un agrégateur de confiance. Détails et "
-                              "candidature sur la page de l'organisme recruteur.")
+            # Le VRAI texte de l'annonce (l'API WordPress le fournit) : il sert de texte de
+            # secours à l'usine quand la page de candidature (ATS externe) bloque les robots.
+            contenu = p.get("content", {}) or {}
+            corps = nettoyer_html(contenu.get("rendered", "") if isinstance(contenu, dict) else "")
+            if len(corps) < 200:
+                extrait = p.get("excerpt", {}) or {}
+                corps = nettoyer_html(extrait.get("rendered", "") if isinstance(extrait, dict) else "")
+            desc = corps[:4000].strip() or source.get(
+                "description_defaut",
+                "Offre relayée par un agrégateur de confiance. Détails et "
+                "candidature sur la page de l'organisme recruteur.")
             o = _offre(source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
                        titre, source.get("organisation_defaut", ""), pays, ville, "",
                        desc, lien, jour(p.get("date")) or today(), expire)
