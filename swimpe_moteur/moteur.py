@@ -1625,6 +1625,8 @@ def executer(config, mock=None):
                       % (src["id"], len(cand)), file=sys.stderr)
                 continue
             offres = lire_source(src, pays_cibles, mock)
+            for o in offres:
+                o["_src"] = src["id"]   # pour le bilan par source (retiré avant écriture)
             toutes += offres
             print("  · %s : %d offre(s)" % (src["id"], len(offres)), file=sys.stderr)
         except Exception as e:
@@ -1645,10 +1647,16 @@ def executer(config, mock=None):
     # PUIS par page officielle (meme lien d'offre) : la fiche la plus complete gagne
     vus_id, vus_cle, vus_url, uniques = set(), set(), {}, []
     n_doublons, journal_liens = 0, []
+    bilan = {}   # source -> {lues, doublon, hors_pays, b2b, gardees}
+    def _compte(o, cle):
+        b = bilan.setdefault(o.get("_src") or "manuelles/veille", {"lues": 0, "doublon": 0, "hors_pays": 0, "b2b": 0, "gardees": 0})
+        b[cle] += 1
     for o in toutes:
+        _compte(o, "lues")
         c = _cle_dedup(o)
         if o["id"] in vus_id or (c and c in vus_cle):
             n_doublons += 1
+            _compte(o, "doublon")
             continue
         cu = _cle_url(o)
         if cu and cu in vus_url:
@@ -1660,6 +1668,7 @@ def executer(config, mock=None):
             else:
                 journal_liens.append("gardé « %s » (%s), doublon de lien : %s"
                                      % (uniques[i]["titre"][:40], uniques[i]["id"], o["id"]))
+            _compte(o, "doublon")
             continue
         vus_id.add(o["id"])
         vus_cle.add(c)
@@ -1676,6 +1685,8 @@ def executer(config, mock=None):
     if hors_pays:
         print("  − %d offre(s) hors pays cibles écartée(s) : %s" % (len(hors_pays),
               ", ".join(sorted(set(o["pays"] or "?" for o in hors_pays))[:8])), file=sys.stderr)
+    for o in hors_pays:
+        _compte(o, "hors_pays")
     uniques = [o for o in uniques if not pays_cibles or o["pays"] in pays_cibles]
     # on écarte les avis destinés aux entreprises (appels d'offres, prestataires…)
     b2b = [o for o in uniques if pour_entreprises(o.get("titre", ""))]
@@ -1684,7 +1695,19 @@ def executer(config, mock=None):
               file=sys.stderr)
     for o in b2b[:6]:
         print("      · « %s »" % o["titre"][:70], file=sys.stderr)
+    for o in b2b:
+        _compte(o, "b2b")
     uniques = [o for o in uniques if not pour_entreprises(o.get("titre", ""))]
+    for o in uniques:
+        _compte(o, "gardees")
+    pertes = {k: v for k, v in bilan.items() if v["gardees"] < v["lues"]}
+    if pertes:
+        print("  = bilan par source (lues → gardées) :", file=sys.stderr)
+        for k, v in sorted(pertes.items()):
+            detail = ", ".join("%s %d" % (n, v[n]) for n in ("doublon", "hors_pays", "b2b") if v[n])
+            print("      · %s : %d → %d (%s)" % (k, v["lues"], v["gardees"], detail or "?"), file=sys.stderr)
+    for o in uniques:
+        o.pop("_src", None)
     return {"maj": today(), "schema": SCHEMA_VERSION, "offres": uniques,
             "_a_valider": a_valider}
 
