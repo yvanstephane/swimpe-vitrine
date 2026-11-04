@@ -3,50 +3,52 @@
   "schema": "1",
   "offres": [
     {
-      "id": "hcdh-yaounde-stage-data-2026",
+      "id": "un_careers_api-63a563e623",
       "domaine_swimpe": "local",
       "type": "stage",
-      "titre": "Stage Data Management & Administrative Support (nov. 2026 – fév. 2027)",
-      "organisation": "HCDH / OHCHR",
+      "titre": "Intern- Data Management and Administrative Support",
+      "organisation": "ONU · Office of the High Commissioner for Human Rights",
       "pays": "Cameroun",
-      "ville": "Yaoundé",
-      "domaine": "ONU",
-      "description": "Stage non rémunéré.",
+      "ville": "YAOUNDE",
+      "domaine": "",
+      "description": "Lieu d'affectation : YAOUNDE · Niveau : I-1 · Département : Office of the High Commissioner for Human Rights\n\nWork Location In-Person Expected duration 25.11.26 - 24.02.27 Duties and Responsibilities The internship is based in the Enterprise Resource Planning (ERP) Section within the Programme Support and Management Service (PSMS), Regional Hub for Central and West Africa (RHCWA), Office of the High Commissioner for Human Rights (OHCHR), Yaoundé. The Intern will work under the supervision of the ERP Team and collaborate with internal clients and counterparts across headquarters and field operations, gaining exposure to digital transformation initiatives and enterprise systems that underpin the effective delivery of OHCHR's human rights mandate worldwide. The Intern will support the work of the ERP Section by contributing to administrative coordination, data management, and stakeholder communication related to ERP-enabled business processes. The internship provides practical learning opportunity at the intersection of digital transformation, enterprise resource planning, and operational support for human rights programmes. Under the guidance of the supervisor, the Intern will undertake the following responsibilities: Administrative and Operational Support • Support day-to-day administrative and operational activities related to ERP initiatives. • Respond to routine requests for information and assistance from internal stakeholders. • Support with maintaining organized filing, tracking systems and support document archiving in line with established procedures. Document and Process Support • Review and verify documentation for accuracy and completeness in support of ERP role-mapping and access management processes. • Support with ensuring proper classification, filing, and storage of documents and records. Communication and Coordination • Support with drafting routine correspondence and liaising with other sections to gather and consolidate information related to ERP and operational processes. • Take minutes during meetings, summarize key decisions and actions, and ensure timely circulation. Data Management, Reporting, and Knowledge Sharing • Support the maintenance of dashboards and ensure the accuracy and timeliness of data. • Compile information and contribute to the preparation of periodic reports and draft PowerPoint presentations supporting management decision-making. • Update and maintain content on the ERPMS intranet page to facilitate knowledge sharing and transparency. Other Responsibilities • Support with performance of other related duties as required by …",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://careers.un.org/jobSearchDescription/286456"
+        "valeur": "https://careers.un.org/jobSearchDescription/286456?language=en"
       },
-      "publie_le": "2026-10-23",
-      "expire_le": "2026-11-04",
+      "publie_le": "2026-10-20",
+      "expire_le": "2026-11-05",
       "verifie": true,
-      "source_url": "https://careers.un.org/jobSearchDescription/286456",
+      "source_url": "https://careers.un.org/jobSearchDescription/286456?language=en",
       "source_domaine": "careers.un.org",
-      "methode_verif": "veille-swimpe",
-      "verifie_le": "2026-10-23",
-      "ajoute_par": "veille"
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "moteur",
+      "profil_international": false
     },
     {
-      "id": "onuhabitat-abidjan-stage-2026",
+      "id": "un_careers_api-265cadc5a9",
       "domaine_swimpe": "local",
       "type": "stage",
-      "titre": "Stage Programme Management (6 mois)",
-      "organisation": "ONU-Habitat",
+      "titre": "Programme Management Intern",
+      "organisation": "ONU · United Nations Human Settlements Programme",
       "pays": "Côte d'Ivoire",
-      "ville": "Abidjan",
-      "domaine": "ONU",
-      "description": "Offre officielle de ONU-Habitat.",
+      "ville": "ABIDJAN (+ 1 autres lieux)",
+      "domaine": "",
+      "description": "Lieu d'affectation : ABIDJAN (+ 1 autres lieux) · Niveau : I-1 · Département : United Nations Human Settlements Programme\n\nWork Location In-Person, Abidjan, Côte d’Ivoire Expected duration 6 Months Duties and Responsibilities The United Nations Human Settlements Programme (UN-Habitat) is mandated by the UN General Assembly to promote socially and environmentally sustainable towns and cities. UN-Habitat is the focal point for all urbanization and human settlement matters within the UN system. UN-Habitat works with partners to build inclusive, safe, resilient and sustainable cities and communities. UN-Habitat promotes urbanization as a positive transformative force for people and communities, reducing inequality, discrimination and poverty. The UN-Habitat Regional Office for Africa (ROAF) supports African countries developing human settlements projects to address fast urbanization of the continent and achieve sustainable development by focusing on challenges faced by cities in Africa. In recent years, the Côte d’Ivoire Country Office was marked by the reinforcement of the organization's presence within the UN ecosystem and the facilitation and strengthening of dialogue with several continental and regional organizations, such as the African Development Bank (AfDB) headquarter. The Cote d’Ivoire portfolio has recently increased with active projects in waste management, housing, climate change and costal resilience. Moreover, recently an MoU was signed between UN HABITAT and the Government of Cote d’Ivoire to strengthen the areas of collaboration in various sectors as assistance on housing and urban policy development. Also, various interaction between UN-Habitat and the District of Abidjan happened on the issue of slums upgrading. Beyond the management of ongoing projects, the resource mobilization and application to calls for proposal remain a key element of the country office. Therefore, additional support is needed in the framework UN Habitat activities in Cote d’Ivoire. The above mentioned project “Improving resilience for coastal communities in Cote d’Ivoire and Ghana was launched in September 2024 and is implemented in these two countries with the operational support of three executing entities. That project will require a high level of commitment and coordination with the stakeholders. The intern under the supervision of the project manager, will support on various tasks related to project monitoring and evaluation, support field monitoring visits and reporting. UN-Habitat is expanding and developing its presence in those countries and needs support for its pro-gramme impl…",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://careers.un.org/jobSearchDescription/286269"
+        "valeur": "https://careers.un.org/jobSearchDescription/286269?language=en"
       },
-      "publie_le": "2026-10-23",
-      "expire_le": "2026-11-04",
+      "publie_le": "2026-10-21",
+      "expire_le": "2026-11-05",
       "verifie": true,
-      "source_url": "https://careers.un.org/jobSearchDescription/286269",
+      "source_url": "https://careers.un.org/jobSearchDescription/286269?language=en",
       "source_domaine": "careers.un.org",
-      "methode_verif": "veille-swimpe",
-      "verifie_le": "2026-10-23",
-      "ajoute_par": "veille"
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "moteur",
+      "profil_international": false
     },
     {
       "id": "usembassy-yaounde-political-assistant-2026",
@@ -95,27 +97,28 @@
       "ajoute_par": "veille"
     },
     {
-      "id": "unodc-dakar-procurement-2026",
+      "id": "un_careers_api-6380678ea8",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Procurement Officer P-4 — hub achats Afrique de l'Ouest et centrale",
-      "organisation": "UNODC",
+      "titre": "Procurement Officer (Head, West and Central Africa Procurement Hub), P4",
+      "organisation": "ONU · United Nations Office on Drugs and Crime",
       "pays": "Sénégal",
-      "ville": "Dakar",
-      "domaine": "ONU",
-      "description": "Offre officielle de UNODC.",
+      "ville": "DAKAR",
+      "domaine": "",
+      "description": "Lieu d'affectation : DAKAR · Niveau : P-4 · Département : United Nations Office on Drugs and Crime\n\nOrg. Setting and Reporting This position is located in the Regional Office for West and Central Africa (ROSEN), Division for Operations (DO) of the United Nations Office on Drugs and Crime (UNODC) in Dakar, Senegal. As Head of the West and Central Africa Procurement Hub, the Procurement Officer works under the direct supervision of the Chief (Procurement), UNOV/UNODC Procurement Unit in Vienna, and the overall supervision of the ROSEN Representative. The incumbent also supports and provides technical oversight for procurement functions at the UNODC Country Office in Nigeria (CONGA). The incumbent will execute his/her functions as part of the ROSEN Operations Team and work in close coordination with the Operations Officer. For more information on UNODC, please visit the website www.unodc.org. Responsibilities The incumbent is expected, upon request, to support other UNODC offices and Global Programmes in the West and Central Africa region where UNODC operates. Within assigned authority the Procurement Officer will provide the following specific duties: • Serve as a senior procurement and contracting expert with responsibility for the procurement of a wide variety of supplies and services associated with technically and legally complex contracts and procurement activities; lead and support the procurement work of Regional Offices. • Plan, develop and manage all procurement and contractual aspects of projects of significant complexity related to diverse services and commodities (e.g., information technology, specialized electronic equipment and instruments, medicines, safety and security equipment including PPE, foodstuffs, building maintenance materials, refurbishment work, office supplies, furniture, etc.), taking into account local economic and other conditions. • Plan, develop and manage procurement activities related to infrastructure and major construction projects, including those of significant value, in consultation and supported by UNOV/UNODC Procurement Unit, in close cooperation with UNODC architects, engineers, national authorities to ensure that all local, state, and national building codes and regulations and safety precautions are followed. • Lead the preparation and implementation of procurement according to the United Nations Secretariat Financial Regulations and Rules; when applicable, oversee procurement processed by other UN entities — including through the Common Back Office (CBO) arrangement following the upcoming relocation to the UN H…",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://careers.un.org/jobSearchDescription/286543"
+        "valeur": "https://careers.un.org/jobSearchDescription/286543?language=en"
       },
-      "publie_le": "2026-10-23",
-      "expire_le": "2026-11-19",
+      "publie_le": "2026-10-21",
+      "expire_le": "2026-11-20",
       "verifie": true,
-      "source_url": "https://careers.un.org/jobSearchDescription/286543",
+      "source_url": "https://careers.un.org/jobSearchDescription/286543?language=en",
       "source_domaine": "careers.un.org",
-      "methode_verif": "veille-swimpe",
-      "verifie_le": "2026-10-23",
-      "ajoute_par": "veille"
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "moteur",
+      "profil_international": false
     },
     {
       "id": "bad-moibrahim-fellowship-2027",
@@ -1605,51 +1608,51 @@
       "profil_international": false
     },
     {
-      "id": "lesopportunites_rss-9478bdf4c1",
+      "id": "veille-138e9aa0c7",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb",
-      "organisation": "",
+      "titre": "ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde",
+      "organisation": "LesOpportunités",
       "pays": "Sénégal",
       "ville": "",
       "domaine": "",
-      "description": "ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb POSTULER ICI Cet article ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb est apparu en premier sur Opportunités du Monde .",
+      "description": "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function(){return litespeed_docref}}),sessionStorage.removeItem(\"litespeed_docref\")); (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-69989611-19','auto');ga('send','pageview') ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/\",\"url\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/\",\"name\":\"ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde\",\"isPartOf\":{\"@id\":\"https://www.lesopportunites.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/#primaryimage\"},\"image\":{\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/#primaryimage\"},\"thumbnailUrl\":\"https://www.lesopportunites.com/wp-content/uploads/2026/11/image_2026-11-04_145756825.png\",\"datePublished\":\"2026-11-04T14:00:31+00:00\",\"description\":\"ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde\",\"breadcrumb\":{\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5…",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/?utm_source=rss&utm_medium=rss&utm_campaign=abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb"
+        "valeur": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/"
       },
       "publie_le": "2026-11-04",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/?utm_source=rss&utm_medium=rss&utm_campaign=abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb",
+      "source_url": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/",
       "source_domaine": "lesopportunites.com",
       "methode_verif": "auto",
       "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
+      "ajoute_par": "veille-auto",
       "profil_international": false
     },
     {
-      "id": "lesopportunites_rss-5107dddaa7",
+      "id": "veille-3d4f3838f7",
       "domaine_swimpe": "local",
       "type": "emploi",
       "titre": "Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun",
-      "organisation": "",
+      "organisation": "LesOpportunités",
       "pays": "Cameroun",
       "ville": "",
       "domaine": "",
-      "description": "Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun Cet article Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun est apparu en premier sur Opportunités du Monde .",
+      "description": "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function(){return litespeed_docref}}),sessionStorage.removeItem(\"litespeed_docref\")); (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-69989611-19','auto');ga('send','pageview') Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun - Opportunités du Monde {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/\",\"url\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/\",\"name\":\"Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun - Opportunités du Monde\",\"isPartOf\":{\"@id\":\"https://www.lesopportunites.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/#primaryimage\"},\"image\":{\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/#primaryimage\"},\"thumbnailUrl\":\"https://www.lesopportunites.com/wp-content/uploads/2026/11/auf.jpg\",\"datePublished\":\"2026-11-04T05:52:51+00:00\",\"description\":\"Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun\",\"breadcrumb\":{\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-…",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/?utm_source=rss&utm_medium=rss&utm_campaign=avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun"
+        "valeur": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/"
       },
       "publie_le": "2026-11-04",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/?utm_source=rss&utm_medium=rss&utm_campaign=avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun",
+      "source_url": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/",
       "source_domaine": "lesopportunites.com",
       "methode_verif": "auto",
       "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
+      "ajoute_par": "veille-auto",
       "profil_international": false
     },
     {
@@ -1849,11 +1852,11 @@
       "domaine_swimpe": "local",
       "type": "emploi",
       "titre": "International Consultant to Conduct a Human Rights Due Diligence Review (HRDDP) of the Security Sector in The Gambia",
-      "organisation": "Nations Unies (Secrétariat)",
+      "organisation": "ONU · Office of the High Commissioner for Human Rights",
       "pays": "Sénégal",
-      "ville": "[{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb689C6B19792E1510B650'}]",
+      "ville": "DAKAR",
       "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb689C6B19792E1510B650'}] · Niveau : CON · Département : {'code': '15201520', 'name': 'Office of the High Commissioner for Human Rights'}\n\nResult of Service A comprehensive and validated Human Rights Due Diligence Review Report of the Gambian security sector, providing: • Analysis of institutional compliance with international norms. • Human rights risk ratings. • Identification of gaps and challenges. • Recommendations and mitigation measures. • Actionable benchmarks for future engagement and monitoring Work Location Banjul, The Gambia Expected duration 44 calendar days Duties and Responsibilities The consultant shall undertake a Human Rights Due Diligence Review in line with UN HRDDP standards, including: • Assessing compliance with international human rights and humanitarian law. • Reviewing records of human rights violations and patterns of abuse. • Evaluating accountability and justice mechanisms, including investigations, prosecutions, and reparations. • Assessing prevention and mitigation mechanisms, including training, safeguards, and early warning systems. • Reviewing legal, policy, and institutional frameworks governing the security sector. • Conducting risk analysis and applying HRDDP risk assessment methodology. • Developing practical recommendations and risk mitigation measures. The review will cover: • The Gambia Armed Forces (GAF) • The Gambia Police Force (GPF) • State Intelligence Services • Gambia Immigration Department • Gambia Prison Services • Office of National Security • National Human Rights Commission Evaluation Criteria: Criteria Score Experience 30 Methodology 45 Expertise 25 Total 100 Technical proposal must score at least 75% to proceed to financial evaluation Qualifications/special skills Advanced university degree (Master's or PhD) in: • Human Rights Law • International Law • Political Science • Security Studies • Peace and Conflict Studies • Related discipline • Minimum 10 years of progressively responsible experience in human rights, security sector reform, or related fields • Demonstrated experience conducting human rights due diligence or risk assessments using HRDDP or similar frameworks. • Experience engaging with security sector institutions. • Experience in transitional or post-authoritarian contexts. • Experience in West Africa or The Gambia is an asset • Knowledge of security sector reform and UN human rights mechanisms. • Strong analytical, drafting and communication skills. • Computer literacy. • Ability to work effectively in diverse cultural, religious, gender and political contexts. Languages Fluency in English Additional Information Not available…",
+      "description": "Lieu d'affectation : DAKAR · Niveau : CON · Département : Office of the High Commissioner for Human Rights\n\nResult of Service A comprehensive and validated Human Rights Due Diligence Review Report of the Gambian security sector, providing: • Analysis of institutional compliance with international norms. • Human rights risk ratings. • Identification of gaps and challenges. • Recommendations and mitigation measures. • Actionable benchmarks for future engagement and monitoring Work Location Banjul, The Gambia Expected duration 44 calendar days Duties and Responsibilities The consultant shall undertake a Human Rights Due Diligence Review in line with UN HRDDP standards, including: • Assessing compliance with international human rights and humanitarian law. • Reviewing records of human rights violations and patterns of abuse. • Evaluating accountability and justice mechanisms, including investigations, prosecutions, and reparations. • Assessing prevention and mitigation mechanisms, including training, safeguards, and early warning systems. • Reviewing legal, policy, and institutional frameworks governing the security sector. • Conducting risk analysis and applying HRDDP risk assessment methodology. • Developing practical recommendations and risk mitigation measures. The review will cover: • The Gambia Armed Forces (GAF) • The Gambia Police Force (GPF) • State Intelligence Services • Gambia Immigration Department • Gambia Prison Services • Office of National Security • National Human Rights Commission Evaluation Criteria: Criteria Score Experience 30 Methodology 45 Expertise 25 Total 100 Technical proposal must score at least 75% to proceed to financial evaluation Qualifications/special skills Advanced university degree (Master's or PhD) in: • Human Rights Law • International Law • Political Science • Security Studies • Peace and Conflict Studies • Related discipline • Minimum 10 years of progressively responsible experience in human rights, security sector reform, or related fields • Demonstrated experience conducting human rights due diligence or risk assessments using HRDDP or similar frameworks. • Experience engaging with security sector institutions. • Experience in transitional or post-authoritarian contexts. • Experience in West Africa or The Gambia is an asset • Knowledge of security sector reform and UN human rights mechanisms. • Strong analytical, drafting and communication skills. • Computer literacy. • Ability to work effectively in diverse cultural, religious, gender and political contexts. Languages Fluency in English Additional Information Not available…",
       "comment_postuler": {
         "mode": "lien",
         "valeur": "https://careers.un.org/jobSearchDescription/286860?language=en"
@@ -1873,11 +1876,11 @@
       "domaine_swimpe": "local",
       "type": "emploi",
       "titre": "International Consultant (Team Leader) – Study on the Sexual Exploitation of Children in Guinea-Bissau: Focus on the Bolama-Bijagós Region.",
-      "organisation": "Nations Unies (Secrétariat)",
+      "organisation": "ONU · Office of the High Commissioner for Human Rights",
       "pays": "Sénégal",
-      "ville": "[{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb68A41C4175Bb31B61828'}]",
+      "ville": "DAKAR",
       "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb68A41C4175Bb31B61828'}] · Niveau : CON · Département : {'code': '15201520', 'name': 'Office of the High Commissioner for Human Rights'}\n\nResult of Service A comprehensive, evidence-based study on violations of children’s rights in the Bolama-Bijagós Region is produced and validated, with particular attention to sexual exploitation and other forms of violence, abuse, exploitation and harmful practices affecting children. The study will provide practical recommendations to strengthen prevention, child protection, referral mechanisms, accountability and institutional responses in Guinea-Bissau, supporting OHCHR programming, government action and advocacy efforts under the PAPEV Project. Work Location Guinea Bissau Expected duration Three (3) months Duties and Responsibilities Under the overall supervision of OHCHR-WARO/PAPEV, the International Consultant, as Team Leader, will plan, organize and lead the implementation of the study and coordinate closely with the National Consultant. • Provide overall technical leadership for the study and ensure effective coordination and division of responsibilities with the National Consultant throughout the assignment. • Conduct a desk review of relevant legislation, policies, studies and available data relating to children’s rights violations in Guinea-Bissau, including sexual exploitation and other forms of violence, abuse, exploitation and harmful practices. • Develop the study methodology, research tools and workplan in close consultation with the National Consultant and OHCHR. • Ensure that the methodology and research tools are appropriately adapted to the national and local context, drawing on the contextual knowledge and inputs of the National Consultant. • Plan and lead the field research in the Bolama-Bijagós Region, including the technical arrangements necessary for data collection in accordance with the approved methodology. • Conduct and/or supervise interviews, focus group discussions and consultations with relevant stakeholders in accordance with ethical standards. • Coordinate and supervise all technical aspects of the study, ensuring quality, consistency and timely delivery of outputs. • Ensure integration of child protection, human rights and gender equality perspectives throughout the study. • Lead the analysis of data collected, working closely with the National Consultant to ensure that findings on children’s rights violations are grounded in the national and local context. • Lead the preparation of the draft analytical report and final report, incorporating relevant inputs from the National Consultant and consolidated comments from OHC…",
+      "description": "Lieu d'affectation : DAKAR · Niveau : CON · Département : Office of the High Commissioner for Human Rights\n\nResult of Service A comprehensive, evidence-based study on violations of children’s rights in the Bolama-Bijagós Region is produced and validated, with particular attention to sexual exploitation and other forms of violence, abuse, exploitation and harmful practices affecting children. The study will provide practical recommendations to strengthen prevention, child protection, referral mechanisms, accountability and institutional responses in Guinea-Bissau, supporting OHCHR programming, government action and advocacy efforts under the PAPEV Project. Work Location Guinea Bissau Expected duration Three (3) months Duties and Responsibilities Under the overall supervision of OHCHR-WARO/PAPEV, the International Consultant, as Team Leader, will plan, organize and lead the implementation of the study and coordinate closely with the National Consultant. • Provide overall technical leadership for the study and ensure effective coordination and division of responsibilities with the National Consultant throughout the assignment. • Conduct a desk review of relevant legislation, policies, studies and available data relating to children’s rights violations in Guinea-Bissau, including sexual exploitation and other forms of violence, abuse, exploitation and harmful practices. • Develop the study methodology, research tools and workplan in close consultation with the National Consultant and OHCHR. • Ensure that the methodology and research tools are appropriately adapted to the national and local context, drawing on the contextual knowledge and inputs of the National Consultant. • Plan and lead the field research in the Bolama-Bijagós Region, including the technical arrangements necessary for data collection in accordance with the approved methodology. • Conduct and/or supervise interviews, focus group discussions and consultations with relevant stakeholders in accordance with ethical standards. • Coordinate and supervise all technical aspects of the study, ensuring quality, consistency and timely delivery of outputs. • Ensure integration of child protection, human rights and gender equality perspectives throughout the study. • Lead the analysis of data collected, working closely with the National Consultant to ensure that findings on children’s rights violations are grounded in the national and local context. • Lead the preparation of the draft analytical report and final report, incorporating relevant inputs from the National Consultant and consolidated comments from OHC…",
       "comment_postuler": {
         "mode": "lien",
         "valeur": "https://careers.un.org/jobSearchDescription/286872?language=en"
@@ -1897,11 +1900,11 @@
       "domaine_swimpe": "local",
       "type": "emploi",
       "titre": "National Consultant – study on violations of children’s rights in the Bolama-Bijagós Region of Guinea-Bissau",
-      "organisation": "Nations Unies (Secrétariat)",
+      "organisation": "ONU · Office of the High Commissioner for Human Rights",
       "pays": "Sénégal",
-      "ville": "[{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb68A41C4175Bb31B6182C'}]",
+      "ville": "DAKAR",
       "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb68A41C4175Bb31B6182C'}] · Niveau : CON · Département : {'code': '15201520', 'name': 'Office of the High Commissioner for Human Rights'}\n\nResult of Service The National Consultant contributes effectively to the production and validation of a comprehensive, evidence-based study on violations of children’s rights in the Bolama-Bijagós Region, with particular attention to sexual exploitation and other forms of violence, abuse, exploitation and harmful practices affecting children. The National Consultant will help ensure that the study reflects the national and local context and provides practical, contextually appropriate recommendations to strengthen prevention, child protection, referral mechanisms, accountability and institutional responses in Guinea-Bissau. Work Location Guinea Bissau Expected duration Three (3) months Duties and Responsibilities Under the overall supervision of OHCHR-WARO/PAPEV and in close collaboration with the International Consultant (Team Leader) – Study on the Sexual Exploitation of Children in Guinea-Bissau: Focus on the Bolama-Bijagós Region, the National Consultant will: • Provide substantive contextual inputs on Guinea-Bissau’s child protection framework, institutions, relevant legislation, policies, practices and available national information related to violations of children’s rights, including sexual exploitation and other forms of violence, abuse, exploitation and harmful practices affecting children. • Support the International Consultant in the desk review and identification of relevant national and local sources, documentation and stakeholders. • Contribute to the development and contextual adaptation of the study methodology, research tools and workplan. • Facilitate engagement and coordination with national and local authorities, including IMC, child protection actors, civil society organizations, community leaders and other relevant stakeholders. • Support the organization and implementation of field research in the Bolama-Bijagós Region, including stakeholder consultations, interviews and focus group discussions. • Conduct data collection activities assigned under the agreed workplan and support communication in Portuguese and/or Creole as required. • Provide contextual interpretation of qualitative and quantitative findings, including relevant cultural, linguistic, institutional and community dynamics. • Contribute substantively to the analysis of data and to the preparation of the draft and final reports, particularly sections requiring national contextualization. • Support the identification of practical and nationally relevant recommendations for…",
+      "description": "Lieu d'affectation : DAKAR · Niveau : CON · Département : Office of the High Commissioner for Human Rights\n\nResult of Service The National Consultant contributes effectively to the production and validation of a comprehensive, evidence-based study on violations of children’s rights in the Bolama-Bijagós Region, with particular attention to sexual exploitation and other forms of violence, abuse, exploitation and harmful practices affecting children. The National Consultant will help ensure that the study reflects the national and local context and provides practical, contextually appropriate recommendations to strengthen prevention, child protection, referral mechanisms, accountability and institutional responses in Guinea-Bissau. Work Location Guinea Bissau Expected duration Three (3) months Duties and Responsibilities Under the overall supervision of OHCHR-WARO/PAPEV and in close collaboration with the International Consultant (Team Leader) – Study on the Sexual Exploitation of Children in Guinea-Bissau: Focus on the Bolama-Bijagós Region, the National Consultant will: • Provide substantive contextual inputs on Guinea-Bissau’s child protection framework, institutions, relevant legislation, policies, practices and available national information related to violations of children’s rights, including sexual exploitation and other forms of violence, abuse, exploitation and harmful practices affecting children. • Support the International Consultant in the desk review and identification of relevant national and local sources, documentation and stakeholders. • Contribute to the development and contextual adaptation of the study methodology, research tools and workplan. • Facilitate engagement and coordination with national and local authorities, including IMC, child protection actors, civil society organizations, community leaders and other relevant stakeholders. • Support the organization and implementation of field research in the Bolama-Bijagós Region, including stakeholder consultations, interviews and focus group discussions. • Conduct data collection activities assigned under the agreed workplan and support communication in Portuguese and/or Creole as required. • Provide contextual interpretation of qualitative and quantitative findings, including relevant cultural, linguistic, institutional and community dynamics. • Contribute substantively to the analysis of data and to the preparation of the draft and final reports, particularly sections requiring national contextualization. • Support the identification of practical and nationally relevant recommendations for…",
       "comment_postuler": {
         "mode": "lien",
         "valeur": "https://careers.un.org/jobSearchDescription/286874?language=en"
@@ -1921,11 +1924,11 @@
       "domaine_swimpe": "local",
       "type": "emploi",
       "titre": "Economic Affairs Officer",
-      "organisation": "Nations Unies (Secrétariat)",
+      "organisation": "ONU · Economic Commission for Africa",
       "pays": "Cameroun",
-      "ville": "[{'Code': '0690', 'Description': 'Yaounde', '_Id': '6Aeb689C6B19792E1510B5Ec'}]",
+      "ville": "YAOUNDE",
       "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '0690', 'Description': 'Yaounde', '_Id': '6Aeb689C6B19792E1510B5Ec'}] · Niveau : CON · Département : {'code': '07020702', 'name': 'Economic Commission for Africa'}\n\nResult of Service The consultant shall, within the relevant timeframe, provide ECA SRO-CA with the following: - Prepare and maintain Central Africa socio-economics data sets, country and subregional profiles; - Prepare periodic monitoring and evaluation reports of the national and joint AfCFTA regional projects; - At least three well prepared background papers, reports, studies, and inputs to Office outputs and knowledge products; - At least three Meetings, Workshops, Seminars, and Conferences organized and serviced; - At least 2 policy briefs and one study/research on Central Africa emerging issues completed; - Act as focal points for at least three interdivisional/partners collaboration; and - Well prepared inputs on the study on cross border trade in Central Africa. Work Location Yaounde Expected duration 6 months Duties and Responsibilities ECA's mission is to deliver ideas and actions for an empowered and transformed Africa; informed by the 2030 Agenda and Agenda 2063. The mission will be guided by ECA's five new strategic directions which are: Advancing ECA's position as a premier knowledge institution that builds on its unique position and privilege to bring global solutions to the continent's problems and take local solution to the continent; Developing macroeconomic and structural policy options to accelerate economic diversification and job creation; Designing and implementing innovative financing models for infrastructure, and for human, physical and social assets for a transforming Africa; Contributing solutions to regional and transboundary challenges, with a focus on peace security and social inclusion as an important development nexus; Advocating, Africa's position at the global level and developing regional responses as a contribution to global governance issues. The Sub-regional Office for Central Africa (SRO-CA) is located in Yaoundé (Cameroon) and its main objective is to contribute to promoting structural transformation for inclusive and sustainable development in Central Africa, focusing on economic diversification through inclusive and sustainable industrialization and intra-regional trade. The core functions are: (i) Providing relevant support to member States, regional economic communities and intergovernmental organizations in their quest to report and achieve the 2030 Agenda and Agenda 2063 goals and targets , including the Central African integration agenda through its support to ECCAS and CEMAC ambitions; (ii) Contributing to en…",
+      "description": "Lieu d'affectation : YAOUNDE · Niveau : CON · Département : Economic Commission for Africa\n\nResult of Service The consultant shall, within the relevant timeframe, provide ECA SRO-CA with the following: - Prepare and maintain Central Africa socio-economics data sets, country and subregional profiles; - Prepare periodic monitoring and evaluation reports of the national and joint AfCFTA regional projects; - At least three well prepared background papers, reports, studies, and inputs to Office outputs and knowledge products; - At least three Meetings, Workshops, Seminars, and Conferences organized and serviced; - At least 2 policy briefs and one study/research on Central Africa emerging issues completed; - Act as focal points for at least three interdivisional/partners collaboration; and - Well prepared inputs on the study on cross border trade in Central Africa. Work Location Yaounde Expected duration 6 months Duties and Responsibilities ECA's mission is to deliver ideas and actions for an empowered and transformed Africa; informed by the 2030 Agenda and Agenda 2063. The mission will be guided by ECA's five new strategic directions which are: Advancing ECA's position as a premier knowledge institution that builds on its unique position and privilege to bring global solutions to the continent's problems and take local solution to the continent; Developing macroeconomic and structural policy options to accelerate economic diversification and job creation; Designing and implementing innovative financing models for infrastructure, and for human, physical and social assets for a transforming Africa; Contributing solutions to regional and transboundary challenges, with a focus on peace security and social inclusion as an important development nexus; Advocating, Africa's position at the global level and developing regional responses as a contribution to global governance issues. The Sub-regional Office for Central Africa (SRO-CA) is located in Yaoundé (Cameroon) and its main objective is to contribute to promoting structural transformation for inclusive and sustainable development in Central Africa, focusing on economic diversification through inclusive and sustainable industrialization and intra-regional trade. The core functions are: (i) Providing relevant support to member States, regional economic communities and intergovernmental organizations in their quest to report and achieve the 2030 Agenda and Agenda 2063 goals and targets , including the Central African integration agenda through its support to ECCAS and CEMAC ambitions; (ii) Contributing to en…",
       "comment_postuler": {
         "mode": "lien",
         "valeur": "https://careers.un.org/jobSearchDescription/287054?language=en"
@@ -1941,87 +1944,15 @@
       "profil_international": false
     },
     {
-      "id": "un_careers_api-6380678ea8",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Procurement Officer (Head, West and Central Africa Procurement Hub), P4",
-      "organisation": "Nations Unies (Secrétariat)",
-      "pays": "Sénégal",
-      "ville": "[{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb68Ab97Ac6Bdbc1E8C606'}]",
-      "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb68Ab97Ac6Bdbc1E8C606'}] · Niveau : P-4 · Département : {'code': '47404740', 'name': 'United Nations Office on Drugs and Crime'}\n\nOrg. Setting and Reporting This position is located in the Regional Office for West and Central Africa (ROSEN), Division for Operations (DO) of the United Nations Office on Drugs and Crime (UNODC) in Dakar, Senegal. As Head of the West and Central Africa Procurement Hub, the Procurement Officer works under the direct supervision of the Chief (Procurement), UNOV/UNODC Procurement Unit in Vienna, and the overall supervision of the ROSEN Representative. The incumbent also supports and provides technical oversight for procurement functions at the UNODC Country Office in Nigeria (CONGA). The incumbent will execute his/her functions as part of the ROSEN Operations Team and work in close coordination with the Operations Officer. For more information on UNODC, please visit the website www.unodc.org. Responsibilities The incumbent is expected, upon request, to support other UNODC offices and Global Programmes in the West and Central Africa region where UNODC operates. Within assigned authority the Procurement Officer will provide the following specific duties: • Serve as a senior procurement and contracting expert with responsibility for the procurement of a wide variety of supplies and services associated with technically and legally complex contracts and procurement activities; lead and support the procurement work of Regional Offices. • Plan, develop and manage all procurement and contractual aspects of projects of significant complexity related to diverse services and commodities (e.g., information technology, specialized electronic equipment and instruments, medicines, safety and security equipment including PPE, foodstuffs, building maintenance materials, refurbishment work, office supplies, furniture, etc.), taking into account local economic and other conditions. • Plan, develop and manage procurement activities related to infrastructure and major construction projects, including those of significant value, in consultation and supported by UNOV/UNODC Procurement Unit, in close cooperation with UNODC architects, engineers, national authorities to ensure that all local, state, and national building codes and regulations and safety precautions are followed. • Lead the preparation and implementation of procurement according to the United Nations Secretariat Financial Regulations and Rules; when applicable, oversee procurement processed by other UN entities — including through the Common Back Office (CBO) arrangement following the upcoming relocation to the UN H…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://careers.un.org/jobSearchDescription/286543?language=en"
-      },
-      "publie_le": "2026-10-21",
-      "expire_le": "2026-11-20",
-      "verifie": true,
-      "source_url": "https://careers.un.org/jobSearchDescription/286543?language=en",
-      "source_domaine": "careers.un.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "un_careers_api-265cadc5a9",
-      "domaine_swimpe": "local",
-      "type": "stage",
-      "titre": "Programme Management Intern",
-      "organisation": "Nations Unies (Secrétariat)",
-      "pays": "Côte d'Ivoire",
-      "ville": "[{'Code': '2250', 'Description': 'Abidjan', '_Id': '6Aeb68A41C4175Bb31B617Fe'}, {'Code': '2400', 'Description': 'Nairobi', '_Id': '6Aeb68A41C4175Bb31B617Ff'}]",
-      "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '2250', 'Description': 'Abidjan', '_Id': '6Aeb68A41C4175Bb31B617Fe'}, {'Code': '2400', 'Description': 'Nairobi', '_Id': '6Aeb68A41C4175Bb31B617Ff'}] · Niveau : I-1 · Département : {'code': '19801980', 'name': 'United Nations Human Settlements Programme'}\n\nWork Location In-Person, Abidjan, Côte d’Ivoire Expected duration 6 Months Duties and Responsibilities The United Nations Human Settlements Programme (UN-Habitat) is mandated by the UN General Assembly to promote socially and environmentally sustainable towns and cities. UN-Habitat is the focal point for all urbanization and human settlement matters within the UN system. UN-Habitat works with partners to build inclusive, safe, resilient and sustainable cities and communities. UN-Habitat promotes urbanization as a positive transformative force for people and communities, reducing inequality, discrimination and poverty. The UN-Habitat Regional Office for Africa (ROAF) supports African countries developing human settlements projects to address fast urbanization of the continent and achieve sustainable development by focusing on challenges faced by cities in Africa. In recent years, the Côte d’Ivoire Country Office was marked by the reinforcement of the organization's presence within the UN ecosystem and the facilitation and strengthening of dialogue with several continental and regional organizations, such as the African Development Bank (AfDB) headquarter. The Cote d’Ivoire portfolio has recently increased with active projects in waste management, housing, climate change and costal resilience. Moreover, recently an MoU was signed between UN HABITAT and the Government of Cote d’Ivoire to strengthen the areas of collaboration in various sectors as assistance on housing and urban policy development. Also, various interaction between UN-Habitat and the District of Abidjan happened on the issue of slums upgrading. Beyond the management of ongoing projects, the resource mobilization and application to calls for proposal remain a key element of the country office. Therefore, additional support is needed in the framework UN Habitat activities in Cote d’Ivoire. The above mentioned project “Improving resilience for coastal communities in Cote d’Ivoire and Ghana was launched in September 2024 and is implemented in these two countries with the operational support of three executing entities. That project will require a high level of commitment and coordination with the stakeholders. The intern under the supervision of the project manager, will support on various tasks related to project monitoring and evaluation, support field monitoring visits and reporting. UN-Habitat is expanding and developing its presence in those countries and needs support for its pro-gramme impl…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://careers.un.org/jobSearchDescription/286269?language=en"
-      },
-      "publie_le": "2026-10-21",
-      "expire_le": "2026-11-05",
-      "verifie": true,
-      "source_url": "https://careers.un.org/jobSearchDescription/286269?language=en",
-      "source_domaine": "careers.un.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "un_careers_api-63a563e623",
-      "domaine_swimpe": "local",
-      "type": "stage",
-      "titre": "Intern- Data Management and Administrative Support",
-      "organisation": "Nations Unies (Secrétariat)",
-      "pays": "Cameroun",
-      "ville": "[{'Code': '0690', 'Description': 'Yaounde', '_Id': '6Aeb68A41C4175Bb31B61742'}]",
-      "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '0690', 'Description': 'Yaounde', '_Id': '6Aeb68A41C4175Bb31B61742'}] · Niveau : I-1 · Département : {'code': '15201520', 'name': 'Office of the High Commissioner for Human Rights'}\n\nWork Location In-Person Expected duration 25.11.26 - 24.02.27 Duties and Responsibilities The internship is based in the Enterprise Resource Planning (ERP) Section within the Programme Support and Management Service (PSMS), Regional Hub for Central and West Africa (RHCWA), Office of the High Commissioner for Human Rights (OHCHR), Yaoundé. The Intern will work under the supervision of the ERP Team and collaborate with internal clients and counterparts across headquarters and field operations, gaining exposure to digital transformation initiatives and enterprise systems that underpin the effective delivery of OHCHR's human rights mandate worldwide. The Intern will support the work of the ERP Section by contributing to administrative coordination, data management, and stakeholder communication related to ERP-enabled business processes. The internship provides practical learning opportunity at the intersection of digital transformation, enterprise resource planning, and operational support for human rights programmes. Under the guidance of the supervisor, the Intern will undertake the following responsibilities: Administrative and Operational Support • Support day-to-day administrative and operational activities related to ERP initiatives. • Respond to routine requests for information and assistance from internal stakeholders. • Support with maintaining organized filing, tracking systems and support document archiving in line with established procedures. Document and Process Support • Review and verify documentation for accuracy and completeness in support of ERP role-mapping and access management processes. • Support with ensuring proper classification, filing, and storage of documents and records. Communication and Coordination • Support with drafting routine correspondence and liaising with other sections to gather and consolidate information related to ERP and operational processes. • Take minutes during meetings, summarize key decisions and actions, and ensure timely circulation. Data Management, Reporting, and Knowledge Sharing • Support the maintenance of dashboards and ensure the accuracy and timeliness of data. • Compile information and contribute to the preparation of periodic reports and draft PowerPoint presentations supporting management decision-making. • Update and maintain content on the ERPMS intranet page to facilitate knowledge sharing and transparency. Other Responsibilities • Support with performance of other related duties as required by …",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://careers.un.org/jobSearchDescription/286456?language=en"
-      },
-      "publie_le": "2026-10-20",
-      "expire_le": "2026-11-05",
-      "verifie": true,
-      "source_url": "https://careers.un.org/jobSearchDescription/286456?language=en",
-      "source_domaine": "careers.un.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "un_careers_api-bc78081f7f",
       "domaine_swimpe": "local",
       "type": "emploi",
       "titre": "ECONOMIST (MULTIPLE DUTY STATIONS), P3",
-      "organisation": "Nations Unies (Secrétariat)",
+      "organisation": "ONU · Resident Coordinator System",
       "pays": "Sénégal",
-      "ville": "[{'Code': '0000', 'Description': 'Other', '_Id': '6Aeb6894D03E65766F83Ef5F'}, {'Code': '0490', 'Description': 'Thimphu', '_Id': '6Aeb6894D03E65766F83Ef60'}, {'Code': '0520', 'Description': 'Gaborone', '_Id': '6Aeb6894D03E65766F83Ef61'}, {'Code': '0660', 'Description': 'Phnom-Penh', '_Id': '6Aeb6894D03E65766F83Ef62'}, {'Code': '2450', 'Description': 'Bishkek', '_Id': '6Aeb6894D03E65766F83Ef63'}, {'Code': '2460', 'Description': 'Vientiane', '_Id': '6Aeb6894D03E65766F83Ef64'}, {'Code': '2520', 'Description': 'Maseru', '_Id': '6Aeb6894D03E65766F83Ef65'}, {'Code': '2692', 'Description': 'Lilongwe', '_Id': '6Aeb6894D03E65766F83Ef66'}, {'Code': '2820', 'Description': 'Nouakchott', '_Id': '6Aeb6894D03E65766F83Ef67'}, {'Code': '2880', 'Description': 'Ulan Bator', '_Id': '6Aeb6894D03E65766F83Ef68'}, {'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb6894D03E65766F83Ef69'}, {'Code': '4230', 'Description': 'Lome', '_Id': '6Aeb6894D03E65766F83Ef6A'}, {'Code': '4980', 'Description': 'Lusaka', '_Id': '6Aeb6894D03E65766F83Ef6B'}, {'Code': '6690', 'Description': 'Djibouti', '_Id': '6Aeb6894D03E65766F83Ef6C'}]",
+      "ville": "DAKAR (+ 13 autres lieux)",
       "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '0000', 'Description': 'Other', '_Id': '6Aeb6894D03E65766F83Ef5F'}, {'Code': '0490', 'Description': 'Thimphu', '_Id': '6Aeb6894D03E65766F83Ef60'}, {'Code': '0520', 'Description': 'Gaborone', '_Id': '6Aeb6894D03E65766F83Ef61'}, {'Code': '0660', 'Description': 'Phnom-Penh', '_Id': '6Aeb6894D03E65766F83Ef62'}, {'Code': '2450', 'Description': 'Bishkek', '_Id': '6Aeb6894D03E65766F83Ef63'}, {'Code': '2460', 'Description': 'Vientiane', '_Id': '6Aeb6894D03E65766F83Ef64'}, {'Code': '2520', 'Description': 'Maseru', '_Id': '6Aeb6894D03E65766F83Ef65'}, {'Code': '2692', 'Description': 'Lilongwe', '_Id': '6Aeb6894D03E65766F83Ef66'}, {'Code': '2820', 'Description': 'Nouakchott', '_Id': '6Aeb6894D03E65766F83Ef67'}, {'Code': '2880', 'Description': 'Ulan Bator', '_Id': '6Aeb6894D03E65766F83Ef68'}, {'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb6894D03E65766F83Ef69'}, {'Code': '4230', 'Description': 'Lome', '_Id': '6Aeb6894D03E65766F83Ef6A'}, {'Code': '4980', 'Description': 'Lusaka', '_Id': '6Aeb6894D03E65766F83Ef6B'}, {'Code': '6690', 'Description': 'Djibouti', '_Id': '6Aeb6894D03E65766F83Ef6C'}] · Niveau : P-3 · Département : {'code': '88888891', 'name': 'Resident Coordinator System'}\n\nOrg. Setting and Reporting The UN Secretary-General launched on 1 January 2019 a bold and new global reform which repositioned the UN Development System to deliver more effectively and efficiently with the achievement of the 2030 Agenda and the Sustainable Development Goals. As part of this reform, UN Resident Coordinator Offices (UN RCO), under the leadership of an empowered and independent UN Resident Coordinator - the highest-ranking official of the UN Development System and Representative of the UN Secretary-General at country level - support countries in the achievement of their development priorities and the attainment of the SDG's. In its Resolution A/RES/72/279, the United Nations General Assembly endorsed the transformation of the Development Operations Coordination Office (DCO) as a stand-alone coordination office within the United Nations Secretariat. DCO exercises managerial and oversight functions of the resident coordinator system under the oversight of the Chair of United Nations Sustainable Development Group (UNSDG). In 2026, DCO undertook a recalibration to ensure the RC system remains optimally configured to support the acceleration of the 2030 Agenda and embodies the UN 2.0 shift- anchored in data, digital, innovation, behavioral science, strategic foresight, and a mission driven organizational culture. The Economist engages in close collaboration with experts and stakeholders. Internally, this involves working with economic affairs officers, related teams within the entity, and intergovernmental bodies on economic policy to share thematic information, gather data, exchange best practices, and coordinate activities. Externally, the role engages with UN specialized agencies, international financial institutions, bilateral development agencies, governments, academic institutions, professional networks, and private sector entities to promote knowledge sharing, exchange information, report on developments, and stay updated on emerging trends and practices. The Economist is responsible for monitoring, analyzing, and advising on economic trends, policies, and developments to support informed economic decision-making and development strategies. This role involves conducting research on economic issues, preparing analytical reports, and evaluating the impact of economic policies as well as the economic impact of social, environmental and geopolitical developments at global, regional, and national levels. The position supports the Resident Coordi…",
+      "description": "Lieu d'affectation : DAKAR (+ 13 autres lieux) · Niveau : P-3 · Département : Resident Coordinator System\n\nOrg. Setting and Reporting The UN Secretary-General launched on 1 January 2019 a bold and new global reform which repositioned the UN Development System to deliver more effectively and efficiently with the achievement of the 2030 Agenda and the Sustainable Development Goals. As part of this reform, UN Resident Coordinator Offices (UN RCO), under the leadership of an empowered and independent UN Resident Coordinator - the highest-ranking official of the UN Development System and Representative of the UN Secretary-General at country level - support countries in the achievement of their development priorities and the attainment of the SDG's. In its Resolution A/RES/72/279, the United Nations General Assembly endorsed the transformation of the Development Operations Coordination Office (DCO) as a stand-alone coordination office within the United Nations Secretariat. DCO exercises managerial and oversight functions of the resident coordinator system under the oversight of the Chair of United Nations Sustainable Development Group (UNSDG). In 2026, DCO undertook a recalibration to ensure the RC system remains optimally configured to support the acceleration of the 2030 Agenda and embodies the UN 2.0 shift- anchored in data, digital, innovation, behavioral science, strategic foresight, and a mission driven organizational culture. The Economist engages in close collaboration with experts and stakeholders. Internally, this involves working with economic affairs officers, related teams within the entity, and intergovernmental bodies on economic policy to share thematic information, gather data, exchange best practices, and coordinate activities. Externally, the role engages with UN specialized agencies, international financial institutions, bilateral development agencies, governments, academic institutions, professional networks, and private sector entities to promote knowledge sharing, exchange information, report on developments, and stay updated on emerging trends and practices. The Economist is responsible for monitoring, analyzing, and advising on economic trends, policies, and developments to support informed economic decision-making and development strategies. This role involves conducting research on economic issues, preparing analytical reports, and evaluating the impact of economic policies as well as the economic impact of social, environmental and geopolitical developments at global, regional, and national levels. The position supports the Resident Coordi…",
       "comment_postuler": {
         "mode": "lien",
         "valeur": "https://careers.un.org/jobSearchDescription/285831?language=en"
@@ -2041,11 +1972,11 @@
       "domaine_swimpe": "local",
       "type": "emploi",
       "titre": "Human Resources Officer (2 positions), P4",
-      "organisation": "Nations Unies (Secrétariat)",
+      "organisation": "ONU · Department of Operational Support",
       "pays": "Sénégal",
-      "ville": "[{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb6895D03E65766F83Efb7'}, {'Code': '4200', 'Description': 'Bangkok', '_Id': '6Aeb6895D03E65766F83Efb8'}]",
+      "ville": "DAKAR (+ 1 autres lieux)",
       "domaine": "",
-      "description": "Lieu d'affectation : [{'Code': '3810', 'Description': 'Dakar', '_Id': '6Aeb6895D03E65766F83Efb7'}, {'Code': '4200', 'Description': 'Bangkok', '_Id': '6Aeb6895D03E65766F83Efb8'}] · Niveau : P-4 · Département : {'code': '88888893', 'name': 'Department of Operational Support'}\n\nOrg. Setting and Reporting These positions (2) are located within the Common Administrative Platform (CAP) in New York at United Nations Headquarters, referred to as the One Executive Office (\"One EO\"), under the Division of Administration in the Department of Operational Support (DOS). One EO started its transition phase on 1 January 2026 as part of the UN80 reform initiative, which aims to consolidate common administrative functions across Secretariat entities into unified service platforms. The Department of Operational Support (DOS) was established to provide end-to-end operational support, advisory services and other solutions to operating entities across the Secretariat, including departments, offices away from headquarters, peace operations, and regional commissions. The Division of Administration (DOA) in New York provides administrative support functions (human resources, budget, finance and general administration) and facility management and commercial services to entities at United Nations Headquarters. It also provides financial operational services to entities across the globe. As Common Administrative Platform, the Division comprises the OneEO, the Financial Operations Service (including OnePayroll), and the Facilities and Commercial Activities Service. One EO provides the full range of administrative and operational services required by New York– based Secretariat client entities to fulfil their mandates, including human resources management, financial administration, travel, and general administrative support. c Responsibilities Within limits of delegated authority, the Human Resources Officer will carry out the following duties in the assigned regional portfolio, as applicable: GENERAL: • Develops and implements new human resources policies, practices and procedures to meet the evolving needs of the Organization and maintains effective and steady communication or working relations with UN Agencies to seek harmonization. • Monitors and ensures the implementation of human resources policies, practices and procedures and Represents HR in regional meetings as needed. • Keeps abreast of developments in various areas of human resources and serves as the first point of contact for regional human resources policy and administrative questions, supports implementation of Secretariat human resources reforms, and provides strategic advice on workforce planning and human resources arrangements during emergencies. • Prepares reports and participates and…",
+      "description": "Lieu d'affectation : DAKAR (+ 1 autres lieux) · Niveau : P-4 · Département : Department of Operational Support\n\nOrg. Setting and Reporting These positions (2) are located within the Common Administrative Platform (CAP) in New York at United Nations Headquarters, referred to as the One Executive Office (\"One EO\"), under the Division of Administration in the Department of Operational Support (DOS). One EO started its transition phase on 1 January 2026 as part of the UN80 reform initiative, which aims to consolidate common administrative functions across Secretariat entities into unified service platforms. The Department of Operational Support (DOS) was established to provide end-to-end operational support, advisory services and other solutions to operating entities across the Secretariat, including departments, offices away from headquarters, peace operations, and regional commissions. The Division of Administration (DOA) in New York provides administrative support functions (human resources, budget, finance and general administration) and facility management and commercial services to entities at United Nations Headquarters. It also provides financial operational services to entities across the globe. As Common Administrative Platform, the Division comprises the OneEO, the Financial Operations Service (including OnePayroll), and the Facilities and Commercial Activities Service. One EO provides the full range of administrative and operational services required by New York– based Secretariat client entities to fulfil their mandates, including human resources management, financial administration, travel, and general administrative support. c Responsibilities Within limits of delegated authority, the Human Resources Officer will carry out the following duties in the assigned regional portfolio, as applicable: GENERAL: • Develops and implements new human resources policies, practices and procedures to meet the evolving needs of the Organization and maintains effective and steady communication or working relations with UN Agencies to seek harmonization. • Monitors and ensures the implementation of human resources policies, practices and procedures and Represents HR in regional meetings as needed. • Keeps abreast of developments in various areas of human resources and serves as the first point of contact for regional human resources policy and administrative questions, supports implementation of Secretariat human resources reforms, and provides strategic advice on workforce planning and human resources arrangements during emergencies. • Prepares reports and participates and…",
       "comment_postuler": {
         "mode": "lien",
         "valeur": "https://careers.un.org/jobSearchDescription/285677?language=en"
@@ -2058,54 +1989,6 @@
       "methode_verif": "auto",
       "verifie_le": "2026-11-04",
       "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "veille-3d4f3838f7",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun",
-      "organisation": "LesOpportunités",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function(){return litespeed_docref}}),sessionStorage.removeItem(\"litespeed_docref\")); (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-69989611-19','auto');ga('send','pageview') Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun - Opportunités du Monde {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/\",\"url\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/\",\"name\":\"Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun - Opportunités du Monde\",\"isPartOf\":{\"@id\":\"https://www.lesopportunites.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/#primaryimage\"},\"image\":{\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/#primaryimage\"},\"thumbnailUrl\":\"https://www.lesopportunites.com/wp-content/uploads/2026/11/auf.jpg\",\"datePublished\":\"2026-11-04T05:52:51+00:00\",\"description\":\"Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun\",\"breadcrumb\":{\"@id\":\"https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/"
-      },
-      "publie_le": "2026-11-04",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/",
-      "source_domaine": "lesopportunites.com",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
-      "id": "veille-138e9aa0c7",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde",
-      "organisation": "LesOpportunités",
-      "pays": "Sénégal",
-      "ville": "",
-      "domaine": "",
-      "description": "var litespeed_docref=sessionStorage.getItem(\"litespeed_docref\");litespeed_docref&&(Object.defineProperty(document,\"referrer\",{get:function(){return litespeed_docref}}),sessionStorage.removeItem(\"litespeed_docref\")); (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-69989611-19','auto');ga('send','pageview') ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/\",\"url\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/\",\"name\":\"ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde\",\"isPartOf\":{\"@id\":\"https://www.lesopportunites.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/#primaryimage\"},\"image\":{\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/#primaryimage\"},\"thumbnailUrl\":\"https://www.lesopportunites.com/wp-content/uploads/2026/11/image_2026-11-04_145756825.png\",\"datePublished\":\"2026-11-04T14:00:31+00:00\",\"description\":\"ABED ONG recrute cinq (5) Représentant(e)s Pays au Sénégal, au Burkina Faso, au Niger, en RDC et au Maghreb - Opportunités du Monde\",\"breadcrumb\":{\"@id\":\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/"
-      },
-      "publie_le": "2026-11-04",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://www.lesopportunites.com/opportunite/afrique/avis-de-recrutement/education/abed-ong-recrute-cinq-5-representantes-pays-au-senegal-au-burkina-faso-au-niger-en-rdc-et-au-maghreb/",
-      "source_domaine": "lesopportunites.com",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-04",
-      "ajoute_par": "veille-auto",
       "profil_international": false
     }
   ]

@@ -35,6 +35,22 @@
       ]
     },
     {
+      "sujet": "EmploisCI on X: \" SOS VILLAGES D'ENFANTS EN CÔTE D'IVOIRE RECRUTE",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://x.com/EmploisCi/status/2118002912668373347",
+          "domaine": "x.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : x.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "EmploisCI on X: \" COSO RECRUTE – COMPTABLE PRINCIPAL (H/F)",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -340,22 +356,6 @@
       ]
     },
     {
-      "sujet": "MAN PROPERTIES recrute un Stagiaire Assistant Administratif - Journal Universitaire",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://journaluniversitaire.com/man-properties-recrute-assistant-administratif/",
-          "domaine": "journaluniversitaire.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : journaluniversitaire.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
       "sujet": "Le Fonds mondial pour la nature (WWF) recrute un Stagiaire en Comptabilité - YOP L-FRII",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -518,6 +518,22 @@
       ]
     },
     {
+      "sujet": "Offre d'emploi Yaoundé : on recrute une secrétaire commerciale (CDD, Bac+2, 1 an d ... - Instagram",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.instagram.com/reel/DfUaj5LgrY_/",
+          "domaine": "instagram.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : instagram.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "Rejoignez-nous... AFG Bank Cameroun recrute au poste de Chef Service ALM. Douala ... - Facebook",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -631,22 +647,6 @@
         "🔴 facebook.com ressemble au domaine officiel facebook.com/business/learn — sosie probable, NE PAS diffuser"
       ],
       "alerte_arnaque_probable": true
-    },
-    {
-      "sujet": "Tchad : le PDAF-MPME recrute un cabinet d'audit externe pour les exercices 2026, 2027 et 2028",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-03",
-      "liens": [
-        {
-          "lien": "https://www.alwihdainfo.com/tchad-le-pdaf-mpme-recrute-un-cabinet-daudit-externe-pour-les-exercices-2026-2027-et-2028/",
-          "domaine": "alwihdainfo.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : alwihdainfo.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
     },
     {
       "sujet": "Afrique : qui sera le joueur de l'année ? - Maxifoot",
@@ -921,6 +921,54 @@
       ]
     },
     {
+      "sujet": "La BRVM évoque l'ouverture de l'introduction en bourse de la raffinerie Dangote",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://energynews.pro/la-brvm-evoque-louverture-de-lintroduction-en-bourse-de-la-raffinerie-dangote",
+          "domaine": "energynews.pro"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : energynews.pro — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Formation GEO : Être visible dans les nouveaux moteurs de recherche IA - Ifop Group",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.ifopgroup.com/evenement/formation-geo-etre-visible-dans-les-nouveaux-moteurs-de-recherche-ia/",
+          "domaine": "ifopgroup.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : ifopgroup.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Le Sénégal obtient près de 1 000 milliards de francs CFA d'engagements pour l'accès ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.afdb.org/fr/news-and-events/press-releases/senegal-obtient-pres-1-000-milliards-francs-cfa-98252",
+          "domaine": "afdb.org"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 afdb.org est officiel mais la page n'a pas répondu (403 Client Error: Forbidden for url: https://www.afdb.org/fr/news-and-events/press-releases/senegal-obtient-pres-1-000-milliards-francs-cfa-98252)"
+      ]
+    },
+    {
       "sujet": "Mauritanie : l'alternance pour combler le fossé entre formation industrielle et emplois",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -968,6 +1016,22 @@
         "🔴 facebook.com ressemble au domaine officiel facebook.com/business/learn — sosie probable, NE PAS diffuser"
       ],
       "alerte_arnaque_probable": true
+    },
+    {
+      "sujet": "À Marseille, le Bivouac fait vivre l'amitié entre les religions - Scouts et Guides de France",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://sgdf.fr/a-marseille-le-bivouac-fait-vivre-lamitie-entre-les-religions/",
+          "domaine": "sgdf.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : sgdf.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
     },
     {
       "sujet": "Quotidienne 24 du 04 novembre 2026 - Star Academy - TF1",
@@ -1176,70 +1240,6 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : koaci.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Côte d'Ivoire : Examens d'État de l'année universitaire 2025-2026 de l'INJS, quelle solution ...",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.koaci.com/article/2026/11/04/cote-divoire/societe/cote-divoire-examens-detat-de-lannee-universitaire-2025-2026-de-linjs-quelle-solution-pour-les-943-etudiants-ajournes_202257.html",
-          "domaine": "koaci.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : koaci.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Côte d'Ivoire : le kilogramme de coton-graine maintenu à 310 FCFA pour la nouvelle campagne",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.financialafrik.com/2026/11/04/cote-divoire-le-kilogramme-de-coton-graine-maintenu-a-310-fcfa-pour-la-nouvelle-campagne/",
-          "domaine": "financialafrik.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "« Mon Heure d'Afrique » reçoit Aissata Diakité, fondatrice et Présidente du groupe ...",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.financialafrik.com/2026/11/04/mon-heure-dafrique-recoit-aissata-diakite-fondatrice-et-presidente-du-groupe-zabbaan/",
-          "domaine": "financialafrik.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Sport : la LONACI octroie 60 millions FCFA à 15 clubs sportifs pour renforcer la formation ...",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://news.abidjan.net/galeries/57501/sport-la-lonaci-octroie-60-millions-fcfa-a-15-clubs-sportifs-pour-renforcer-la-formation-des-athletes",
-          "domaine": "news.abidjan.net"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : news.abidjan.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -1800,6 +1800,102 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : senenews.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "MAN PROPERTIES recrute un Stagiaire Assistant Administratif - Journal Universitaire",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://journaluniversitaire.com/man-properties-recrute-assistant-administratif/",
+          "domaine": "journaluniversitaire.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : journaluniversitaire.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Tchad : le PDAF-MPME recrute un cabinet d'audit externe pour les exercices 2026, 2027 et 2028",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-03",
+      "liens": [
+        {
+          "lien": "https://www.alwihdainfo.com/tchad-le-pdaf-mpme-recrute-un-cabinet-daudit-externe-pour-les-exercices-2026-2027-et-2028/",
+          "domaine": "alwihdainfo.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : alwihdainfo.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Côte d'Ivoire : Examens d'État de l'année universitaire 2025-2026 de l'INJS, quelle solution ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.koaci.com/article/2026/11/04/cote-divoire/societe/cote-divoire-examens-detat-de-lannee-universitaire-2025-2026-de-linjs-quelle-solution-pour-les-943-etudiants-ajournes_202257.html",
+          "domaine": "koaci.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : koaci.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Côte d'Ivoire : le kilogramme de coton-graine maintenu à 310 FCFA pour la nouvelle campagne",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.financialafrik.com/2026/11/04/cote-divoire-le-kilogramme-de-coton-graine-maintenu-a-310-fcfa-pour-la-nouvelle-campagne/",
+          "domaine": "financialafrik.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "« Mon Heure d'Afrique » reçoit Aissata Diakité, fondatrice et Présidente du groupe ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.financialafrik.com/2026/11/04/mon-heure-dafrique-recoit-aissata-diakite-fondatrice-et-presidente-du-groupe-zabbaan/",
+          "domaine": "financialafrik.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : financialafrik.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Sport : la LONACI octroie 60 millions FCFA à 15 clubs sportifs pour renforcer la formation ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://news.abidjan.net/galeries/57501/sport-la-lonaci-octroie-60-millions-fcfa-a-15-clubs-sportifs-pour-renforcer-la-formation-des-athletes",
+          "domaine": "news.abidjan.net"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : news.abidjan.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
