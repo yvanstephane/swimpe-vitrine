@@ -1816,6 +1816,7 @@ SELF_TEST_MOCK = {
 def self_test(config):
     # on force : reliefweb_rss ACTIF + jooble ACTIF pour tester les mappers, le reste inchange
     cfg = json.loads(json.dumps(config))
+    cfg["_chemin_offres_manuelles"] = ""   # le test ne compte que les données simulées
     for s in cfg.get("sources", []):
         if s["id"] in SELF_TEST_MOCK:
             s["actif"] = True
