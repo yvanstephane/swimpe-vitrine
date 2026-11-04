@@ -291,11 +291,11 @@ def self_test():
 
     e, _ = detecter_par_motif("https://apply.workable.com/giz-kamerun/", "Cameroun", "emploi")
     check("Workable type", e and e["type"] == "workable_api")
+    check("Workable compte", e and e["compte"] == "giz-kamerun")
     e, _ = detecter_par_motif("https://estm.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/29178", "Sénégal", "emploi")
     check("Oracle HCM type", e and e["type"] == "oracle_hcm_api" and e["site"] == "CX_1" and e["host"] == "https://estm.fa.em2.oraclecloud.com")
     e, _ = detecter_par_motif("https://careers.un.org/jobSearchDescription/286456?language=en", None, None)
     check("ONU type", e and e["type"] == "un_careers_api")
-    check("Workable compte", e and e["compte"] == "giz-kamerun")
 
     e, _ = detecter_par_motif("https://medecinssansfrontiereswaca.recruitee.com/o/poste", None, None)
     check("Recruitee type", e and e["type"] == "recruitee_api")
