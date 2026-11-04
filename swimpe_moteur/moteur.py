@@ -482,6 +482,125 @@ def map_un_careers(items, source, pays_cibles=None):
     return offres
 
 
+# ---------------------------------------------------------------------------
+# CONNECTEUR Oracle HCM « Candidate Experience » (PNUD / UNFPA « Quantum », banques, groupes)
+# Methode « porte de service » : la page …/hcmUI/CandidateExperience/… est une appli
+# JavaScript illisible, mais elle lit elle-meme une API REST publique. On l'utilise.
+#   liste   : {host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+#             ?onlyData=true&expand=requisitionList.secondaryLocations
+#             &finder=findReqs;siteNumber={site},limit={n},offset={o},sortBy=POSTING_DATES_DESC
+#   details : {host}/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails
+#             ?expand=all&onlyData=true&finder=ById;siteNumber={site},Id="{id}"
+#   page    : {host}/hcmUI/CandidateExperience/{langue}/sites/{site}/job/{id}
+# ---------------------------------------------------------------------------
+def _oracle_texte(v):
+    if v is None:
+        return ""
+    if isinstance(v, (str, int, float)):
+        return str(v).strip()
+    if isinstance(v, dict):
+        for k in ("Name", "name", "Description", "description", "label", "value"):
+            if isinstance(v.get(k), str) and v[k].strip():
+                return v[k].strip()
+        return ""
+    if isinstance(v, (list, tuple)):
+        return ", ".join(t for t in (_oracle_texte(x) for x in v) if t)
+    return str(v)
+
+
+def fetch_oracle_hcm(source, pays_cibles, _mock=None):
+    """Lit la liste, garde les offres de nos pays, puis va chercher le detail de chacune."""
+    if _mock is not None:
+        return _mock
+    if requests is None:
+        raise RuntimeError("Le module 'requests' est requis.")
+    host = source["host"].rstrip("/")
+    site = source.get("site", "CX_1")
+    par_page = int(source.get("par_page", 100))
+    pages_max = int(source.get("pages_max", 3))
+    entetes = {**UA, "Accept": "application/json"}
+    gardes = []
+    for page in range(pages_max):
+        url = ("%s/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true"
+               "&expand=requisitionList.secondaryLocations"
+               "&finder=findReqs;siteNumber=%s,limit=%d,offset=%d,sortBy=POSTING_DATES_DESC"
+               % (host, site, par_page, page * par_page))
+        r = requests.get(url, headers=entetes, timeout=int(source.get("timeout", 40)))
+        r.raise_for_status()
+        items = (r.json() or {}).get("items") or []
+        reqs = (items[0].get("requisitionList") if items else None) or []
+        for it in reqs:
+            lieu = " ".join(_oracle_texte(it.get(k)) for k in
+                            ("PrimaryLocation", "PrimaryLocationCountry", "secondaryLocations", "Title"))
+            if detecter_pays(lieu, pays_cibles):
+                gardes.append(it)
+        if len(reqs) < par_page or len(gardes) >= int(source.get("limite", 40)):
+            break
+    # details (texte complet) pour chaque offre gardee
+    resultats = []
+    for it in gardes[: int(source.get("limite", 40))]:
+        det = {}
+        try:
+            url = ("%s/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails"
+                   "?expand=all&onlyData=true&finder=ById;siteNumber=%s,Id=%%22%s%%22"
+                   % (host, site, it.get("Id")))
+            rd = requests.get(url, headers=entetes, timeout=int(source.get("timeout", 40)))
+            if rd.ok:
+                det = ((rd.json() or {}).get("items") or [{}])[0] or {}
+        except Exception:
+            det = {}
+        resultats.append((it, det))
+    return resultats
+
+
+def map_oracle_hcm(resultats, source, pays_cibles=None):
+    fenetre = int(source.get("fenetre_jours", 30))
+    exp_def = (datetime.date.today() + datetime.timedelta(days=fenetre)).isoformat()
+    langue = source.get("langue", "en")
+    offres = []
+    for it, det in resultats or []:
+        rid = str(it.get("Id") or det.get("Id") or "").strip()
+        titre = nettoyer_html(_oracle_texte(it.get("Title") or det.get("Title")))[:140]
+        if not rid or not titre:
+            continue
+        lieu = _oracle_texte(it.get("PrimaryLocation") or det.get("PrimaryLocation"))
+        autres = _oracle_texte(it.get("secondaryLocations"))
+        # le lieu principal d'abord, puis les lieux secondaires et le titre
+        pays = (detecter_pays(lieu + " " + _oracle_texte(it.get("PrimaryLocationCountry")), pays_cibles or [])
+                or detecter_pays(autres + " " + titre, pays_cibles or []))
+        if not pays:
+            continue
+        expire = (jour(det.get("PostingEndDate") or det.get("ExpirationDate") or it.get("PostingEndDate"))
+                  or exp_def)
+        if not non_expiree(expire):
+            continue
+        morceaux = []
+        for cle, etiquette in (("ShortDescriptionStr", ""), ("ExternalDescriptionStr", ""),
+                               ("ExternalResponsibilitiesStr", "Responsabilités : "),
+                               ("ExternalQualificationsStr", "Qualifications : ")):
+            v = nettoyer_html(_oracle_texte(det.get(cle) or it.get(cle)))
+            if v:
+                morceaux.append(etiquette + v)
+        corps = "\n\n".join(morceaux)
+        entete = " · ".join(x for x in [
+            ("Lieu : " + lieu) if lieu else "",
+            ("Organisation : " + _oracle_texte(det.get("Organization") or it.get("Organization")))
+            if (det.get("Organization") or it.get("Organization")) else "",
+            ("Famille : " + _oracle_texte(det.get("JobFamily") or it.get("JobFamily")))
+            if (det.get("JobFamily") or it.get("JobFamily")) else ""] if x)
+        description = ((entete + "\n\n") if entete else "") + corps[:3500]
+        if len(description) < 40:
+            description = "Offre publiée sur le portail officiel de l'organisation. Détails et candidature sur la page officielle."
+        ville = lieu.split(",")[0].strip() if lieu else ""
+        lien = "%s/hcmUI/CandidateExperience/%s/sites/%s/job/%s" % (
+            source["host"].rstrip("/"), langue, source.get("site", "CX_1"), rid)
+        offres.append(_offre(
+            source, id_stable(source["id"], lien), detecter_type(titre, "emploi"),
+            titre, source.get("organisation_defaut", ""), pays, ville, "", description, lien,
+            jour(it.get("PostedDate") or det.get("PostedDate")) or today(), expire))
+    return offres
+
+
 def map_reliefweb(jobs, source):
     offres = []
     for j in jobs:
@@ -1572,6 +1691,8 @@ def lire_source(src, pays_cibles, mock=None):
         return map_un_careers(fetch_un_careers(src, _mock=m), src, pays_cibles)
     if t == "reliefweb_api":
         return map_reliefweb(fetch_reliefweb(src, pays_cibles, _mock=m), src)
+    if t == "oracle_hcm_api":
+        return map_oracle_hcm(fetch_oracle_hcm(src, pays_cibles, _mock=m), src, pays_cibles)
     if t == "jooble_api":
         return map_jooble(fetch_jooble(src, _mock=m), src)
     if t == "recruitee_api":

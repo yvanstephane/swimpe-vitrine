@@ -93,6 +93,39 @@ def detecter_par_motif(url, pays, type_offre):
             "fenetre_jours": 21, "limite": 25,
         }, "Portail Workable détecté (compte « %s »)." % compte
 
+    # --- MÉTHODE « PORTE DE SERVICE » : portails qui bloquent les robots mais ont une API ---
+    # ONU (careers.un.org / Inspira) : un seul connecteur suffit, il couvre tout le Secrétariat
+    if host in ("careers.un.org", "inspira.un.org"):
+        return {
+            "id": "un_careers_api", "actif": False, "type": "un_careers_api",
+            "domaine": "careers.un.org", "libelle": "Nations Unies — portail officiel (API careers.un.org)",
+            "organisation_defaut": "Nations Unies (Secrétariat)",
+            "api_base": "https://careers.un.org/api/public/opening/jo",
+            "par_page": 100, "pages_max": 6, "limite": 40,
+        }, "Portail ONU détecté : la source « un_careers_api » existe déjà dans sources.json (elle couvre toutes les offres)."
+
+    # Oracle HCM « Candidate Experience » (PNUD/UNFPA « Quantum », banques…) :
+    # https://<host>/hcmUI/CandidateExperience/<langue>/sites/<SITE>/...
+    if host.endswith(".oraclecloud.com") and "/hcmUI/CandidateExperience/" in chemin:
+        m = re.search(r"/CandidateExperience/([a-z]{2})/sites/([^/]+)", chemin)
+        langue, site = (m.group(1), m.group(2)) if m else ("en", "CX_1")
+        nom = host.split(".")[0]
+        return {
+            "id": _slug(nom) + "_oracle",
+            "actif": False, "type": "oracle_hcm_api",
+            "domaine": host,
+            "libelle": "%s — portail officiel Oracle HCM (site %s)" % (nom.upper(), site),
+            "organisation_defaut": "", "host": "https://" + host, "site": site, "langue": langue,
+            "par_page": 100, "pages_max": 3, "fenetre_jours": 30, "limite": 40,
+        }, "Portail Oracle HCM détecté (site « %s »). Renseigne organisation_defaut (ex. PNUD)." % site
+
+    # ReliefWeb (reliefweb.int) : API officielle déjà branchée
+    if host == "reliefweb.int":
+        return {
+            "id": "reliefweb_api", "actif": False, "type": "reliefweb_api", "domaine": "reliefweb.int",
+            "libelle": "ReliefWeb — API officielle (ONU/OCHA)",
+        }, "ReliefWeb détecté : la source API existe déjà dans sources.json."
+
     # Recruitee : <nom>.recruitee.com
     if host.endswith(".recruitee.com"):
         nom = host.split(".recruitee.com")[0]
@@ -258,6 +291,10 @@ def self_test():
 
     e, _ = detecter_par_motif("https://apply.workable.com/giz-kamerun/", "Cameroun", "emploi")
     check("Workable type", e and e["type"] == "workable_api")
+    e, _ = detecter_par_motif("https://estm.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/29178", "Sénégal", "emploi")
+    check("Oracle HCM type", e and e["type"] == "oracle_hcm_api" and e["site"] == "CX_1" and e["host"] == "https://estm.fa.em2.oraclecloud.com")
+    e, _ = detecter_par_motif("https://careers.un.org/jobSearchDescription/286456?language=en", None, None)
+    check("ONU type", e and e["type"] == "un_careers_api")
     check("Workable compte", e and e["compte"] == "giz-kamerun")
 
     e, _ = detecter_par_motif("https://medecinssansfrontiereswaca.recruitee.com/o/poste", None, None)

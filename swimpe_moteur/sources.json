@@ -576,6 +576,22 @@
       "limite": 40,
       "timeout": 40,
       "_note": "API JSON publique lue par la page web elle-meme (POST /list/filteredV2/en). Toutes les offres mondiales, filtrees sur nos pays via le lieu d'affectation (dutyStation) + titre. Description complete stockee (texte de secours pour l'usine)."
+    },
+    {
+      "id": "undp_quantum",
+      "actif": true,
+      "type": "oracle_hcm_api",
+      "domaine": "estm.fa.em2.oraclecloud.com",
+      "libelle": "PNUD — portail officiel « Quantum » (Oracle HCM, API publique)",
+      "organisation_defaut": "PNUD (UNDP)",
+      "host": "https://estm.fa.em2.oraclecloud.com",
+      "site": "CX_1",
+      "langue": "en",
+      "par_page": 100,
+      "pages_max": 3,
+      "fenetre_jours": 30,
+      "limite": 40,
+      "_note": "Méthode « porte de service » : la page est une appli JavaScript, l'API REST qu'elle utilise est publique. Pays détecté sur le lieu principal."
     }
   ]
 }
