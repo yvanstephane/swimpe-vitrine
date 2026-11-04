@@ -35,6 +35,86 @@
       ]
     },
     {
+      "sujet": "EmploisCI on X: \" COSO RECRUTE – COMPTABLE PRINCIPAL (H/F)",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://x.com/EmploisCi/status/2118007894230585571",
+          "domaine": "x.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : x.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "EmploisCI on X: \" OFFRE D'EMPLOI – DIRECTEUR(TRICE) D'HÔTEL (H/F)",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://x.com/EmploisCi/status/2117977681086058964",
+          "domaine": "x.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : x.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Opportunité d'emploi pour les diplômés de l'Académie Régionale des Sciences et ... - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/opportunite-demploi-pour-les-diplomes-de-lacademie-regionale-des-sciences-et-techniques-de-la-mer-arstm-04-novembre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Avis de recrutement à l'ONG internationale Médecins du monde - 04 novembre 2026",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/avis-de-recrutement-a-long-internationale-medecins-du-monde-04-novembre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Le Bureau régional de l'UNICEF recrute des Volontaires - 04 Novembre 2026 - YOP L-FRII",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/le-bureau-regional-de-lunicef-recrute-des-volontaires-04-novembre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "Man Group lance ses premiers ETF Ucits actifs - L'Agefi",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -64,6 +144,22 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Man Utd : Carrick heureux pour ses joueurs - Maxifoot",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://m.maxifoot.fr/man-utd/carrick-heureux-pour-ses-joueurs-foot-467053.htm",
+          "domaine": "m.maxifoot.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : m.maxifoot.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -164,6 +260,22 @@
       ]
     },
     {
+      "sujet": "OpenAI recrute Jill Hazelbaker, venue d'Uber, comme directrice des affaires institutionnelles",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.unite.ai/fr/openai-taps-ubers-jill-hazelbaker-as-corporate-affairs-chief/",
+          "domaine": "unite.ai"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : unite.ai — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "Le PNUD recherche un volontaire 04 novembre 2026 - YOP L-FRII",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -212,6 +324,22 @@
       ]
     },
     {
+      "sujet": "Rothschild & Co recrute un directeur sur la partie conseil - Citywire",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://citywire.com/fr/news/rothschild-and-co-recrute-un-directeur-sur-la-partie-conseil/a2502421",
+          "domaine": "citywire.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : citywire.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "Avis de recrutement à Africa Global Logistics 04 novembre 2026 - YOP L-FRII",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -225,134 +353,6 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Neuberger recrute un responsable clients institutionnels en Europe du Nord - L'Agefi",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.agefi.fr/asset-management/actualites/neuberger-recrute-un-responsable-clients-institutionnels-en-europe-du-nord",
-          "domaine": "agefi.fr"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : agefi.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "EDG recrute Guilhem Bodin pour doper son modèle à l'IA - Stratégies",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.strategies.fr/actualites/agences/LQ6856634C/edg-recrute-guilhem-bodin-pour-doper-son-modele-l-ia.html",
-          "domaine": "strategies.fr"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : strategies.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "EmploisCI on X: \" ICM HOLDING RECRUTE – MATELOT MÉCANICIEN (H/F)",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://x.com/EmploisCi/status/2117897170351227251",
-          "domaine": "x.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : x.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Painter / Handy man : offre d'emploi chez Cogir Immobilier, Montréal | Glassdoor",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://fr.glassdoor.ca/job-listing/painter-handy-man-cogir-management-JV_IC2296722_KO0,17_KE18,34.htm?jl=1007914025044",
-          "domaine": "fr.glassdoor.ca"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : fr.glassdoor.ca — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Job Info : l'ADAPEILA recrute dans l'ouest",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.ouest-france.fr/pays-de-la-loire/nantes-44000/video-job-info-l-adapeila-recrute-dans-l-ouest-d31a5fe5-25ee-3fdc-8e73-ef468484d38c",
-          "domaine": "ouest-france.fr"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : ouest-france.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Man City : Aït-Nouri ouvert à un départ - Maxifoot",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://m.maxifoot.fr/man-city/ait-nouri-ouvert-a-un-depart-foot-466989.htm",
-          "domaine": "m.maxifoot.fr"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : m.maxifoot.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "BP recrute la dirigeante de Shell Emma Lewis pour sa division aval - Investing.com",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://fr.investing.com/news/stock-market-news/bp-recrute-la-dirigeante-de-shell-emma-lewis-pour-sa-division-aval-3673565",
-          "domaine": "fr.investing.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : fr.investing.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Guérigny : l'Orchestre des Forges Royales recrute des musiciens pour renforcer ses cordes",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.lejdc.fr/guerigny-58130/loisirs/guerigny-l-orchestre-des-forges-royales-recrute-des-musiciens-pour-renforcer-ses-cordes_15074209/",
-          "domaine": "lejdc.fr"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : lejdc.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -410,6 +410,23 @@
       "liens": [
         {
           "lien": "https://www.facebook.com/BoursesOpportunites/photos/la-délégation-du-comité-international-de-la-croix-rouge-cicr-recrute-une-ingénie/1641726641299391/",
+          "domaine": "facebook.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🔴 facebook.com ressemble au domaine officiel facebook.com/business/learn — sosie probable, NE PAS diffuser"
+      ],
+      "alerte_arnaque_probable": true
+    },
+    {
+      "sujet": "L'UNICEF recrute pour un Stage national - Unité Éducation à Yaoundé , au Cameroun",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.facebook.com/BoursesOpportunites/posts/lunicef-recrute-pour-un-stage-national-unité-éducation-à-yaoundé-au-camerounplus/1641961544609234/",
           "domaine": "facebook.com"
         }
       ],
@@ -652,19 +669,19 @@
       "alerte_arnaque_probable": true
     },
     {
-      "sujet": "L'UNFPA – Fonds des Nations Unies pour la Population recrute – 03 novembre 2026",
+      "sujet": "Afrique : qui sera le joueur de l'année ? - Maxifoot",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-03",
+      "recu_le": "2026-11-04",
       "liens": [
         {
-          "lien": "https://yop.l-frii.com/lunfpa-fonds-des-nations-unies-pour-la-population-recrute-03-novembre-2026/",
-          "domaine": "yop.l-frii.com"
+          "lien": "https://m.maxifoot.fr/afrique/qui-sera-le-joueur-de-l-annee-foot-467087.htm",
+          "domaine": "m.maxifoot.fr"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+        "🟡 domaine inconnu : m.maxifoot.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -844,22 +861,6 @@
       ]
     },
     {
-      "sujet": "Opportunité d'emploi pour les diplômés de l'Académie Régionale des Sciences et ... - YOP L-FRII",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://yop.l-frii.com/opportunite-demploi-pour-les-diplomes-de-lacademie-regionale-des-sciences-et-techniques-de-la-mer-arstm-04-novembre-2026/",
-          "domaine": "yop.l-frii.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
       "sujet": "Electromécanicien (H/F) INTERACTION - Meteojob",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -924,19 +925,68 @@
       ]
     },
     {
-      "sujet": "FORUM D'AFFAIRES GABON-ITALIE: UNE VINGTAINE D'ENTREPRISES ITALIENNES ...",
+      "sujet": "EDG recrute Guilhem Bodin pour doper son modèle à l'IA - Stratégies",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
       "liens": [
         {
-          "lien": "https://www.tvplusafrique.com/index.php?page=detail-article&article=20158&titre=FORUM D'AFFAIRES GABON-ITALIE: UNE VINGTAINE D'ENTREPRISES ITALIENNES ATTENDUES À LIBREVILLE LES 18 ET 19 NOVEMBRE",
-          "domaine": "tvplusafrique.com"
+          "lien": "https://www.strategies.fr/actualites/agences/LQ6856634C/edg-recrute-guilhem-bodin-pour-doper-son-modele-l-ia.html",
+          "domaine": "strategies.fr"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 domaine inconnu : tvplusafrique.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+        "🟡 domaine inconnu : strategies.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Mauritanie : l'alternance pour combler le fossé entre formation industrielle et emplois",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.agenceecofin.com/actualites-services/0411-143102-mauritanie-lalternance-pour-combler-le-fosse-entre-formation-industrielle-et-emplois",
+          "domaine": "agenceecofin.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : agenceecofin.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "COMMUNIQUE Madame le Ministre d'État, Ministre de la Fonction Publique et de la ... - Facebook",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.facebook.com/Fonctionpublique.ci/posts/𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐐𝐔𝐄madame-le-ministre-détat-ministre-de-la-fonction-publique-et-de-la-mod/1595163425979896/",
+          "domaine": "facebook.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🔴 facebook.com ressemble au domaine officiel facebook.com/business/learn — sosie probable, NE PAS diffuser"
+      ],
+      "alerte_arnaque_probable": true
+    },
+    {
+      "sujet": "Quotidienne 24 du 04 novembre 2026 - Star Academy - TF1",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.tf1.fr/fr-ci/tf1/star-academy/videos/star-academy-2026-quotidienne-24-du-4-novembre-2026-91258233.html",
+          "domaine": "tf1.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : tf1.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -1018,6 +1068,22 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : agenceecofin.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Le gardien Jesús Owono évoque «une immense douleur» après le décès de Jesús de Miguel",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://fr.news.yahoo.com/gardien-jesús-owono-évoque-immense-162958380.html",
+          "domaine": "fr.news.yahoo.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : fr.news.yahoo.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -1198,70 +1264,6 @@
       ]
     },
     {
-      "sujet": "Les prévisions de la récolte intermédiaire de cacao de la Côte d'Ivoire revues à la baisse ...",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.zonebourse.com/actualite-bourse/les-previsions-de-la-recolte-intermediaire-de-cacao-de-la-cote-da-ivoire-revues-a-la-baisse-apres-d-ce785fded081f723",
-          "domaine": "zonebourse.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : zonebourse.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Le Sénégal discute avec Alibaba d'une suite de partenariat après les JOJ - We are Tech",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.wearetech.africa/fr/fils/actualites/tech/le-senegal-discute-avec-alibaba-d-une-suite-de-partenariat-apres-les-joj",
-          "domaine": "wearetech.africa"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : wearetech.africa — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Quel avenir pour la gouvernance électorale en Côte d'Ivoire ? Retour sur le Symposium",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.kas.de/fr/web/westafrika/veranstaltungsberichte/detail/-/content/quel-avenir-pour-la-gouvernance-electorale-en-cote-d-ivoire-retour-sur-le-symposium",
-          "domaine": "kas.de"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : kas.de — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "L'Université du Nil au Nigéria diplôme 30 startups étudiantes lors du Collective Lab Demo Day 2026",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://techcabal.com/fr/2026/11/04/L'université-du-Nil-au-Nigéria-diplôme-30-startups-dirigées-par-des-étudiants-lors-de-la-journée-de-démonstration-de-Collective-Lab-2026/",
-          "domaine": "techcabal.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : techcabal.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
       "sujet": "Médias : fin du séminaire d'immersion en Chine | Lunion.ga | Actualités Gabon - sonapresse",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -1307,6 +1309,22 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : africtelegraph.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Formation Odoo au Cameroun - Cabinet de formation au Maroc",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://newlearning.ma/formation-odoo-au-cameroun/",
+          "domaine": "newlearning.ma"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : newlearning.ma — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -1502,6 +1520,22 @@
       ]
     },
     {
+      "sujet": "Avis de recrutement des AGENTS P.O.S at NEERO CAMEROUN",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://cameroun.minajobs.net/emplois-stage-recrutement/45688/avis-de-recrutement-des-agents-pos-at-neero-cameroun",
+          "domaine": "cameroun.minajobs.net"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : cameroun.minajobs.net — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "2027 Offre de stage – Site Partenaire Cameroun - ANRS MIE",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -1518,35 +1552,51 @@
       ]
     },
     {
-      "sujet": "CAF Awards 2026 : Les Lionnes Indomptables à la conquête du continent, le Cameroun ...",
+      "sujet": "Migration et sécurité humaine dans l'Est du Sénégal : dépasser le prisme sécuritaire Spécial",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
       "liens": [
         {
-          "lien": "https://actucameroun.com/2026/11/04/caf-awards-2026-les-lionnes-indomptables-a-la-conquete-du-continent-le-cameroun-present-dans-4-categories/",
-          "domaine": "actucameroun.com"
+          "lien": "https://timbuktu-institute.org/index.php/toutes-l-actualites/item/1841-migration-et-securite-humaine-dans-l-est-du-senegal-depasser-le-prisme-securitaire",
+          "domaine": "timbuktu-institute.org"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 domaine inconnu : actucameroun.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+        "🟡 domaine inconnu : timbuktu-institute.org — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
-      "sujet": "Chantal Kambiwa : le Front camerounais vise le Pacte républicain - 237online.com",
+      "sujet": "Sénégal : Le rejet du budget rectificatif fait planer des incertitudes sur les d - Sika Finance",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
       "liens": [
         {
-          "lien": "https://www.237online.com/chantal-kambiwa-front-camerounais-pacte-republicain/",
-          "domaine": "237online.com"
+          "lien": "https://www.sikafinance.com/marches/senegal-le-rejet-du-budget-rectificatif-fait-planer-des-incertitudes-sur-les-depenses-sociales-et-les-investissements-publics_65494",
+          "domaine": "sikafinance.com"
         }
       ],
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 domaine inconnu : 237online.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+        "🟡 domaine inconnu : sikafinance.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Pétanque. Coupe de France : Bron alignera ses mondialistes avant leur envol pour la Thaïlande",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.leprogres.fr/sport/2026/11/04/coupe-de-france-bron-alignera-ses-mondialistes-avant-leur-envol-pour-la-thailande",
+          "domaine": "leprogres.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : leprogres.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
@@ -1694,6 +1744,22 @@
       ]
     },
     {
+      "sujet": "Dividende démographique : Le Sénégal sous la barre des 50 %, le signal d'alarme du ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.seneweb.com/fr/news/Societe/dividende-demographique-le-senegal-sous-la-barre-des-50-le-signal-dalarme-du-decrochage-de-matam_n_999002626.html",
+          "domaine": "seneweb.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : seneweb.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "Fatima Al Qadiri, 3TWI | Bourse de Commerce - Pinault Collection",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -1758,6 +1824,246 @@
       ]
     },
     {
+      "sujet": "Neuberger recrute un responsable clients institutionnels en Europe du Nord - L'Agefi",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.agefi.fr/asset-management/actualites/neuberger-recrute-un-responsable-clients-institutionnels-en-europe-du-nord",
+          "domaine": "agefi.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : agefi.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "EmploisCI on X: \" ICM HOLDING RECRUTE – MATELOT MÉCANICIEN (H/F)",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://x.com/EmploisCi/status/2117897170351227251",
+          "domaine": "x.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : x.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Painter / Handy man : offre d'emploi chez Cogir Immobilier, Montréal | Glassdoor",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://fr.glassdoor.ca/job-listing/painter-handy-man-cogir-management-JV_IC2296722_KO0,17_KE18,34.htm?jl=1007914025044",
+          "domaine": "fr.glassdoor.ca"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : fr.glassdoor.ca — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Job Info : l'ADAPEILA recrute dans l'ouest",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.ouest-france.fr/pays-de-la-loire/nantes-44000/video-job-info-l-adapeila-recrute-dans-l-ouest-d31a5fe5-25ee-3fdc-8e73-ef468484d38c",
+          "domaine": "ouest-france.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : ouest-france.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Man City : Aït-Nouri ouvert à un départ - Maxifoot",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://m.maxifoot.fr/man-city/ait-nouri-ouvert-a-un-depart-foot-466989.htm",
+          "domaine": "m.maxifoot.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : m.maxifoot.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "BP recrute la dirigeante de Shell Emma Lewis pour sa division aval - Investing.com",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://fr.investing.com/news/stock-market-news/bp-recrute-la-dirigeante-de-shell-emma-lewis-pour-sa-division-aval-3673565",
+          "domaine": "fr.investing.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : fr.investing.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Guérigny : l'Orchestre des Forges Royales recrute des musiciens pour renforcer ses cordes",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.lejdc.fr/guerigny-58130/loisirs/guerigny-l-orchestre-des-forges-royales-recrute-des-musiciens-pour-renforcer-ses-cordes_15074209/",
+          "domaine": "lejdc.fr"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : lejdc.fr — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "L'UNFPA – Fonds des Nations Unies pour la Population recrute – 03 novembre 2026",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-03",
+      "liens": [
+        {
+          "lien": "https://yop.l-frii.com/lunfpa-fonds-des-nations-unies-pour-la-population-recrute-03-novembre-2026/",
+          "domaine": "yop.l-frii.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : yop.l-frii.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "FORUM D'AFFAIRES GABON-ITALIE: UNE VINGTAINE D'ENTREPRISES ITALIENNES ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.tvplusafrique.com/index.php?page=detail-article&article=20158&titre=FORUM D'AFFAIRES GABON-ITALIE: UNE VINGTAINE D'ENTREPRISES ITALIENNES ATTENDUES À LIBREVILLE LES 18 ET 19 NOVEMBRE",
+          "domaine": "tvplusafrique.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : tvplusafrique.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Les prévisions de la récolte intermédiaire de cacao de la Côte d'Ivoire revues à la baisse ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.zonebourse.com/actualite-bourse/les-previsions-de-la-recolte-intermediaire-de-cacao-de-la-cote-da-ivoire-revues-a-la-baisse-apres-d-ce785fded081f723",
+          "domaine": "zonebourse.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : zonebourse.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Le Sénégal discute avec Alibaba d'une suite de partenariat après les JOJ - We are Tech",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.wearetech.africa/fr/fils/actualites/tech/le-senegal-discute-avec-alibaba-d-une-suite-de-partenariat-apres-les-joj",
+          "domaine": "wearetech.africa"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : wearetech.africa — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Quel avenir pour la gouvernance électorale en Côte d'Ivoire ? Retour sur le Symposium",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.kas.de/fr/web/westafrika/veranstaltungsberichte/detail/-/content/quel-avenir-pour-la-gouvernance-electorale-en-cote-d-ivoire-retour-sur-le-symposium",
+          "domaine": "kas.de"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : kas.de — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "L'Université du Nil au Nigéria diplôme 30 startups étudiantes lors du Collective Lab Demo Day 2026",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://techcabal.com/fr/2026/11/04/L'université-du-Nil-au-Nigéria-diplôme-30-startups-dirigées-par-des-étudiants-lors-de-la-journée-de-démonstration-de-Collective-Lab-2026/",
+          "domaine": "techcabal.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : techcabal.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "CAF Awards 2026 : Les Lionnes Indomptables à la conquête du continent, le Cameroun ...",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://actucameroun.com/2026/11/04/caf-awards-2026-les-lionnes-indomptables-a-la-conquete-du-continent-le-cameroun-present-dans-4-categories/",
+          "domaine": "actucameroun.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : actucameroun.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
+      "sujet": "Chantal Kambiwa : le Front camerounais vise le Pacte républicain - 237online.com",
+      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
+      "recu_le": "2026-11-04",
+      "liens": [
+        {
+          "lien": "https://www.237online.com/chantal-kambiwa-front-camerounais-pacte-republicain/",
+          "domaine": "237online.com"
+        }
+      ],
+      "statut": "a_valider",
+      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
+      "diagnostic": [
+        "🟡 domaine inconnu : 237online.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
+      ]
+    },
+    {
       "sujet": "Saint-Louis : le PRDC-VFS remet quatre drones pour la lutte contre les oiseaux granivores",
       "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
       "recu_le": "2026-11-04",
@@ -1804,22 +2110,6 @@
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
         "🟡 domaine inconnu : sikafinance.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
-      ]
-    },
-    {
-      "sujet": "Mauritanie : l'alternance pour combler le fossé entre formation industrielle et emplois",
-      "expediteur": "Google Alertes — Veille Google Alertes — emploi/stage/concours, Cameroun · Côte d'Ivoire · Sénégal (toutes villes)",
-      "recu_le": "2026-11-04",
-      "liens": [
-        {
-          "lien": "https://www.agenceecofin.com/actualites-services/0411-143102-mauritanie-lalternance-pour-combler-le-fosse-entre-formation-industrielle-et-emplois",
-          "domaine": "agenceecofin.com"
-        }
-      ],
-      "statut": "a_valider",
-      "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
-      "diagnostic": [
-        "🟡 domaine inconnu : agenceecofin.com — à vérifier UNE fois puis ajouter à domaines_confiance.json"
       ]
     },
     {
