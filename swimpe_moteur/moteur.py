@@ -923,6 +923,23 @@ def est_bruit(titre):
 
 
 # Liens tournés vers le PASSÉ / l'admin (jamais un avis ouvert) — à écarter même avec un mot-clé
+# Avis destinés aux ENTREPRISES (appels d'offres, prestataires, firmes…) : pas pour nos candidats.
+# Exception : les avis pour « consultant individuel » restent (ce sont des personnes).
+RE_POUR_ENTREPRISES = re.compile(
+    r"(?:recrutement|s[ée]lection|choix|engagement)\s+d(?:'|e\s+l[a']\s*|'une\s+|'un\s+)?\s*"
+    r"(?:une\s+)?(?:entreprise|cabinet|firme|prestataire|soci[ée]t[ée]|bureau\s+d['e]|agence)"
+    r"|appel\s+d'offres|\bfirmes?\b|fourniture\s+de|acquisition\s+de|externalisation"
+    r"|pr[ée]qualification|\bdao\b|consultation\s+de\s+prestataires|travaux\s+de\s+construction",
+    re.I)
+
+
+def pour_entreprises(titre):
+    t = titre or ""
+    if re.search(r"individuel", t, re.I):
+        return False
+    return bool(RE_POUR_ENTREPRISES.search(t))
+
+
 EXCLUDE_CONCOURS = re.compile(
     r"(r[ée]sultat|liste\s+des\s+admis|\badmis\b|proclamation|corrig[ée]|annales|"
     r"palmar[èe]s|statistiques|archives|calendrier\s+des|anciens\s+sujets|d[ée]lib[ée]ration)",
@@ -1486,6 +1503,12 @@ def executer(config, mock=None):
         uniques.append(o)
     # on ne garde que les pays cibles
     uniques = [o for o in uniques if not pays_cibles or o["pays"] in pays_cibles]
+    # on écarte les avis destinés aux entreprises (appels d'offres, prestataires…)
+    b2b = [o for o in uniques if pour_entreprises(o.get("titre", ""))]
+    if b2b:
+        print("  − %d avis « pour entreprises » écarté(s) (appels d'offres, prestataires…)" % len(b2b),
+              file=sys.stderr)
+    uniques = [o for o in uniques if not pour_entreprises(o.get("titre", ""))]
     return {"maj": today(), "schema": SCHEMA_VERSION, "offres": uniques,
             "_a_valider": a_valider}
 
