@@ -1653,6 +1653,30 @@
       "profil_international": false
     },
     {
+      "id": "lesopportunites_rss-5107dddaa7",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun",
+      "organisation": "",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et des jeunes femmes en situation de handicap au Cameroun Cet article Avis de recrutement de (10) Personnes pour une enquête sur la scolarité des filles et d…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/?utm_source=rss&utm_medium=rss&utm_campaign=avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun"
+      },
+      "publie_le": "2026-11-04",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/psychologie/avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun/?utm_source=rss&utm_medium=rss&utm_campaign=avis-de-recrutement-de-10-personnes-pour-une-enquete-sur-la-scolarite-des-filles-et-des-jeunes-femmes-en-situation-de-handicap-au-cameroun",
+      "source_domaine": "lesopportunites.com",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-04",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
       "id": "beac_avis-a13c8b4b76",
       "domaine_swimpe": "local",
       "type": "concours",
