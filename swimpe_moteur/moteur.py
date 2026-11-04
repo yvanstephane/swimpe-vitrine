@@ -1165,7 +1165,9 @@ _G_ORG = ("undp.org", "unicef.org", "who.int", "unhcr.org", "wfp.org", "iom.int"
           "oxfam", "care.org", "savethechildren", "plan-international", "unesco.org",
           "unfpa.org", "ilo.org", "fao.org", "developmentaid.org", "coordinationsud.org",
           "expertisefrance", "cirad.fr", "afd.fr", "ird.fr", "beac.int", "uemoa.int",
-          "ecowas.int", "au.int")
+          "ecowas.int", "au.int",
+          # volontariat (plateformes officielles ; pages lues par les 3 IA via navigateur)
+          "unv.org", "france-volontaires", "pnvcameroun", "service-civique", "impactpool.org")
 _G_SIGNAL = ("recrut", "carriere", "fonctionpublique", "fonction-publique", "emploi-public")
 # Agregateurs / job boards / blogs : exclus meme s'ils contiennent un mot « signal ».
 _G_AGREGATEURS = ("optioncarriere", "educarriere", "infosconcours", "afri-carrieres",
