@@ -464,7 +464,7 @@
       "statut": "a_valider",
       "_rappel": "Lien remonté par Google Alertes : vérifier sur le site OFFICIEL de l'organisme avant toute diffusion (jamais de publication automatique hors domaine de confiance).",
       "diagnostic": [
-        "🟡 cameroondesks.com officiel, mais titre/pays cible non détectés sur la page — à confirmer"
+        "🟡 cameroondesks.com est officiel mais la page n'a pas répondu (429 Client Error: Too Many Requests for url: https://www.google.com/sorry/index?continue=https://www.cameroondesks.com/2026/11/ludreps-recrute-10-enqueteurs-et-coordinateurs-terrain-job.html&q=EgQ08ZRRGObUrtcGIi1Gp1Ub2QdAY5LRQnDArf8jptJg2c_7dpvB9dEyuQK_K0m4cEgZpsfbIEZcuyIyAnJSWgFDYK2N_fLy5qvzZw)"
       ]
     },
     {
