@@ -121,30 +121,6 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-6301d7ea49",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Chauffeur de voiture particulière",
-      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://fnecm.org/offre/NET-OE-2026-009365"
-      },
-      "publie_le": "2026-11-07",
-      "expire_le": "2026-11-21",
-      "verifie": true,
-      "source_url": "https://fnecm.org/offre/NET-OE-2026-009365",
-      "source_domaine": "fnecm.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-07",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "fne_cameroun-e161be89cc",
       "domaine_swimpe": "local",
       "type": "emploi",
@@ -330,6 +306,30 @@
       "expire_le": "2026-11-21",
       "verifie": true,
       "source_url": "https://fnecm.org/offre/J01-OE-2026-001109",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-07",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-0e5da81092",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Secrétaire Bilingue",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/NET-OE-2026-009328"
+      },
+      "publie_le": "2026-11-07",
+      "expire_le": "2026-11-21",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/NET-OE-2026-009328",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-07",
@@ -1606,6 +1606,30 @@
       "methode_verif": "auto",
       "verifie_le": "2026-11-07",
       "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "veille-dbb1f1087d",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "WWF Cameroun recrute un consultant pour évaluer les rendements du cacao à Mintom",
+      "organisation": "CameroonDesks",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "WWF Cameroun recrute un consultant pour évaluer les rendements du cacao à Mintom :root { --body-font-stack: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } body, .body-font, .text-font, .meta-font, .title-font { font-family: var(--body-font-stack) !important; } window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3F5GEKQ3E5'); // // /*-- Reset CSS Start Here --*/ html.rtl { --body-font: Cairo,sans-serif; --meta-font: Cairo,sans-serif; --title-font: Cairo,sans-serif; --text-font: Cairo,sans-serif; } :root{ --body-font:'Arial', sans-serif; --title-font:'Arial', sans-serif; --meta-font:'Arial', sans-serif; --text-font:'Arial', sans-serif; --icons-font:\"bootstrap-icons\",bootstrap-icons; --text-font-color:#505050; --runs-solid-color:#c1bbbb; --black-color:#404040; --hero-color:#aaaaaa; --main-menu-bg:#ffffff; --snippet-color:#aba4a4; --solid-border:#ddd; --featured-posts-title:#454360; --button-bg-color:#09693a; --button-text-color:#ffffff; --lables-buttons-color:#ffffff; --lables-text-color:#454360; --primary-bg-color:#ec001b; --primary-text-color:#ffffff; --cloud-bg-color:#4b4871; --cloud-border-color:#4b4871; --list-text-color:#333333; --theme-text-color:#3e3e3e; --featured-gadgets-title:#e8e8e8; --placeholder-text-color:#3e3e3e; --main-menu-text-color:#1e1e1e; --sub-menu-text-color:#333333; --footer-title-color:#e8e8e8; --footer-copyright-bg:#1e1e1e; --body-color-main:#F9F9FE url() repeat fixed top left; --all-link-color:#0241ff; --black-text:#343434; --sp-bg:#fcfbf6; --bg-cards-search:#f5f8fc; --main-text-color:#101010; --mobile-menu-bg:#ffffff; --mobile-text-color:#333333; --white-bg:#ffffff; --block-bg:#ffffff; --featured-posts-title-featured:#ffffff; --white-label-color:#ffffff; --bg-cards:#ffffff; --widget-bg:#ffffff; --bg-cards-video:#121212; --box-shadow:1px 1px 4px 0 rgba(0, 0, 0, 0.02); --home-shadow:1px 1px 4px 0 rgba(0, 0, 0, 0.12); --bt-breaking:rgba(0 0 0 / 0.08); --bt-breaking-text:#626262; --shadow-top:0 0 20px rgba(0,0,0,.15); --shadow-top-fixed:5px 5px 8px 0px rgba(224 223 223 / 0.48); --buttons-category-text:#1d1d1d; --snip-text-color:#eeeeee; --comments-dec:#333; --sticky-bg:#f1f1f1; --input-form:transparent; --bt-home:#f2f7fb; --cm-count:#555555; --shadow-light:0px 2px 5px 1px rgb(0 0 0 / 0.10); --primary-nav-text:#4e4e4e; --sticky-lists:#f7fcff; --post-snip-data:#707070; --post-snip-open:#383838; --ico-relative:#c111…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://www.cameroondesks.com/2026/11/wwf-cameroun-recrute-un-consultant-job.html"
+      },
+      "publie_le": "2026-11-07",
+      "expire_le": "2026-11-18",
+      "verifie": true,
+      "source_url": "https://www.cameroondesks.com/2026/11/wwf-cameroun-recrute-un-consultant-job.html",
+      "source_domaine": "cameroondesks.com",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-07",
+      "ajoute_par": "veille-auto",
       "profil_international": false
     }
   ]
