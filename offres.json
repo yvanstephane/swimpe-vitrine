@@ -50,6 +50,198 @@
       "ajoute_par": "veille"
     },
     {
+      "id": "fne_cameroun-dd83ac0a7b",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Gestionnaire des approvisionnements et des stocks",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/C01-PD-2026-000081"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/C01-PD-2026-000081",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-9d1bced934",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Vendeur en magasin",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/C01-PD-2026-000080"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/C01-PD-2026-000080",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-720127e6ca",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Cadre gestionnaire des ressources humaines",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/C01-PD-2026-000079"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/C01-PD-2026-000079",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-e8b3856207",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Commercial",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002153"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002153",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-3d079ee984",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Secrétaire Bilingue",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002152"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002152",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-7e4c4bcef8",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Analyste de crédit",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/E01-OE-2026-000167"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/E01-OE-2026-000167",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-989b8b9276",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Comptable",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/E01-OE-2026-000166"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/E01-OE-2026-000166",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
+      "id": "fne_cameroun-58a1a7bb9b",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Chauffeur Voitures légères",
+      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
+      "pays": "Cameroun",
+      "ville": "",
+      "domaine": "",
+      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002139"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-25",
+      "verifie": true,
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002139",
+      "source_domaine": "fnecm.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
       "id": "fne_cameroun-3554ed13f6",
       "domaine_swimpe": "local",
       "type": "emploi",
@@ -122,10 +314,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-0468195872",
+      "id": "fne_cameroun-511de49cfa",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Agent Commercial",
+      "titre": "Cuisinier Restaurant",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -133,12 +325,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/NET-OE-2026-009354"
+        "valeur": "https://fnecm.org/offre/E01-OE-2026-000165"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/NET-OE-2026-009354",
+      "source_url": "https://fnecm.org/offre/E01-OE-2026-000165",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -146,10 +338,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-936e087f16",
+      "id": "fne_cameroun-243fb0c2cf",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Pâtissier",
+      "titre": "Enseignant du Secondaire",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -157,12 +349,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/D01-OE-2026-000173"
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002129"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/D01-OE-2026-000173",
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002129",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -170,10 +362,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-0e5da81092",
+      "id": "fne_cameroun-43b6bfc37a",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Secrétaire Bilingue",
+      "titre": "Conducteur de moto",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -181,12 +373,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/NET-OE-2026-009328"
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002126"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/NET-OE-2026-009328",
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002126",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -194,10 +386,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-deada91d7a",
+      "id": "fne_cameroun-d83f143108",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Directeur financier",
+      "titre": "Instructeur de sécurité",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -205,12 +397,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/NET-OE-2026-009325"
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002125"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/NET-OE-2026-009325",
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002125",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -218,10 +410,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-ed46d905c2",
+      "id": "fne_cameroun-8f1d158f1a",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Contrôleur de gestion",
+      "titre": "Surveillant de la sécurité",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -229,12 +421,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000386"
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002124"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000386",
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002124",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -242,10 +434,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-b3eff3860f",
+      "id": "fne_cameroun-f61bb9527d",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Ingénieur Electricien",
+      "titre": "Agent Sécurité",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -253,12 +445,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000385"
+        "valeur": "https://fnecm.org/offre/C01-OE-2026-002123"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000385",
+      "source_url": "https://fnecm.org/offre/C01-OE-2026-002123",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -266,10 +458,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-034ffa07de",
+      "id": "fne_cameroun-8e08563670",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Commercial",
+      "titre": "Monteur",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -277,12 +469,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000384"
+        "valeur": "https://fnecm.org/offre/H01-OE-2026-000156"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000384",
+      "source_url": "https://fnecm.org/offre/H01-OE-2026-000156",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -290,10 +482,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-0b348c1486",
+      "id": "fne_cameroun-24bc246cf3",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Plombier",
+      "titre": "Contrôleur Chaîne de Fabrication",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -301,12 +493,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000383"
+        "valeur": "https://fnecm.org/offre/H01-OE-2026-000155"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000383",
+      "source_url": "https://fnecm.org/offre/H01-OE-2026-000155",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -314,10 +506,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-ce1d462b09",
+      "id": "fne_cameroun-56829ebd16",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Chef Cuisinier",
+      "titre": "Chef d'équipe manutention",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -325,12 +517,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000382"
+        "valeur": "https://fnecm.org/offre/H01-OE-2026-000154"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000382",
+      "source_url": "https://fnecm.org/offre/H01-OE-2026-000154",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -338,10 +530,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-05f886eea6",
+      "id": "fne_cameroun-3c7ffc0ec5",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Employé de Bureau",
+      "titre": "Manutentionnaire",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -349,12 +541,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000379"
+        "valeur": "https://fnecm.org/offre/H01-OE-2026-000153"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000379",
+      "source_url": "https://fnecm.org/offre/H01-OE-2026-000153",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -362,10 +554,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-567d51098d",
+      "id": "fne_cameroun-ee54c53702",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Cadre financier",
+      "titre": "Agent d'entretien",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -373,12 +565,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000378"
+        "valeur": "https://fnecm.org/offre/H01-OE-2026-000152"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000378",
+      "source_url": "https://fnecm.org/offre/H01-OE-2026-000152",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -386,10 +578,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-b63cb43467",
+      "id": "fne_cameroun-f4401bad35",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Commis de Restaurant",
+      "titre": "Cadre Sécurité, Hygiène et Environnement",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -397,12 +589,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000377"
+        "valeur": "https://fnecm.org/offre/H01-OE-2026-000151"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000377",
+      "source_url": "https://fnecm.org/offre/H01-OE-2026-000151",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -410,10 +602,10 @@
       "profil_international": false
     },
     {
-      "id": "fne_cameroun-24c9a10011",
+      "id": "fne_cameroun-fc4ffa14e8",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Opérateur sur station de pompage",
+      "titre": "Technicien Logistique",
       "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
       "pays": "Cameroun",
       "ville": "",
@@ -421,132 +613,12 @@
       "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000376"
+        "valeur": "https://fnecm.org/offre/H01-OE-2026-000150"
       },
       "publie_le": "2026-11-11",
       "expire_le": "2026-11-25",
       "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000376",
-      "source_domaine": "fnecm.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-11",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "fne_cameroun-b4d438399d",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Salesman",
-      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000375"
-      },
-      "publie_le": "2026-11-11",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000375",
-      "source_domaine": "fnecm.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-11",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "fne_cameroun-2fee8b9af3",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Pharmacien",
-      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000374"
-      },
-      "publie_le": "2026-11-11",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000374",
-      "source_domaine": "fnecm.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-11",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "fne_cameroun-92f52c368f",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Entraîneur de Natation",
-      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000371"
-      },
-      "publie_le": "2026-11-11",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000371",
-      "source_domaine": "fnecm.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-11",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "fne_cameroun-0b9ea338df",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Chef de Caisse",
-      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000369"
-      },
-      "publie_le": "2026-11-11",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000369",
-      "source_domaine": "fnecm.org",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-11",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
-      "id": "fne_cameroun-e1ca92b9ce",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Chef de Département",
-      "organisation": "Fonds National de l'Emploi (FNE) — agence publique de l'emploi, Cameroun",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Offre publiée sur le site officiel. Détails et candidature sur la page officielle.",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://fnecm.org/offre/G01-OE-2026-000368"
-      },
-      "publie_le": "2026-11-11",
-      "expire_le": "2026-11-25",
-      "verifie": true,
-      "source_url": "https://fnecm.org/offre/G01-OE-2026-000368",
+      "source_url": "https://fnecm.org/offre/H01-OE-2026-000150",
       "source_domaine": "fnecm.org",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
@@ -1394,30 +1466,6 @@
       "profil_international": false
     },
     {
-      "id": "lesopportunites_rss-744eeef786",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Appel à candidatures – Lancement du 2e cycle du Programme d’Inclusion Économique de 20 000 Jeunes Camerounais — PFS-AIE",
-      "organisation": "",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": "Appel à candidatures – Lancement du 2e cycle du Programme d’Inclusion Économique de 20 000 Jeunes Camerounais — PFS-AIE POSTULER ICI Cet article Appel à candidatures – Lancement du 2e cycle du Programme d’Inclusion Économique de 20 000 Jeunes Camerounais — PFS-AIE est apparu en premier sur Opportunités du Monde .",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/sciences-economiques/appel-a-candidatures-lancement-du-2e-cycle-du-programme-dinclusion-economique-de-20-000-jeunes-camerounais-pfs-aie/?utm_source=rss&utm_medium=rss&utm_campaign=appel-a-candidatures-lancement-du-2e-cycle-du-programme-dinclusion-economique-de-20-000-jeunes-camerounais-pfs-aie"
-      },
-      "publie_le": "2026-11-10",
-      "expire_le": "2026-12-02",
-      "verifie": true,
-      "source_url": "https://www.lesopportunites.com/opportunite/cameroun/avis-de-recrutement/sciences-economiques/appel-a-candidatures-lancement-du-2e-cycle-du-programme-dinclusion-economique-de-20-000-jeunes-camerounais-pfs-aie/?utm_source=rss&utm_medium=rss&utm_campaign=appel-a-candidatures-lancement-du-2e-cycle-du-programme-dinclusion-economique-de-20-000-jeunes-camerounais-pfs-aie",
-      "source_domaine": "lesopportunites.com",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-11",
-      "ajoute_par": "moteur",
-      "profil_international": false
-    },
-    {
       "id": "beac_avis-089a55b08a",
       "domaine_swimpe": "local",
       "type": "stage",
@@ -1610,6 +1658,30 @@
       "profil_international": false
     },
     {
+      "id": "un_careers_api-d8ecfffeb1",
+      "domaine_swimpe": "local",
+      "type": "emploi",
+      "titre": "Driver-Messenger",
+      "organisation": "ONU · Office of the High Commissioner for Human Rights",
+      "pays": "Cameroun",
+      "ville": "Yaoundé",
+      "domaine": "",
+      "description": "Lieu d'affectation : Yaoundé · Niveau : CON · Département : Office of the High Commissioner for Human Rights\n\nResult of Service The key results have an impact on the accurate, safe, cost-effective and timely execution of the office services. Work Location Cameroon Expected duration 14-12-2026-12-03-027 Duties and Responsibilities Under the guidance and supervision of the Deputy Director of OHCHR Regional Hub for Central and West Africa (RHCWA) and the Administration and Finance Officer, the Driver provides reliable and safe driving services to the staff of the RHCWA. He ensures highest standards of discretion and integrity, sense of responsibility, excellent knowledge of protocol and security issues. The Driver also demonstrates a client-oriented approach, courtesy, tact and ability to work with people of different national and cultural backgrounds. Upon request of the supervisor, the Driver is required to provide driving services to the operations and programme staff at the RHCWA, Consultants, Experts and UN staff on mission. Functions / Key Results Expected: 1. Ensures provision of reliable and safe driving services by a) driving office vehicles for the transport of UNCHRD-CA staff, other high-ranking officials and visitors and delivery and collection of mails, documents and other items, and b) meeting official personnel and visitors at the airport, including visa and customs formalities arrangement when required. 2. Ensures cost-savings through proper use of vehicle through accurate maintenance of daily vehicle logs, provision of inputs to preparation of the vehicle maintenance plans and reports. 3. Ensures proper day-to-day maintenance of the assigned vehicle through timely minor repairs, arrangements for major repairs, timely changes of oil, check of tires, brakes, car washing, etc. 4. Ensures availability of all the required documents/supplies including vehicle insurance, vehicle logs, office directory, and map of the city/country, first aid kit, and necessary spare parts in the assigned vehicle. 5. Ensures that all immediate actions required by rules and regulations are taken in case of involvement in accidents. 6. Ensure efficient mail delivery whenever needed Qualifications/special skills HS Diploma and a Valid Driver’s license 3 years’ work experience as a driver; safe driving record; knowledge of driving rules and regulations and skills in minor vehicle repair. Languages Fluency in either English or French is required Additional Information Not available. No Fee THE UNITED NATIONS DOES NOT CHARGE A FEE AT ANY STAGE OF THE RECRUITMENT PROCESS (APPLICATIO…",
+      "comment_postuler": {
+        "mode": "lien",
+        "valeur": "https://careers.un.org/jobSearchDescription/287956?language=en"
+      },
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-11-24",
+      "verifie": true,
+      "source_url": "https://careers.un.org/jobSearchDescription/287956?language=en",
+      "source_domaine": "careers.un.org",
+      "methode_verif": "auto",
+      "verifie_le": "2026-11-11",
+      "ajoute_par": "moteur",
+      "profil_international": false
+    },
+    {
       "id": "un_careers_api-01a9e2cfaa",
       "domaine_swimpe": "local",
       "type": "emploi",
@@ -1682,72 +1754,48 @@
       "profil_international": false
     },
     {
-      "id": "veille-c8a241858c",
+      "id": "veille-d9e92712fc",
       "domaine_swimpe": "local",
       "type": "emploi",
-      "titre": "Recrutement Belife Insurance Cameroun : Agent Courrier / Coursier - novembre 2026",
-      "organisation": "CameroonDesks",
+      "titre": "Illegal Migration: Belgian Minister On Sensitisation Tour",
+      "organisation": "Cameroon Tribune",
       "pays": "Cameroun",
       "ville": "",
       "domaine": "",
-      "description": "Recrutement Belife Insurance Cameroun : Agent Courrier / Coursier - novembre 2026 :root { --body-font-stack: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } body, .body-font, .text-font, .meta-font, .title-font { font-family: var(--body-font-stack) !important; } window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3F5GEKQ3E5'); // // /*-- Reset CSS Start Here --*/ html.rtl { --body-font: Cairo,sans-serif; --meta-font: Cairo,sans-serif; --title-font: Cairo,sans-serif; --text-font: Cairo,sans-serif; } :root{ --body-font:'Arial', sans-serif; --title-font:'Arial', sans-serif; --meta-font:'Arial', sans-serif; --text-font:'Arial', sans-serif; --icons-font:\"bootstrap-icons\",bootstrap-icons; --text-font-color:#505050; --runs-solid-color:#c1bbbb; --black-color:#404040; --hero-color:#aaaaaa; --main-menu-bg:#ffffff; --snippet-color:#aba4a4; --solid-border:#ddd; --featured-posts-title:#454360; --button-bg-color:#09693a; --button-text-color:#ffffff; --lables-buttons-color:#ffffff; --lables-text-color:#454360; --primary-bg-color:#ec001b; --primary-text-color:#ffffff; --cloud-bg-color:#4b4871; --cloud-border-color:#4b4871; --list-text-color:#333333; --theme-text-color:#3e3e3e; --featured-gadgets-title:#e8e8e8; --placeholder-text-color:#3e3e3e; --main-menu-text-color:#1e1e1e; --sub-menu-text-color:#333333; --footer-title-color:#e8e8e8; --footer-copyright-bg:#1e1e1e; --body-color-main:#F9F9FE url() repeat fixed top left; --all-link-color:#0241ff; --black-text:#343434; --sp-bg:#fcfbf6; --bg-cards-search:#f5f8fc; --main-text-color:#101010; --mobile-menu-bg:#ffffff; --mobile-text-color:#333333; --white-bg:#ffffff; --block-bg:#ffffff; --featured-posts-title-featured:#ffffff; --white-label-color:#ffffff; --bg-cards:#ffffff; --widget-bg:#ffffff; --bg-cards-video:#121212; --box-shadow:1px 1px 4px 0 rgba(0, 0, 0, 0.02); --home-shadow:1px 1px 4px 0 rgba(0, 0, 0, 0.12); --bt-breaking:rgba(0 0 0 / 0.08); --bt-breaking-text:#626262; --shadow-top:0 0 20px rgba(0,0,0,.15); --shadow-top-fixed:5px 5px 8px 0px rgba(224 223 223 / 0.48); --buttons-category-text:#1d1d1d; --snip-text-color:#eeeeee; --comments-dec:#333; --sticky-bg:#f1f1f1; --input-form:transparent; --bt-home:#f2f7fb; --cm-count:#555555; --shadow-light:0px 2px 5px 1px rgb(0 0 0 / 0.10); --primary-nav-text:#4e4e4e; --sticky-lists:#f7fcff; --post-snip-data:#707070; --post-snip-open:#383838; --ico-relative:#c11…",
+      "description": "Illegal Migration: Belgian Minister On Sensitisation Tour (237) 222 30 41 47 info@cameroon-tribune.cm Nous contacter Wishlist: 12 --> Boutique | Abonnement Presidential Politique Economie Société Culture Sports International Editorial Régions Commentaires Régions Contenus sponsorisés .grid-item .grid-item-img { min-height: auto; } .form-group .error{color:red;display:block} .row .error{color:red;display:block} .row .attribute-class{height:110px} .form-control.error{ border-color: #f2676b !important; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(242, 103, 107, 0.66) !important; box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(242, 103, 107, 0.68) !important; } .post-footer .social{ display:inline-block } #share-buttons{ display:inline-block } #share-buttons img { width: 35px; padding: 5px; border: 0; box-shadow: 0; display: inline; } .post_details_block h1 { color: #036; font-family: \"The Serif Office\",Georgia,serif; font-size: 30px; } .page-title .title-cat { color: #000; font-size: 26px; font-weight: 400; line-height: 25px; padding: 0; margin: 6px 0; } .page-title .title-cat strong { font-family: \"The Serif Office\",Georgia,serif; font-size: 44px; line-height: 55px; color: #40a9ff; } Politique Accueil Détail de l'article Illegal Migration: Belgian Minister On Sensitisation Tour Par Eulalia AMABO 11 Nov 2026 08:08 0 Likes \" target=\"_blank\"> Anneleen Van Bossuyt, who is in Yaounde was on November 9, 2026 granted an audience by the Minister of External Relations, Mbella Mbella. “W e have a good re­ lationship bet­ ween Cameroon and Belgium and we are here to see that a lot of young people come to Belgium with dreams that are not real and it is important to get them the right in­ formation about living in Belgium. It is expensive and the rules are very strict on asylum and migration,” stated the Minister of Asylum and Migration, Social Integration, and Urban Policy of Belgium, Anneleen Van Bossuyt. She was speaking after an audience granted her by the Minister of External Relations, Mbella Mbella, on November 9, 2026. Accompanied by the Belgian Am­ bassador to Cameroon, Alain Leroy, the personalities also examined bi­ lateral relations between the two countries. On the reason for her working visit to Cameroon, the Belgian official said it was to provide practical in­ formation to Cameroonians on tra­ velling to Belgium. Anneleen Van Bossuyt, added that many youths use unconventional means to travel, with people offeri…",
       "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.cameroondesks.com/2026/11/recrutement-belife-insurance-cameroun-agent-coursier-november-job.html"
+        "mode": "email",
+        "valeur": "info@cameroon-tribune.cm"
       },
-      "publie_le": "2026-11-10",
-      "expire_le": "2026-11-15",
+      "publie_le": "2026-11-11",
+      "expire_le": "2026-12-02",
       "verifie": true,
-      "source_url": "https://www.cameroondesks.com/2026/11/recrutement-belife-insurance-cameroun-agent-coursier-november-job.html",
-      "source_domaine": "cameroondesks.com",
+      "source_url": "https://www.cameroon-tribune.cm/article.html/82523/fr.html/illegal-migration-belgian-minister-on-sensitisation-tour",
+      "source_domaine": "cameroon-tribune.cm",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
       "ajoute_par": "veille-auto",
       "profil_international": false
     },
     {
-      "id": "veille-574d9dbf7a",
+      "id": "veille-20f218c6f4",
       "domaine_swimpe": "local",
-      "type": "concours",
-      "titre": "ALIMA recrute 01 Référent.e Action Environnementale – Sénégal H/F - Concoursn.com",
+      "type": "emploi",
+      "titre": "`Recrutement Deloitte Sénégal : Manager Tax & Legal (Dakar)`",
       "organisation": "ConcoursN",
       "pays": "Sénégal",
       "ville": "",
       "domaine": "",
-      "description": "if ('addEventListener' in document) { document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false); } window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-G0Y7LTCQ6Z'); ALIMA recrute 01 Référent.e Action Environnementale – Sénégal H/F - Concoursn.com img:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px} /*# sourceURL=wp-img-auto-sizes-contain-inline-css */ img.wp-smiley, img.emoji { display: inline !important; border: none !important; box-shadow: none !important; height: 1em !important; width: 1em !important; margin: 0 0.07em !important; vertical-align: -0.1em !important; background: none !important; padding: 0 !important; } /*# sourceURL=wp-emoji-styles-inline-css */ :root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-…",
+      "description": "if ('addEventListener' in document) { document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false); } window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-G0Y7LTCQ6Z'); `Recrutement Deloitte Sénégal : Manager Tax & Legal (Dakar)` img:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px} /*# sourceURL=wp-img-auto-sizes-contain-inline-css */ img.wp-smiley, img.emoji { display: inline !important; border: none !important; box-shadow: none !important; height: 1em !important; width: 1em !important; margin: 0 0.07em !important; vertical-align: -0.1em !important; background: none !important; padding: 0 !important; } /*# sourceURL=wp-emoji-styles-inline-css */ :root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-hu…",
       "comment_postuler": {
         "mode": "lien",
-        "valeur": "https://concoursn.com/alima-recrute-01-referent-e-action-environnementale-senegal-h-f/"
+        "valeur": "https://concoursn.com/recrutement-deloitte-senegal-manager-tax-legal-dakar-session-2026/"
       },
-      "publie_le": "2026-11-10",
+      "publie_le": "2026-11-11",
       "expire_le": "2026-12-02",
       "verifie": true,
-      "source_url": "https://concoursn.com/alima-recrute-01-referent-e-action-environnementale-senegal-h-f/",
+      "source_url": "https://concoursn.com/recrutement-deloitte-senegal-manager-tax-legal-dakar-session-2026/",
       "source_domaine": "concoursn.com",
-      "methode_verif": "auto",
-      "verifie_le": "2026-11-11",
-      "ajoute_par": "veille-auto",
-      "profil_international": false
-    },
-    {
-      "id": "veille-3388235060",
-      "domaine_swimpe": "local",
-      "type": "emploi",
-      "titre": "Yimɓe 7 mbaraama e hare hakkunde durooɓe e remooɓe to Djaba, e nder diiwaan rewo Cameroun - RFI",
-      "organisation": "Bourse Ghislaine Dupont & Claude Verlon (RFI)",
-      "pays": "Cameroun",
-      "ville": "",
-      "domaine": "",
-      "description": ":root{--raw-white:#fff;--raw-black:#0e1013;--raw-greyscale-000:#fff;--raw-greyscale-050:#f8f9fa;--raw-greyscale-100:#f1f3f4;--raw-greyscale-200:#e8eaed;--raw-greyscale-300:#dadce0;--raw-greyscale-400:#bdc1c6;--raw-greyscale-500:#9aa0a6;--raw-greyscale-600:#80868b;--raw-greyscale-700:#5f6368;--raw-greyscale-800:#3c4043;--raw-greyscale-850:#2e3134;--raw-greyscale-900:#202124;--raw-greyscale-950:#0e1013;--raw-primary-100:rgba(177,47,62,.2);--raw-primary-500:#ff814e;--raw-primary-800:#2f2933;--raw-primary-900:#e2001a;--raw-secondary-blue:#423afc;--raw-secondary-blue-500:#5766fe;--raw-secondary-orange:#ff8b04;--raw-secondary-brown:#b24d03;--raw-secondary-purple:#7e16d0;--raw-secondary-green:#009b76;--raw-secondary-yellow:#c29800;--raw-secondary-red:#c60000;--raw-secondary-red-500:#ff2525;--raw-secondary-pink:#b93490;--raw-secondary-green-apple:#a8c23f;--raw-secondary-eggplant:#3e0094;--raw-secondary-apricot:#f2911c;--raw-system-error-500:#c70b0b;--raw-system-error-300:#ec4d4d;--raw-system-error-100:#fbdfdf;--raw-system-success-500:#337c43;--raw-system-success-300:#57ae6a;--raw-system-success-100:#a8eeb7;--raw-opacity-greyscale-950-60:rgba(14,16,19,.6);--raw-opacity-greyscale-950-50:rgba(14,16,19,.5);--raw-opacity-greyscale-950-40:rgba(14,16,19,.4);--raw-opacity-greyscale-950-30:rgba(14,16,19,.3);--raw-opacity-greyscale-950-20:rgba(14,16,19,.2);--raw-opacity-greyscale-950-15:rgba(14,16,19,.15);--raw-opacity-greyscale-950-8:rgba(14,16,19,.08);--raw-opacity-greyscale-950-6:rgba(14,16,19,.06);--raw-opacity-greyscale-950-4:rgba(14,16,19,.04);--raw-opacity-greyscale-950-0:rgba(14,16,19,0);--raw-opacity-greyscale-050-40:rgba(248,249,250,.4);--raw-opacity-greyscale-050-0:rgba(248,249,250,0);--raw-opacity-greyscale-000-0:hsla(0,0%,100%,0);--raw-opacity-primary-900-20:rgba(226,0,26,.2);--raw-opacity-primary-900-15:rgba(226,0,26,.15);--raw-opacity-primary-900-10:rgba(226,0,26,.1);--raw-opacity-primary-900-6:rgba(226,0,26,.06);--raw-opacity-primary-900-4:rgba(226,0,26,.04);--raw-opacity-primary-900-3:rgba(226,0,26,.03);--raw-opacity-primary-900-2:rgba(226,0,26,.02);--raw-opacity-primary-900-0:rgba(226,0,26,0);--raw-opacity-primary-800-0:rgba(47,41,51,0);--raw-greyscale-tinted-900-primary-900-a-20:#3d1c23;--raw-greyscale-tinted-900-primary-900-a-30:#4b1a22;--raw-greyscale-tinted-000-primary-900-a-20:#fdecee;--raw-greyscale-tinted-000-primary-900-a-30:#fce3e6}:root,[data-theme=light]{--color-bg-default:var(--raw-greyscale-000);--color-bg-secondary:var(--raw-greyscale-100);--…",
-      "comment_postuler": {
-        "mode": "lien",
-        "valeur": "https://www.rfi.fr/ff/afrik/20261110-yimɓe-7-mbaraama-e-hare-hakkunde-durooɓe-e-remooɓe-to-djaba-e-nder-diiwaan-rewo-cameroun"
-      },
-      "publie_le": "2026-11-10",
-      "expire_le": "2026-12-02",
-      "verifie": true,
-      "source_url": "https://www.rfi.fr/ff/afrik/20261110-yimɓe-7-mbaraama-e-hare-hakkunde-durooɓe-e-remooɓe-to-djaba-e-nder-diiwaan-rewo-cameroun",
-      "source_domaine": "rfi.fr",
       "methode_verif": "auto",
       "verifie_le": "2026-11-11",
       "ajoute_par": "veille-auto",
