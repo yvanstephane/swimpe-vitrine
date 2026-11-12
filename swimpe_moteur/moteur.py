@@ -1207,7 +1207,13 @@ RE_POUR_ENTREPRISES = re.compile(
     r"(?:recrutement|s[ée]lection|choix|engagement)\s+d(?:'|e\s+l[a']\s*|'une\s+|'un\s+)?\s*"
     r"(?:une\s+)?(?:entreprise|cabinet|firme|prestataire|soci[ée]t[ée]|bureau\s+d['e]|agence)"
     r"|appel\s+d'offres|\bfirmes?\b|fourniture\s+de|acquisition\s+de|externalisation"
-    r"|pr[ée]qualification|\bdao\b|consultation\s+de\s+prestataires|travaux\s+de\s+construction",
+    r"|pr[ée]qualification|\bdao\b|consultation\s+de\s+prestataires|travaux\s+de\s+construction"
+    r"|bons?\s+du\s+tr[ée]sor|obligations?\s+du\s+tr[ée]sor|adjudication|[ée]mission\s+(?:des?\s+)?bons"
+    r"|titres?\s+publics?|communiqu[ée]\s+d'annonce|souscription\s+des?\s+titres"
+    r"|avis\s+d'attribution|attribution\s+(?:du|de)\s+march[ée]|march[ée]\s+public"
+    r"|manifestation\s+d'int[ée]r[êe]t|demande\s+de\s+propositions|demande\s+de\s+cotation|sollicitation\s+de\s+prix"
+    r"|services\s+de\s+consultants|ma[îi]trise\s+d'ouvrage|\bamoa\b|assistance\s+[àa]\s+ma[îi]trise|entreprise\s+sp[ée]cialis[ée]e"
+    r"|candidats?\s+pr[ée]s[ée]lectionn[ée]s|pr[ée]s[ée]lectionn[ée]s|liste\s+des\s+candidats|proc[èe]s[-\s]verbal",
     re.I)
 
 
