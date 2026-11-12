@@ -64,6 +64,42 @@ def _get(url, source):
     return requests.get(url, timeout=int(source.get("timeout", 30)), headers=UA, verify=verify)
 
 
+def trouver_lien_officiel(article_url, relais_domaine, confiance):
+    """Option 1 (resilience) : ouvre l'article d'un RELAIS et cherche a l'interieur un lien
+    sortant vers un domaine OFFICIEL (present dans domaines_confiance), different du relais.
+    Garde la vraie source officielle meme si le relais disparait.
+    Retourne (url_officielle, domaine_officiel) ou (None, None). Ne leve jamais d'exception."""
+    try:
+        import urllib.parse as _up
+        if not article_url or not str(article_url).startswith("http") or not confiance:
+            return (None, None)
+        r = requests.get(article_url, timeout=20, headers=UA)
+        if not getattr(r, "ok", False):
+            return (None, None)
+        html_src = r.text or ""
+        relais = (relais_domaine or "").replace("www.", "").lower()
+        exclus = ("facebook.com", "fb.com", "instagram.com", "twitter.com", "x.com",
+                  "wa.me", "whatsapp.com", "t.me", "telegram.me", "bit.ly", "tinyurl.com",
+                  "lnkd.in", "linkedin.com", "youtube.com", "youtu.be", "tiktok.com",
+                  "google.com", "gstatic.com", "gravatar.com", "wordpress.org", "w.org")
+        for h in re.findall(r'href=["\']([^"\']+)["\']', html_src):
+            h = h.strip()
+            if not h.startswith("http"):
+                continue
+            dom = (_up.urlparse(h).hostname or "").replace("www.", "").lower()
+            if not dom or "." not in dom:
+                continue
+            if dom == relais or dom.endswith("." + relais):
+                continue
+            if any(dom == e or dom.endswith("." + e) for e in exclus):
+                continue
+            if dom in confiance or any(dom.endswith("." + c) for c in confiance):
+                return (h, dom)
+    except Exception:
+        return (None, None)
+    return (None, None)
+
+
 def today():
     return datetime.date.today().isoformat()
 
@@ -1738,6 +1774,7 @@ def _cle_url(o):
 
 def executer(config, mock=None):
     pays_cibles = config.get("pays_cibles", [])
+    confiance_glob = charger_domaines_confiance(config.get("_chemin_domaines_confiance", "")) or {}
     # offres validees a la main : prioritaires (gagnent le dedup)
     manuelles = charger_offres_manuelles(config.get("_chemin_offres_manuelles", ""))
     if manuelles:
@@ -1759,6 +1796,14 @@ def executer(config, mock=None):
                       % (src["id"], len(cand)), file=sys.stderr)
                 continue
             offres = lire_source(src, pays_cibles, mock)
+            # Option 1 : pour un RELAIS, retrouver le lien officiel dans chaque article
+            if src.get("relais") and not mock and confiance_glob:
+                for o in offres[: int(src.get("max_officiel", 15))]:
+                    u2, d2 = trouver_lien_officiel(o.get("source_url", ""), src.get("domaine", ""), confiance_glob)
+                    if u2:
+                        o["lien_relais"] = o.get("source_url")
+                        o["source_url"] = u2
+                        o["source_domaine"] = d2
             for o in offres:
                 o["_src"] = src["id"]   # pour le bilan par source (retiré avant écriture)
             toutes += offres

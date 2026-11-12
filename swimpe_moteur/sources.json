@@ -420,7 +420,8 @@
     },
     {
       "id": "kamerpower_rss",
-      "actif": false,
+      "relais": true,
+      "actif": true,
       "type": "rss",
       "domaine": "kamerpower.com",
       "libelle": "KamerPower — relais concours & emplois (CM, CI, SN) — site privé très suivi",
@@ -434,6 +435,7 @@
     },
     {
       "id": "lesopportunites_rss",
+      "relais": true,
       "actif": true,
       "type": "rss",
       "domaine": "lesopportunites.com",
@@ -447,7 +449,8 @@
     },
     {
       "id": "cameroondesks_rss",
-      "actif": false,
+      "relais": true,
+      "actif": true,
       "type": "rss",
       "domaine": "cameroondesks.com",
       "libelle": "CameroonDesks — relais offres & concours (Cameroun)",
@@ -461,7 +464,8 @@
     },
     {
       "id": "concoursn_rss",
-      "actif": false,
+      "relais": true,
+      "actif": true,
       "type": "rss",
       "domaine": "concoursn.com",
       "libelle": "ConcoursN — relais concours & recrutements (Sénégal)",
