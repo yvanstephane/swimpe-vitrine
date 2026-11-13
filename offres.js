@@ -167,6 +167,8 @@
   function rendreListe() {
     var liste = $("#of-liste"); liste.innerHTML = "";
     var res = apresFiltres();
+    // Les plus récentes d'abord (une offre sans date de publication passe en fin de liste).
+    res = res.slice().sort(function (a, b) { return String(b.publie_le || "").localeCompare(String(a.publie_le || "")); });
     $("#of-compteur").innerHTML = '<span class="pt"></span>' + res.length + (res.length > 1 ? " offres" : " offre") + " · vérifiées le " + dateFr(DATA.maj);
     if (res.length === 0) { liste.appendChild(vide(offresVisibles().length === 0)); return; }
     var pages = Math.max(1, Math.ceil(res.length / PAR_PAGE));
