@@ -5,8 +5,8 @@
   "use strict";
 
   var DATA = { maj: "", offres: [] };
-  var state = { type: "tout", paysSel: [], domaine: "tout", selection: null, coches: {}, page: 1 };
-  var CONTACT_EMAIL = "info.swimpe@gmail.com";
+  var state = { type: "tout", pays: "tout", ville: "tout", domaine: "tout", publication: "tout", selection: null, coches: {}, page: 1 };
+  var CONTACT_EMAIL = "contact@swimpe.com";
   var PAR_PAGE = 15;
 
   function $(s, r) { return (r || document).querySelector(s); }
@@ -32,13 +32,47 @@
     return parseInt(p[2], 10) + " " + (m[parseInt(p[1], 10) - 1] || "");
   }
 
-  function apresFiltres() {
+  // Valeur d'une offre pour chaque famille de filtres (vide -> « Non précisé(e) », comme l'app).
+  function valeurDe(cle, o) {
+    if (cle === "type") return o.type;
+    if (cle === "pays") return o.pays;
+    if (cle === "ville") {
+      // « Dakar, Senegal » ou « Dakar (+ 1 autre lieu) » -> « Dakar » : un seul choix par ville.
+      var v = String(o.ville || "").split(/[,(]/)[0].trim();
+      return v || "Non précisée";
+    }
+    if (cle === "domaine") return (o.domaine || "").trim() || "Non précisé";
+    return "";
+  }
+  var PUBLICATIONS = [["24h", "Dernières 24 heures", 1], ["7j", "7 derniers jours", 7], ["30j", "30 derniers jours", 30]];
+  function joursDepuis(iso) {
+    if (!iso) return null;
+    var d = Date.parse(String(iso).slice(0, 10)), auj = Date.parse(todayISO());
+    return isNaN(d) ? null : Math.round((auj - d) / 86400000);
+  }
+  function publicationOk(o, id) {
+    for (var i = 0; i < PUBLICATIONS.length; i++) if (PUBLICATIONS[i][0] === id) {
+      var j = joursDepuis(o.publie_le);
+      return j !== null && j >= 0 && j <= PUBLICATIONS[i][2];
+    }
+    return true;
+  }
+  function passe(o, sauf) {
+    var cles = ["type", "pays", "ville", "domaine"];
+    for (var i = 0; i < cles.length; i++) {
+      var c = cles[i];
+      if (c !== sauf && state[c] !== "tout" && valeurDe(c, o) !== state[c]) return false;
+    }
+    if (sauf !== "publication" && state.publication !== "tout" && !publicationOk(o, state.publication)) return false;
+    return true;
+  }
+  function apresFiltres() { return offresVisibles().filter(function (o) { return passe(o, null); }); }
+  // Compteur d'une option : « comme si on la choisissait », les autres filtres restant appliqués.
+  function compte(cle, valeur) {
     return offresVisibles().filter(function (o) {
-      if (state.type !== "tout" && o.type !== state.type) return false;
-      if (state.paysSel.length > 0 && state.paysSel.indexOf(o.pays) === -1) return false;
-      if (state.domaine !== "tout" && o.domaine !== state.domaine) return false;
-      return true;
-    });
+      if (!passe(o, cle)) return false;
+      return cle === "publication" ? publicationOk(o, valeur) : valeurDe(cle, o) === valeur;
+    }).length;
   }
 
   function pill(txt, on, onClick) {
@@ -53,21 +87,48 @@
     return sel;
   }
 
+  // Les grandes familles de filtres, chacune en liste déroulante. « Ville » n'apparaît qu'après le choix d'un pays,
+  // avec les villes de CE pays. Chaque option affiche son nombre d'offres ; 0 offre = non cliquable.
+  function champ(titre, cle, tout, options) {
+    var w = el("label", "of-champ");
+    var lab = el("span"); lab.textContent = titre; w.appendChild(lab);
+    var sel = el("select", "of-select"); sel.id = "of-filtre-" + cle;
+    var o0 = el("option"); o0.value = "tout"; o0.textContent = tout; sel.appendChild(o0);
+    options.forEach(function (v) {
+      var id = v[0], nom = v[1], n = compte(cle, id);
+      var op = el("option"); op.value = id; op.textContent = nom + " (" + n + ")";
+      if (id === state[cle]) op.selected = true;
+      if (n === 0 && id !== state[cle]) op.disabled = true;
+      sel.appendChild(op);
+    });
+    sel.addEventListener("change", function () {
+      state[cle] = sel.value;
+      if (cle === "pays") state.ville = "tout"; // changer de pays remet la ville à zéro
+      state.page = 1; rendre();
+    });
+    w.appendChild(sel);
+    return w;
+  }
   function rendreFiltres() {
     var vis = offresVisibles();
-    var zt = $("#of-ftype"); zt.innerHTML = "";
-    [["tout", "Tout"], ["emploi", "Emploi"], ["stage", "Stage"], ["volontariat", "Volontariat"], ["concours", "Concours"], ["formation", "Formations"]].forEach(function (t) {
-      zt.appendChild(pill(t[1], state.type === t[0], function () { state.type = t[0]; state.page = 1; rendre(); }));
-    });
-    var zp = $("#of-fpays"); zp.innerHTML = "";
-    var lab = el("span", "of-flabel"); lab.textContent = "Pays"; zp.appendChild(lab);
-    zp.appendChild(pill("Tous", state.paysSel.length === 0, function () { state.paysSel = []; state.page = 1; rendre(); }));
-    uniques(vis, "pays").forEach(function (p) {
-      zp.appendChild(pill(p, state.paysSel.indexOf(p) !== -1, function () {
-        var i = state.paysSel.indexOf(p); if (i === -1) state.paysSel.push(p); else state.paysSel.splice(i, 1); state.page = 1; rendre();
-      }));
-    });
-    zp.appendChild(selecteur("Domaine", uniques(vis, "domaine"), state.domaine, function (v) { state.domaine = v; state.page = 1; rendre(); }));
+    var z = $("#of-fmenus"); z.innerHTML = "";
+    var paire = function (v) { return [v, v]; };
+    z.appendChild(champ("Pays", "pays", "Tous les pays", uniques(vis, "pays").map(paire)));
+    if (state.pays !== "tout") {
+      var duPays = vis.filter(function (o) { return o.pays === state.pays; });
+      var villes = [], vues = {};
+      duPays.forEach(function (o) { var v = valeurDe("ville", o); if (!vues[v]) { vues[v] = 1; villes.push(v); } });
+      villes.sort(function (a, b) { return a === "Non précisée" ? 1 : b === "Non précisée" ? -1 : a.localeCompare(b, "fr"); });
+      z.appendChild(champ("Ville", "ville", "Toutes les villes", villes.map(paire)));
+    }
+    z.appendChild(champ("Type d’offre", "type",
+      "Tous les types", [["emploi", "Emploi"], ["stage", "Stage"], ["volontariat", "Volontariat"], ["concours", "Concours"], ["formation", "Formations"]]));
+    var domaines = [], vusD = {};
+    vis.forEach(function (o) { var v = valeurDe("domaine", o); if (!vusD[v]) { vusD[v] = 1; domaines.push(v); } });
+    domaines.sort(function (a, b) { return a === "Non précisé" ? 1 : b === "Non précisé" ? -1 : a.localeCompare(b, "fr"); });
+    z.appendChild(champ("Domaine", "domaine", "Tous les domaines", domaines.map(paire)));
+    z.appendChild(champ("Date de publication", "publication", "Toutes les dates",
+      PUBLICATIONS.map(function (p) { return [p[0], p[1]]; })));
   }
 
   function badge(type) { var b = el("span", "of-badge " + esc(type)); b.textContent = LIB[type] || type; return b; }
@@ -154,7 +215,7 @@
       d.appendChild(pv);
     }
     var b = el("button", "btn btn-ligne"); b.type = "button"; b.textContent = "Réinitialiser les filtres";
-    b.addEventListener("click", function () { state.type = "tout"; state.paysSel = []; state.domaine = "tout"; state.page = 1; rendre(); });
+    b.addEventListener("click", function () { state.type = "tout"; state.pays = "tout"; state.ville = "tout"; state.domaine = "tout"; state.publication = "tout"; state.page = 1; rendre(); });
     d.appendChild(b); return d;
   }
 
