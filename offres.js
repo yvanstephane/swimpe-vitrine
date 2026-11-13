@@ -24,10 +24,24 @@
     ["Fonction publique & recrutement", /minfopra|fonction publique|administratif|recrutement|police|gendarmerie|douane|arm[ée]e|mairie|nasla|eaux et for[êe]ts|magistrature|s[ée]lection/i]
   ];
   var DOMC_AUTRE = "Autres compétitions";
-  function domaineConcours(o) {
-    var t = [o.titre, o.organisation, o.domaine].filter(Boolean).join(" ");
+  function domaineCompetition(o) {
+    var d = (o.domaine || "").trim(); if (d) return d;
+    var t = [o.titre, o.organisation].filter(Boolean).join(" ");
     for (var i = 0; i < DOMC.length; i++) if (DOMC[i][1].test(t)) return DOMC[i][0];
     return DOMC_AUTRE;
+  }
+
+  // Domaines des CONCOURS (recrutements, concours d'entrée) : une famille à part, qu'on ne mélange pas
+  // avec les compétitions.
+  var DOMK = [
+    ["Écoles & universités (concours d'entrée)", /entr[ée]e|minesup|universit|[ée]cole|institut|facult[ée]|\biut\b|ipes|annale|fastef|\bena\b|\bcycle\b|formation m[ée]dicale|aptitude|biom[ée]dicale/i],
+    ["Fonction publique & recrutement", /minfopra|fonction publique|administratif|recrutement|police|gendarmerie|douane|arm[ée]e|mairie|nasla|eaux et for[êe]ts|magistrature|s[ée]lection/i]
+  ];
+  var DOMK_AUTRE = "Autres concours";
+  function domaineConcours(o) {
+    var t = [o.titre, o.organisation, o.domaine].filter(Boolean).join(" ");
+    for (var i = 0; i < DOMK.length; i++) if (DOMK[i][1].test(t)) return DOMK[i][0];
+    return DOMK_AUTRE;
   }
 
   function $(s, r) { return (r || document).querySelector(s); }
@@ -45,7 +59,7 @@
     arr.forEach(function (o) { var v = o[cle]; if (v && !vus[v]) { vus[v] = 1; out.push(v); } });
     out.sort(function (a, b) { return a.localeCompare(b, "fr"); }); return out;
   }
-  var LIB = { emploi: "Emploi", stage: "Stage", volontariat: "Volontariat", concours: "Concours", formation: "Formation" };
+  var LIB = { emploi: "Emploi", stage: "Stage", volontariat: "Volontariat", concours: "Concours", competition: "Compétition", formation: "Formation" };
   function dateFr(iso) {
     if (!iso) return "";
     var m = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."];
@@ -64,6 +78,7 @@
     }
     if (cle === "domaine") {
       if (o.type === "concours") return domaineConcours(o);
+      if (o.type === "competition") return domaineCompetition(o);
       return (o.domaine || "").trim() || "Non précisé";
     }
     return "";
@@ -147,8 +162,12 @@
       z.appendChild(champ("Ville", "ville", "Toutes les villes", villes.map(paire)));
     }
     z.appendChild(champ("Type d’offre", "type",
-      "Tous les types", [["emploi", "Emploi"], ["stage", "Stage"], ["volontariat", "Volontariat"], ["concours", "Compétition / concours"], ["formation", "Formations"]]));
+      "Tous les types", [["emploi", "Emploi"], ["stage", "Stage"], ["volontariat", "Volontariat"], ["concours", "Concours"], ["competition", "Compétition"], ["formation", "Formations"]]));
     if (state.type === "concours") {
+      // Concours : écoles / fonction publique / autres.
+      var domK = DOMK.map(function (d) { return d[0]; }); domK.push(DOMK_AUTRE);
+      z.appendChild(champ("Domaine", "domaine", "Tous les domaines", domK.map(paire)));
+    } else if (state.type === "competition") {
       // Compétitions : toutes les familles (sport inclus) ; 0 offre = visible mais non cliquable.
       var domC = DOMC.map(function (d) { return d[0]; }); domC.push(DOMC_AUTRE);
       z.appendChild(champ("Domaine", "domaine", "Tous les domaines", domC.map(paire)));
@@ -224,7 +243,7 @@
     c.appendChild(haut);
     var t = el("h3", "of-titre"); t.textContent = o.titre; c.appendChild(t);
     var m = el("p", "of-meta"); m.textContent = [o.organisation, o.ville ? o.ville + ", " + o.pays : o.pays, o.domaine].filter(Boolean).join(" · "); c.appendChild(m);
-    var lblCarte = o.type === "concours" ? "Voir le concours" : (o.type === "formation" ? "Voir la formation" : (o.type === "volontariat" ? "Voir / s'engager" : "Voir / postuler"));
+    var lblCarte = o.type === "concours" ? "Voir le concours" : (o.type === "competition" ? "Voir la compétition" : (o.type === "formation" ? "Voir la formation" : (o.type === "volontariat" ? "Voir / s'engager" : "Voir / postuler")));
     var voir = el("div", "of-voir"); voir.innerHTML = lblCarte + " &rarr;"; c.appendChild(voir);
     function ouvrir() { state.selection = o.id; rendre(); window.scrollTo(0, 0); }
     c.addEventListener("click", ouvrir);
@@ -335,7 +354,7 @@
       if (t) window.scrollTo({ top: Math.max(0, t.getBoundingClientRect().top + window.pageYOffset - 70), behavior: "smooth" });
     });
     z.appendChild(b);
-    var TYPES_LIB = { emploi: "Emploi", stage: "Stage", volontariat: "Volontariat", concours: "Comp\u00e9tition / concours", formation: "Formations" };
+    var TYPES_LIB = { emploi: "Emploi", stage: "Stage", volontariat: "Volontariat", concours: "Concours", competition: "Comp\u00e9tition", formation: "Formations" };
     if (state.type !== "tout") z.appendChild(pastille(TYPES_LIB[state.type] || state.type, "type"));
     if (state.pays !== "tout") z.appendChild(pastille(state.pays, "pays"));
     if (state.ville !== "tout") z.appendChild(pastille(state.ville, "ville"));
