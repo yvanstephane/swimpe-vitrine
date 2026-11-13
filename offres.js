@@ -7,7 +7,7 @@
   var DATA = { maj: "", offres: [] };
   var state = { type: "tout", pays: "tout", ville: "tout", domaine: "tout", publication: "tout", selection: null, coches: {}, page: 1 };
   var CONTACT_EMAIL = "contact@swimpe.com";
-  var PAR_PAGE = 15;
+  var PAR_PAGE = 5;
 
   // Domaines des compétitions (type « concours ») : déduits du texte de l'offre (titre, organisation, domaine).
   // Toutes les familles sont proposées dans le menu « Domaine » ; celles sans offre restent visibles mais non cliquables.
