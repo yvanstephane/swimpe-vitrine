@@ -85,6 +85,11 @@ a.of-pill{display:inline-block;text-decoration:none}
 .of-aussi-note a{color:var(--sceau);font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--sceau)}
 .of-pill:hover{border-color:var(--sceau)}
 .of-pill.on{background:var(--sceau);color:#2A1705;border-color:var(--sceau)}
+.of-colle{position:sticky;top:60px;z-index:40;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  background:var(--papier);padding:10px 0;border-bottom:1px solid var(--filet);margin:0 0 16px}
+.of-colle-btn{font:inherit;font-size:13.5px;font-weight:700;padding:7px 15px;border-radius:2px;
+  border:1.5px solid var(--sceau);background:transparent;color:var(--sceau);cursor:pointer}
+.of-colle-nb{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--muet)}
 .of-select{font-family:var(--sans);font-size:13.5px;border:1.5px solid var(--filet);border-radius:2px;padding:7px 12px;background:var(--blanc);color:var(--encre-2);cursor:pointer;min-height:40px}
 .of-select.on{border-color:var(--sceau);color:var(--encre);background:var(--sceau-fond)}
 
@@ -202,10 +207,10 @@ footer .fin{border-top:1px solid #3A4E6B;margin-top:28px;padding-top:16px;displa
       <nav class="of-filtres of-aussi" aria-label="Autres rubriques">
         <span class="of-flabel">Aussi</span>
         <a class="of-pill" href="/annuaire/?cat=sport">⚽ Sport</a>
-        <a class="of-pill" href="/annuaire/?comp=1">🏆 Compétitions</a>
         <a class="of-pill" href="/anti-arnaque.html#verifier">🔎 Vérifier un site →</a>
       </nav>
-      <p class="of-aussi-note">Sport et compétitions : pas d'offre individuelle ici pour l'instant. Les sites officiels des organisateurs (fédérations, festivals, olympiades, concours) sont réunis dans nos <a href="/annuaire/">sources officielles</a> (rubrique Anti-arnaque). Un lien reçu t'inquiète ? <a href="/anti-arnaque.html#verifier">Vérifie-le ici</a>.</p>
+      <p class="of-aussi-note">Les compétitions (concours d'entrée, recrutements, prix…) sont dans le menu « Type d'offre » ci-dessus. Pour le sport (fédérations, académies, détections), les sites officiels sont réunis dans nos <a href="/annuaire/">sources officielles</a> (rubrique Anti-arnaque). Un lien reçu t'inquiète ? <a href="/anti-arnaque.html#verifier">Vérifie-le ici</a>.</p>
+      <div class="of-colle" id="of-colle"></div>
       <div class="of-liste" id="of-liste"></div>
       <div class="of-pont">
         Tu prépares un départ à l'international ? <a href="index.html">Bientôt sur Swimpe →</a>

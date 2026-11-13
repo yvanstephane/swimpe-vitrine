@@ -9,6 +9,27 @@
   var CONTACT_EMAIL = "contact@swimpe.com";
   var PAR_PAGE = 15;
 
+  // Domaines des compétitions (type « concours ») : déduits du texte de l'offre (titre, organisation, domaine).
+  // Toutes les familles sont proposées dans le menu « Domaine » ; celles sans offre restent visibles mais non cliquables.
+  var DOMC = [
+    ["Sport", /sport|football|basket|athl[ée]t|tournoi|championnat|\bcoupe\b/i],
+    ["Cinéma & audiovisuel", /cin[ée]ma|\bfilms?\b|m[ée]trage|audiovisuel|documentaire|casting/i],
+    ["Musique", /musique|\bchants?\b|chanson/i],
+    ["Arts & culture", /\barts?\b|\bmode\b|design|\bphotos?\b|festival|biennale/i],
+    ["Écriture & médias", /[ée]criture|litt[ée]ra|journalis|po[ée]sie|\bslam\b/i],
+    ["Sciences & maths", /olympiade|\bmaths?\b|math[ée]matique|science|physique|chimie/i],
+    ["Informatique & tech", /hackathon|informatique|num[ée]rique|robotique|\btech\b/i],
+    ["Entrepreneuriat", /entrepreneur|start-?up|innovation/i],
+    ["Écoles & universités (concours d'entrée)", /entr[ée]e|minesup|universit|[ée]cole|institut|facult[ée]|\biut\b|ipes|annale|fastef|\bena\b|\bcycle\b|formation m[ée]dicale|aptitude/i],
+    ["Fonction publique & recrutement", /minfopra|fonction publique|administratif|recrutement|police|gendarmerie|douane|arm[ée]e|mairie|nasla|eaux et for[êe]ts|magistrature|s[ée]lection/i]
+  ];
+  var DOMC_AUTRE = "Autres compétitions";
+  function domaineConcours(o) {
+    var t = [o.titre, o.organisation, o.domaine].filter(Boolean).join(" ");
+    for (var i = 0; i < DOMC.length; i++) if (DOMC[i][1].test(t)) return DOMC[i][0];
+    return DOMC_AUTRE;
+  }
+
   function $(s, r) { return (r || document).querySelector(s); }
   function el(tag, cls) { var e = document.createElement(tag); if (cls) e.className = cls; return e; }
   function esc(s) {
@@ -41,7 +62,10 @@
       var v = String(o.ville || "").split(/[,(]/)[0].trim();
       return v || "Non précisée";
     }
-    if (cle === "domaine") return (o.domaine || "").trim() || "Non précisé";
+    if (cle === "domaine") {
+      if (o.type === "concours") return domaineConcours(o);
+      return (o.domaine || "").trim() || "Non précisé";
+    }
     return "";
   }
   var PUBLICATIONS = [["24h", "Dernières 24 heures", 1], ["7j", "7 derniers jours", 7], ["30j", "30 derniers jours", 30]];
@@ -104,6 +128,7 @@
     sel.addEventListener("change", function () {
       state[cle] = sel.value;
       if (cle === "pays") state.ville = "tout"; // changer de pays remet la ville à zéro
+      if (cle === "type") state.domaine = "tout"; // les domaines dépendent du type
       state.page = 1; rendre();
     });
     w.appendChild(sel);
@@ -122,11 +147,17 @@
       z.appendChild(champ("Ville", "ville", "Toutes les villes", villes.map(paire)));
     }
     z.appendChild(champ("Type d’offre", "type",
-      "Tous les types", [["emploi", "Emploi"], ["stage", "Stage"], ["volontariat", "Volontariat"], ["concours", "Concours"], ["formation", "Formations"]]));
-    var domaines = [], vusD = {};
-    vis.forEach(function (o) { var v = valeurDe("domaine", o); if (!vusD[v]) { vusD[v] = 1; domaines.push(v); } });
-    domaines.sort(function (a, b) { return a === "Non précisé" ? 1 : b === "Non précisé" ? -1 : a.localeCompare(b, "fr"); });
-    z.appendChild(champ("Domaine", "domaine", "Tous les domaines", domaines.map(paire)));
+      "Tous les types", [["emploi", "Emploi"], ["stage", "Stage"], ["volontariat", "Volontariat"], ["concours", "Compétition / concours"], ["formation", "Formations"]]));
+    if (state.type === "concours") {
+      // Compétitions : toutes les familles (sport inclus) ; 0 offre = visible mais non cliquable.
+      var domC = DOMC.map(function (d) { return d[0]; }); domC.push(DOMC_AUTRE);
+      z.appendChild(champ("Domaine", "domaine", "Tous les domaines", domC.map(paire)));
+    } else {
+      var domaines = [], vusD = {};
+      vis.forEach(function (o) { var v = valeurDe("domaine", o); if (!vusD[v]) { vusD[v] = 1; domaines.push(v); } });
+      domaines.sort(function (a, b) { return a === "Non précisé" ? 1 : b === "Non précisé" ? -1 : a.localeCompare(b, "fr"); });
+      z.appendChild(champ("Domaine", "domaine", "Tous les domaines", domaines.map(paire)));
+    }
     z.appendChild(champ("Date de publication", "publication", "Toutes les dates",
       PUBLICATIONS.map(function (p) { return [p[0], p[1]]; })));
   }
@@ -279,13 +310,48 @@
     maj(); return prep;
   }
 
+  function pastille(txt, cle) {
+    var b = el("button", "of-pill on"); b.type = "button";
+    b.innerHTML = esc(txt) + " \u2715";
+    b.setAttribute("aria-label", "Retirer le filtre " + txt);
+    b.addEventListener("click", function () {
+      state[cle] = "tout";
+      if (cle === "pays") state.ville = "tout";
+      if (cle === "type") state.domaine = "tout";
+      state.page = 1; rendre();
+    });
+    return b;
+  }
+  // Barre qui reste visible en défilant : les choix en cours (retirables), le nombre d'offres, et « Filtres »
+  // pour remonter aux menus d'un geste.
+  function rendreColle() {
+    var z = $("#of-colle"); if (!z) return;
+    z.innerHTML = "";
+    var b = el("button", "of-colle-btn"); b.type = "button"; b.textContent = "\u2630 Filtres";
+    b.addEventListener("click", function () {
+      var t = $("#of-fmenus");
+      if (t) window.scrollTo({ top: Math.max(0, t.getBoundingClientRect().top + window.pageYOffset - 70), behavior: "smooth" });
+    });
+    z.appendChild(b);
+    var TYPES_LIB = { emploi: "Emploi", stage: "Stage", volontariat: "Volontariat", concours: "Comp\u00e9tition / concours", formation: "Formations" };
+    if (state.type !== "tout") z.appendChild(pastille(TYPES_LIB[state.type] || state.type, "type"));
+    if (state.pays !== "tout") z.appendChild(pastille(state.pays, "pays"));
+    if (state.ville !== "tout") z.appendChild(pastille(state.ville, "ville"));
+    if (state.domaine !== "tout") z.appendChild(pastille(state.domaine, "domaine"));
+    if (state.publication !== "tout") {
+      PUBLICATIONS.forEach(function (p) { if (p[0] === state.publication) z.appendChild(pastille(p[1], "publication")); });
+    }
+    var n = apresFiltres().length;
+    var c = el("span", "of-colle-nb"); c.textContent = n + (n > 1 ? " offres" : " offre"); z.appendChild(c);
+  }
+
   function rendre() {
     var sel = state.selection ? DATA.offres.filter(function (o) { return o.id === state.selection; })[0] : null;
     if (sel && visible(sel)) {
       $("#of-vue-liste").hidden = true; $("#of-vue-detail").hidden = false; rendreDetail(sel);
     } else {
       state.selection = null; $("#of-vue-detail").hidden = true; $("#of-vue-liste").hidden = false;
-      rendreFiltres(); rendreListe();
+      rendreFiltres(); rendreColle(); rendreListe();
     }
   }
 
