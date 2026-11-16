@@ -421,7 +421,7 @@
   {
    "id": "kamerpower_rss",
    "relais": true,
-   "actif": true,
+   "actif": false,
    "type": "rss",
    "domaine": "kamerpower.com",
    "libelle": "KamerPower — relais concours & emplois (CM, CI, SN) — site privé très suivi",
@@ -431,7 +431,7 @@
    ],
    "fenetre_jours": 21,
    "limite": 25,
-   "_note": "RELAIS PRIVÉ (pas une source officielle) : republie les avis officiels des 3 pays. Pays détecté automatiquement dans le titre/texte. À confirmer à la main avant activation ; chaque fiche renvoie vers l'article source."
+   "_note": "RELAIS PRIVÉ (pas une source officielle) : republie les avis officiels des 3 pays. Pays détecté automatiquement dans le titre/texte. À confirmer à la main avant activation ; chaque fiche renvoie vers l'article source. | 16/11/2026 : DÉSACTIVÉE — le site refuse les robots (réponse non-XML au SwimpeBot). À réactiver seulement avec l'accord du site (demande de partenariat à envoyer)."
   },
   {
    "id": "lesopportunites_rss",
@@ -455,12 +455,12 @@
    "domaine": "cameroondesks.com",
    "libelle": "CameroonDesks — relais offres & concours (Cameroun)",
    "urls": [
-    "https://www.cameroondesks.com/feed/"
+    "https://www.cameroondesks.com/feeds/posts/default?alt=rss"
    ],
    "pays": "Cameroun",
    "fenetre_jours": 14,
    "limite": 20,
-   "_note": "RELAIS PRIVÉ cité par la presse locale comme site de référence. À confirmer à la main avant activation."
+   "_note": "RELAIS PRIVÉ cité par la presse locale comme site de référence. À confirmer à la main avant activation. | 16/11/2026 : adresse corrigée (flux Blogger ; l'ancien /feed/ donnait 404)."
   },
   {
    "id": "concoursn_rss",
@@ -596,16 +596,6 @@
    "fenetre_jours": 30,
    "limite": 40,
    "_note": "Méthode « porte de service » : la page est une appli JavaScript, l'API REST qu'elle utilise est publique. Pays détecté sur le lieu principal."
-  },
-  {
-   "id": "eneo_careers",
-   "actif": false,
-   "type": "concours_html",
-   "domaine": "eneocameroon.cm",
-   "libelle": "ENEO Cameroon — offres d'emploi officielles (électricité)",
-   "url": "https://eneocameroon.cm/index.php/en/about-eneo/human-resources-management/job-offers-internships",
-   "pays": "Cameroun",
-   "_note": "CANDIDAT (16/11/2026) : page carrières officielle à sonder (sélecteur à régler) avant activation."
   },
   {
    "id": "camtel_careers",
