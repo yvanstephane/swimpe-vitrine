@@ -121,12 +121,12 @@
    "fenetre_jours": 30,
    "limite": 15,
    "timeout": 45,
-   "_note": "ACTIVÉ 16/11/2026 : vérifié de visu — site statique Hugo, lisible sans JavaScript. Concours sous /concours-2026/details-concours/<CODE>, communiqués PDF sous /uploads/communiques/. Guichet unique officiel des concours administratifs CI (MEMFPMA, ENA, diaspora).",
+   "_note": "ACTIVÉ 16/11/2026, affiné : seules les pages /concours-2026/details-concours/<CODE> et /diaspora (vraies ouvertures). Les /uploads/communiques/ et pages de procédure sont écartés (étapes pour admis, pas des ouvertures). Session 2026 close — la source captera l'ouverture de la session 2027.",
    "type_offre": "concours",
-   "motif_href": "details-concours|uploads/communiques|diaspora",
+   "motif_href": "details-concours|diaspora",
    "lire_pdf": true,
    "pdf_max": 6,
-   "longueur_min_titre": 6
+   "longueur_min_titre": 10
   },
   {
    "id": "agence_emploi_jeunes_ci",
