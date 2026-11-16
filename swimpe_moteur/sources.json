@@ -104,7 +104,7 @@
   },
   {
    "id": "gucaci_ci",
-   "actif": false,
+   "actif": true,
    "type": "concours_html",
    "domaine": "gucaci.ciconcours.com",
    "libelle": "GUCACI — Guichet Unique des Concours Administratifs (Côte d'Ivoire)",
@@ -121,7 +121,12 @@
    "fenetre_jours": 30,
    "limite": 15,
    "timeout": 45,
-   "_note": "CANDIDAT 16/11/2026 : plateforme centrale des préinscriptions aux concours CI (citée par erooamba/guides 2026). PAS ENCORE VÉRIFIÉE DE VISU — à confirmer avant activation."
+   "_note": "ACTIVÉ 16/11/2026 : vérifié de visu — site statique Hugo, lisible sans JavaScript. Concours sous /concours-2026/details-concours/<CODE>, communiqués PDF sous /uploads/communiques/. Guichet unique officiel des concours administratifs CI (MEMFPMA, ENA, diaspora).",
+   "type_offre": "concours",
+   "motif_href": "details-concours|uploads/communiques|diaspora",
+   "lire_pdf": true,
+   "pdf_max": 6,
+   "longueur_min_titre": 6
   },
   {
    "id": "agence_emploi_jeunes_ci",
