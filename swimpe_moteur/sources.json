@@ -349,7 +349,7 @@
   },
   {
    "id": "ansd_sn",
-   "actif": true,
+   "actif": false,
    "type": "concours_html",
    "domaine": "ansd.sn",
    "libelle": "ANSD — Agence Nationale de la Statistique et de la Démographie (Sénégal)",
@@ -366,7 +366,7 @@
    "limite": 15,
    "timeout": 45,
    "verify_ssl": false,
-   "_note": "CORRIGÉ 16/11/2026 : les avis ne sont PAS sur www.ansd.sn mais sur la plateforme officielle recrute.ansd.sn (confirmée par Ndarinfo, Senego, ConcoursN). À surveiller au prochain passage.",
+   "_note": "DÉSACTIVÉ 16/11/2026 : la plateforme officielle recrute.ansd.sn interdit les robots (robots.txt) — on respecte, pas de contournement (même règle que Kamerpower/Minajobs). Les avis ANSD arrivent déjà via le relais concoursn_rss. Piste : partenariat ANSD, ou vérification de visu au navigateur.",
    "suivre_article": true,
    "lire_pdf": true,
    "articles_max": 12,
