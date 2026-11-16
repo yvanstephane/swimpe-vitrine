@@ -75,7 +75,7 @@ const D=[
 ["public","ENEO (électricité)","eneocameroon.cm","emploi","officiel","⚠️ Arnaques « emplois ENEO » : seul canal officiel eneocameroon.cm (vérifié 15/11/2026).","local"],
 ["public","CAMTEL","camtel.cm","emploi","officiel","Portail carrières : career.camtel.cm (vérifié 15/11/2026).","local"],
 ["public","CAMPOST","campost.cm","emploi","officiel","Recrutements massifs ponctuels (vérifié 15/11/2026).","local"],
-["public","SONARA (raffinage, Limbé)","à confirmer","emploi","averifier","⚠️ Pas de site officiel trouvable (raffinerie à l'arrêt depuis 2019, relance prévue 2027). Recrutements rares, annoncés par voie officielle/presse — toute « offre SONARA » payante est une arnaque.","local"],
+["public","SONARA (raffinage, Limbé)","sonara-cm.cm","emploi","officiel","Raffinerie à l'arrêt depuis 2019, relance prévue 2027 : recrutements rares. ⚠️ Toute « offre SONARA » payante est une arnaque (vérifié 16/11/2026, domaine donné par Yvan et recoupé).","local"],
 ["public","CNPS","cnps.cm","emploi","officiel","Recrutements ponctuels (vérifié 15/11/2026).","local"],
 ["public","FNE (Fonds National de l'Emploi)","fnecm.org","emploi · placement","officiel","Organisme public de placement.","local"],
 ["public","JEME (Jeune Métier Emploi)","emploijeune.cm","emploi","officiel","Portail national du MINEFOP (vérifié 15/11/2026).","local"],

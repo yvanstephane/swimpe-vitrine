@@ -1,6 +1,6 @@
 {
   "_comment": "LISTE DE CONFIANCE Swimpe : domaines OFFICIELS vérifiés à la main (bibliothèque du 19/10/2026). Le validateur automatique ne publie QUE ce qui pointe vers ces domaines. Pour en ajouter un : vérifie-le toi-même, puis ajoute une ligne \"domaine\": \"Nom de l'organisme\".",
-  "maj": "2026-11-15",
+  "maj": "2026-11-16",
   "domaines": {
     "3fpt.sn": "3FPT – Fonds de Financement de la Formation Professionnelle et Technique",
     "about.fiba.basketball": "FIBA Afrique",
@@ -316,6 +316,7 @@
     "unaids.org": "ONUSIDA / UNAIDS – Programme commun des Nations Unies sur le VIH/sida",
     "campost.cm": "CAMPOST – Cameroon Postal Services",
     "emploijeune.cm": "JEME / MINEFOP – portail national emploi des jeunes",
-    "ins-cameroun.cm": "INS – Institut National de la Statistique"
+    "ins-cameroun.cm": "INS – Institut National de la Statistique",
+    "sonara-cm.cm": "SONARA – Société Nationale de Raffinage (Limbé)"
   }
 }
