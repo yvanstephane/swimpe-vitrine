@@ -32,13 +32,13 @@
 <h1>Aide-nous à construire Swimpe !</h1>
 <p>Ce questionnaire s'adresse aux futurs utilisateurs de SWIMPE. Tes réponses nous aideront à mieux comprendre les besoins des chercheurs d'emploi et à y répondre de façon spécifique.</p>
 <p><b>15 questions · Quelques minutes · Ton avis compte !</b></p>
-<button class="mainbtn" onclick="begin()">COMMENCER →</button>
+<button class="mainbtn" id="begin">COMMENCER →</button>
 <p class="note">Tes réponses sont enregistrées de façon anonyme pour améliorer Swimpe. Aucun nom ni e-mail n'est demandé.</p>
 </section>
 <section id="survey" class="hidden"><div class="meta"><span class="qnum" id="counter">Question 1 / 15</span><div class="bar"><div class="fill" id="progress"></div></div></div>
 <div class="question" id="question"></div><div class="hint" id="hint">Choisis la réponse qui te correspond !</div>
 <div class="answers" id="answers"></div><div class="content hidden" id="longanswer"><textarea id="suggestion" placeholder="Écris tes suggestions ici..."></textarea></div>
-<div class="actions"><button class="secondary" id="back" onclick="back()">← RETOUR</button><button class="mainbtn" id="next" disabled onclick="next()">SUIVANT →</button></div></section>
-<section id="done" class="done hidden"><div style="font-size:70px">🎉💜</div><h1>Merci pour ta participation !</h1><p>Tes réponses ont été enregistrées dans cette page pendant cette session.</p><p class="note">Pour recevoir réellement les réponses, il faudra connecter ce formulaire à Google Forms, une base de données ou un service de collecte.</p><button class="mainbtn" onclick="downloadAnswers()">TÉLÉCHARGER MES RÉPONSES</button><br><br><button class="secondary" onclick="restart()">RECOMMENCER</button></section>
+<div class="actions"><button class="secondary" id="back">← RETOUR</button><button class="mainbtn" id="next" disabled>SUIVANT →</button></div></section>
+<section id="done" class="done hidden"><div style="font-size:70px">🎉💜</div><h1>Merci pour ta participation !</h1><p>Tes réponses ont été enregistrées dans cette page pendant cette session.</p><p class="note">Pour recevoir réellement les réponses, il faudra connecter ce formulaire à Google Forms, une base de données ou un service de collecte.</p><button class="mainbtn" id="download">TÉLÉCHARGER MES RÉPONSES</button><br><br><button class="secondary" id="restart">RECOMMENCER</button></section>
 <footer class="footer">Ensemble, construisons ton avenir avec Swimpe !</footer></main>
 <script src="sondage.js"></script></body></html>

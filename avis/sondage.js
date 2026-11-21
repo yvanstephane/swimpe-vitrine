@@ -11,3 +11,10 @@ function back(){if(index>0){if(questions[index][2]==='text')responses[index]=doc
 var SB_URL='https://nwvcsqqukgygudbjnryk.supabase.co';var SB_KEY='sb_publishable_UaEdcpv8aXPlQ0AT4N1jVA_9FGujfAs';function valeur(k){var v=responses[k];return Array.isArray(v)?v.join(', '):(v||null)}function champ(mot){for(var k=0;k<questions.length;k++){if(questions[k][0].toLowerCase().indexOf(mot)>=0)return valeur(k)}return null}function enregistrer(){try{var qa=questions.map(function(q,i){return{question:q[0],reponse:responses[i]||null}});var payload={profil:valeur(0),pays:champ('pays'),ville:champ('vis-tu'),reponses:qa,user_agent:(navigator.userAgent||'').slice(0,300)};fetch(SB_URL+'/rest/v1/reponses_sondage',{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payload)}).catch(function(){});}catch(e){}}function finish(){enregistrer();document.getElementById('survey').classList.add('hidden');document.getElementById('done').classList.remove('hidden')}
 function downloadAnswers(){let data=questions.map((q,i)=>({question:q[0],reponse:responses[i]||''}));let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='reponses-swimpe-survey.json';a.click();URL.revokeObjectURL(a.href)}
 function restart(){index=0;responses=Array(questions.length).fill(null);document.getElementById('done').classList.add('hidden');document.getElementById('survey').classList.remove('hidden');render()}
+
+/* Relier les boutons fixes depuis le fichier (la CSP interdit onclick= dans la page) */
+function wireSondage(){
+  var liens={begin:begin,back:back,next:next,download:downloadAnswers,restart:restart};
+  for(var id in liens){(function(el,fn){if(el)el.addEventListener('click',fn);})(document.getElementById(id),liens[id]);}
+}
+if(document.readyState!=='loading')wireSondage();else document.addEventListener('DOMContentLoaded',wireSondage);
